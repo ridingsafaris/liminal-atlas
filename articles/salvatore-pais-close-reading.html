@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salvatore Pais on Jesse Michels&#8217; American Alchemy &#8212; Close Reading | Liminal Atlas</title>
+<meta name="description" content="A close reading of Salvatore Pais on American Alchemy: Navy patents, the Pais Effect, high-frequency gravitational waves, room-temperature superconductors, quantum vacuum propulsion, MH370, remote action and NHI claims.">
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+.article-hero{position:relative;z-index:1;padding:72px 24px 56px;max-width:var(--max-width);margin:0 auto;border-bottom:1px solid var(--border);}
+.article-hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;letter-spacing:-0.03em;color:var(--text-bright);line-height:1.1;margin-bottom:20px;}
+.article-hero h1 span{color:var(--blue-bright);}
+.hero-meta{display:flex;flex-wrap:wrap;gap:20px;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px;}
+.hero-intro{font-size:17px;line-height:1.8;color:var(--text);max-width:760px;margin-bottom:24px;}
+.speakers-section{position:relative;z-index:1;background:var(--surface);border-bottom:1px solid var(--border);padding:40px 24px;}
+.speakers-inner{max-width:var(--max-width);margin:0 auto;}
+.speakers-label,.toc-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.25em;color:var(--blue);text-transform:uppercase;margin-bottom:24px;}
+.speakers-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.speaker-card{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:20px;display:flex;gap:18px;align-items:flex-start;}
+.speaker-photo-placeholder{width:72px;height:72px;border-radius:50%;border:2px solid var(--blue-dim);flex-shrink:0;background:var(--blue-glow);display:flex;align-items:center;justify-content:center;font-size:26px;}
+.speaker-name{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:2px;}
+.speaker-role{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;color:var(--blue-bright);text-transform:uppercase;margin-bottom:8px;}
+.speaker-bio{font-size:13px;line-height:1.65;color:var(--text-dim);margin-bottom:10px;}
+.toc-section{position:relative;z-index:1;padding:32px 24px;max-width:var(--max-width);margin:0 auto;}
+.article-body{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 24px 100px;}
+.claim-verified,.claim-disputed,.claim-unsupported,.claim-classified{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;vertical-align:middle;margin-left:6px;white-space:nowrap;}
+.claim-verified{background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);}
+.claim-disputed{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.claim-unsupported{background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);}
+.claim-classified{background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);}
+.claim-legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim);}
+.key-claims{background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0;}
+.key-claims-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px;}
+.key-claims ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;}
+.key-claims li{font-size:13.5px;line-height:1.6;color:var(--text);}
+.mainstream-box{background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0;}
+.mainstream-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px;}
+.mainstream-box p{font-size:13px;line-height:1.7;margin-bottom:6px;}
+.dialogue{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);margin:20px 0;overflow:hidden;}
+.dialogue-header{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);letter-spacing:0.08em;text-transform:uppercase;padding:12px 16px;border-bottom:1px solid var(--border2);background:var(--surface);}
+.d-line{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 16px;border-bottom:1px solid var(--border2);}
+.d-line:last-child{border-bottom:none;}
+.d-speaker{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue-bright);}
+.d-text{font-size:14px;line-height:1.7;color:var(--text);}
+.thread-index,.source-card{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px;}
+.thread-index-label,.source-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px;}
+.thread-row{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px;}
+.thread-row:last-child{border-bottom:none;}
+.thread-concept{font-weight:600;color:var(--text-bright);min-width:220px;flex-shrink:0;}
+.thread-links{display:flex;flex-wrap:wrap;gap:5px;}
+.thread-ch{font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap;}
+.glossary-section{border-top:2px solid var(--border);padding-top:40px;margin-top:16px;}
+.glossary-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px;}
+.glossary-entry{background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px;}
+.g-term{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);letter-spacing:0.05em;margin-bottom:6px;text-transform:uppercase;}
+.g-def{font-size:13px;line-height:1.65;color:var(--text-dim);}
+.source-card p{font-size:14px;line-height:1.7;margin-bottom:8px;}
+.source-card a{color:var(--blue-bright);}
+.tl-wrap{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px 20px;}
+.tl-inner{max-width:var(--max-width);margin:0 auto;}
+.tl-label{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;}
+.tl-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;}
+.tl-grid a{font-family:var(--font-mono);font-size:10px;text-decoration:none;color:var(--text-dim);border:1px solid var(--border2);background:var(--surface2);border-radius:6px;padding:8px;}
+.tl-grid a span{display:block;color:var(--blue-bright);margin-bottom:3px;}
+@media(max-width:800px){.speakers-grid,.glossary-grid{grid-template-columns:1fr}.d-line{grid-template-columns:1fr}.tl-grid{grid-template-columns:repeat(2,1fr)}.thread-concept{min-width:120px}}
+</style>
+
+</head>
+<body>
+
+<!-- Header injected by site.js -->
+
+<main>
+
+<div class="article-hero fade-up">
+  <div style="margin-bottom:16px; display:flex; gap:8px; flex-wrap:wrap;">
+    <span class="cat-pill physics">Physics</span>
+    <span class="cat-pill uap">UAP</span>
+    <span class="cat-pill consciousness">National Security</span>
+  </div>
+  <div class="badge" style="margin-bottom:20px;">Close Reading &#183; American Alchemy &#183; Salvatore Pais</div>
+  <h1>Salvatore Pais on <span>Jesse Michels&#8217;</span><br>American Alchemy<br><span style="font-size:0.55em;color:var(--text-dim);font-weight:400;">Navy Patents, Black Holes, Quantum Vacuum Propulsion and &#8220;A Cosmic War&#8221;</span></h1>
+  <div class="hero-meta">
+    <span>Guest: Salvatore Cezar Pais</span>
+    <span>Host: Jesse Michels</span>
+    <span>Co-host: Jack</span>
+    <span>Runtime: ~1hr 57min</span>
+    <span>18 chapters &#183; transcript close reading</span>
+  </div>
+  <p class="hero-intro">Salvatore Pais is one of the few publicly identifiable government scientists whose name is attached to patents regularly cited in UFO propulsion discussions. That fact does not prove his claims. It does, however, make this interview unusually useful: the claims can be separated into public patents, accepted physics, speculative extrapolation and statements that remain unverifiable because Pais explicitly withholds details on national-security grounds.</p>
+  <p class="hero-intro">This close reading follows the episode chapter by chapter. It keeps the strongest distinction possible between legitimate scientific concepts such as Maxwell&#8217;s equations, superconductivity and the Schwinger effect, and unsupported extensions involving black hole propulsion, MH370, remote action and non-human threats.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://www.youtube.com/watch?v=8TYMQOUDQBo" target="_blank" rel="noopener">&#9654; Watch Full Episode</a>
+    <a class="btn btn-ghost" href="https://patents.google.com/?inventor=Salvatore+Cezar+Pais" target="_blank" rel="noopener">&#8599; Pais Patents</a>
+    <a class="btn btn-ghost" href="https://www.jesse-michels.com/" target="_blank" rel="noopener">&#8599; Jesse Michels</a>
+  </div>
+</div>
+
+<div class="tl-wrap">
+  <div class="tl-inner">
+    <div class="tl-label">Episode map &#8212; 1hr 57min &#183; 18 sections</div>
+    <div class="tl-grid"><a href="#ch1"><span>00:00</span>Cold Open: External Enemy, Remote </a>
+<a href="#ch2"><span>01:20</span>Host Setup, Skunk Works Framing an</a>
+<a href="#ch3"><span>06:16</span>Biography: Romania, Queens, Brookl</a>
+<a href="#ch4"><span>10:27</span>The Origin of the Patents: UFO Obs</a>
+<a href="#ch5"><span>15:49</span>The Superforce, Quantum Vacuum and</a>
+<a href="#ch6"><span>18:01</span>Heaviside, Maxwell and the Harmoni</a>
+<a href="#ch7"><span>23:23</span>Terahertz Fields, Superconductors </a>
+<a href="#ch8"><span>29:22</span>Schwinger Limit, Vacuum Polarisati</a>
+<a href="#ch9"><span>33:41</span>Spin, Vibration and the Alternativ</a>
+<a href="#ch10"><span>36:31</span>Cold Plasma, BCS Theory and Room T</a>
+<a href="#ch11"><span>45:44</span>“Let’s Build a UFO”: National Surv</a>
+<a href="#ch12"><span>51:50</span>High-Frequency Gravitational Waves</a>
+<a href="#ch13"><span>58:26</span>Cold War Secrecy, China and the Ex</a>
+<a href="#ch14"><span>64:31</span>Puthoff, Remote Viewing and Remote</a>
+<a href="#ch15"><span>70:00</span>Mind-Matter Interface, Consciousne</a>
+<a href="#ch16"><span>84:30</span>Ethics, Weaponisation and Why Phys</a>
+<a href="#ch17"><span>101:30</span>Man-Made Tech, ET Tech and MH370</a>
+<a href="#ch18"><span>110:56</span>Artificial Singularity, Civil Infr</a></div>
+  </div>
+</div>
+
+<div class="speakers-section fade-up-1">
+  <div class="speakers-inner">
+    <div class="speakers-label">About the Speakers</div>
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <div class="speaker-photo-placeholder">&#128100;</div>
+        <div>
+          <div class="speaker-name">Salvatore Cezar Pais</div>
+          <div class="speaker-role">Guest &#183; Aerospace Engineer / Navy Patent Inventor</div>
+          <p class="speaker-bio">Pais is associated with a set of Navy-linked patents covering a craft using an inertial mass reduction device, a high-frequency gravitational wave generator and a piezoelectricity-induced room-temperature superconductor. In the interview he states that he works for the U.S. Navy, previously worked for the Space Force and is speaking only as a private citizen.</p>
+          <div class="speaker-links"><a class="link-pill" href="https://patents.google.com/?inventor=Salvatore+Cezar+Pais" target="_blank">&#8599; Google Patents</a></div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <div class="speaker-photo-placeholder">&#127908;</div>
+        <div>
+          <div class="speaker-name">Jesse Michels</div>
+          <div class="speaker-role">Host &#183; American Alchemy</div>
+          <p class="speaker-bio">Michels frames the interview through the UFO disclosure and frontier physics lens, with Jack serving as a technical co-host able to challenge and translate the physics discussion for the audience.</p>
+          <div class="speaker-links"><a class="link-pill green" href="https://www.youtube.com/@JesseMichels" target="_blank">&#9654; YouTube</a><a class="link-pill" href="https://www.jesse-michels.com/" target="_blank">&#8599; Website</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toc-section fade-up-1">
+  <div class="toc-inner">
+    <div class="toc-label">Contents</div>
+    <div class="toc-grid">
+      <a href="#ch1"><span class="toc-n">01</span>Cold Open: External Enemy, Remote Action and the “Yummy Apple”<span class="toc-ts">00:00 – 01:20</span></a>
+<a href="#ch2"><span class="toc-n">02</span>Host Setup, Skunk Works Framing and Pais’ Disclaimer<span class="toc-ts">01:20 – 06:16</span></a>
+<a href="#ch3"><span class="toc-n">03</span>Biography: Romania, Queens, Brooklyn Tech, Case Western and Defence Work<span class="toc-ts">06:16 – 10:27</span></a>
+<a href="#ch4"><span class="toc-n">04</span>The Origin of the Patents: UFO Observables and Non-Newtonian Propulsion<span class="toc-ts">10:27 – 15:49</span></a>
+<a href="#ch5"><span class="toc-n">05</span>The Superforce, Quantum Vacuum and the Craft “Grown Out of Space-Time”<span class="toc-ts">15:49 – 18:01</span></a>
+<a href="#ch6"><span class="toc-n">06</span>Heaviside, Maxwell and the Harmonic Oscillator<span class="toc-ts">18:01 – 23:23</span></a>
+<a href="#ch7"><span class="toc-n">07</span>Terahertz Fields, Superconductors and the Patent Examiner<span class="toc-ts">23:23 – 29:22</span></a>
+<a href="#ch8"><span class="toc-n">08</span>Schwinger Limit, Vacuum Polarisation and Black Hole Propulsion<span class="toc-ts">29:22 – 33:41</span></a>
+<a href="#ch9"><span class="toc-n">09</span>Spin, Vibration and the Alternative Gravity Lineage<span class="toc-ts">33:41 – 36:31</span></a>
+<a href="#ch10"><span class="toc-n">10</span>Cold Plasma, BCS Theory and Room Temperature Superconductivity<span class="toc-ts">36:31 – 45:44</span></a>
+<a href="#ch11"><span class="toc-n">11</span>“Let’s Build a UFO”: National Survival, LK-99 and Proliferation<span class="toc-ts">45:44 – 51:50</span></a>
+<a href="#ch12"><span class="toc-n">12</span>High-Frequency Gravitational Waves, FTL Refusal and Townsend Brown<span class="toc-ts">51:50 – 58:26</span></a>
+<a href="#ch13"><span class="toc-n">13</span>Cold War Secrecy, China and the External Enemy Claim<span class="toc-ts">58:26 – 64:31</span></a>
+<a href="#ch14"><span class="toc-n">14</span>Puthoff, Remote Viewing and Remote Action<span class="toc-ts">64:31 – 70:00</span></a>
+<a href="#ch15"><span class="toc-n">15</span>Mind-Matter Interface, Consciousness and the Fifth Dimension<span class="toc-ts">70:00 – 84:30</span></a>
+<a href="#ch16"><span class="toc-n">16</span>Ethics, Weaponisation and Why Physics May Stay Stagnant<span class="toc-ts">84:30 – 101:30</span></a>
+<a href="#ch17"><span class="toc-n">17</span>Man-Made Tech, ET Tech and MH370<span class="toc-ts">101:30 – 110:56</span></a>
+<a href="#ch18"><span class="toc-n">18</span>Artificial Singularity, Civil Infrastructure and Closing Hope<span class="toc-ts">110:56 – 117:05</span></a>
+      <a href="#glossary"><span class="toc-n">&#128218;</span>Glossary &#8212; Technical Terms</a>
+      <a href="#bibliography"><span class="toc-n">&#128218;</span>Bibliography, Patents &amp; Books</a>
+    </div>
+  </div>
+</div>
+
+<div class="article-body">
+
+<div class="skeptic-box" style="margin-bottom:24px;">
+  <div class="skeptic-label">&#8505; About this close reading</div>
+  <p>Dialogue is drawn from the uploaded transcript. The transcript contains automatic-caption errors, so quotations have been lightly punctuated for readability without changing the substance. Claim badges refer to public verifiability, not whether a statement is personally sincere.</p>
+</div>
+
+<div class="claim-legend">
+  <strong style="color:var(--text-bright);margin-right:6px;">Claim status:</strong>
+  <span><span class="claim-verified">✅ Verified</span> Accepted by mainstream evidence or public records</span>
+  <span><span class="claim-disputed">△ Disputed</span> Contested, unreplicated or fringe interpretation</span>
+  <span><span class="claim-unsupported">✕ Unsupported</span> No credible public evidence</span>
+  <span><span class="claim-classified">◼ Unverifiable</span> Claimed classified, private or not independently checkable</span>
+</div>
+
+<div class="thread-index">
+  <div class="thread-index-label">Concept threads &#8212; follow a topic across chapters</div>
+  <div class="thread-row"><span class="thread-concept">Pais Effect / high-energy EM fields</span><div class="thread-links"><a class="thread-ch" href="#ch6">06</a><a class="thread-ch" href="#ch7">07</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch17">17</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Superconductors</span><div class="thread-links"><a class="thread-ch" href="#ch7">07</a><a class="thread-ch" href="#ch10">10</a><a class="thread-ch" href="#bibliography">sources</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Quantum vacuum / Schwinger limit</span><div class="thread-links"><a class="thread-ch" href="#ch5">05</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch14">14</a></div></div>
+  <div class="thread-row"><span class="thread-concept">National security / China / secrecy</span><div class="thread-links"><a class="thread-ch" href="#ch2">02</a><a class="thread-ch" href="#ch11">11</a><a class="thread-ch" href="#ch13">13</a><a class="thread-ch" href="#ch16">16</a></div></div>
+  <div class="thread-row"><span class="thread-concept">NHI / cosmic war claims</span><div class="thread-links"><a class="thread-ch" href="#ch1">01</a><a class="thread-ch" href="#ch13">13</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Remote viewing / remote action</span><div class="thread-links"><a class="thread-ch" href="#ch14">14</a><a class="thread-ch" href="#ch15">15</a></div></div>
+</div>
+
+<div class="tag-row" style="margin-bottom:40px;margin-top:8px;">
+  <span class="tag">Pais Effect</span><span class="tag">U.S. Navy Patents</span><span class="tag">High-Frequency Gravitational Waves</span><span class="tag">Room-Temperature Superconductivity</span><span class="tag">Quantum Vacuum</span><span class="tag">Schwinger Limit</span><span class="tag">Townsend Brown</span><span class="tag">Remote Action</span><span class="tag">NHI</span><span class="tag">MH370</span>
+</div>
+
+
+<section class="chapter" id="ch1">
+  <div class="ch-header">
+    <span class="ch-num">CH 01</span><span class="ch-time">00:00 – 01:20</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Cold Open: External Enemy, Remote Action and the “Yummy Apple”</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>The episode opens with the most sensational claims before any biographical or technical grounding is given. Pais compresses the core themes of the interview into a minute: external threat, remote action, MH370, the Pais Effect and artificial singularity. It is effective as a trailer, but analytically it is the weakest material because almost every claim is either unsupported or unverifiable.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I truly think that one day we must unite the factions because I think one day we shall have an external enemy.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Think of the Earth. We are a very yummy apple.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I think remote action is possible. Can you imagine stopping a heart just by thinking about it, say from Qatar?&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>External non-human enemy <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>Remote biological action by thought <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>MH370/Pais Effect implication <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The opening is best read as rhetorical positioning. Pais is telling the audience that he sees frontier physics as a defence issue, not merely a propulsion problem.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch2">
+  <div class="ch-header">
+    <span class="ch-num">CH 02</span><span class="ch-time">01:20 – 06:16</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Host Setup, Skunk Works Framing and Pais’ Disclaimer</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Jesse Michels introduces the interview as a discussion of the Navy patents that shocked the UFO world. Jack, a pseudonymous technical co-host, is introduced as someone familiar with heterodox scientific frameworks. Pais then gives his disclaimer: he is speaking as a private citizen, not for the Navy or Space Force, and he will avoid details he considers sensitive.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I work for the United States Navy. I used to work for the United States Space Force.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I come on this podcast as a private citizen and my opinions, my statements, everything I say, everything I have said, is my own.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I am not on this podcast to enlighten and educate the enemy.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Employment statement <span class="claim-classified">◼ Partly verifiable / official confirmation limited</span></li>
+<li>Private-citizen disclaimer <span class="claim-verified">✅ Stated directly</span></li>
+<li>Security withholding <span class="claim-classified">◼ Unverifiable</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This disclaimer is important because throughout the episode Pais refuses to discuss frequencies, mechanisms or applications when he thinks they cross into weaponisable territory.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch3">
+  <div class="ch-header">
+    <span class="ch-num">CH 03</span><span class="ch-time">06:16 – 10:27</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Biography: Romania, Queens, Brooklyn Tech, Case Western and Defence Work</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais gives a conventional technical biography. He says he was born in Bucharest, came to New York as a teenager, attended Brooklyn Technical High School, studied at Case Western Reserve University, worked at Northrop Grumman, then the USPTO, Navy, Strategic Systems Programs and Space Force.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;My name is Salvatore Cezar Pais, and that is the way you pronounce it in Romanian.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I was born in Romania, in Bucharest, Romania.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I went to Brooklyn Technical High School.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Then I went to Case Western Reserve University in Cleveland, Ohio.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Romanian origin and education claims <span class="claim-verified">✅ Mostly verifiable</span></li>
+<li>Northrop / USPTO / Navy pathway <span class="claim-verified">✅ Broadly consistent with public patent biography</span></li>
+<li>Specific internal roles <span class="claim-classified">◼ Limited public verification</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This section grounds the interview. It matters because Pais is not presented as an anonymous experiencer; he is presented as an engineer with a formal aerospace and defence background.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch4">
+  <div class="ch-header">
+    <span class="ch-num">CH 04</span><span class="ch-time">10:27 – 15:49</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>The Origin of the Patents: UFO Observables and Non-Newtonian Propulsion</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais says his interest was shaped by Steven Greer’s material and by asking how apparently anomalous craft might work. He rejects the idea that all advanced flight must be Newtonian reaction propulsion and asks whether the gravitational field itself can be modified so that inertia is reduced.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;The title of the patent just says a lot: a hybrid craft using an inertial mass modification device.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;The whole idea is it can’t all be Newtonian propulsion.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Can we do something to the field that we operate in, the gravitational field, for example, to make objects have diminished inertia?&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Pais Navy patent exists <span class="claim-verified">✅ Verified</span></li>
+<li>Equivalence of inertial and gravitational mass <span class="claim-verified">✅ Standard physics</span></li>
+<li>Practical inertial mass reduction craft <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The patents are real. That is not the same thing as saying the craft works. A patent is not an experimental validation.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch5">
+  <div class="ch-header">
+    <span class="ch-num">CH 05</span><span class="ch-time">15:49 – 18:01</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>The Superforce, Quantum Vacuum and the Craft “Grown Out of Space-Time”</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais introduces the language of the Superforce and suggests that Einstein’s field equations can be read as a way of understanding the quantum vacuum as a structure that can generate energy density. The discussion moves into a speculative analogy: exotic craft as if grown or 3D-printed out of the vacuum itself.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;The Superforce acting on the spatial-temporal geometric structure, what we understand as a quantum vacuum locally, can actually give birth, generate energy density.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;It is very interesting, this idea of the vehicle being 3D printed out of the quantum vacuum.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Absolutely smooth, like a 3D printing out of the space-time fabric itself.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Einstein field equations <span class="claim-verified">✅ Verified</span></li>
+<li>Quantum vacuum as physical concept <span class="claim-verified">✅ Verified</span></li>
+<li>Craft grown from vacuum structure <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is one of the first places where legitimate theoretical language is used to support a claim that has no public experimental basis.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch6">
+  <div class="ch-header">
+    <span class="ch-num">CH 06</span><span class="ch-time">18:01 – 23:23</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Heaviside, Maxwell and the Harmonic Oscillator</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>This is one of the most coherent technical sections of the interview. Pais insists he is not inventing new physics. He says he combined Heaviside’s version of Maxwell’s equations with the harmonic oscillator and found nonlinear behaviour with respect to angular frequency, vibration and spin.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;This is not anything new. This is not new physics. This is a new perspective on old physics.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;All I’ve done was taking the Heaviside version of Maxwell’s equations, couple them with a harmonic oscillator.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Resonance is extremely important because it talks to energy amplification.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Maxwell-Heaviside equations <span class="claim-verified">✅ Verified</span></li>
+<li>Harmonic oscillator physics <span class="claim-verified">✅ Verified</span></li>
+<li>Pais’ claimed propulsion consequence <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The key pattern of the interview is visible here: real physics, real mathematics, speculative application.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch7">
+  <div class="ch-header">
+    <span class="ch-num">CH 07</span><span class="ch-time">23:23 – 29:22</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Terahertz Fields, Superconductors and the Patent Examiner</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>The conversation turns to the high-temperature or room-temperature superconductor concept. Pais argues that the room-temperature superconductor patent should have been treated as linked to the high-frequency gravitational wave patent because the systems require high-Q electromagnetic behaviour. Jack highlights the annular channel, standing waves and terahertz regime.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;When you’ve got these 100 terahertz microwaves inside the annular channel of your triangle patent, you’re setting up that standing wave.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;The terahertz frequency is an interesting field that should be looked into, but again we are not here to educate and enlighten the enemy.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Physics is not enough. The engineering of that physics trumps everything else.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Terahertz radiation exists <span class="claim-verified">✅ Verified</span></li>
+<li>Superconductors have high-Q relevance <span class="claim-verified">✅ Broadly plausible</span></li>
+<li>Pais RTSC patent works as claimed <span class="claim-disputed">△ Disputed / unproven</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is a useful chapter because it makes clear that Pais considers implementation, not theory, to be the core obstacle.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch8">
+  <div class="ch-header">
+    <span class="ch-num">CH 08</span><span class="ch-time">29:22 – 33:41</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Schwinger Limit, Vacuum Polarisation and Black Hole Propulsion</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais and Jack discuss the possibility of using high-energy electromagnetic fields to polarise the quantum vacuum and create extreme local conditions. Pais refers to the Schwinger limit as the point at which the vacuum can no longer be treated as linear. He then links this to black holes, white holes and wormholes.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;When you put more and more energy into a particular space-time locality, you can actually unravel what we understand as continuum space-time.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;You’re using this electromagnetic amplification methodology to essentially break the fabric of reality in a way that uses it as propulsion. Is that right?&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;That’s 100% correct.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Schwinger effect / vacuum pair production <span class="claim-verified">✅ Verified theoretical QED</span></li>
+<li>Laboratory propulsion from vacuum breakdown <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>Black hole / white hole engineering <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is where the interview crosses decisively from advanced engineering speculation into highly unsupported propulsion claims.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch9">
+  <div class="ch-header">
+    <span class="ch-num">CH 09</span><span class="ch-time">33:41 – 36:31</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Spin, Vibration and the Alternative Gravity Lineage</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>The hosts compare Pais’ vibration approach with older alternative-gravity ideas involving rotating superconductors, angular momentum, Victor Schauberger, Podkletnov and Ning Li. Pais repeatedly says that macroscopic spin is an engineering problem and that vibration is more practical.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;You can accelerate either in spin or accelerate in vibration depending on which is easier from an engineering point of view.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;That is why I chose vibration.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;There has been a very common through-line in a lot of alternate gravity manipulation approaches relating to macroscopic spin.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Rotating superconductors have been studied in speculative literature <span class="claim-disputed">△ Disputed</span></li>
+<li>Vibration easier than extreme RPM engineering <span class="claim-verified">✅ Plausible engineering point</span></li>
+<li>Anti-gravity from these systems <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This section gives the article a historical spine: Pais sees himself as part of a longer lineage, not as an isolated inventor.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch10">
+  <div class="ch-header">
+    <span class="ch-num">CH 10</span><span class="ch-time">36:31 – 45:44</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Cold Plasma, BCS Theory and Room Temperature Superconductivity</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Jack explains conventional superconductivity, BCS theory, Cooper pairs, phonons, lattice coherence and why room-temperature superconductivity is hard. Pais argues that his effect does not depend on conventional chemical composition in the same way and points to Victor Lakhno’s bipolaron mechanism.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;Superconductivity truly represents a macroscopic quantum phenomenon.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;The Pais Effect speaks directly to this mechanism of room-temperature superconductivity.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;The problem is if this lattice is warm and all these atoms are vibrating randomly, you can’t get this coherent phonon behaviour.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>BCS theory and Cooper pairs <span class="claim-verified">✅ Verified</span></li>
+<li>Room-temperature superconductivity as a transformative goal <span class="claim-verified">✅ Verified</span></li>
+<li>Pais-induced RTSC mechanism <span class="claim-disputed">△ Disputed / unreplicated</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is one of the strongest sections because even when Pais’ conclusion is unproven, the surrounding discussion is connected to real materials science.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch11">
+  <div class="ch-header">
+    <span class="ch-num">CH 11</span><span class="ch-time">45:44 – 51:50</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>“Let’s Build a UFO”: National Survival, LK-99 and Proliferation</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Michels asks the obvious question: if the work is real, what is the next step toward building a UFO-like vehicle? Pais responds in civilisational terms, saying the republic must survive. The conversation then moves into LK-99, replication disputes, AI-enabled synthesis and dangerous cross-domain technology.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;Let’s build a UFO.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;This democracy must win. This republic must stand. We must survive.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I do not think I’m an original in this at all.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>LK-99 was widely disputed after replication attempts <span class="claim-verified">✅ Verified broadly</span></li>
+<li>China/Russia/U.S. propulsion race <span class="claim-classified">◼ Unverifiable</span></li>
+<li>Pais is not original / older physics existed <span class="claim-classified">◼ Interpretive claim</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>Pais’ repeated claim that he is not original is important. It implies either that earlier researchers discovered the same pathway or that classified programs already moved beyond him.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch12">
+  <div class="ch-header">
+    <span class="ch-num">CH 12</span><span class="ch-time">51:50 – 58:26</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>High-Frequency Gravitational Waves, FTL Refusal and Townsend Brown</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais becomes more cautious. When asked directly how high-frequency gravitational waves would enable UFO-like activity, he refuses to answer. He rejects simple faster-than-light travel but suggests that once a black hole or wormhole condition is created, the usual paradigm no longer applies. Townsend Brown is treated more favourably here than in mainstream physics.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;There is no such thing as faster-than-light travel. Einsteinian physics is never broken.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;Can you talk about how high-frequency gravity waves might allow for UFO-like activity?&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I would rather not. Let’s not go there.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>No normal FTL travel under special relativity <span class="claim-verified">✅ Verified</span></li>
+<li>High-frequency gravitational wave generator patent exists <span class="claim-verified">✅ Verified</span></li>
+<li>Operational HFGW propulsion <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The refusal itself becomes part of the performance. Pais signals technical knowledge while withholding details on weaponisation grounds.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch13">
+  <div class="ch-header">
+    <span class="ch-num">CH 13</span><span class="ch-time">58:26 – 64:31</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Cold War Secrecy, China and the External Enemy Claim</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>The hosts discuss whether Cold War secrecy created a culture that buried advanced physics and whether China may now be ahead. Pais then introduces his most dramatic geopolitical statement: humanity may need to unite because the real threat is external and non-human.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;Now there is a race and we are not in first.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I truly think that one day we must unite the factions.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;By external enemy, I mean very external. NHI.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>China produces large STEM cohorts <span class="claim-verified">✅ Broadly verifiable</span></li>
+<li>U.S. not first in advanced propulsion <span class="claim-classified">◼ Unverifiable</span></li>
+<li>Hostile NHI threat <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This chapter is rhetorically powerful but evidentially weak. It should be separated sharply from the engineering discussion.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch14">
+  <div class="ch-header">
+    <span class="ch-num">CH 14</span><span class="ch-time">64:31 – 70:00</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Puthoff, Remote Viewing and Remote Action</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais praises Hal Puthoff and argues that Puthoff’s work on gravity deserves serious attention despite its association with remote viewing. The discussion then moves from remote viewing to remote action—the idea that mind could act at a distance, not merely perceive.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;If he was not connected with things that are taken as pseudoscience like remote viewing, he would be deserving of a Nobel Prize.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;I think remote action is possible.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;There must be an intermittent medium. It has occurred to me that the vacuum itself... what else can it be?&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Puthoff polarizable vacuum papers exist <span class="claim-verified">✅ Verified</span></li>
+<li>Remote viewing operational claims <span class="claim-disputed">△ Disputed</span></li>
+<li>Remote action causing biological effects <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is where the interview folds consciousness claims into vacuum physics. That synthesis remains speculative.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch15">
+  <div class="ch-header">
+    <span class="ch-num">CH 15</span><span class="ch-time">70:00 – 84:30</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Mind-Matter Interface, Consciousness and the Fifth Dimension</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>After discussing remote action, the conversation turns to whether the brain might interface with the quantum vacuum. Pais and Jack speculate about coherence, non-Abelian statistics, UAP mind-matter effects and whether the same vacuum structure involved in propulsion could mediate consciousness anomalies.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;In these UAP phenomena they speak of a mind-matter connection.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;There must be an intermittent medium.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Jack</div><div class="d-text">&#8220;If the brain is a hybrid quantum-classical system, maybe you are accessing shards of information from the future.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Quantum biology as a broad research area <span class="claim-verified">✅ Limited but real</span></li>
+<li>Brain as vacuum-mediated remote-action device <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>Fifth-dimensional consciousness interface <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The language becomes increasingly metaphysical here. The article should avoid laundering this into established neuroscience.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch16">
+  <div class="ch-header">
+    <span class="ch-num">CH 16</span><span class="ch-time">84:30 – 101:30</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Ethics, Weaponisation and Why Physics May Stay Stagnant</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais repeatedly returns to the danger of release. If the engineering is not as difficult as nuclear weapons, he argues, disclosure could be dangerous. The ethical question becomes whether stagnation is deliberate, accidental or protective.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Can you imagine some person that hates the world engineering this?&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Weaponisation by, God forbid, a third party, not even a country.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;So basically physics stagnation... our physics has to be stagnated?&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>Dual-use risk in frontier technology <span class="claim-verified">✅ Verified general principle</span></li>
+<li>Suppressed physics as policy <span class="claim-classified">◼ Unverifiable</span></li>
+<li>Easy world-destroying engineering <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This is the strongest policy argument in the episode, even if the underlying technology remains unproven.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch17">
+  <div class="ch-header">
+    <span class="ch-num">CH 17</span><span class="ch-time">101:30 – 110:56</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Man-Made Tech, ET Tech and MH370</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>Pais distinguishes man-made technology from non-human technology and suggests the two may be separable. Michels then asks about the MH370 orb videos promoted by Ashton Forbes. Pais does not say he knows what happened, but he says that when he saw the visual effect in the video, he thought of the Pais Effect.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;There’s ET tech and there’s man-made tech. Many roads lead to Rome, but there’s only one Rome.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Michels</div><div class="d-text">&#8220;Do you think this is man-made tech and that the craft was somehow teleported out of the sky?&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;When I saw that thing open up, I saw the Pais Effect in action.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>MH370 disappeared in 2014 <span class="claim-verified">✅ Verified historical event</span></li>
+<li>Orb videos depict real teleportation <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>Pais Effect visible in the footage <span class="claim-unsupported">✕ Unsupported</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>This section should be handled carefully. It is one of the most viral claims, but also one of the least substantiated.</p>
+  </div>
+</section>
+
+<section class="chapter" id="ch18">
+  <div class="ch-header">
+    <span class="ch-num">CH 18</span><span class="ch-time">110:56 – 117:05</span>
+    <a href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=0s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; Segment</a>
+  </div>
+  <h2>Artificial Singularity, Civil Infrastructure and Closing Hope</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
+    <p>The closing section brings together AI, quantum systems, UAP physics and possible disruptive infrastructure. Pais warns again about third-party weaponisation but ends on a more optimistic note: if the technology exists, it could also represent a glimmer of hope.</p>
+  </div>
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; Quoted dialogue from the transcript</div>
+    <div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;We’re talking about artificial singularity.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Cross-domain disciplines coming together, fusion of these ideas, resounding into disruptive technology.&#8221;</div></div>
+<div class="d-line"><div class="d-speaker">Pais</div><div class="d-text">&#8220;Whatever it is, it is a glimmer of hope, and we need all the hope we can have.&#8221;</div></div>
+  </div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Verifiability status</div>
+    <ol><li>AI/quantum/UAP triangle as strategic theme <span class="claim-classified">◼ Interpretive / speculative</span></li>
+<li>Artificial singularity from orb systems <span class="claim-unsupported">✕ Unsupported</span></li>
+<li>Hopeful civil applications <span class="claim-classified">◼ Unverifiable</span></li></ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; Reading note</div>
+    <p>The interview ends where it began: not with a reproducible experiment, but with a civilisational frame.</p>
+  </div>
+</section>
+
+
+<section class="glossary-section" id="glossary">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">GLOSSARY</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">Technical terms used in the episode</span>
+  </div>
+  <h2>Technical Glossary</h2>
+  <div class="glossary-grid"><div class="glossary-entry" id="g-1"><div class="g-term">Pais Effect</div><div class="g-def">Pais’ term for a proposed mechanism in which accelerated vibration or spin of electrically charged matter produces high-energy electromagnetic conditions with possible inertial or gravitational consequences.<div style="margin-top:8px;"><span class="claim-unsupported">✕ Unsupported as propulsion</span></div></div></div>
+<div class="glossary-entry" id="g-2"><div class="g-term">Maxwell-Heaviside equations</div><div class="g-def">The vector calculus form of Maxwell’s equations widely used in classical electromagnetism, associated with Oliver Heaviside’s reformulation of Maxwell’s earlier quaternion-heavy presentation.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified</span></div></div></div>
+<div class="glossary-entry" id="g-3"><div class="g-term">Harmonic oscillator</div><div class="g-def">A physical system, such as a mass on a spring, that oscillates around equilibrium and is mathematically central to waves, vibrations and resonance.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified</span></div></div></div>
+<div class="glossary-entry" id="g-4"><div class="g-term">Schwinger limit</div><div class="g-def">The critical electric field scale in QED at which vacuum pair production becomes important. It is a legitimate theoretical concept, but not a proven propulsion gateway.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified theory</span></div></div></div>
+<div class="glossary-entry" id="g-5"><div class="g-term">Quantum vacuum</div><div class="g-def">The lowest-energy state of quantum fields. It is not empty nothingness, but mainstream physics does not currently support extractable UFO-style propulsion from it.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified concept</span></div></div></div>
+<div class="glossary-entry" id="g-6"><div class="g-term">High-frequency gravitational waves</div><div class="g-def">Gravitational waves at high frequencies. Pais holds a Navy patent for a generator, but no public evidence shows such a device works as claimed.<div style="margin-top:8px;"><span class="claim-disputed">△ Disputed</span></div></div></div>
+<div class="glossary-entry" id="g-7"><div class="g-term">Room-temperature superconductor</div><div class="g-def">A material superconducting at practical room temperature. Such a material would be transformative, but no generally accepted ambient-condition superconductor is currently available.<div style="margin-top:8px;"><span class="claim-disputed">△ Disputed</span></div></div></div>
+<div class="glossary-entry" id="g-8"><div class="g-term">BCS theory</div><div class="g-def">The standard microscopic theory explaining conventional superconductivity through Cooper pair formation mediated by lattice vibrations.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified</span></div></div></div>
+<div class="glossary-entry" id="g-9"><div class="g-term">Cooper pair</div><div class="g-def">A bound pair of electrons that can move through a superconducting lattice without normal electrical resistance.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified</span></div></div></div>
+<div class="glossary-entry" id="g-10"><div class="g-term">Bipolaron</div><div class="g-def">A quasiparticle involving two polarons. Bipolaron theories are sometimes invoked in high-temperature superconductivity discussions.<div style="margin-top:8px;"><span class="claim-disputed">△ Specialist / disputed in this context</span></div></div></div>
+<div class="glossary-entry" id="g-11"><div class="g-term">Topological superconductor</div><div class="g-def">A superconducting phase with topologically protected properties. Important in quantum computing research, not evidence for UFO propulsion by itself.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified field</span></div></div></div>
+<div class="glossary-entry" id="g-12"><div class="g-term">Terahertz radiation</div><div class="g-def">Electromagnetic radiation between microwave and infrared ranges. Pais and Jack discuss it as potentially relevant to resonant structures.<div style="margin-top:8px;"><span class="claim-verified">✅ Verified</span></div></div></div>
+<div class="glossary-entry" id="g-13"><div class="g-term">Polarizable vacuum</div><div class="g-def">A model associated with Robert Dicke and Hal Puthoff that treats gravity through a vacuum-medium analogy. It is not the standard formulation of GR.<div style="margin-top:8px;"><span class="claim-disputed">△ Fringe / heuristic</span></div></div></div>
+<div class="glossary-entry" id="g-14"><div class="g-term">Alcubierre drive</div><div class="g-def">A speculative general-relativistic warp-drive metric requiring exotic energy conditions. No practical implementation exists.<div style="margin-top:8px;"><span class="claim-unsupported">✕ Theoretical only</span></div></div></div>
+<div class="glossary-entry" id="g-15"><div class="g-term">Townsend Brown effect</div><div class="g-def">A claimed electrogravitic effect associated with high-voltage capacitors; mainstream explanations generally point to ion wind and conventional forces.<div style="margin-top:8px;"><span class="claim-disputed">△ Disputed</span></div></div></div>
+<div class="glossary-entry" id="g-16"><div class="g-term">Ning Li</div><div class="g-def">Physicist associated with claims involving superconductors and gravitational effects. Her work remains controversial and unreplicated at the claimed level.<div style="margin-top:8px;"><span class="claim-disputed">△ Disputed</span></div></div></div>
+<div class="glossary-entry" id="g-17"><div class="g-term">Podkletnov effect</div><div class="g-def">A claimed gravitational shielding or impulse effect involving rotating superconductors. Not accepted as replicated mainstream physics.<div style="margin-top:8px;"><span class="claim-unsupported">✕ Unsupported</span></div></div></div>
+<div class="glossary-entry" id="g-18"><div class="g-term">Remote viewing</div><div class="g-def">A claimed psychic perception protocol historically studied by U.S. intelligence-linked programs. Results remain contested.<div style="margin-top:8px;"><span class="claim-disputed">△ Disputed</span></div></div></div>
+<div class="glossary-entry" id="g-19"><div class="g-term">Remote action</div><div class="g-def">Pais’ more extreme claim that mind could physically act at a distance. No credible public evidence supports it.<div style="margin-top:8px;"><span class="claim-unsupported">✕ Unsupported</span></div></div></div>
+<div class="glossary-entry" id="g-20"><div class="g-term">NHI</div><div class="g-def">Non-human intelligence; a broad term used in UAP discourse for potentially non-human actors. No public proof establishes hostile NHI in this interview.<div style="margin-top:8px;"><span class="claim-unsupported">✕ Unsupported</span></div></div></div></div>
+</section>
+
+<section class="glossary-section" id="bibliography">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">BIBLIOGRAPHY</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">Patents, papers, books and primary sources</span>
+  </div>
+  <h2>Bibliography, Patent Archive and Books Mentioned</h2>
+  <p style="font-size:15px;line-height:1.8;color:var(--text-dim);margin-bottom:24px;">This source list separates public patents and papers from books mentioned or implied in the discussion. Amazon links are included only for books, as requested.</p>
+  
+<div class="source-card">
+  <div class="source-label">U.S. Patent US10144532B2 / Google Patents</div>
+  <p><strong>Pais, S.C. — Craft Using an Inertial Mass Reduction Device</strong></p>
+  <p>Primary source for the hybrid aerospace-undersea craft patent.</p>
+  <div class="link-row"><a class="link-pill" href="https://patents.google.com/patent/US10144532B2/en" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">U.S. Patent US10322827B2 / Google Patents</div>
+  <p><strong>Pais, S.C. — High Frequency Gravitational Wave Generator</strong></p>
+  <p>Primary source for the high-frequency gravitational wave generator patent.</p>
+  <div class="link-row"><a class="link-pill" href="https://patents.google.com/patent/US10322827B2/en" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Patent application US20190058105A1 / Google Patents</div>
+  <p><strong>Pais, S.C. — Piezoelectricity-induced Room Temperature Superconductor</strong></p>
+  <p>Primary source for the room-temperature superconductivity claim.</p>
+  <div class="link-row"><a class="link-pill" href="https://patents.google.com/patent/US20190058105A1/en" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Int. J. Space Science and Engineering / PDF copy</div>
+  <p><strong>Pais, S.C. — The high energy electromagnetic field generator</strong></p>
+  <p>Pais’ 2015 paper describing high-energy electromagnetic field generation.</p>
+  <div class="link-row"><a class="link-pill" href="https://ayuba.fr/pdf/pais2015.pdf" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">AIAA 2017 paper / NAVAIR FOIA PDF</div>
+  <p><strong>Pais, S.C. — A Hybrid Craft using an Inertial Mass Modification Device</strong></p>
+  <p>Conference paper version of the hybrid craft idea.</p>
+  <div class="link-row"><a class="link-pill" href="https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/document/%5Bfilename%5D/2022-006587%20FINAL%20VERSION%20AIAA%202017-5343.pdf" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">AIAA 2019 / NAVAIR FOIA PDF</div>
+  <p><strong>Pais, S.C. — Room Temperature Superconducting System for use on a Hybrid Aerospace-Undersea Craft</strong></p>
+  <p>Paper discussed indirectly when Pais tells viewers to examine slides 4–9.</p>
+  <div class="link-row"><a class="link-pill" href="https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/document/%5Bfilename%5D/2022-006587%20FINAL%20VERSION%20AIAA%202019-0869.pdf" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">arXiv gr-qc/9909037</div>
+  <p><strong>Puthoff, H.E. — Polarizable-Vacuum representation of general relativity</strong></p>
+  <p>Referenced conceptually in the discussion of vacuum polarisation and gravity.</p>
+  <div class="link-row"><a class="link-pill" href="https://arxiv.org/abs/gr-qc/9909037" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Physical Review A</div>
+  <p><strong>Puthoff, H.E. — Gravity as a zero-point-fluctuation force</strong></p>
+  <p>Puthoff paper discussed in relation to gravity and zero-point field ideas.</p>
+  <div class="link-row"><a class="link-pill" href="https://link.aps.org/doi/10.1103/PhysRevA.39.2333" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Physical Review 82, 664 (1951)</div>
+  <p><strong>Schwinger, J. — On Gauge Invariance and Vacuum Polarization</strong></p>
+  <p>Source for the QED vacuum polarisation / Schwinger effect background.</p>
+  <div class="link-row"><a class="link-pill" href="https://link.aps.org/doi/10.1103/PhysRev.82.664" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Amazon</div>
+  <p><strong>Cook, Nick — The Hunt for Zero Point</strong></p>
+  <p>Book mentioned in the interview in connection with Nick Cook, Podkletnov and anti-gravity research.</p>
+  <div class="link-row"><a class="link-pill" href="https://www.amazon.com/Hunt-Zero-Point-Classified-Antigravity/dp/0767906284" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+
+<div class="source-card">
+  <div class="source-label">Amazon</div>
+  <p><strong>Lacatski, Kelleher &amp; Knapp — Skinwalkers at the Pentagon</strong></p>
+  <p>Referenced indirectly through discussion of AAWSAP/AATIP-linked remote viewing and anomalous research.</p>
+  <div class="link-row"><a class="link-pill" href="https://www.amazon.com/Skinwalkers-at-Pentagon-James-Lacatski/dp/B0BQLCNLFC" target="_blank" rel="noopener">&#8599; Source / Amazon</a></div>
+</div>
+
+</section>
+
+</div>
+</main>
+
+<script src="/js/site.js"></script>
+</body>
+</html>
