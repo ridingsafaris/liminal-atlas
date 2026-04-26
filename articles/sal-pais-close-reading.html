@@ -7,67 +7,65 @@
 <meta name="description" content="A close reading of the Navy Scientist Sal Pais on American Alchemy: the Pais Effect, MH370 teleportation, the four-orb model, occult breakaway civilisations, and the cosmic war.">
 <link rel="stylesheet" href="/css/style.css">
 <style>
-.article-hero{position:relative;z-index:1;padding:72px 24px 56px;max-width:var(--max-width);margin:0 auto;border-bottom:1px solid var(--border);}
-.article-hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;letter-spacing:-0.03em;color:var(--text-bright);line-height:1.1;margin-bottom:20px;}
-.article-hero h1 span{color:var(--blue-bright);}
-.hero-meta{display:flex;flex-wrap:wrap;gap:20px;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px;}
-.hero-intro{font-size:17px;line-height:1.8;color:var(--text);max-width:720px;margin-bottom:24px;}
-.hero-intro strong{color:var(--text-bright);font-weight:600;}
-.speakers-section{position:relative;z-index:1;background:var(--surface);border-bottom:1px solid var(--border);padding:40px 24px;}
-.speakers-inner{max-width:var(--max-width);margin:0 auto;}
-.speakers-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.25em;color:var(--blue);text-transform:uppercase;margin-bottom:24px;}
-.speakers-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
-.speaker-card{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:20px;display:flex;gap:18px;align-items:flex-start;}
-.speaker-photo-placeholder{width:72px;height:72px;border-radius:50%;border:2px solid var(--blue-dim);flex-shrink:0;background:var(--blue-glow);display:flex;align-items:center;justify-content:center;font-size:26px;}
-.speaker-name{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:2px;}
-.speaker-role{font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;color:var(--blue-bright);text-transform:uppercase;margin-bottom:8px;}
-.speaker-bio{font-size:13px;line-height:1.65;color:var(--text-dim);margin-bottom:10px;}
-.speaker-links{display:flex;flex-wrap:wrap;gap:6px;}
-.toc-section{position:relative;z-index:1;padding:32px 24px;max-width:var(--max-width);margin:0 auto;}
-.article-body{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 24px 100px;}
-/* Claim badges */
-.claim-verified{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap;}
-.claim-disputed{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap;}
-.claim-unsupported{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap;}
-.claim-classified{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap;}
-.claim-legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim);}
-.claim-legend span{display:flex;align-items:center;gap:6px;}
-.key-claims{background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0;}
-.key-claims-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px;}
-.key-claims ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;}
-.key-claims li{font-size:13.5px;line-height:1.6;color:var(--text);}
-.d-confidence{font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block;}
-.conf-fact{background:rgba(34,197,94,0.1);color:#22c55e;}
-.conf-spec{background:rgba(245,158,11,0.1);color:#f59e0b;}
-.conf-classified{background:rgba(139,92,246,0.1);color:#a78bfa;}
-.mainstream-box{background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0;}
-.mainstream-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px;}
-.mainstream-box p{font-size:13px;line-height:1.7;margin-bottom:0;}
-.thread-index{background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px;}
-.thread-index-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px;}
-.thread-row{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px;}
-.thread-row:last-child{border-bottom:none;}
-.thread-concept{font-weight:600;color:var(--text-bright);min-width:240px;flex-shrink:0;}
-.thread-links{display:flex;flex-wrap:wrap;gap:5px;}
-.thread-ch{font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap;}
-.thread-ch:hover{border-color:var(--blue-bright);}
-.tl-wrap{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px 20px;}
-.tl-inner{max-width:var(--max-width);margin:0 auto;}
-.tl-label{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;}
-.tl-row{position:relative;height:22px;margin:0 8px;}
-.tl-chip{position:absolute;transform:translateX(-50%);font-family:var(--font-mono);font-size:8px;color:var(--text-dim);text-decoration:none;text-align:center;white-space:nowrap;line-height:1.3;}
-.tl-chip span{color:var(--blue-bright);font-size:7.5px;}
-.tl-chip:hover{color:var(--text-bright);}
-.tl-track{position:relative;height:4px;background:var(--surface2);border-radius:2px;margin:4px 8px;}
-.tl-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--blue) 0%,var(--blue-bright) 60%,#a78bfa 100%);}
-.tl-dots{position:relative;height:9px;margin:0 8px;}
-@media(max-width:640px){.speakers-grid{grid-template-columns:1fr;}.speaker-card{flex-direction:column;}.thread-concept{min-width:140px;}}
-
-.d-speaker.pais {
-  background: rgba(6,182,212,0.15);
-  color: #06b6d4;
-  border: 1px solid rgba(6,182,212,0.35);
-}
+/* Sal Pais article — enhancement classes not yet in shared CSS */
+.claim-verified   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-disputed   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-unsupported{ display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-classified { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-legend { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim); }
+.claim-legend span { display:flex;align-items:center;gap:6px; }
+.key-claims { background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0; }
+.key-claims-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px; }
+.key-claims ol { margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px; }
+.key-claims li { font-size:13.5px;line-height:1.6;color:var(--text); }
+.d-confidence { font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block; }
+.conf-fact { background:rgba(34,197,94,0.1);color:#22c55e; }
+.conf-spec { background:rgba(245,158,11,0.1);color:#f59e0b; }
+.conf-classified { background:rgba(139,92,246,0.1);color:#a78bfa; }
+.mainstream-box { background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0; }
+.mainstream-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px; }
+.mainstream-box p { font-size:13px;line-height:1.7;margin-bottom:0; }
+.thread-index { background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px; }
+.thread-index-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px; }
+.thread-row { display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px; }
+.thread-row:last-child { border-bottom:none; }
+.thread-concept { font-weight:600;color:var(--text-bright);min-width:240px;flex-shrink:0; }
+.thread-links { display:flex;flex-wrap:wrap;gap:5px; }
+.thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
+.thread-ch:hover { border-color:var(--blue-bright); }
+.tl-wrap { background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px 20px; }
+.tl-inner { max-width:var(--max-width);margin:0 auto; }
+.tl-label { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px; }
+.tl-row { position:relative;height:22px;margin:0 8px; }
+.tl-chip { position:absolute;transform:translateX(-50%);font-family:var(--font-mono);font-size:8px;color:var(--text-dim);text-decoration:none;text-align:center;white-space:nowrap;line-height:1.3; }
+.tl-chip span { color:var(--blue-bright);font-size:7.5px; }
+.tl-chip:hover { color:var(--text-bright); }
+.tl-track { position:relative;height:4px;background:var(--surface2);border-radius:2px;margin:4px 8px; }
+.tl-fill { height:100%;border-radius:2px;background:linear-gradient(90deg,var(--blue) 0%,var(--blue-bright) 60%,#a78bfa 100%); }
+.tl-dots { position:relative;height:9px;margin:0 8px; }
+.speakers-section { position:relative;z-index:1;background:var(--surface);border-bottom:1px solid var(--border);padding:40px 24px; }
+.speakers-inner { max-width:var(--max-width);margin:0 auto; }
+.speakers-label { font-family:var(--font-mono);font-size:10px;letter-spacing:0.25em;color:var(--blue);text-transform:uppercase;margin-bottom:24px; }
+.speakers-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px; }
+.speaker-card { background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:20px;display:flex;gap:18px;align-items:flex-start; }
+.speaker-photo-placeholder { width:72px;height:72px;border-radius:50%;border:2px solid var(--blue-dim);flex-shrink:0;background:var(--blue-glow);display:flex;align-items:center;justify-content:center;font-size:26px; }
+.speaker-name { font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:2px; }
+.speaker-role { font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;color:var(--blue-bright);text-transform:uppercase;margin-bottom:8px; }
+.speaker-bio { font-size:13px;line-height:1.65;color:var(--text-dim);margin-bottom:10px; }
+.speaker-links { display:flex;flex-wrap:wrap;gap:6px; }
+.toc-section { position:relative;z-index:1;padding:32px 24px;max-width:var(--max-width);margin:0 auto; }
+.article-body { position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 24px 100px; }
+.article-hero { position:relative;z-index:1;padding:72px 24px 56px;max-width:var(--max-width);margin:0 auto;border-bottom:1px solid var(--border); }
+.article-hero h1 { font-size:clamp(2rem,5vw,3.4rem);font-weight:700;letter-spacing:-0.03em;color:var(--text-bright);line-height:1.1;margin-bottom:20px; }
+.article-hero h1 span { color:var(--blue-bright); }
+.hero-meta { display:flex;flex-wrap:wrap;gap:20px;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px; }
+.hero-intro { font-size:17px;line-height:1.8;color:var(--text);max-width:720px;margin-bottom:24px; }
+.hero-intro strong { color:var(--text-bright);font-weight:600; }
+.glossary-section { border-top:2px solid var(--border);padding-top:40px;margin-top:16px; }
+.glossary-grid { display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px; }
+.glossary-entry { background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px; }
+.glossary-entry:hover { border-color:var(--blue-dim); }
+@media(max-width:640px) { .speakers-grid{grid-template-columns:1fr;} .speaker-card{flex-direction:column;} .thread-concept{min-width:140px;} .glossary-grid{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -289,6 +287,14 @@
       <a class="link-pill green" href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=771s" target="_blank">&#9654; Episode at 12:51</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Oliver_Heaviside" target="_blank">&#8599; Oliver Heaviside</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Harmonic_oscillator" target="_blank">&#8599; Harmonic Oscillator</a>
+    </div>
+  </div>
+
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=Frontiers+of+Propulsion+Science+Davis+Puthoff+AIAA" target="_blank">&#128218; Frontiers of Propulsion Science &#8212; Davis &amp; Puthoff</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=hunt+for+zero+point+nick+cook" target="_blank">&#128218; The Hunt for Zero Point &#8212; Nick Cook</a>
     </div>
   </div>
 
@@ -712,6 +718,14 @@
     </div>
   </div>
 
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=man+who+mastered+gravity+townsend+brown+schatzkin" target="_blank">&#128218; The Man Who Mastered Gravity &#8212; Paul Schatzkin</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=hunt+for+zero+point+nick+cook" target="_blank">&#128218; The Hunt for Zero Point &#8212; Nick Cook</a>
+    </div>
+  </div>
+
 </section>
 
 
@@ -868,6 +882,14 @@
     </div>
   </div>
 
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=book+of+the+damned+charles+fort" target="_blank">&#128218; Book of the Damned &#8212; Charles Fort</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=fingerprints+of+the+gods+graham+hancock" target="_blank">&#128218; Fingerprints of the Gods &#8212; Graham Hancock</a>
+    </div>
+  </div>
+
 </section>
 
 
@@ -924,6 +946,15 @@
     </div>
   </div>
 
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=stargate+conspiracy+lyn+picknett+clive+prince" target="_blank">&#128218; Stargate Conspiracy &#8212; Picknett &amp; Prince</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=psychic+warrior+david+morehouse" target="_blank">&#128218; Psychic Warrior &#8212; David Morehouse</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=mind-reach+russell+targ+harold+puthoff" target="_blank">&#128218; Mind-Reach &#8212; Targ &amp; Puthoff</a>
+    </div>
+  </div>
+
 </section>
 
 
@@ -952,6 +983,14 @@
       <a class="link-pill green" href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=3989s" target="_blank">&#9654; Episode at 1:06:29</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Kaluza%E2%80%93Klein_theory" target="_blank">&#8599; Kaluza-Klein Theory</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">&#8599; Biefeld-Brown Effect</a>
+    </div>
+  </div>
+
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=Frontiers+of+Propulsion+Science+Davis+Puthoff+AIAA" target="_blank">&#128218; Frontiers of Propulsion Science &#8212; Davis &amp; Puthoff</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=dean+radin+entangled+minds" target="_blank">&#128218; Entangled Minds &#8212; Dean Radin</a>
     </div>
   </div>
 
@@ -1051,6 +1090,14 @@
       <a class="link-pill green" href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=4525s" target="_blank">&#9654; Episode at 1:15:25</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/E._T._Whittaker" target="_blank">&#8599; ET Whittaker</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Scalar_field" target="_blank">&#8599; Scalar Field</a>
+    </div>
+  </div>
+
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=scalar+wave+technology+bearden" target="_blank">&#128218; Scalar Wave Theory &#8212; Tom Bearden</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=E+T+Whittaker+history+of+aether+electricity" target="_blank">&#128218; History of the Theories of Aether &amp; Electricity &#8212; Whittaker</a>
     </div>
   </div>
 
@@ -1177,6 +1224,14 @@
     <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;There&#8217;s a famous quote &#8212; Agnew Bahnson, he&#8217;s sponsoring the Chapel Hill conference and kind of creates quantum gravity. He&#8217;s also finding Townsend Brown&#8217;s work and he says &#8216;strange phenomena occur&#8217; &#8212; and you have these incredible names: Bryce and Cécile DeWitt, John Wheeler, Louis Witten.&#8221;</div></div>
   </div>
 
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=man+who+mastered+gravity+townsend+brown+schatzkin" target="_blank">&#128218; The Man Who Mastered Gravity &#8212; Paul Schatzkin</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=frontiers+propulsion+science+AIAA" target="_blank">&#128218; Frontiers of Propulsion Science</a>
+    </div>
+  </div>
+
 </section>
 
 
@@ -1258,6 +1313,15 @@
       <a class="link-pill green" href="https://www.youtube.com/watch?v=8TYMQOUDQBo&t=6090s" target="_blank">&#9654; Episode at 1:41:30</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Mystery_airship" target="_blank">&#8599; 1890s Mystery Airship</a>
       <a class="link-pill" href="https://en.wikipedia.org/wiki/Richard_Dolan" target="_blank">&#8599; Richard Dolan</a>
+    </div>
+  </div>
+
+  <div class="link-cluster">
+    <div class="link-cluster-title">Books Referenced</div>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=breakaway+civilization+joseph+farrell" target="_blank">&#128218; Breakaway Civilization &#8212; Joseph Farrell</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=richard+dolan+UFOs+national+security+state" target="_blank">&#128218; UFOs and the National Security State &#8212; Richard Dolan</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=walter+bosley+nymza+airship" target="_blank">&#128218; Empire of the Wheel &#8212; Walter Bosley</a>
     </div>
   </div>
 
