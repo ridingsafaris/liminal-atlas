@@ -104,6 +104,76 @@
   .speaker-card { flex-direction: column; }
   .person-card-photo { flex-direction: column; }
 }
+
+/* ── Enhancement styles ── */
+
+/* Claim status badges */
+.claim-verified   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-disputed   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-unsupported{ display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-classified { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+
+/* Claim key legend */
+.claim-legend { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim); }
+.claim-legend span { display:flex;align-items:center;gap:6px; }
+
+/* Glossary term link */
+.gterm { color:var(--blue-bright);text-decoration:none;border-bottom:1px dashed rgba(96,165,250,0.4);cursor:help;font-weight:500; }
+.gterm:hover { border-bottom-color:var(--blue-bright); }
+
+/* Episode timeline bar */
+.ep-timeline { position:relative;margin:0 0 32px;padding:20px 0 8px; }
+.ep-timeline-track { position:relative;height:6px;background:var(--surface2);border-radius:3px;margin:0 12px; }
+.ep-timeline-fill { position:absolute;left:0;top:0;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blue-bright)); }
+.ep-timeline-markers { position:relative;height:32px; }
+.ep-timeline-marker { position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px; }
+.ep-marker-dot { width:8px;height:8px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);margin-top:-4px; }
+.ep-marker-label { font-family:var(--font-mono);font-size:8px;color:var(--text-dim);letter-spacing:0.05em;white-space:nowrap; }
+.ep-timeline-label { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;padding:0 12px; }
+
+/* Key claims box */
+.key-claims { background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0; }
+.key-claims-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px; }
+.key-claims ol { margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px; }
+.key-claims li { font-size:13.5px;line-height:1.6;color:var(--text); }
+
+/* Glossary section */
+.glossary-section { border-top:2px solid var(--border);padding-top:40px;margin-top:16px; }
+.glossary-grid { display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px; }
+.glossary-entry { background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px; }
+.glossary-entry:hover { border-color:var(--blue-dim); }
+.g-term { font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);letter-spacing:0.05em;margin-bottom:6px;text-transform:uppercase; }
+.g-def { font-size:13px;line-height:1.65;color:var(--text-dim); }
+.g-status { margin-top:6px; }
+.g-chapters { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);margin-top:4px; }
+
+/* Concept thread index */
+.thread-index { background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px; }
+.thread-index-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px; }
+.thread-row { display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px; }
+.thread-row:last-child { border-bottom:none; }
+.thread-concept { font-weight:600;color:var(--text-bright);min-width:220px;flex-shrink:0; }
+.thread-links { display:flex;flex-wrap:wrap;gap:5px; }
+.thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
+.thread-ch:hover { border-color:var(--blue-bright); }
+
+/* Speaker confidence on dialogue lines */
+.d-confidence { font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block; }
+.conf-fact { background:rgba(34,197,94,0.1);color:#22c55e; }
+.conf-spec { background:rgba(245,158,11,0.1);color:#f59e0b; }
+.conf-classified { background:rgba(139,92,246,0.1);color:#a78bfa; }
+.conf-declined { background:rgba(239,68,68,0.1);color:#ef4444; }
+
+/* "What mainstream physics says" sidebars */
+.mainstream-box { background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0; }
+.mainstream-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px; }
+.mainstream-box p { font-size:13px;line-height:1.7;margin-bottom:6px; }
+.mainstream-box p:last-child { margin-bottom:0; }
+
+@media(max-width:640px){
+  .glossary-grid{grid-template-columns:1fr;}
+  .thread-concept{min-width:140px;}
+}
 </style>
 </head>
 <body>
@@ -133,6 +203,38 @@
     <a class="btn btn-primary" href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" rel="noopener">&#9654; Watch Full Episode</a>
     <a class="btn btn-ghost" href="https://www.youtube.com/@generationzed4767" target="_blank" rel="noopener">&#8599; Generation Zed Channel</a>
     <a class="btn btn-ghost" href="https://www.jesse-michels.com/" target="_blank" rel="noopener">&#8599; Jesse Michels</a>
+  </div>
+</div>
+
+
+<!-- ══ EPISODE TIMELINE ═══════════════════════════════════ -->
+<div style="background:var(--surface);border-bottom:1px solid var(--border);padding:20px 24px;">
+  <div style="max-width:var(--max-width);margin:0 auto;">
+    <div class="ep-timeline-label">Episode map &#8212; 2hr 04min &#183; 20 chapters</div>
+    <div class="ep-timeline-track">
+      <div class="ep-timeline-fill" style="width:100%;"></div>
+    </div>
+    <div class="ep-timeline-markers" style="position:relative;height:40px;margin:4px 12px 0;">
+      <a class="ep-timeline-marker" href="#ch1"  style="left:0%">  <div class="ep-marker-dot"></div><div class="ep-marker-label">00:00<br>Intro</div></a>
+      <a class="ep-timeline-marker" href="#ch2"  style="left:5.2%"> <div class="ep-marker-dot"></div><div class="ep-marker-label">06:13<br>Encounter</div></a>
+      <a class="ep-timeline-marker" href="#ch4"  style="left:9.4%"> <div class="ep-marker-dot"></div><div class="ep-marker-label">11:40<br>Scalar</div></a>
+      <a class="ep-timeline-marker" href="#ch5"  style="left:14.9%"><div class="ep-marker-dot"></div><div class="ep-marker-label">18:33<br>Curved ST</div></a>
+      <a class="ep-timeline-marker" href="#ch6"  style="left:20.3%"><div class="ep-marker-dot"></div><div class="ep-marker-label">25:20<br>UFOs/Gravity</div></a>
+      <a class="ep-timeline-marker" href="#ch7"  style="left:27.2%"><div class="ep-marker-dot"></div><div class="ep-marker-label">33:39<br>Supercond.</div></a>
+      <a class="ep-timeline-marker" href="#ch8"  style="left:34.5%"><div class="ep-marker-dot"></div><div class="ep-marker-label">42:43<br>Long. Waves</div></a>
+      <a class="ep-timeline-marker" href="#ch9"  style="left:39.9%"><div class="ep-marker-dot"></div><div class="ep-marker-label">49:20<br>Symmetry</div></a>
+      <a class="ep-timeline-marker" href="#ch10" style="left:46.5%"><div class="ep-marker-dot"></div><div class="ep-marker-label">57:56<br>EM+Gravity</div></a>
+      <a class="ep-timeline-marker" href="#ch11" style="left:47.9%"><div class="ep-marker-dot"></div><div class="ep-marker-label">59:26<br>Lorenz</div></a>
+      <a class="ep-timeline-marker" href="#ch12" style="left:51.6%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:06:28<br>Topo Ins.</div></a>
+      <a class="ep-timeline-marker" href="#ch13" style="left:52.7%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:08:30<br>Nat.Sec.</div></a>
+      <a class="ep-timeline-marker" href="#ch14" style="left:54.1%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:11:24<br>DNA</div></a>
+      <a class="ep-timeline-marker" href="#ch15" style="left:57.9%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:18:04<br>Spiritual</div></a>
+      <a class="ep-timeline-marker" href="#ch16" style="left:60.4%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:24:37<br>Time</div></a>
+      <a class="ep-timeline-marker" href="#ch17" style="left:63.1%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:29:30<br>Danger</div></a>
+      <a class="ep-timeline-marker" href="#ch18" style="left:64.7%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:34:03<br>Ethics</div></a>
+      <a class="ep-timeline-marker" href="#ch19" style="left:72.4%"><div class="ep-marker-dot"></div><div class="ep-marker-label">1:49:06<br>Conscious.</div></a>
+      <a class="ep-timeline-marker" href="#ch20" style="left:75.8%"><div class="ep-marker-dot" style="background:var(--text-dim)"></div><div class="ep-marker-label">1:56:19<br>Close</div></a>
+    </div>
   </div>
 </div>
 
@@ -197,6 +299,7 @@
       <a href="#ch18"><span class="toc-n">18</span>Ethics of Sharing Knowledge<span class="toc-ts">1:34:03</span></a>
       <a href="#ch19"><span class="toc-n">19</span>Consciousness and Time Perception<span class="toc-ts">1:49:06</span></a>
       <a href="#ch20"><span class="toc-n">20</span>Closing Thoughts and Future Prospects<span class="toc-ts">1:56:19</span></a>
+      <a href="#glossary"><span class="toc-n">&#128218;</span>Glossary &#8212; Technical Terms</a>
       <a href="#bibliography"><span class="toc-n">&#128218;</span>Bibliography &#8212; Academic Papers &amp; Patents</a>
     </div>
   </div>
@@ -208,6 +311,33 @@
 <div class="skeptic-box" style="margin-bottom:24px;">
   <div class="skeptic-label">&#8505; About Dialogue Sourcing</div>
   <p>Dialogue in this article is drawn from the full episode transcript. All quotes are verbatim. Square brackets [ ] indicate editorial clarifications for readability. Timestamps link to the relevant moment in the <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--amber);">original episode</a>.</p>
+</div>
+
+
+<!-- Claim status legend -->
+<div class="claim-legend">
+  <strong style="color:var(--text-bright);margin-right:6px;">Claim status:</strong>
+  <span><span class="claim-verified">&#10003; Verified</span> Accepted by mainstream physics with experimental support</span>
+  <span><span class="claim-disputed">&#9651; Disputed</span> In peer-reviewed literature but contested or unreplicated</span>
+  <span><span class="claim-unsupported">&#10007; No peer-review support</span> No independently replicated evidence as of 2025</span>
+  <span><span class="claim-classified">&#9632; Claimed classified</span> Rossi declines to elaborate citing national security</span>
+</div>
+
+<!-- Concept thread index -->
+<div class="thread-index">
+  <div class="thread-index-label">Concept threads &#8212; follow a topic across chapters</div>
+  <div class="thread-row"><span class="thread-concept">Scalar / vector potentials</span><div class="thread-links"><a class="thread-ch" href="#ch4">04</a><a class="thread-ch" href="#ch5">05</a><a class="thread-ch" href="#ch9">09</a><a class="thread-ch" href="#ch10">10</a><a class="thread-ch" href="#ch11">11</a><a class="thread-ch" href="#ch13">13</a><a class="thread-ch" href="#ch15">15</a><a class="thread-ch" href="#ch16">16</a></div></div>
+  <div class="thread-row"><span class="thread-concept">AC / DC Gravity</span><div class="thread-links"><a class="thread-ch" href="#ch6">06</a><a class="thread-ch" href="#ch7">07</a><a class="thread-ch" href="#ch10">10</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Cold electricity / LENR / Cold fusion</span><div class="thread-links"><a class="thread-ch" href="#ch5">05</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch9">09</a><a class="thread-ch" href="#ch18">18</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Ning Li &amp; superconductors</span><div class="thread-links"><a class="thread-ch" href="#ch6">06</a><a class="thread-ch" href="#ch7">07</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch12">12</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Tesla / Townsend Brown / electrogravitics</span><div class="thread-links"><a class="thread-ch" href="#ch3">03</a><a class="thread-ch" href="#ch4">04</a><a class="thread-ch" href="#ch5">05</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch16">16</a><a class="thread-ch" href="#ch17">17</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Puthoff / zero-point energy / ZPE</span><div class="thread-links"><a class="thread-ch" href="#ch1">01</a><a class="thread-ch" href="#ch3">03</a><a class="thread-ch" href="#ch9">09</a><a class="thread-ch" href="#ch11">11</a><a class="thread-ch" href="#ch12">12</a></div></div>
+  <div class="thread-row"><span class="thread-concept">DNA / biological EM effects</span><div class="thread-links"><a class="thread-ch" href="#ch5">05</a><a class="thread-ch" href="#ch14">14</a><a class="thread-ch" href="#ch15">15</a><a class="thread-ch" href="#ch19">19</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Temporal displacement / time</span><div class="thread-links"><a class="thread-ch" href="#ch10">10</a><a class="thread-ch" href="#ch15">15</a><a class="thread-ch" href="#ch16">16</a><a class="thread-ch" href="#ch18">18</a><a class="thread-ch" href="#ch19">19</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Lorenz / Maxwell / Heaviside</span><div class="thread-links"><a class="thread-ch" href="#ch1">01</a><a class="thread-ch" href="#ch4">04</a><a class="thread-ch" href="#ch10">10</a><a class="thread-ch" href="#ch11">11</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Consciousness / contact experience</span><div class="thread-links"><a class="thread-ch" href="#ch2">02</a><a class="thread-ch" href="#ch14">14</a><a class="thread-ch" href="#ch15">15</a><a class="thread-ch" href="#ch16">16</a><a class="thread-ch" href="#ch19">19</a></div></div>
+  <div class="thread-row"><span class="thread-concept">National security / dual-use danger</span><div class="thread-links"><a class="thread-ch" href="#ch1">01</a><a class="thread-ch" href="#ch13">13</a><a class="thread-ch" href="#ch17">17</a><a class="thread-ch" href="#ch18">18</a></div></div>
+  <div class="thread-row"><span class="thread-concept">Salvatore Pais / Navy patents</span><div class="thread-links"><a class="thread-ch" href="#ch6">06</a><a class="thread-ch" href="#ch8">08</a><a class="thread-ch" href="#ch9">09</a><a class="thread-ch" href="#ch16">16</a><a class="thread-ch" href="#ch19">19</a></div></div>
 </div>
 
 <div class="tag-row" style="margin-bottom:40px;margin-top:8px;">
@@ -231,6 +361,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 00:00 Introduction &#183; 01:33 The Journey from Construction to Quantum Physics &#183; 03:48 The Role of Extended Electrodynamics</div></div>
     <p>Jesse Michels opens by describing Dave Rossi as a former construction worker whose interest in UFO phenomena led to a self-directed dive into physics. Michels frames extended electrodynamics as a field considered &#8220;quackery&#8221; at the time of recording but subsequently co-sponsored by the NSF and NASA. Rossi describes starting a UFO podcast during COVID, then approximately a year and a half in having the blue being encounter that redirected him toward experimental physics.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: extended electrodynamics &#183; zero-point energy &#183; longitudinal scalar waves &#183; quantum vacuum &#183; luminiferous ether &#183; U1 model &#183; flat space-time &#183; ring superconductors</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Extended electrodynamics describes physical phenomena the standard Heaviside equations cannot. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>The quantum vacuum (luminiferous ether) contains longitudinal scalar wave modes accessible by curving space-time. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Hal Puthoff and Eric Davis engaged seriously with Rossi&#8217;s framework after seeing his presentations. <span class="claim-classified">&#9632; Claimed classified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Extended electrodynamics:</strong> Standard QED (U(1) gauge theory) has passed every experimental test to 1 part in 10&#185;&#178;. No peer-reviewed independently replicated experiment has demonstrated longitudinal free-space EM propagation. The Aharonov-Bohm effect &#8212; which Rossi uses as his anchor &#8212; is confirmed mainstream physics, but its extension to scalar wave propulsion is Rossi&#8217;s interpretation.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=228s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 03:48</a> &#8212; The Role of Extended Electrodynamics</div>
@@ -367,6 +509,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 11:40 The Awakening of Scientific Curiosity &#183; 14:10 Longitudinal Scalar Waves Explained</div></div>
     <p>Rossi explains that the blue being showed him longitudinal scalar waves as a &#8220;slinky&#8221; &#8212; waves that propagate as compressions parallel to the direction of travel, distinct from standard transverse hertzian electromagnetic waves. These waves exist in the quantum vacuum (he uses the terms interchangeably with &#8220;luminiferous ether&#8221;) but require curving space-time to interact with. He frames the entire extended electrodynamics project as requiring a departure from the U1 flat space-time model that underlies conventional particle physics and electrical engineering.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: longitudinal waves &#183; transverse hertzian waves &#183; scalar field &#183; quantum vacuum &#183; luminiferous ether &#183; space-time curvature &#183; U1 model &#183; Aharonov-Bohm effect &#183; four-vector potentials</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Longitudinal scalar waves were shown to Rossi by the blue being as a slinky-like structure. <span class="claim-classified">&#9632; Claimed classified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>Standard U1 EM models assume flat space-time; curving it produces new wave phenomenology. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>The Aharonov-Bohm effect proves potentials are more fundamental than E and B fields. <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Aharonov-Bohm effect:</strong> Confirmed by Tonomura et al. (1986) &#8212; potentials are physically real. <strong>Longitudinal EM waves in free space:</strong> Not confirmed. In plasma physics and acoustics, longitudinal waves are well understood. For free-space EM &#8212; no independent replication. <strong>U1 / flat space-time:</strong> Correct that standard QED assumes flat space-time to first order; gravitational QED corrections are real but extremely small in laboratory conditions.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=700s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 11:40</a> &#8212; The Awakening of Scientific Curiosity</div>
@@ -427,6 +581,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 18:33 Curving Space-Time: A New Perspective &#183; 20:54 High Voltage and its Effects on Matter</div></div>
     <p>Rossi argues that the standard U1 electromagnetic model assumes flat space-time, which constrains what reactions are possible. When space-time is curved via electromagnetic means, chemistry and thermodynamics behave differently &#8212; specifically, reactions that would normally produce heat may instead produce negentropy (negative entropy), including cold electrical effects. He connects this directly to low energy nuclear reactions (cold fusion). He then discusses how humans can induce this curvature privately &#8212; referencing conversations with physicist Bob McGuire about the stress-energy tensor &#8212; and how high voltage is a practical method of polarizing the local vacuum.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: U1 model &#183; flat space-time &#183; negentropy &#183; cold electricity &#183; LENR / cold fusion &#183; Coulomb barrier &#183; caduceus geometry &#183; stress-energy tensor &#183; vacuum polarization &#183; Aharonov-Bohm effect</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Curving space-time via EM produces negentropy: reactions without expected exothermic heat. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>This mechanism connects directly to low energy nuclear reactions (LENR / cold fusion). <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Humans have privately achieved this &#8212; without reverse-engineered programmes. <span class="claim-classified">&#9632; Claimed classified</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Negentropy from EM-curved space-time:</strong> No experimental basis. Standard thermodynamics applies to all currently verified laboratory conditions. <strong>LENR / Cold fusion:</strong> Anomalous excess heat has been observed in multiple labs (SRI, ENEA, Navy SPAWAR) but the mechanism is unexplained and no theoretical framework within standard physics accounts for it. Rossi&#8217;s curved space-time explanation is his own &#8212; not the mainstream LENR community&#8217;s position.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1113s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 18:33</a> &#8212; Curving Space-Time: A New Perspective</div>
@@ -495,6 +661,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 25:20 The Intersection of UFOs and Modern Science &#183; 29:10 Gravitational Waves and Exotic Physics</div></div>
     <p>Rossi states he believes humans have privately made advancements in inertial mass reduction and high-frequency gravitational wave emission, citing Salvatore Pais&#8217;s Navy patents as the most revealing public document. He explains inertial mass reduction as biasing the potentials of an object&#8217;s mass so it &#8220;falls up.&#8221; He then discusses Ning Li&#8217;s distinction between DC gravity (static, magnetostatic-field-dependent) and AC gravity (pulsed, far stronger, caduceus geometry). He also references graviton detection papers funded by the MITRE Corporation, Einstein&#8217;s changing positions on the quantum vacuum, and Soviet physics before the fall of the USSR.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: inertial mass reduction &#183; DC gravity &#183; AC gravity &#183; gravitons &#183; gravitomagnetic field &#183; high-frequency gravitational waves &#183; Victor Schauberger &#183; Ning Li &#183; Salvatore Pais</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Ning Li discovered two types of gravity: static DC gravity and pulsed AC gravity. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>AC gravity is far stronger than DC gravity and has a caduceus/double-helix geometry. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Gravitons have been detected near Earth&#8217;s atmosphere in MITRE-funded papers. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>AC/DC gravity:</strong> The Li-Torr papers are peer-reviewed (Physical Review D, B; Foundations of Physics Letters) but their predicted external gravitational effects were found by a 2010 DIA analysis to be ~10&#178;&#8304; times smaller than claimed. <strong>Gravitons:</strong> Not yet detected &#8212; this remains a major open problem in physics. The LIGO detection of gravitational waves (2015) confirmed GR predictions but individual graviton detection is far beyond current technology.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1520s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 25:20</a> &#8212; The Intersection of UFOs and Modern Science</div>
@@ -561,6 +739,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 33:39 The Role of Superconductors in New Technologies</div></div>
     <p>Rossi describes Niels Bohr&#8217;s model of superconductors as macroscopic atoms, argues that BCS theory has left out the role of lattice holes (as shown in a 1992 paper by Torr and Ning Li), and that polarising the lattice of a superconductor allows for the manipulation of light and gravity. He argues geometry of the superconductor &#8212; ring vs puck vs square &#8212; is critical, as it determines whether the device can couple to the vortex-like geometry of longitudinal waves.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: BCS theory &#183; Cooper pairs &#183; lattice holes &#183; Meissner effect &#183; flux pinning &#183; vacuum polarisation &#183; quantum coherence &#183; superconductor geometry &#183; quadrupole oscillation &#183; strong nuclear force</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>BCS theory omitted lattice holes, missing a key mechanism of angular momentum quantisation. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>Superconductors are macroscopic atoms (Bohr model) exhibiting Planck-scale coherence. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Geometry of superconductor (ring vs disc vs puck) determines coupling to scalar field modes. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>BCS theory and lattice holes:</strong> The 1992 Torr-Li paper arguing lattice ions (not Cooper pairs) carry quantised angular momentum is a genuine peer-reviewed publication but was critically challenged by Kowitt (1994) and Harris and found to overestimate effects by orders of magnitude. <strong>Macroscopic quantum coherence:</strong> Superconductors do exhibit macroscopic quantum coherence (the Meissner effect, flux quantisation) but at the Planck scale &#8212; mainstream physics does not support.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2019s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 33:39</a> &#8212; The Role of Superconductors in New Technologies</div>
@@ -668,6 +858,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 49:20 The Implications of Breaking Space-Time Symmetry</div></div>
     <p>Rossi describes &#8220;higher symmetry electromagnetics&#8221; using vector and scalar potentials &#8212; what results from breaking the standard flat-space-time symmetry &#8212; and states this produces cold electricity (currents that cause frostbite rather than burns). He argues that UAP may behave like macroscopic quantum objects. He discusses the Swimmer limit (vacuum becomes nonlinear above an electromagnetic threshold), vacuum polarisation, and how polarising a superconductor&#8217;s lattice allows electrons to move nonlinearly &#8212; producing the topological effects he describes.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: higher symmetry electromagnetics &#183; vector and scalar potentials &#183; cold electricity &#183; Schwinger limit &#183; vacuum polarisation &#183; lattice symmetry breaking &#183; macroscopic quantum objects &#183; topological insulators</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Breaking space-time symmetry produces cold electricity &#8212; currents that cause frostbite. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>UFOs may behave as macroscopic quantum objects. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>The vacuum becomes nonlinear above the Schwinger limit (~10&#8313; V/m). <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Cold electricity:</strong> No peer-reviewed experimental confirmation. Tesla&#8217;s reports of cold electrical effects in high-frequency resonance experiments are historically documented but not reproduced under controlled conditions. <strong>Schwinger limit:</strong> Confirmed prediction of QED (Sauter, 1931; Schwinger, 1951) &#8212; the only verified claim in this chapter. Not yet achieved in laboratory conditions.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2960s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 49:20</a> &#8212; The Implications of Breaking Space-Time Symmetry</div>
@@ -782,6 +984,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 1:02:44 Scalar and Vector Potentials</div></div>
     <p>Rossi discusses Puthoff&#8217;s proposed method of quantum communications via scalar and vector potentials (toroidal geometries, no E or B fields), connecting it to David Bohm&#8217;s concept of topological infolding and outfolding (implicate order). He references a Lockheed Martin patent for a &#8220;coherent matter wave beam&#8221; that uses the Aharonov-Bohm effect &#8212; the potentials themselves, not fields &#8212; to cohere matter. He argues space-time is a &#8220;living structure with memory&#8221; and that inducing vector and scalar potentials allows access to geometric modes invisible to standard hertzian wave engineering.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: toroidal geometry &#183; topological infolding/outfolding &#183; David Bohm &#183; implicate order &#183; coherent matter wave beam &#183; Lockheed Martin &#183; fractal structure &#183; space-time memory &#183; quantum communications</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Lorenz set scalar potentials to zero calling them &#8220;of no physical significance.&#8221; <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>Maxwell&#8217;s original quaternion equations had 20 equations in 20 unknowns. <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>Reinstating removed terms produces physically real new wave modes. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Lorenz re-gauging:</strong> Correct &#8212; the Lorenz gauge is a mathematical choice, not a physical law. Lorenz did describe the scalar potential as having "no physical significance" in the context of his re-gauging. This is a simplification that is now known to be incomplete (see Aharonov-Bohm). <strong>New wave modes from reinstating terms:</strong> Allowed mathematically in extended frameworks but not confirmed experimentally.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=3764s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:02:44</a> &#8212; Scalar and Vector Potentials</div>
@@ -874,6 +1088,17 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 1:08:30 National Security Implications</div></div>
     <p>Jesse describes having the door shut on him when trying to contact Lee Hely (working in extended electrodynamics). Rossi gives a concrete national security application: room surveillance without cameras using scalar and vector potentials of the quantum vacuum. He states he knows a government group that has had this operational since the 1990s and is currently developing new versions. He declines to describe the mechanism.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: quantum vacuum surveillance &#183; vector and scalar potentials &#183; national security &#183; room surveillance without cameras</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Room surveillance without cameras using quantum vacuum scalar potentials is possible. <span class="claim-classified">&#9632; Claimed classified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>A government group has operated this technology since the 1990s. <span class="claim-classified">&#9632; Claimed classified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Scalar potential surveillance:</strong> No publicly available scientific literature supports room surveillance via quantum vacuum scalar potentials. Rossi explicitly declines to describe the mechanism. This claim cannot be evaluated with public information.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4110s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:08:30</a> &#8212; National Security Implications</div>
@@ -915,6 +1140,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 1:11:24 The Third Strand of DNA</div></div>
     <p>Rossi claims there is a physical third strand of DNA &#8212; running down the centre of the double helix, existing at the Planck scale, electrically conductive &#8212; that means so-called &#8220;junk DNA&#8221; is not junk. He believes this overlaps with Luc Montagnier&#8217;s DNA water teleportation work. He describes a manuscript he wrote on this which a peer-review-eligible collaborator agreed to help publish, but was later restrained from doing so. He references Peter Gariaev (nominated for Nobel Prize 2019&#8211;2020, died under disputed circumstances) who was healing people using vector and scalar potentials through sound and light, inside wooden pyramids with electronic circuits.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: third strand of DNA &#183; junk DNA &#183; Planck scale &#183; electrically conductive DNA &#183; Peter Gariaev &#183; linguistic wave genetics &#183; wooden pyramid healing &#183; Luc Montagnier &#183; DNA water teleportation</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>A physical third strand of DNA exists at the Planck scale that is electrically conductive. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Junk DNA is not junk &#8212; it relates to this third strand. <span class="claim-disputed">&#9651; Disputed</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>Peter Gariaev healed people using scalar EM fields in wooden pyramid chambers. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>Third strand of DNA:</strong> Triplex DNA is a confirmed laboratory phenomenon but is a chemically bound third strand, not a Planck-scale electrically conductive structure. <strong>Junk DNA:</strong> The ENCODE project (2012) showed most of the genome is transcribed and functionally active &#8212; "junk DNA" is now recognised as an oversimplification. This is real but unrelated to Rossi&#8217;s electrically conductive third strand claim. <strong>Gariaev&#8217;s healing experiments:</strong> Not peer-reviewed and not independently replicated.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4284s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:11:24</a> &#8212; The Third Strand of DNA</div>
@@ -1019,6 +1256,18 @@
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; YouTube: 1:24:37 Physics and Temporal Displacement</div></div>
     <p>Rossi explains charge-parity inversion in the quantum vacuum as equivalent to reflection &#8212; and argues that polarising time rather than space enables time displacement. He discusses the Philadelphia Experiment, temporal non-locality in quantum systems (linking to quantum computing), brain function as possibly a room-temperature quantum system (per Penrose-Hameroff), and Dean Radin&#8217;s retrocognition experiments. He also references a 1950s Toronto newspaper article about a man who demonstrated missing time to government representatives &#8212; two hours externally elapsed while 25 minutes passed inside his laboratory.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: charge-parity inversion &#183; time polarisation &#183; temporal displacement &#183; Philadelphia Experiment &#183; temporal non-locality &#183; quantum computing time &#183; Penrose-Hameroff &#183; Dean Radin &#183; retrocognition &#183; Orch-OR</div>
+  <div class="key-claims">
+    <div class="key-claims-label">&#9670; Key checkable claims in this chapter</div>
+    <ol>
+<li>Charge-parity inversion in the quantum vacuum is equivalent to reflection. <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+<li>Polarising time rather than space produces time displacement. <span class="claim-unsupported">&#10007; No peer-review support</span><div class="d-confidence conf-spec">&#9670; Stated as speculation</div></li>
+<li>GPS satellites require relativistic time correction of ~38&#956;s/day. <span class="claim-verified">&#10003; Verified</span><div class="d-confidence conf-fact">&#128100; Stated as fact</div></li>
+    </ol>
+  </div>
+  <div class="mainstream-box">
+    <div class="mainstream-label">&#128300; What mainstream physics says</div>
+    <p><strong>CP inversion:</strong> Confirmed physics &#8212; CPT symmetry is one of the best-tested symmetries in physics. <strong>GPS time dilation:</strong> Confirmed &#8212; GPS systems correct for both SR and GR time dilation daily. <strong>Time displacement via scalar wave polarisation:</strong> No experimental basis. Extrapolating from GPS time dilation to engineerable time displacement requires energy densities and field strengths orders of magnitude beyond anything achieved.</p>
+  </div>
   </div>
   <div class="dialogue">
     <div class="dialogue-header">&#128924; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" style="color:var(--blue);text-decoration:none;">American Alchemy, Feb 13 2025</a> &#183; <a href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=5077s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:24:37</a> &#8212; Physics and Temporal Displacement</div>
@@ -1262,6 +1511,159 @@
   </div>
 </section>
 
+
+
+<!-- ══ GLOSSARY ═══════════════════════════════════════════ -->
+<section class="glossary-section" id="glossary">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">GLOSSARY</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">Technical terms used in the episode &#8212; click any <a class="gterm" href="#glossary">underlined term</a> in the article</span>
+  </div>
+  <h2>Technical Glossary</h2>
+  <div class="glossary-grid">
+
+    <div class="glossary-entry" id="g-extended-electrodynamics">
+      <div class="g-term">Extended Electrodynamics (MCE)</div>
+      <div class="g-def">Theoretical frameworks extending the Heaviside-reformulated Maxwell equations by restoring scalar potential terms removed by the Lorenz gauge. Allows longitudinal EM wave solutions absent from standard U(1) field theory. Also called &#8220;More Complete Electrodynamics.&#8221;</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 01, 04, 09, 11, 13</div>
+    </div>
+
+    <div class="glossary-entry" id="g-scalar-waves">
+      <div class="g-term">Longitudinal Scalar Waves</div>
+      <div class="g-def">Wave solutions in which the field oscillates parallel to the direction of propagation &#8212; as in a slinky compression. Undisputed in acoustics and plasma physics; disputed for free-space electromagnetic propagation.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Disputed (free-space EM)</span></div>
+      <div class="g-chapters">Appears in: Ch. 04, 08, 09, 10, 15, 16</div>
+    </div>
+
+    <div class="glossary-entry" id="g-quantum-vacuum">
+      <div class="g-term">Quantum Vacuum / Zero-Point Field</div>
+      <div class="g-def">The lowest-energy state of quantum fields &#8212; not empty space but a sea of virtual particle fluctuations with non-zero energy (zero-point energy). The Casimir effect is an empirically confirmed consequence. Rossi uses this interchangeably with &#8220;luminiferous ether.&#8221;</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified (ZPE exists)</span></div>
+      <div class="g-chapters">Appears in: Ch. 01, 04, 05, 09, 10, 13, 15</div>
+    </div>
+
+    <div class="glossary-entry" id="g-u1-model">
+      <div class="g-term">U(1) Model / Flat Space-Time</div>
+      <div class="g-def">The U(1) gauge symmetry group underlying standard quantum electrodynamics. Assumes a flat Minkowski space-time metric. Standard QED has passed every experimental test to 1 part in 10&#185;&#178;. Rossi argues it is a special case valid only in flat space-time.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified (as a model)</span></div>
+      <div class="g-chapters">Appears in: Ch. 04, 05, 09, 11</div>
+    </div>
+
+    <div class="glossary-entry" id="g-aharonov-bohm">
+      <div class="g-term">Aharonov-Bohm Effect</div>
+      <div class="g-def">Quantum phenomenon in which an electron is phase-shifted by an electromagnetic potential even in regions where E and B fields are zero &#8212; proving potentials are physically real. Predicted 1959, confirmed by Tonomura et al. (1986). Rossi uses this as his primary empirical anchor for scalar potential physics.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified</span></div>
+      <div class="g-chapters">Appears in: Ch. 04, 11</div>
+    </div>
+
+    <div class="glossary-entry" id="g-negentropy">
+      <div class="g-term">Negentropy (Negative Entropy)</div>
+      <div class="g-def">A local decrease in entropy &#8212; increase in order &#8212; in an open system that exports entropy to its environment. Real in thermodynamics for open systems (living organisms, refrigerators). Rossi&#8217;s specific claim &#8212; that EM-curved space-time produces negentropy in chemical reactions &#8212; has no experimental basis.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Concept real, specific claim disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 05, 15, 16</div>
+    </div>
+
+    <div class="glossary-entry" id="g-cold-electricity">
+      <div class="g-term">Cold Electricity</div>
+      <div class="g-def">Electrical effects that cool rather than heat conductors &#8212; claimed to cause frostbite on contact rather than burns. Associated with Tesla&#8217;s high-frequency resonance experiments. Not confirmed in peer-reviewed independently replicated experiments.</div>
+      <div class="g-status"><span class="claim-unsupported">&#10007; No peer-review support</span></div>
+      <div class="g-chapters">Appears in: Ch. 05, 09, 18</div>
+    </div>
+
+    <div class="glossary-entry" id="g-lenr">
+      <div class="g-term">LENR / Cold Fusion</div>
+      <div class="g-def">Low Energy Nuclear Reactions &#8212; nuclear fusion occurring at or near room temperature. Pons and Fleischmann (1989) reported anomalous excess heat from palladium electrolytic cells. Anomalous heat effects have been replicated at SRI, ENEA, and Navy SPAWAR but the mechanism is unexplained and the field is not accepted by mainstream nuclear physics.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Anomalous heat observed, mechanism disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 05, 18</div>
+    </div>
+
+    <div class="glossary-entry" id="g-dc-gravity">
+      <div class="g-term">DC Gravity (Static Gravitational Field)</div>
+      <div class="g-def">Rossi&#8217;s term for a constant, unvarying gravitational or gravitomagnetic field &#8212; produced by continuous rotation of a superconductor. Analogous to direct current in electrical systems. Earth&#8217;s gravitational field is effectively DC. Named after Ning Li&#8217;s AC Gravity LLC framework.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Framework disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 06</div>
+    </div>
+
+    <div class="glossary-entry" id="g-ac-gravity">
+      <div class="g-term">AC Gravity (Pulsed Gravitational Waves)</div>
+      <div class="g-def">Rossi&#8217;s term for oscillating, pulsed gravitational field output from a superconductor driven in a frequency-modulated mode. Named after Ning Li&#8217;s company AC Gravity LLC, which the DoD funded from 2001. Analogous to alternating current. The Pais high-frequency gravitational wave generator patent (US10322827B2) is the AC gravity device in Rossi&#8217;s framework.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Framework disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 06, 10</div>
+    </div>
+
+    <div class="glossary-entry" id="g-bcs">
+      <div class="g-term">BCS Theory</div>
+      <div class="g-def">Bardeen-Cooper-Schrieffer theory of superconductivity (Nobel 1972). Below critical temperature Tc, electrons form &#8220;Cooper pairs&#8221; via phonon-mediated attraction and condense into a single quantum state. The dominant theory of conventional superconductivity. Rossi argues it omits the role of lattice holes in angular momentum quantisation (after Torr-Li 1992).</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Mainstream theory</span></div>
+      <div class="g-chapters">Appears in: Ch. 07</div>
+    </div>
+
+    <div class="glossary-entry" id="g-meissner">
+      <div class="g-term">Meissner Effect</div>
+      <div class="g-def">The expulsion of magnetic fields from the interior of a superconductor when it transitions below its critical temperature. Discovered by Meissner and Ochsenfeld (1933). The mechanism behind magnetic levitation of superconductors. Confirmed mainstream physics.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified</span></div>
+      <div class="g-chapters">Appears in: Ch. 07</div>
+    </div>
+
+    <div class="glossary-entry" id="g-schwinger">
+      <div class="g-term">Schwinger Limit</div>
+      <div class="g-def">The critical electric field strength (~1.32 &#215; 10&#185;&#8312; V/m) at which the quantum vacuum becomes nonlinear &#8212; strong enough to spontaneously produce electron-positron pairs. Predicted by QED (Schwinger 1951). Not yet achieved in laboratory. Rossi uses this as the threshold above which exotic vacuum effects become accessible.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Theoretically verified (QED prediction)</span></div>
+      <div class="g-chapters">Appears in: Ch. 09</div>
+    </div>
+
+    <div class="glossary-entry" id="g-lorenz-gauge">
+      <div class="g-term">Lorenz Gauge Condition</div>
+      <div class="g-def">A mathematical constraint (&#8706;&#966;/&#8706;t + &#8711;&#183;A = 0) applied to electromagnetic potentials to simplify wave equations. A gauge choice &#8212; not a physical law. Setting it eliminates longitudinal EM solutions from free space. Lorenz described scalar potentials under this gauge as having &#8220;no physical significance.&#8221; The Aharonov-Bohm effect shows potentials do have physical significance beyond this gauge.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Gauge choice (not physical law)</span></div>
+      <div class="g-chapters">Appears in: Ch. 04, 11</div>
+    </div>
+
+    <div class="glossary-entry" id="g-toroidal">
+      <div class="g-term">Toroidal Geometry</div>
+      <div class="g-def">Doughnut-shaped electromagnetic field configurations in which fields are confined to the interior of a torus, producing no net external E or B fields. The Aharonov-Bohm effect uses a toroidal solenoid configuration. Rossi argues toroidal geometries are the engineering basis for scalar potential quantum communications.</div>
+      <div class="g-status"><span class="claim-disputed">&#9651; Geometry confirmed, comms application disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 11, 15</div>
+    </div>
+
+    <div class="glossary-entry" id="g-topological-insulator">
+      <div class="g-term">Topological Insulator</div>
+      <div class="g-def">A material that is electrically insulating in its bulk but conducts electricity on its surface through topologically protected quantum states &#8212; immune to many forms of disorder. Examples: bismuth selenide (Bi&#8322;Se&#8323;), bismuth telluride. Active area of condensed matter physics with genuine applications in quantum computing.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified (material properties)</span></div>
+      <div class="g-chapters">Appears in: Ch. 12</div>
+    </div>
+
+    <div class="glossary-entry" id="g-zitterbewegung">
+      <div class="g-term">Zitterbewegung</div>
+      <div class="g-def">German: &#8220;trembling motion.&#8221; The rapid oscillatory motion of elementary particles predicted by the Dirac equation even at rest &#8212; the quantum mechanical basis for why matter perpetually oscillates at the quantum level. Rossi uses this as the basis for his claim that the quantum vacuum is never truly still and contains accessible potential energy.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified (Dirac equation prediction)</span></div>
+      <div class="g-chapters">Appears in: Ch. 15</div>
+    </div>
+
+    <div class="glossary-entry" id="g-schumann">
+      <div class="g-term">Schumann Resonances</div>
+      <div class="g-def">Global electromagnetic resonances in the Earth-ionosphere cavity, excited by lightning. Fundamental mode ~7.83 Hz. Well-established physics. Rossi argues these represent a toroidal geometric resonance field that cannot be shielded by standard EM methods &#8212; and may be the substrate for scalar potential communications.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; Verified (resonances); disputed (scalar comms connection)</span></div>
+      <div class="g-chapters">Appears in: Ch. 15</div>
+    </div>
+
+    <div class="glossary-entry" id="g-cpt">
+      <div class="g-term">Charge-Parity (CP) Inversion</div>
+      <div class="g-def">A symmetry transformation combining charge conjugation (C, replacing particles with antiparticles) and parity (P, spatial reflection). CPT symmetry (adding time reversal T) is one of the most precisely tested symmetries in physics. Rossi argues CP inversion in the vacuum is equivalent to reflection, enabling time polarisation.</div>
+      <div class="g-status"><span class="claim-verified">&#10003; CPT verified; time polarisation claim disputed</span></div>
+      <div class="g-chapters">Appears in: Ch. 16</div>
+    </div>
+
+    <div class="glossary-entry" id="g-inertial-mass">
+      <div class="g-term">Inertial Mass Reduction</div>
+      <div class="g-def">The proposed reduction of an object&#8217;s effective inertial mass &#8212; its resistance to acceleration &#8212; by manipulating the local quantum vacuum energy state. Haisch, Rueda &amp; Puthoff (1994) proposed inertia is a zero-point field Lorentz force. The Pais Navy patent US10144532B2 claims to achieve this by polarising the vacuum around a craft.</div>
+      <div class="g-status"><span class="claim-unsupported">&#10007; No experimental demonstration</span></div>
+      <div class="g-chapters">Appears in: Ch. 06, 08, 19</div>
+    </div>
+
+  </div>
+</section>
 
 <!-- ══ BIBLIOGRAPHY ══════════════════════════════════════ -->
 <section class="chapter" id="bibliography" style="border-top:2px solid var(--blue);padding-top:40px;margin-top:16px;">
