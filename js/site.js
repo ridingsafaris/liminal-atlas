@@ -26,10 +26,8 @@ const FOOTER_COLS = [
   {
     heading: 'Liminal Atlas',
     links: [
-      { label: 'About',              href: '/about.html' },
-      { label: 'Editorial Standards', href: '/about.html#standards' },
-      { label: 'Subscribe',          href: '/subscribe.html' },
-      { label: 'Contact',            href: '/about.html#contact' },
+      { label: 'Est. 2026',           href: '/index.html' },
+      { label: 'Subscribe',           href: '/subscribe.html' },
     ],
   },
   {
