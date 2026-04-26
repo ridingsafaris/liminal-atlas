@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive | Liminal Atlas</title>
+  <meta name="description" content="All articles published on Liminal Atlas.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .archive-hero { padding: 72px 0 48px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+    .archive-hero h1 { font-size: clamp(2rem,4vw,2.8rem); font-weight: 700; letter-spacing: -0.02em; color: var(--text-bright); margin-bottom: 12px; }
+    .archive-hero p { font-size: 15px; color: var(--text-dim); }
+    .year-group { margin-bottom: 48px; }
+    .year-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; color: var(--blue); text-transform: uppercase; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .archive-row { display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--border); text-decoration: none; transition: all 0.15s; }
+    .archive-row:hover .archive-title { color: var(--blue-bright); }
+    .archive-date { font-family: var(--font-mono); font-size: 11px; color: var(--text-dim); flex-shrink: 0; width: 80px; }
+    .archive-title { font-size: 15px; font-weight: 600; color: var(--text-bright); flex: 1; }
+    .archive-cats { display: flex; gap: 6px; flex-shrink: 0; }
+    @media (max-width: 600px) { .archive-cats { display: none; } .archive-date { width: auto; } }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="page-wrapper">
+    <div class="archive-hero fade-up">
+      <div class="badge" style="margin-bottom:16px;">Full Archive</div>
+      <h1>All Articles</h1>
+      <p>Every piece published on Liminal Atlas, newest first.</p>
+    </div>
+
+    <!-- ── 2025 ── -->
+    <div class="year-group fade-up">
+      <div class="year-label">2025</div>
+
+      <a class="archive-row" href="/articles/dave-rossi-close-reading.html">
+        <span class="archive-date">13 Feb</span>
+        <span class="archive-title">When a Blue Being Taught a Builder Advanced Physics — Dave Rossi Close Reading</span>
+        <div class="archive-cats">
+          <span class="cat-pill physics">Physics</span>
+          <span class="cat-pill uap">UAP</span>
+        </div>
+      </a>
+
+      <!-- ADD NEW ARTICLES HERE — copy the archive-row above -->
+      <!-- Example:
+      <a class="archive-row" href="/articles/my-new-article.html">
+        <span class="archive-date">01 Mar</span>
+        <span class="archive-title">My New Article Title Here</span>
+        <div class="archive-cats">
+          <span class="cat-pill physics">Physics</span>
+        </div>
+      </a>
+      -->
+
+    </div>
+
+  </div><!-- end page-wrapper -->
+</main>
+
+<script src="/js/site.js"></script>
+</body>
+</html>

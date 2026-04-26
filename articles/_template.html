@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ════════════════════════════════════════
+    HOW TO USE THIS TEMPLATE
+    ════════════════════════════════════════
+    1. Copy this file into /articles/
+    2. Rename it: e.g. articles/my-new-article.html
+    3. Fill in the fields marked ← EDIT THIS
+    4. Add your chapters below the TOC
+    5. Add the article to index.html cards
+    ════════════════════════════════════════ -->
+
+  <title>← EDIT: Article Title | Liminal Atlas</title>
+  <meta name="description" content="← EDIT: One sentence description for search engines.">
+
+  <!-- Shared design system — do not change this path -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Header injected by site.js — do not add manually -->
+
+<main>
+
+  <!-- ══ HERO ══════════════════════════════ -->
+  <div class="page-wrapper" style="padding-top: 72px; padding-bottom: 48px;">
+    <div class="fade-up">
+
+      <!-- EDIT: Category badge — options: physics / religion / uap / consciousness / biology -->
+      <div style="margin-bottom: 20px;">
+        <span class="cat-pill physics">Physics</span>
+        <!-- Add more category pills if needed -->
+      </div>
+
+      <!-- EDIT: Source badge (podcast, book, paper, etc.) -->
+      <div class="badge" style="margin-bottom: 24px;">Close Reading · Source Name · Date</div>
+
+      <!-- EDIT: Main title -->
+      <h1 style="font-size: clamp(2rem,5vw,3.6rem); font-weight:700; letter-spacing:-0.03em; color:var(--text-bright); line-height:1.1; margin-bottom:20px;">
+        Article Title with a <span style="color:var(--blue-bright);">Key Phrase</span> Highlighted
+      </h1>
+
+      <!-- EDIT: Meta row -->
+      <div style="display:flex; flex-wrap:wrap; gap:20px; font-family:var(--font-mono); font-size:11px; color:var(--text-dim); letter-spacing:0.06em; border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:12px 0; margin-bottom:28px;">
+        <span>Guest / Author: Name Here</span>
+        <span>Host / Source: Name Here</span>
+        <span>Published: DD Mon YYYY</span>
+        <span>Reading time: ~N min</span>
+      </div>
+
+      <!-- EDIT: Intro paragraph -->
+      <p style="font-size:17px; line-height:1.8; color:var(--text); max-width:760px; margin-bottom:24px;">
+        Write a 2–3 sentence intro describing what this article is about and why it matters. 
+        Use <strong>bold for key names and concepts</strong>.
+      </p>
+
+      <!-- EDIT: Link buttons — remove any not needed -->
+      <div class="btn-row">
+        <a class="btn btn-primary" href="YOUTUBE_OR_SOURCE_URL" target="_blank" rel="noopener">▶ Watch / Listen</a>
+        <a class="btn btn-ghost" href="CHANNEL_OR_AUTHOR_URL" target="_blank" rel="noopener">↗ Source Channel</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ TABLE OF CONTENTS ════════════════ -->
+  <div class="page-wrapper" style="margin-bottom: 48px;">
+    <div class="toc-inner fade-up-1">
+      <div class="toc-label">Contents</div>
+      <div class="toc-grid">
+        <!-- EDIT: Add one <a> per chapter. toc-ts is optional (for podcasts/videos) -->
+        <a href="#ch1"><span class="toc-n">01</span>Chapter One Title<span class="toc-ts">00:00</span></a>
+        <a href="#ch2"><span class="toc-n">02</span>Chapter Two Title<span class="toc-ts">10:00</span></a>
+        <a href="#ch3"><span class="toc-n">03</span>Chapter Three Title<span class="toc-ts">20:00</span></a>
+        <a href="#ch4"><span class="toc-n">04</span>Chapter Four Title<span class="toc-ts">30:00</span></a>
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAGS ══════════════════════════════ -->
+  <div class="page-wrapper">
+    <div class="tag-row fade-up-2" style="margin-bottom:40px;">
+      <!-- EDIT: Add relevant tags -->
+      <span class="tag">Tag One</span>
+      <span class="tag">Tag Two</span>
+      <span class="tag">Tag Three</span>
+    </div>
+  </div>
+
+  <!-- ══ CHAPTERS ═════════════════════════ -->
+  <div class="page-wrapper">
+
+    <!-- ─────────────────────────────────────
+      CHAPTER 1
+      Copy this block for each new chapter.
+    ───────────────────────────────────────── -->
+    <section class="chapter" id="ch1">
+      <div class="ch-header">
+        <span class="ch-num">CH 01</span>
+        <!-- EDIT: Timestamp (delete if not a video) -->
+        <span class="ch-time">00:00 – 10:00</span>
+        <!-- EDIT: YouTube link with timestamp (delete if not a video) -->
+        <a class="ch-yt" href="VIDEO_URL&t=0s" target="_blank">▶ Jump to segment</a>
+      </div>
+      <h2>Chapter One: Your Title Here</h2>
+
+      <!-- Body text -->
+      <div class="prose">
+        <p>Write your intro paragraph here. Use <strong>bold for key concepts</strong> and 
+        <em>italics for technical terms</em>.</p>
+      </div>
+
+      <!-- ── Dialogue block (delete if not a podcast/video) ── -->
+      <div class="dialogue">
+        <div class="dialogue-header">📼 Dialogue Excerpt · ~00:00</div>
+        <div class="d-line">
+          <div class="d-speaker host">Host Name</div>
+          <div class="d-text">"What did they actually say here? Paraphrase or quote the dialogue."</div>
+        </div>
+        <div class="d-line">
+          <div class="d-speaker guest">Guest Name</div>
+          <div class="d-text">"Their response goes here in italics."</div>
+          <div class="d-note">Paraphrased from the episode. See YouTube timestamp ~00:00.</div>
+        </div>
+      </div>
+
+      <!-- ── Science / explainer box ── -->
+      <div class="sci-box">
+        <div class="sci-box-header">
+          <div class="sci-icon">⚛</div>
+          <div class="sci-title">Physics Explainer: Topic Name Here</div>
+        </div>
+        <p>Write a plain-language explanation of the concept. 2–4 paragraphs is ideal.</p>
+        <p>Use <strong>bold for technical terms</strong> on first use.</p>
+      </div>
+
+      <!-- ── Person card ── -->
+      <div class="person-card">
+        <div class="person-head">
+          <span class="person-name">Person's Full Name</span>
+          <span class="person-dates">YYYY–YYYY</span>
+          <a class="wiki-link" href="https://en.wikipedia.org/wiki/PERSON_NAME" target="_blank">↗ Wikipedia</a>
+          <!-- Add more links if useful -->
+        </div>
+        <p>2–3 sentences on who this person is and why they're relevant to the article.</p>
+      </div>
+
+      <!-- ── Skeptic / mainstream note ── -->
+      <div class="skeptic-box">
+        <div class="skeptic-label">⚠ Mainstream Science Note</div>
+        <p>What does the scientific consensus say about this claim? Be honest and specific.</p>
+      </div>
+
+      <!-- ── Link cluster ── -->
+      <div class="link-cluster">
+        <div class="link-cluster-title">Further Reading &amp; Links</div>
+        <div class="link-row">
+          <a class="link-pill" href="https://en.wikipedia.org/wiki/ARTICLE" target="_blank">↗ Concept Name (Wikipedia)</a>
+          <a class="link-pill amber" href="https://www.amazon.com/s?k=BOOK+TITLE" target="_blank">📚 Book Title — Amazon</a>
+          <a class="link-pill green" href="https://www.youtube.com/..." target="_blank">▶ Related Video</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────
+      CHAPTER 2 — copy from above
+    ───────────────────────────────────────── -->
+    <section class="chapter" id="ch2">
+      <div class="ch-header">
+        <span class="ch-num">CH 02</span>
+        <span class="ch-time">10:00 – 20:00</span>
+        <a class="ch-yt" href="VIDEO_URL&t=600s" target="_blank">▶ Jump to segment</a>
+      </div>
+      <h2>Chapter Two: Your Title Here</h2>
+      <div class="prose">
+        <p>Chapter content goes here...</p>
+      </div>
+    </section>
+
+    <!-- Add more chapters by copying the block above -->
+
+    <!-- ══ CLOSING NOTE ══════════════════════ -->
+    <section class="chapter" style="border-top: 1px solid var(--border2); padding-top: 40px;">
+      <div class="ch-header" style="border-bottom-color: var(--border2);">
+        <span class="ch-num" style="color:var(--text-dim)">EDITOR</span>
+      </div>
+      <h2>Editor's Note</h2>
+      <div class="prose">
+        <p>Write a closing reflection: what to make of this, what's verified, what's speculative, 
+        why it matters. This is where your editorial voice comes through most clearly.</p>
+      </div>
+
+      <!-- All sources summary -->
+      <div class="link-cluster">
+        <div class="link-cluster-title">All Primary Sources</div>
+        <div class="link-row">
+          <a class="link-pill green" href="SOURCE_URL" target="_blank">▶ Original Source</a>
+          <!-- Add all Wikipedia, YouTube, paper links here -->
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end .page-wrapper -->
+
+</main>
+
+<!-- Footer injected by site.js — do not add manually -->
+
+<!-- Shared JS — always keep this at the bottom -->
+<script src="/js/site.js"></script>
+</body>
+</html>

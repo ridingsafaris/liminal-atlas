@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Liminal Atlas</title>
+  <meta name="description" content="About Liminal Atlas — a knowledge-sharing blog at the intersection of frontier physics, comparative religion, UAP research, and consciousness studies.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .about-hero { padding: 72px 0 48px; border-bottom: 1px solid var(--border); margin-bottom: 56px; }
+    .about-hero h1 { font-size: clamp(2rem,5vw,3rem); font-weight: 700; letter-spacing: -0.03em; color: var(--text-bright); margin-bottom: 20px; }
+    .about-hero h1 span { color: var(--blue-bright); }
+    .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; margin-bottom: 72px; }
+    .about-section { margin-bottom: 40px; }
+    .about-section h2 { font-size: 1.3rem; font-weight: 700; color: var(--text-bright); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .about-section p { font-size: 15px; line-height: 1.8; color: var(--text); margin-bottom: 14px; }
+    .about-section strong { color: var(--text-bright); }
+    .standards-list { list-style: none; }
+    .standards-list li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; line-height: 1.7; display: flex; gap: 12px; }
+    .standards-list li::before { content: '→'; color: var(--blue); flex-shrink: 0; font-family: var(--font-mono); }
+    .sidebar-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
+    .sidebar-card h3 { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em; color: var(--blue); text-transform: uppercase; margin-bottom: 12px; }
+    .sidebar-card p { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+    @media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="page-wrapper">
+    <div class="about-hero fade-up">
+      <div class="badge" style="margin-bottom: 20px;">About This Blog</div>
+      <h1>Liminal Atlas:<br><span>Not Credulity — Curiosity</span></h1>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <div class="about-section fade-up">
+          <h2>What This Is</h2>
+          <p>Liminal Atlas is a knowledge-sharing blog that takes seriously the questions mainstream institutions are too cautious — or too institutional — to engage with honestly. We cover <strong>frontier physics</strong>, <strong>comparative religion</strong>, <strong>UAP research</strong>, <strong>consciousness studies</strong>, and the places where these fields intersect in ways that demand attention.</p>
+          <p>Our format is the <strong>close reading</strong>: we take a podcast episode, a paper, a book, or an encounter narrative and unpack it systematically — with physics explainers, inline diagrams, links to every person mentioned on Wikipedia, and honest notes about what is verified and what is not.</p>
+          <p>We are not a conspiracy blog. We check primary sources. We link to the DIA FOIA documents, the actual patents, the peer-reviewed papers. When something is mainstream physics, we say so. When something is contested, we say so. When something is fringe, we say that too — and then we explain why it might still be worth understanding.</p>
+        </div>
+
+        <div class="about-section fade-up" id="standards">
+          <h2>Editorial Standards</h2>
+          <ul class="standards-list">
+            <li>Every factual claim links to a primary source — Wikipedia, arXiv, patent filings, or FOIA documents.</li>
+            <li>We distinguish between mainstream consensus, contested science, and speculation. These are always labelled.</li>
+            <li>We do not reproduce copyrighted material. We paraphrase dialogue and note where reconstructions are approximate.</li>
+            <li>We do not take money from anyone we write about. No sponsored content, no affiliate physics.</li>
+            <li>Amazon book links are for reader convenience. We have no affiliate relationship.</li>
+            <li>When we get something wrong, we correct it with a visible note, not a silent edit.</li>
+            <li>We are not anti-science. We are pro-rigour — including rigour about what science has and hasn't actually tested.</li>
+          </ul>
+        </div>
+
+        <div class="about-section fade-up" id="contact">
+          <h2>Contact &amp; Contributions</h2>
+          <p>If you have a correction, a source we missed, or a topic you'd like to see covered — reach out. If you're a researcher in one of the fields we cover and want to contribute a piece, we're interested.</p>
+          <p>We're also building a community for people who take these questions seriously. If that's you, stay tuned.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="sidebar-card fade-up">
+          <h3>Topics We Cover</h3>
+          <div class="tag-row" style="margin: 0;">
+            <span class="cat-pill physics">Physics</span>
+            <span class="cat-pill religion">Religion</span>
+            <span class="cat-pill uap">UAP</span>
+            <span class="cat-pill consciousness">Consciousness</span>
+            <span class="cat-pill biology">Biology</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card fade-up-1">
+          <h3>Format</h3>
+          <p>Every article is a <strong>close reading</strong>: a primary source (podcast, paper, book) broken into chapters, with physics explainers, person cards, inline diagrams, and a link cluster at the end of every section.</p>
+        </div>
+
+        <div class="sidebar-card fade-up-2">
+          <h3>Key Wikipedia Pages</h3>
+          <div style="display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+            <a class="link-pill" href="https://en.wikipedia.org/wiki/Maxwell%27s_equations" target="_blank" style="border-radius:4px;">↗ Maxwell's Equations</a>
+            <a class="link-pill" href="https://en.wikipedia.org/wiki/Superconductivity" target="_blank" style="border-radius:4px;">↗ Superconductivity</a>
+            <a class="link-pill" href="https://en.wikipedia.org/wiki/Zero-point_energy" target="_blank" style="border-radius:4px;">↗ Zero-Point Energy</a>
+            <a class="link-pill" href="https://en.wikipedia.org/wiki/General_relativity" target="_blank" style="border-radius:4px;">↗ General Relativity</a>
+            <a class="link-pill" href="https://en.wikipedia.org/wiki/Quantum_biology" target="_blank" style="border-radius:4px;">↗ Quantum Biology</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="/js/site.js"></script>
+</body>
+</html>
