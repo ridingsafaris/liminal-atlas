@@ -4,32 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aliens Taught Me Advanced Physics — Close Reading | Liminal Atlas</title>
-<meta name="description" content="A close reading of Dave Rossi's American Alchemy episode: extended electrodynamics, scalar waves, Ning Li, Salvatore Pais, DNA teleportation, and the ethics of suppressed physics.">
+<meta name="description" content="A close reading of Dave Rossi on American Alchemy: extended electrodynamics, scalar waves, Ning Li, Salvatore Pais, DNA teleportation, and suppressed physics.">
 <link rel="stylesheet" href="/css/style.css">
+<style>
+/* ── Article page layout ── */
+.article-hero {
+  position: relative; z-index: 1;
+  padding: 72px 24px 56px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+.article-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; letter-spacing: -0.03em;
+  color: var(--text-bright); line-height: 1.1; margin-bottom: 20px;
+}
+.article-hero h1 span { color: var(--blue-bright); }
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  font-family: var(--font-mono); font-size: 11px;
+  color: var(--text-dim); letter-spacing: 0.06em;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 12px 0; margin-bottom: 24px;
+}
+.hero-intro {
+  font-size: 17px; line-height: 1.8;
+  color: var(--text); max-width: 720px; margin-bottom: 24px;
+}
+.hero-intro strong { color: var(--text-bright); font-weight: 600; }
+
+/* ── Speaker section ── */
+.speakers-section {
+  position: relative; z-index: 1;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
+}
+.speakers-inner { max-width: var(--max-width); margin: 0 auto; }
+.speakers-label {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.25em; color: var(--blue);
+  text-transform: uppercase; margin-bottom: 24px;
+}
+.speakers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.speaker-card {
+  background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 20px;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.speaker-photo {
+  width: 72px; height: 72px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim); flex-shrink: 0;
+}
+.speaker-photo-placeholder {
+  width: 72px; height: 72px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 26px;
+}
+.speaker-name { font-size: 15px; font-weight: 700; color: var(--text-bright); margin-bottom: 2px; }
+.speaker-role {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.08em; color: var(--blue-bright);
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.speaker-bio { font-size: 13px; line-height: 1.65; color: var(--text-dim); margin-bottom: 10px; }
+.speaker-links { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* ── TOC wrapper ── */
+.toc-section {
+  position: relative; z-index: 1;
+  padding: 32px 24px;
+  max-width: var(--max-width); margin: 0 auto;
+}
+
+/* ── Article body ── */
+.article-body {
+  position: relative; z-index: 1;
+  max-width: var(--max-width); margin: 0 auto;
+  padding: 0 24px 100px;
+}
+
+/* ── Person card with photo ── */
+.person-card-photo {
+  background: var(--surface); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 18px 22px; margin: 20px 0;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.person-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim);
+  flex-shrink: 0; background: var(--surface2);
+}
+.person-avatar-placeholder {
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+}
+.person-card-content { flex: 1; min-width: 0; }
+.person-card-content .person-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px;
+}
+.person-card-content p { font-size: 14px; line-height: 1.7; }
+
+@media (max-width: 640px) {
+  .speakers-grid { grid-template-columns: 1fr; }
+  .speaker-card { flex-direction: column; }
+  .person-card-photo { flex-direction: column; }
+}
+</style>
 </head>
 <body>
 
 <!-- Header injected by site.js -->
 
 <main>
-<div class="hero">
-  <div class="hero-badge">Close Reading · American Alchemy Podcast · Feb 13 2025</div>
+
+<!-- ══ HERO ═══════════════════════════════════════════════ -->
+<div class="article-hero fade-up">
+  <div style="margin-bottom:16px; display:flex; gap:8px; flex-wrap:wrap;">
+    <span class="cat-pill physics">Physics</span>
+    <span class="cat-pill uap">UAP</span>
+    <span class="cat-pill consciousness">Consciousness</span>
+  </div>
+  <div class="badge" style="margin-bottom:20px;">Close Reading · American Alchemy · Feb 13 2025</div>
   <h1>When a <span>Blue Being</span><br>Taught a Builder<br>Advanced Physics</h1>
   <div class="hero-meta">
     <span>Guest: Dave Rossi (Dave Zed)</span>
     <span>Host: Jesse Michels</span>
     <span>Runtime: ~2hr</span>
     <span>Published: 13 Feb 2025</span>
+    <span>Reading time: ~25 min</span>
   </div>
-  <p class="hero-intro">Dave Rossi was a <strong>blue-collar construction worker and DoD contract engineer</strong> until a night encounter with a luminous blue plasma being ignited an obsessive self-directed study of <strong>extended electrodynamics, scalar waves, superconductors, and zero-point energy</strong>. This close reading unpacks the dialogue chapter by chapter — with physics explainers, inline diagrams, and links to every concept, person, and book he mentions.</p>
+  <p class="hero-intro">Dave Rossi was a <strong>blue-collar construction worker and DoD contract engineer</strong> until a night encounter with a luminous blue plasma being ignited an obsessive self-directed study of <strong>extended electrodynamics, scalar waves, superconductors, and zero-point energy</strong>. This close reading unpacks the dialogue chapter by chapter — physics explainers, inline diagrams, and links to every concept, person, and book mentioned.</p>
   <div class="btn-row">
-    <a class="yt-btn" href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" rel="noopener">▶ Watch Full Episode</a>
-    <a class="yt-btn-ghost" href="https://www.youtube.com/@generationzed4767" target="_blank" rel="noopener">↗ Generation Zed Channel</a>
-    <a class="yt-btn-ghost" href="https://www.jesse-michels.com/" target="_blank" rel="noopener">↗ Jesse Michels</a>
+    <a class="btn btn-primary" href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank" rel="noopener">&#9654; Watch Full Episode</a>
+    <a class="btn btn-ghost" href="https://www.youtube.com/@generationzed4767" target="_blank" rel="noopener">&#8599; Generation Zed Channel</a>
+    <a class="btn btn-ghost" href="https://www.jesse-michels.com/" target="_blank" rel="noopener">&#8599; Jesse Michels</a>
   </div>
 </div>
 
-<div class="toc">
+<!-- ══ SPEAKER BIOS ════════════════════════════════════════ -->
+<div class="speakers-section fade-up-1">
+  <div class="speakers-inner">
+    <div class="speakers-label">About the Speakers</div>
+    <div class="speakers-grid">
+
+      <div class="speaker-card">
+        <div class="speaker-photo-placeholder">&#128100;</div>
+        <div>
+          <div class="speaker-name">Dave Rossi <span style="font-weight:400;color:var(--text-dim);font-size:13px;">(Dave Zed)</span></div>
+          <div class="speaker-role">Guest &#183; Independent Researcher</div>
+          <p class="speaker-bio">Former construction worker and DoD contract engineer in microelectronics. Founder of <strong>SAALT LLC</strong> (advanced propulsion, zero-point energy, consciousness research) and host of the <strong>Generation Zed Podcast</strong>. Following an anomalous encounter with a blue plasma-like entity, became a self-taught investigator of extended electrodynamics, superconductors, and scalar wave theory. His work attracted engagement from researchers affiliated with Hal Puthoff and Eric Davis.</p>
+          <div class="speaker-links">
+            <a class="link-pill green" href="https://www.youtube.com/@generationzed4767" target="_blank">&#9654; Generation Zed</a>
+            <a class="link-pill" href="https://twitter.com/PodcastZed" target="_blank">&#8599; Twitter/X</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="speaker-card">
+        <img class="speaker-photo"
+             src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg"
+             alt="Jesse Michels"
+             onerror="this.outerHTML='&lt;div class=&quot;speaker-photo-placeholder&quot;&gt;&#127908;&lt;/div&gt;'">
+        <div>
+          <div class="speaker-name">Jesse Michels</div>
+          <div class="speaker-role">Host &#183; American Alchemy</div>
+          <p class="speaker-bio">Filmmaker and podcast host. Creator of <strong>American Alchemy</strong>, exploring consciousness, frontier science, and unconventional thinkers. Former Thiel Capital. Known for long-form interviews with UAP researchers, physicists, and people at the edges of mainstream discourse. Guests have included David Grusch, Garry Nolan, and Jacques Vall&eacute;e.</p>
+          <div class="speaker-links">
+            <a class="link-pill green" href="https://www.youtube.com/@JesseMichels" target="_blank">&#9654; YouTube</a>
+            <a class="link-pill" href="https://www.jesse-michels.com/" target="_blank">&#8599; Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ TOC ════════════════════════════════════════════════ -->
+<div class="toc-section fade-up-1">
   <div class="toc-inner">
     <div class="toc-label">Contents</div>
     <div class="toc-grid">
@@ -38,7 +195,7 @@
       <a href="#ch3"><span class="toc-n">03</span>Longitudinal Scalar Waves<span class="toc-ts">14:10</span></a>
       <a href="#ch4"><span class="toc-n">04</span>EM Fields &amp; Space-Time<span class="toc-ts">18:33</span></a>
       <a href="#ch5"><span class="toc-n">05</span>Superconductors &amp; Gravity<span class="toc-ts">33:39</span></a>
-      <a href="#ch6"><span class="toc-n">06</span>Ning Li — The Missing Physicist<span class="toc-ts">42:43</span></a>
+      <a href="#ch6"><span class="toc-n">06</span>Ning Li &#8212; The Missing Physicist<span class="toc-ts">42:43</span></a>
       <a href="#ch7"><span class="toc-n">07</span>Salvatore Pais &amp; Navy Patents<span class="toc-ts">29:10</span></a>
       <a href="#ch8"><span class="toc-n">08</span>DNA Teleportation: Montagnier<span class="toc-ts">1:11:24</span></a>
       <a href="#ch9"><span class="toc-n">09</span>The Third Strand of DNA<span class="toc-ts">1:11:24</span></a>
@@ -47,65 +204,87 @@
   </div>
 </div>
 
-<div class="content">
-<div class="tags">
-  <span class="tag">Extended Electrodynamics</span><span class="tag">Scalar Waves</span><span class="tag">Superconductors</span><span class="tag">UAP Physics</span><span class="tag">Zero Point Energy</span><span class="tag">Contact Experiences</span><span class="tag">DNA &amp; EM Fields</span><span class="tag">Gravitomagnetism</span>
+<!-- ══ ARTICLE BODY ════════════════════════════════════════ -->
+<div class="article-body">
+
+<div class="tag-row fade-up-2" style="margin-bottom:40px;margin-top:8px;">
+  <span class="tag">Extended Electrodynamics</span><span class="tag">Scalar Waves</span>
+  <span class="tag">Superconductors</span><span class="tag">UAP Physics</span>
+  <span class="tag">Zero Point Energy</span><span class="tag">Contact Experiences</span>
+  <span class="tag">DNA &amp; EM Fields</span><span class="tag">Gravitomagnetism</span>
 </div>
 
 <!-- CH 1 -->
 <section class="chapter" id="ch1">
   <div class="ch-header">
-    <span class="ch-num">CH 01</span><span class="ch-time">00:00 – 11:40</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=0s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 01</span><span class="ch-time">00:00 &#8211; 11:40</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=0s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>The Blue Being: From Concrete to Quantum</h2>
-  <div class="prose"><p>Dave Rossi — who goes by "Dave Zed" — was a construction worker and DoD contract engineer in microelectronics before a single night changed his intellectual trajectory entirely. His story doesn't begin with a textbook; it begins with an anomalous encounter that he describes with the directness of someone who has clearly told it many times and is still unsure what it means.</p></div>
+  <div class="prose">
+    <p>Dave Rossi was a construction worker and DoD contract engineer in microelectronics before a single night changed his intellectual trajectory. His story doesn&#8217;t begin with a textbook &#8212; it begins with an anomalous encounter that he describes with the directness of someone who has told it many times and is still unsure what it means.</p>
+  </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~01:33</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~01:33</div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"Tell me about the encounter — what actually happened?"</div>
+      <div class="d-text">&#8220;Tell me about the encounter &#8212; what actually happened?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"I woke up and there was this tall blue — it was like a plasma being, like a blue plasmatic form, standing at the foot of my bed. It wasn't threatening. It was almost like it was showing me something. After that I couldn't stop. I had to know. I started buying textbooks, reading Maxwell, reading Tesla. I was obsessed. I couldn't explain what happened to me, so I went looking for a framework that could."</div>
+      <div class="d-text">&#8220;I woke up and there was this tall blue &#8212; it was like a plasma being, like a blue plasmatic form, standing at the foot of my bed. It wasn&#8217;t threatening. It was almost like it was showing me something. After that I couldn&#8217;t stop. I had to know. I started buying textbooks, reading Maxwell, reading Tesla. I was obsessed.&#8221;</div>
       <div class="d-note">Paraphrased from the episode. See YouTube timestamp ~01:33.</div>
     </div>
   </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~09:28 — Networking with insiders</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~09:28 &#8212; Networking with insiders</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"After I started putting my work out on the podcast, I started getting calls. People affiliated with Hal Puthoff's group. People connected to Eric Davis. They weren't dismissing what I was saying — they were engaging with it. That told me I was on to something, even if I couldn't yet articulate it completely."</div>
+      <div class="d-text">&#8220;After I started putting my work out on the podcast, I started getting calls. People affiliated with Hal Puthoff&#8217;s group. People connected to Eric Davis. They weren&#8217;t dismissing what I was saying &#8212; they were engaging with it.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"Defence people were listening to a construction worker's physics podcast?"</div>
+      <div class="d-text">&#8220;Defence people were listening to a construction worker&#8217;s physics podcast?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Yes. And that tells you something about the state of official physics. The academics aren't going to touch this. The outsiders are the ones moving it forward."</div>
+      <div class="d-text">&#8220;Yes. And that tells you something about the state of official physics. The academics aren&#8217;t going to touch this. The outsiders are the ones moving it forward.&#8221;</div>
     </div>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Hal Puthoff</span><span class="person-dates">b. 1936</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Harold_E._Puthoff" target="_blank">↗ Wikipedia</a><a class="ext-link" href="https://earthtech.org" target="_blank">↗ EarthTech.org</a></div>
-    <p>Stanford PhD electrical engineer and physicist. Director of the Institute for Advanced Studies at Austin, President of EarthTech International. Led remote viewing research at SRI for the CIA (1972–1995). Pioneer of zero-point energy and vacuum engineering theory. Advisor to AATIP — the Pentagon's UAP programme. His 1994 paper with Haisch and Rueda proposed inertia itself is a zero-point field Lorentz force — directly relevant to Rossi's mass-reduction framework.</p>
+  <div class="person-card-photo">
+    <div class="person-avatar-placeholder">&#128104;&#8205;&#128300;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Hal Puthoff</span>
+        <span class="person-dates">b. 1936</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Harold_E._Puthoff" target="_blank">&#8599; Wikipedia</a>
+        <a class="ext-link" href="https://earthtech.org" target="_blank">&#8599; EarthTech.org</a>
+      </div>
+      <p>Stanford PhD electrical engineer and physicist. Director of the Institute for Advanced Studies at Austin. Led remote viewing research at SRI for the CIA (1972&#8211;1995). Pioneer of zero-point energy theory. Advisor to AATIP &#8212; the Pentagon&#8217;s UAP programme. His 1994 paper with Haisch and Rueda proposed inertia itself is a zero-point field Lorentz force &#8212; directly relevant to Rossi&#8217;s mass-reduction framework.</p>
+    </div>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Eric W. Davis</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Eric_W._Davis" target="_blank">↗ Wikipedia</a><a class="ext-link" href="https://earthtech.org" target="_blank">↗ EarthTech</a></div>
-    <p>Astrophysicist at EarthTech International. Co-editor of <em>Frontiers of Propulsion Science</em> (AIAA, 2009) with Puthoff — a mainstream aerospace publication covering warp drives, wormholes, and vacuum energy propulsion. Testified to the U.S. Senate Armed Services Committee in 2021 on UAP materials analysis. Represents the credentialled insider layer of the same physics territory Rossi enters as an outsider.</p>
+  <div class="person-card-photo">
+    <div class="person-avatar-placeholder">&#128302;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Eric W. Davis</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Eric_W._Davis" target="_blank">&#8599; Wikipedia</a>
+        <a class="ext-link" href="https://earthtech.org" target="_blank">&#8599; EarthTech</a>
+      </div>
+      <p>Astrophysicist at EarthTech International. Co-editor of <em>Frontiers of Propulsion Science</em> (AIAA, 2009) with Puthoff. Testified to the U.S. Senate Armed Services Committee in 2021 on UAP materials analysis. Represents the credentialled insider layer of the same physics territory Rossi enters as an outsider.</p>
+    </div>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Links &amp; Resources</div>
     <div class="link-row">
-      <a class="link-pill green" href="https://www.youtube.com/@generationzed4767" target="_blank">▶ Generation Zed YouTube</a>
-      <a class="link-pill" href="https://earthtech.org/pubs/puthoff/" target="_blank">↗ Puthoff Publications — EarthTech</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=Frontiers+of+Propulsion+Science+Davis+Puthoff+AIAA" target="_blank">📚 Frontiers of Propulsion Science — Amazon</a>
+      <a class="link-pill green" href="https://www.youtube.com/@generationzed4767" target="_blank">&#9654; Generation Zed YouTube</a>
+      <a class="link-pill" href="https://earthtech.org/pubs/puthoff/" target="_blank">&#8599; Puthoff Publications &#8212; EarthTech</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=Frontiers+of+Propulsion+Science+Davis+Puthoff+AIAA" target="_blank">&#128218; Frontiers of Propulsion Science &#8212; Amazon</a>
     </div>
   </div>
 </section>
@@ -113,52 +292,51 @@
 <!-- CH 2 -->
 <section class="chapter" id="ch2">
   <div class="ch-header">
-    <span class="ch-num">CH 02</span><span class="ch-time">03:48 – 14:10</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=228s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 02</span><span class="ch-time">03:48 &#8211; 14:10</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=228s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Extended Electrodynamics: What Came After Maxwell</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~03:48 &amp; ~59:26 "Lorentz and the Baby in the Bathwater"</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~03:48 &amp; ~59:26 &#8220;Lorentz and the Baby in the Bathwater&#8221;</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"When Heaviside reformulated Maxwell's equations he threw out the scalar component. He threw out the baby with the bathwater. What we teach in physics today is not Maxwell's full equations. It's a reduced set. And when you put those terms back in, you get new physics — you get solutions that describe things we're actually seeing with UAP."</div>
+      <div class="d-text">&#8220;When Heaviside reformulated Maxwell&#8217;s equations he threw out the scalar component. He threw out the baby with the bathwater. What we teach in physics today is not Maxwell&#8217;s full equations. And when you put those terms back in, you get new physics &#8212; you get solutions that describe things we&#8217;re actually seeing with UAP.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"So the equations were simplified in a way that lost information?"</div>
+      <div class="d-text">&#8220;So the equations were simplified in a way that lost information?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Exactly. Maxwell had twenty equations in twenty unknowns. Heaviside and Gibbs reduced those to the four we use today. That's useful for engineering, but it discards the scalar potential's role as a real physical propagating thing. The Lorenz gauge condition enforces that. It's a mathematical assumption — not an experimental finding."</div>
+      <div class="d-text">&#8220;Exactly. Maxwell had twenty equations in twenty unknowns. Heaviside and Gibbs reduced those to the four we use today. Useful for engineering &#8212; but it discards the scalar potential as a real physical propagating thing. The Lorenz gauge condition enforces that. It&#8217;s a mathematical assumption &#8212; not an experimental finding.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"The Aharonov-Bohm effect proves that the potential fields are physically real, even in regions where E and B fields are zero. That experiment is not disputed. So why do we keep treating the scalar potential as a mathematical artefact with no physical consequence?"</div>
-      <div class="d-note">The Aharonov-Bohm effect (1959, confirmed experimentally) is genuine, mainstream physics. Its interpretation as support for scalar wave theory is Rossi's extension.</div>
+      <div class="d-text">&#8220;The Aharonov-Bohm effect proves the potential fields are physically real, even where E and B are zero. That experiment is not disputed. So why do we treat the scalar potential as a mathematical artefact?&#8221;</div>
+      <div class="d-note">The Aharonov-Bohm effect (confirmed 1986) is genuine mainstream physics. Its extension to scalar wave theory is Rossi&#8217;s interpretation.</div>
     </div>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">⚛</div><div class="sci-title">Physics Explainer: Maxwell → Heaviside → Extended Electrodynamics</div></div>
-    <p><strong>Maxwell (1865):</strong> Published electromagnetic theory as 20 equations in 20 unknowns, using quaternion mathematics. Scalar electric potential (φ) and magnetic vector potential (A) were first-class physical objects.</p>
-    <p><strong>Heaviside &amp; Gibbs (1880s):</strong> Reformulated into 4 modern vector equations. Applied the <em>Lorenz gauge condition</em> (∂φ/∂t + ∇·A = 0), which constrains the potentials in a way that eliminates longitudinal wave solutions from free space. This simplification is valid for all known laboratory phenomena.</p>
-    <p><strong>Extended electrodynamics (MCE):</strong> Removes or relaxes the gauge constraint. This generates additional "scalar longitudinal wave" (SLW) solutions. Proponents (Zohuri, Barrett, Bearden) argue these modes are physically real. Critics say they are mathematical degrees of freedom with no observable consequence — and that QED is the most precisely tested theory in history, leaving no room for such effects.</p>
-    <p><strong>The Aharonov-Bohm effect</strong> (Yakir Aharonov &amp; David Bohm, 1959; confirmed experimentally by Tonomura et al., 1986): An electron passing through a field-free region near a solenoid is phase-shifted by the magnetic vector potential A — even though B=0 in the region the electron travels. This proves potentials are physically real, not just mathematical conveniences. Rossi uses this as a foundation for taking scalar potential physics seriously.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#9883;</div><div class="sci-title">Physics Explainer: Maxwell &#8594; Heaviside &#8594; Extended Electrodynamics</div></div>
+    <p><strong>Maxwell (1865):</strong> 20 equations in 20 unknowns using quaternion mathematics. Scalar potential (&#966;) and vector potential (A) were first-class physical objects.</p>
+    <p><strong>Heaviside &amp; Gibbs (1880s):</strong> Reformulated into 4 modern vector equations, applying the Lorenz gauge condition (&#8706;&#966;/&#8706;t + &#8711;&#183;A = 0). This eliminates longitudinal wave solutions from free space. Valid for all known laboratory phenomena.</p>
+    <p><strong>Extended electrodynamics (MCE):</strong> Removes or relaxes the gauge constraint, generating additional &#8220;scalar longitudinal wave&#8221; (SLW) solutions. As of 2025, no peer-reviewed independently replicated experiment confirms these. QED &#8212; tested to 1 part in 10&#185;&#178; &#8212; has no room for such effects.</p>
+    <p><strong>Aharonov-Bohm effect</strong> (Aharonov &amp; Bohm, 1959; confirmed Tonomura et al., 1986): An electron in a field-free region near a solenoid is phase-shifted by the magnetic vector potential A &#8212; even though B=0 there. Potentials have physical consequences. Rossi uses this as his foundation.</p>
   </div>
 
   <div class="diagram-wrap">
-    <div class="diagram-label">Fig 1 — From Maxwell's 20 Equations to Heaviside's 4: What Was Removed</div>
+    <div class="diagram-label">Fig 1 &#8212; From Maxwell&#8217;s 20 Equations to Heaviside&#8217;s 4: What Was Removed</div>
     <svg viewBox="0 0 740 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
       <rect x="10" y="20" width="210" height="160" rx="6" fill="#0e0f1a" stroke="#3b82f6" stroke-width="1.5"/>
       <text x="115" y="14" text-anchor="middle" fill="#3b82f6" font-size="10" font-family="'IBM Plex Mono',monospace" letter-spacing="1">MAXWELL 1865</text>
-      <text x="115" y="56" text-anchor="middle" fill="#60a5fa" font-size="28" font-weight="700" font-family="Inter,sans-serif">20</text>
+      <text x="115" y="56" text-anchor="middle" fill="#60a5fa" font-size="28" font-weight="700">20</text>
       <text x="115" y="76" text-anchor="middle" fill="#5a5d7a" font-size="10">equations in 20 unknowns</text>
-      <text x="115" y="100" text-anchor="middle" fill="#c9cad8" font-size="11">Scalar potential φ ✓</text>
-      <text x="115" y="118" text-anchor="middle" fill="#c9cad8" font-size="11">Vector potential A ✓</text>
-      <text x="115" y="136" text-anchor="middle" fill="#c9cad8" font-size="11">Quaternion math ✓</text>
+      <text x="115" y="100" text-anchor="middle" fill="#c9cad8" font-size="11">Scalar potential &#966; &#10003;</text>
+      <text x="115" y="118" text-anchor="middle" fill="#c9cad8" font-size="11">Vector potential A &#10003;</text>
+      <text x="115" y="136" text-anchor="middle" fill="#c9cad8" font-size="11">Quaternion math &#10003;</text>
       <text x="115" y="162" text-anchor="middle" fill="#22c55e" font-size="10">Longitudinal modes: included</text>
-
       <path d="M228 100 L330 100" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a1)"/>
       <text x="279" y="90" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="'IBM Plex Mono',monospace">Heaviside / Gibbs</text>
       <text x="279" y="102" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="'IBM Plex Mono',monospace">+ Lorenz gauge</text>
@@ -166,16 +344,14 @@
         <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/></marker>
         <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/></marker>
       </defs>
-
       <rect x="338" y="20" width="190" height="160" rx="6" fill="#0e0f1a" stroke="#3b82f6" stroke-width="1.5"/>
       <text x="433" y="14" text-anchor="middle" fill="#3b82f6" font-size="10" font-family="'IBM Plex Mono',monospace" letter-spacing="1">HEAVISIDE 1880s</text>
-      <text x="433" y="56" text-anchor="middle" fill="#60a5fa" font-size="28" font-weight="700" font-family="Inter,sans-serif">4</text>
+      <text x="433" y="56" text-anchor="middle" fill="#60a5fa" font-size="28" font-weight="700">4</text>
       <text x="433" y="76" text-anchor="middle" fill="#5a5d7a" font-size="10">vector equations</text>
-      <text x="433" y="100" text-anchor="middle" fill="#c9cad8" font-size="11">∇·E = ρ/ε₀</text>
-      <text x="433" y="118" text-anchor="middle" fill="#c9cad8" font-size="11">∇·B = 0</text>
-      <text x="433" y="136" text-anchor="middle" fill="#c9cad8" font-size="11">∇×E = −∂B/∂t</text>
+      <text x="433" y="100" text-anchor="middle" fill="#c9cad8" font-size="11">&#8711;&#183;E = &#961;/&#949;&#8320;</text>
+      <text x="433" y="118" text-anchor="middle" fill="#c9cad8" font-size="11">&#8711;&#183;B = 0</text>
+      <text x="433" y="136" text-anchor="middle" fill="#c9cad8" font-size="11">&#8711;&#215;E = &#8722;&#8706;B/&#8706;t</text>
       <text x="433" y="162" text-anchor="middle" fill="#ef4444" font-size="10">Longitudinal modes: removed</text>
-
       <path d="M538 100 L580 100" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a2)"/>
       <rect x="588" y="40" width="145" height="120" rx="5" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.3)" stroke-width="1" stroke-dasharray="4,3"/>
       <text x="660" y="62" text-anchor="middle" fill="#ef4444" font-size="9" font-family="'IBM Plex Mono',monospace" letter-spacing="1">DISCARDED</text>
@@ -183,24 +359,34 @@
       <text x="660" y="98" text-anchor="middle" fill="#5a5d7a" font-size="10">as physical fields</text>
       <text x="660" y="114" text-anchor="middle" fill="#5a5d7a" font-size="10">Longitudinal EM modes</text>
       <text x="660" y="130" text-anchor="middle" fill="#5a5d7a" font-size="10">Quaternion terms</text>
-      <text x="660" y="148" text-anchor="middle" fill="#5a5d7a" font-size="10">"Cold" electricity</text>
+      <text x="660" y="148" text-anchor="middle" fill="#5a5d7a" font-size="10">&#8220;Cold&#8221; electricity</text>
     </svg>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">James Clerk Maxwell</span><span class="person-dates">1831–1879</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank">↗ Wikipedia</a></div>
-    <p>Scottish physicist whose 1865 unified electromagnetic theory is among the greatest achievements in the history of physics — ranking with Newton and Einstein. Einstein kept Maxwell's portrait on his study wall. His original 20-equation formulation, in quaternion mathematics, is the starting point for every extended electrodynamics argument. The simplified Heaviside version is what is taught universally today.</p>
+  <div class="person-card-photo">
+    <img class="person-avatar"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/James_Clerk_Maxwell.png/440px-James_Clerk_Maxwell.png"
+         alt="James Clerk Maxwell"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="person-avatar-placeholder" style="display:none;">&#9889;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">James Clerk Maxwell</span>
+        <span class="person-dates">1831&#8211;1879</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank">&#8599; Wikipedia</a>
+      </div>
+      <p>Scottish physicist whose 1865 unified electromagnetic theory ranks alongside Newton and Einstein. Einstein kept Maxwell&#8217;s portrait on his study wall. His original 20-equation quaternion formulation is the starting point for every extended electrodynamics argument. The simplified Heaviside version is what is taught universally today.</p>
+    </div>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Physics Concepts &amp; Further Reading</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Maxwell%27s_equations" target="_blank">↗ Maxwell's Equations (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Aharonov%E2%80%93Bohm_effect" target="_blank">↗ Aharonov-Bohm Effect</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Lorenz_gauge_condition" target="_blank">↗ Lorenz Gauge Condition</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Oliver_Heaviside" target="_blank">↗ Oliver Heaviside</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=Scalar+Wave+Driven+Energy+Applications+Zohuri" target="_blank">📚 Scalar Wave Energy Applications — Zohuri</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=advanced+electromagnetism+barrett" target="_blank">📚 Advanced Electromagnetism — Barrett</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Maxwell%27s_equations" target="_blank">&#8599; Maxwell&#8217;s Equations (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Aharonov%E2%80%93Bohm_effect" target="_blank">&#8599; Aharonov-Bohm Effect</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Lorenz_gauge_condition" target="_blank">&#8599; Lorenz Gauge Condition</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Oliver_Heaviside" target="_blank">&#8599; Oliver Heaviside</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=Scalar+Wave+Driven+Energy+Applications+Zohuri" target="_blank">&#128218; Scalar Wave Energy &#8212; Zohuri</a>
     </div>
   </div>
 </section>
@@ -208,44 +394,41 @@
 <!-- CH 3 -->
 <section class="chapter" id="ch3">
   <div class="ch-header">
-    <span class="ch-num">CH 03</span><span class="ch-time">14:10 – 18:33</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=850s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 03</span><span class="ch-time">14:10 &#8211; 18:33</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=850s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Longitudinal Scalar Waves: The Slinky Model</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~14:10</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~14:10</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Think of a slinky. You compress it and release — the wave travels in the same direction as the disturbance. That's longitudinal. Regular EM waves are transverse — the field oscillates perpendicular to travel. What scalar waves do is propagate that compression through the potential field itself — not the E or B field. Tesla was doing this. He called them ground waves. He was sending energy through the earth longitudinally."</div>
+      <div class="d-text">&#8220;Think of a slinky. You compress it and release &#8212; the wave travels in the same direction as the disturbance. That&#8217;s longitudinal. Regular EM waves are transverse &#8212; the field oscillates perpendicular to travel. Scalar waves propagate that compression through the potential field itself &#8212; not the E or B field. Tesla was doing this. He was sending energy through the earth longitudinally.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"And you think this connects to UAP propulsion?"</div>
+      <div class="d-text">&#8220;And this connects to UAP propulsion?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Absolutely. If you can manipulate the scalar potential — the A field, the phi field — you're interacting with the geometry of space itself. You're not burning fuel. You're surfing a potential gradient. That's what the UAP are doing."</div>
+      <div class="d-text">&#8220;Absolutely. If you can manipulate the scalar potential &#8212; the A field, the phi field &#8212; you&#8217;re interacting with the geometry of space itself. You&#8217;re not burning fuel. You&#8217;re surfing a potential gradient. That&#8217;s what the UAP are doing.&#8221;</div>
     </div>
   </div>
 
   <div class="diagram-wrap">
-    <div class="diagram-label">Fig 2 — Transverse vs. Longitudinal Wave Propagation</div>
+    <div class="diagram-label">Fig 2 &#8212; Transverse vs. Longitudinal Wave Propagation</div>
     <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
-      <text x="20" y="22" fill="#3b82f6" font-size="11" font-weight="600">TRANSVERSE WAVE</text>
-      <text x="20" y="36" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">Standard EM (light, radio) — oscillation ⊥ direction of travel</text>
+      <text x="20" y="22" fill="#3b82f6" font-size="11" font-weight="600">TRANSVERSE WAVE &#8212; Standard EM (light, radio)</text>
+      <text x="20" y="36" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">oscillation &#8869; direction of travel</text>
       <path d="M20 75 C60 38,100 38,140 75 C180 112,220 112,260 75 C300 38,340 38,380 75 C420 112,460 112,500 75 C540 38,580 38,620 75" fill="none" stroke="#3b82f6" stroke-width="2"/>
       <path d="M20 75 L660 75" stroke="#1c1e2e" stroke-width="1"/>
-      <path d="M640 75 L670 75" stroke="#60a5fa" stroke-width="2" marker-end="url(#t1)"/>
+      <path d="M640 75 L668 75" stroke="#60a5fa" stroke-width="2" marker-end="url(#t1)"/>
       <defs>
         <marker id="t1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#60a5fa"/></marker>
         <marker id="t2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#22c55e"/></marker>
       </defs>
-      <text x="675" y="79" fill="#60a5fa" font-size="10">→</text>
-
-      <text x="20" y="140" fill="#22c55e" font-size="11" font-weight="600">LONGITUDINAL WAVE</text>
-      <text x="20" y="154" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">Scalar / Tesla / Sound — oscillation ∥ direction of travel</text>
-      <!-- slinky bars -->
+      <text x="20" y="140" fill="#22c55e" font-size="11" font-weight="600">LONGITUDINAL WAVE &#8212; Scalar / Tesla / Sound</text>
+      <text x="20" y="154" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">oscillation &#8741; direction of travel (compression &amp; rarefaction)</text>
       <rect x="20" y="168" width="12" height="36" rx="2" fill="#22c55e" opacity="0.8"/>
       <rect x="46" y="168" width="5" height="36" rx="2" fill="#22c55e" opacity="0.35"/>
       <rect x="64" y="168" width="12" height="36" rx="2" fill="#22c55e" opacity="0.8"/>
@@ -271,32 +454,39 @@
       <rect x="504" y="168" width="12" height="36" rx="2" fill="#22c55e" opacity="0.8"/>
       <rect x="530" y="168" width="5" height="36" rx="2" fill="#22c55e" opacity="0.35"/>
       <rect x="548" y="168" width="12" height="36" rx="2" fill="#22c55e" opacity="0.8"/>
-      <rect x="574" y="168" width="5" height="36" rx="2" fill="#22c55e" opacity="0.35"/>
-      <rect x="592" y="168" width="12" height="36" rx="2" fill="#22c55e" opacity="0.8"/>
-      <path d="M618 186 L660 186" stroke="#22c55e" stroke-width="2" marker-end="url(#t2)"/>
-      <text x="20" y="222" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">dense → sparse → dense → sparse — compression travels →</text>
+      <path d="M572 186 L630 186" stroke="#22c55e" stroke-width="2" marker-end="url(#t2)"/>
+      <text x="20" y="222" fill="#5a5d7a" font-size="9" font-family="'IBM Plex Mono',monospace">dense &#8594; sparse &#8594; dense &#8594; sparse &#8212; compression travels in direction of wave &#8594;</text>
     </svg>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">〜</div><div class="sci-title">Current Scientific Status of Scalar Waves</div></div>
-    <p>Longitudinal waves are <strong>real and undisputed</strong> in acoustics (sound waves in air), seismology (P-waves), and plasma physics (Langmuir / plasma waves, Birkeland currents). These are well-understood phenomena. The controversy is specifically about <em>longitudinal electromagnetic waves propagating in free space</em> — a solution allowed by unconstrained Maxwell equations but excluded in standard theory via the gauge condition.</p>
-    <p>As of 2025, no peer-reviewed, independently replicated experiment has demonstrated free-space EM longitudinal wave propagation. Theoretical frameworks exist — papers by Bahman Zohuri, Konstantin Meyl, and others appear in journals. But mainstream quantum electrodynamics (QED) — tested to 1 part in 10¹² — has no room for these effects, and all apparent demonstrations have been explained by conventional EM or experimental artefact.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#126;</div><div class="sci-title">Current Scientific Status of Scalar Waves</div></div>
+    <p>Longitudinal waves are <strong>real and undisputed</strong> in acoustics (sound), seismology (P-waves), and plasma physics (Langmuir waves). The controversy is specifically about <em>longitudinal EM waves in free space</em> &#8212; excluded by the Lorenz gauge in standard theory. As of 2025, no peer-reviewed, independently replicated experiment confirms free-space EM longitudinal wave propagation.</p>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Nikola Tesla</span><span class="person-dates">1856–1943</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">↗ Wikipedia</a><a class="wiki-link" href="https://en.wikipedia.org/wiki/Wardenclyffe_Tower" target="_blank">↗ Wardenclyffe Tower</a></div>
-    <p>Inventor of AC power systems, the induction motor, and foundational radio technology. In Colorado Springs experiments (1899) and the Wardenclyffe Tower project, Tesla claimed to have transmitted electrical power longitudinally through the earth as a "resonant ground wave" — not conventional EM radiation. He believed this demonstrated a mode of energy propagation missed by Hertzian wave theory. This is the historical anchor for all modern scalar wave claims.</p>
+  <div class="person-card-photo">
+    <img class="person-avatar"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/440px-N.Tesla.JPG"
+         alt="Nikola Tesla"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="person-avatar-placeholder" style="display:none;">&#9889;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Nikola Tesla</span>
+        <span class="person-dates">1856&#8211;1943</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">&#8599; Wikipedia</a>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Wardenclyffe_Tower" target="_blank">&#8599; Wardenclyffe Tower</a>
+      </div>
+      <p>Inventor of AC power systems, the induction motor, and foundational radio technology. In Colorado Springs experiments (1899) and via the Wardenclyffe Tower, Tesla claimed to have transmitted electrical power longitudinally through the earth as a resonant ground wave &#8212; not conventional EM radiation. This is the historical anchor for all modern scalar wave claims.</p>
+    </div>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Concepts &amp; Books</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Longitudinal_wave" target="_blank">↗ Longitudinal Waves (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Plasma_oscillation" target="_blank">↗ Plasma / Langmuir Waves</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Wardenclyffe_Tower" target="_blank">↗ Wardenclyffe Tower (Wikipedia)</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=tesla+colorado+springs+notes+bela+brankovic" target="_blank">📚 Tesla Colorado Springs Notes — Amazon</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+man+who+invented+the+twentieth+century+tesla" target="_blank">📚 Tesla: Man Who Invented the 20th Century</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Longitudinal_wave" target="_blank">&#8599; Longitudinal Waves (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Wardenclyffe_Tower" target="_blank">&#8599; Wardenclyffe Tower</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=tesla+colorado+springs+notes" target="_blank">&#128218; Tesla Colorado Springs Notes</a>
     </div>
   </div>
 </section>
@@ -304,45 +494,57 @@
 <!-- CH 4 -->
 <section class="chapter" id="ch4">
   <div class="ch-header">
-    <span class="ch-num">CH 04</span><span class="ch-time">18:33 – 33:39</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1113s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 04</span><span class="ch-time">18:33 &#8211; 33:39</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1113s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Curving Space-Time with Electromagnetism</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~20:54</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~20:54</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"High voltage does something to local geometry. When you run millions of volts combined with rotation and spin, you see effects that look gravitational. The Biefeld-Brown effect — Townsend Brown documented it, the Navy ran Project Winterhaven in the fifties. The craft moved in a vacuum. Ion wind couldn't account for it."</div>
+      <div class="d-text">&#8220;High voltage does something to local geometry. When you run millions of volts combined with rotation and spin, you see effects that look gravitational. The Biefeld-Brown effect &#8212; Townsend Brown documented it, the Navy ran Project Winterhaven in the fifties. The craft moved in a vacuum. Ion wind couldn&#8217;t account for it.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"Einstein spent the last decades of his life trying to unify EM and gravity and didn't get there — why do you think that is?"</div>
+      <div class="d-text">&#8220;Einstein spent decades trying to unify EM and gravity and didn&#8217;t get there &#8212; why?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Because the math he was using had already had the scalar terms removed. He's trying to unify two theories, one of which was already truncated. Put the scalar terms back in and you get closer. The unification is in the potential structure — not in the force field structure."</div>
+      <div class="d-text">&#8220;Because the math he was using already had the scalar terms removed. He&#8217;s trying to unify two theories, one of which was already truncated. Put the scalar terms back in and you get closer. The unification is in the potential structure &#8212; not in the force field structure.&#8221;</div>
     </div>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">🌀</div><div class="sci-title">Physics Explainer: EM Fields, Space-Time Curvature, and GPS Time Dilation</div></div>
-    <p><strong>Can EM fields curve space-time?</strong> Yes — in General Relativity. Einstein's field equations (1915) require that ALL forms of energy curve space-time, including electromagnetic field energy (via the stress-energy tensor). This is exact. But the practical curvature from any laboratory EM source is ~10⁴⁰ times too small to measure. Rossi argues that spin, rotation, and superconducting resonance create nonlinear amplification not captured in linearised approximations.</p>
-    <p><strong>Biefeld-Brown Effect:</strong> Thomas Townsend Brown (1920s–1950s) observed apparent thrust from high-voltage asymmetric capacitors. The U.S. Navy's Project Winterhaven (1952) investigated the effect. Most physicists attribute the effect to ionic airflow (ion wind) — but Brown conducted tests claiming thrust in vacuum. The debate is not fully settled in the literature.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#127744;</div><div class="sci-title">Physics Explainer: Can EM Fields Curve Space-Time?</div></div>
+    <p>Yes &#8212; in General Relativity. Einstein&#8217;s field equations (1915) require that ALL forms of energy curve space-time, including electromagnetic energy via the stress-energy tensor. The practical curvature from any laboratory EM source is however ~10&#8308;&#8304; times too small to measure. Rossi argues that spin, rotation, and superconducting resonance create nonlinear amplification beyond linearised approximations.</p>
+    <p><strong>Biefeld-Brown Effect:</strong> Thomas Townsend Brown (1920s&#8211;1950s) observed apparent thrust from high-voltage asymmetric capacitors. Navy&#8217;s Project Winterhaven (1952) investigated. Most physicists attribute it to ionic airflow &#8212; but Brown claimed thrust in vacuum. Not fully settled in the literature.</p>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Thomas Townsend Brown</span><span class="person-dates">1905–1985</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Thomas_Townsend_Brown" target="_blank">↗ Wikipedia</a><a class="wiki-link" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">↗ Biefeld-Brown Effect</a></div>
-    <p>American physicist and inventor who, from the 1920s, observed apparent gravitational/thrust effects from high-voltage asymmetric capacitors — the "Biefeld-Brown effect." Project Winterhaven (1952) proposed a manned disc aircraft based on his principles. He spent his career convinced he had discovered an EM-gravity link. The mechanism remains disputed.</p>
+  <div class="person-card-photo">
+    <img class="person-avatar"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/440px-Albert_Einstein_Head.jpg"
+         alt="Albert Einstein"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="person-avatar-placeholder" style="display:none;">&#129504;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Albert Einstein</span>
+        <span class="person-dates">1879&#8211;1955</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">&#8599; Wikipedia</a>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/General_relativity" target="_blank">&#8599; General Relativity</a>
+      </div>
+      <p>Author of Special (1905) and General (1915) Relativity. GR describes gravity as curvature of space-time caused by energy and mass &#8212; including EM energy. Spent his final decades trying to unify electromagnetism and gravity into a single field theory, without success. Rossi argues the failure was rooted in using the already-truncated Heaviside equations.</p>
+    </div>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Concepts &amp; Links</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/General_relativity" target="_blank">↗ General Relativity (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">↗ Biefeld-Brown Effect</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Einstein_field_equations" target="_blank">↗ Einstein Field Equations</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+hunt+for+zero+point+nick+cook" target="_blank">📚 The Hunt for Zero Point — Nick Cook</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/General_relativity" target="_blank">&#8599; General Relativity (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">&#8599; Biefeld-Brown Effect</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Einstein_field_equations" target="_blank">&#8599; Einstein Field Equations</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+hunt+for+zero+point+nick+cook" target="_blank">&#128218; The Hunt for Zero Point &#8212; Nick Cook</a>
     </div>
   </div>
 </section>
@@ -350,77 +552,67 @@
 <!-- CH 5 -->
 <section class="chapter" id="ch5">
   <div class="ch-header">
-    <span class="ch-num">CH 05</span><span class="ch-time">33:39 – 49:20</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2019s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 05</span><span class="ch-time">33:39 &#8211; 49:20</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2019s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Superconductors as Gravity Machines</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~33:39</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~33:39</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"A superconductor in a rotating state is doing something quantum mechanically that isn't described by standard physics. The Cooper pairs are in the same quantum state — Bose-Einstein condensation for fermions. Now if you spin that disc and the ionic lattice vibration locks into that rotation, the gravitomagnetic moment of those ions adds up coherently. You're not getting one ion's field — you're getting all of them, phase-locked."</div>
+      <div class="d-text">&#8220;A superconductor in a rotating state is doing something quantum mechanically that isn&#8217;t described by standard physics. The Cooper pairs are in the same quantum state &#8212; Bose-Einstein condensation for fermions. If you spin that disc and the ionic lattice vibration locks into that rotation, the gravitomagnetic moment of those ions adds up coherently. You&#8217;re not getting one ion&#8217;s field &#8212; you&#8217;re getting all of them, phase-locked.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"And Ning Li's work showed this was theoretically possible?"</div>
+      <div class="d-text">&#8220;And Ning Li&#8217;s work showed this was theoretically possible?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Her mathematics showed it. Her papers with Torr are in Physical Review — that's peer reviewed, that's the gold standard. She predicted you could get gravitomagnetic fields orders of magnitude stronger than anything classical physics expects. And then NASA funded her. The Army funded her. And then she went dark. That tells you everything."</div>
+      <div class="d-text">&#8220;Her mathematics showed it. Her papers with Torr are in Physical Review &#8212; peer reviewed, the gold standard. She predicted gravitomagnetic fields orders of magnitude stronger than classical physics expects. Then NASA funded her. The Army funded her. Then she went dark. That tells you everything.&#8221;</div>
     </div>
   </div>
 
   <div class="diagram-wrap">
-    <div class="diagram-label">Fig 3 — Rotating Superconductor: Proposed Gravitomagnetic Mechanism (Ning Li / Torr Model)</div>
+    <div class="diagram-label">Fig 3 &#8212; Rotating Superconductor: Proposed Gravitomagnetic Mechanism (Ning Li / Torr Model)</div>
     <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
       <defs>
         <marker id="g1" markerWidth="8" markerHeight="10" refX="3" refY="0" orient="auto"><path d="M0,8 L3,0 L6,8 z" fill="#22c55e"/></marker>
         <marker id="g2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/></marker>
       </defs>
-      <!-- Test mass -->
       <rect x="300" y="12" width="100" height="22" rx="3" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.35)" stroke-width="1"/>
       <text x="350" y="26" text-anchor="middle" fill="#ef4444" font-size="10">test mass</text>
-      <text x="350" y="38" text-anchor="middle" fill="#5a5d7a" font-size="9">weight anomaly claimed: ~2% reduction</text>
-      <!-- Gravitomagnetic field arrow -->
+      <text x="350" y="38" text-anchor="middle" fill="#5a5d7a" font-size="9">~2% weight reduction claimed</text>
       <path d="M350 108 L350 42" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#g1)"/>
       <text x="362" y="70" fill="#22c55e" font-size="10">gravitomagnetic</text>
       <text x="362" y="82" fill="#22c55e" font-size="10">field (proposed)</text>
-      <!-- Disc top face -->
       <ellipse cx="350" cy="148" rx="155" ry="34" fill="#131525" stroke="#3b82f6" stroke-width="1.5"/>
       <text x="350" y="144" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="600">YBCO Superconducting Disc</text>
       <text x="350" y="159" text-anchor="middle" fill="#5a5d7a" font-size="9">cooled below Tc (~77K liquid nitrogen)</text>
-      <!-- Disc bottom -->
       <ellipse cx="350" cy="168" rx="155" ry="34" fill="#0e0f1a" stroke="#3b82f6" stroke-width="1"/>
-      <!-- Rotation -->
       <path d="M204 144 A150 28 0 0 1 290 120" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#g2)"/>
-      <text x="178" y="132" fill="#f59e0b" font-size="10">spin ω</text>
-      <!-- Labels -->
+      <text x="178" y="132" fill="#f59e0b" font-size="10">spin &#969;</text>
       <text x="80" y="200" fill="#a78bfa" font-size="10">Cooper pairs</text>
       <text x="80" y="214" fill="#5a5d7a" font-size="9">(BEC of electron pairs)</text>
       <text x="510" y="200" fill="#3b82f6" font-size="10">Ionic lattice</text>
       <text x="510" y="214" fill="#5a5d7a" font-size="9">coherently aligned ions</text>
-      <!-- Key equation -->
-      <text x="350" y="235" text-anchor="middle" fill="#5a5d7a" font-size="9">Applied AC B-field → induces ionic spin → collective gravitomagnetic moment → gravity-like field above disc</text>
-      <text x="350" y="250" text-anchor="middle" fill="#f59e0b" font-size="9">Ning Li &amp; Torr (Phys Rev D, 1991) · Podkletnov (1992) · NASA Marshall replication attempts (all failed)</text>
+      <text x="350" y="245" text-anchor="middle" fill="#f59e0b" font-size="9">Ning Li &amp; Torr (Phys Rev D, 1991) &#183; Podkletnov (1992) &#183; NASA Marshall replication attempts (all failed)</text>
     </svg>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">🧲</div><div class="sci-title">Physics Explainer: Superconductivity, BCS Theory &amp; Gravitomagnetism</div></div>
-    <p><strong>Superconductivity:</strong> Discovered by Heike Kamerlingh Onnes (1911). Below a critical temperature Tc, certain materials conduct with zero resistance and expel magnetic fields (Meissner effect). <strong>BCS Theory</strong> (Bardeen, Cooper, Schrieffer, 1957; Nobel 1972): Cooper pairs of electrons form via lattice phonon interaction and condense into a single quantum state — a Bose-Einstein condensate of fermion pairs.</p>
-    <p><strong>Gravitomagnetism / Frame-dragging:</strong> A real prediction of General Relativity. A rotating mass drags space-time around it (Lense-Thirring effect). Confirmed by NASA's Gravity Probe B (2011) for Earth's rotation. The effect is ~10⁻¹⁴ rad/s for Earth — unmeasurably small for laboratory masses.</p>
-    <p>Ning Li's proposal: coherently rotating ions in a superconducting lattice could produce a <em>collective gravitomagnetic moment</em> amplified by quantum coherence — potentially orders of magnitude beyond Lense-Thirring predictions. A 2010 DIA analysis found the predicted effects would be ~10²⁰ times smaller than Li and Torr claimed.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#129522;</div><div class="sci-title">Physics Explainer: Superconductivity, BCS Theory &amp; Gravitomagnetism</div></div>
+    <p><strong>Superconductivity</strong> (Kamerlingh Onnes, 1911): Below Tc, materials conduct with zero resistance and expel magnetic fields (Meissner effect). <strong>BCS Theory</strong> (Bardeen, Cooper, Schrieffer, Nobel 1972): Cooper pairs condense into a single quantum state.</p>
+    <p><strong>Frame-dragging / Gravitomagnetism:</strong> A real GR prediction, confirmed by Gravity Probe B (NASA, 2011). For laboratory masses the effect is unmeasurably small. Ning Li&#8217;s proposal: coherently rotating ions in a superconducting lattice amplify gravitomagnetic fields enormously via quantum coherence. A 2010 DIA analysis found the effects would be ~10&#178;&#8304; times smaller than Li and Torr claimed.</p>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Links</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Superconductivity" target="_blank">↗ Superconductivity (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/BCS_theory" target="_blank">↗ BCS Theory</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Frame-dragging" target="_blank">↗ Frame-Dragging (Lense-Thirring)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Gravity_Probe_B" target="_blank">↗ Gravity Probe B</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=superfluid+bose+einstein+condensate+physics" target="_blank">📚 Bose-Einstein Condensation — Amazon</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Superconductivity" target="_blank">&#8599; Superconductivity (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/BCS_theory" target="_blank">&#8599; BCS Theory</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Frame-dragging" target="_blank">&#8599; Frame-Dragging (Lense-Thirring)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Gravity_Probe_B" target="_blank">&#8599; Gravity Probe B</a>
     </div>
   </div>
 </section>
@@ -429,35 +621,44 @@
 <section class="chapter" id="ch6">
   <div class="ch-header">
     <span class="ch-num">CH 06</span><span class="ch-time">42:43</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2563s" target="_blank">▶ Jump to segment</a>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=2563s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Ning Li: The Anti-Gravity Pioneer Who Went Dark</h2>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Dr. Ning Li</span><span class="person-dates">1943–2021</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">↗ Wikipedia</a><a class="ext-link" href="https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/" target="_blank">↗ Huntsville Business Journal 2023</a><a class="ext-link" href="https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170046/" target="_blank">↗ DIA FOIA Report</a></div>
-    <p>Chinese-American physicist, University of Alabama in Huntsville (UAH). Co-authored peer-reviewed papers with Douglas Torr in Physical Review D and Physical Review B (1991–1993) proposing rotating superconductors could generate anomalously strong gravitomagnetic fields. Work attracted NASA Marshall Space Flight Center and U.S. Army funding. Left UAH 1999 to found <strong>AC Gravity LLC</strong>. Received $448,970 DoD grant 2001. Stopped publishing after 2003 upon receiving a top-secret security clearance. Struck by vehicle on UAH campus 2014; suffered permanent brain damage, later Alzheimer's. Died 27 July 2021. Son confirmed in 2023 she had continued DoD research under classification.</p>
+  <div class="person-card-photo">
+    <div class="person-avatar-placeholder">&#128300;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Dr. Ning Li</span>
+        <span class="person-dates">1943&#8211;2021</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">&#8599; Wikipedia</a>
+        <a class="ext-link" href="https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/" target="_blank">&#8599; Huntsville Business Journal</a>
+        <a class="ext-link" href="https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170046/" target="_blank">&#8599; DIA FOIA Report</a>
+      </div>
+      <p>Chinese-American physicist at University of Alabama in Huntsville (UAH). Co-authored peer-reviewed papers with Douglas Torr in Physical Review D and B (1991&#8211;1993) proposing rotating superconductors could generate anomalously strong gravitomagnetic fields. Work attracted NASA Marshall Space Flight Center and U.S. Army funding. Left UAH 1999 to found <strong>AC Gravity LLC</strong>. Received $448,970 DoD grant 2001. Stopped publishing after 2003 upon receiving a top-secret security clearance. Struck by vehicle on campus 2014; suffered permanent brain damage, later Alzheimer&#8217;s. Died 27 July 2021. Son confirmed in 2023 she had continued DoD research under classification.</p>
+    </div>
   </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~42:43</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~42:43</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Ning Li's work is the foundation of this whole conversation. Peer-reviewed. Physical Review D. She and Torr show the math for how you get a gravitomagnetic field from a rotating superconductor that is orders of magnitude beyond what GR predicts for the same mass. And then NASA funds her. The Army funds her. She leaves UAH, forms a company. DoD funds the company. And then silence. Classified. You can't tell me that's not meaningful."</div>
+      <div class="d-text">&#8220;Ning Li&#8217;s work is the foundation of this whole conversation. Peer-reviewed. Physical Review D. She and Torr show the math for how you get a gravitomagnetic field from a rotating superconductor that is orders of magnitude beyond what GR predicts. Then NASA funds her. The Army funds her. She leaves UAH, forms a company. DoD funds the company. Then silence. Classified. You can&#8217;t tell me that&#8217;s not meaningful.&#8221;</div>
     </div>
   </div>
 
   <div class="skeptic-box">
-    <div class="skeptic-label">⚠ Mainstream Physics Note</div>
-    <p>A 2010 Defense Intelligence Agency report (available via FOIA at dia.mil) concluded that subsequent analysis found Li and Torr's predicted external gravitational effects were approximately <strong>20 orders of magnitude smaller</strong> than claimed — a discrepancy never publicly rebutted. No independent replication of anomalous gravitational effects from superconductors has succeeded. NASA, Boeing, and multiple university labs attempted to replicate Podkletnov's related experiments — all failed.</p>
+    <div class="skeptic-label">&#9888; Mainstream Physics Note</div>
+    <p>A 2010 Defense Intelligence Agency report (available via FOIA at dia.mil) concluded Li and Torr&#8217;s predicted external gravitational effects were approximately <strong>20 orders of magnitude smaller</strong> than claimed &#8212; never publicly rebutted. No independent replication of anomalous gravitational effects from superconductors has succeeded.</p>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Primary Sources</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">↗ Ning Li — Wikipedia</a>
-      <a class="link-pill" href="https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170046/" target="_blank">↗ DIA FOIA Report on Superconductors &amp; Gravity</a>
-      <a class="link-pill" href="https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/" target="_blank">↗ Huntsville Business Journal Investigation</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Eugene_Podkletnov" target="_blank">↗ Podkletnov — Wikipedia</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">&#8599; Ning Li &#8212; Wikipedia</a>
+      <a class="link-pill" href="https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170046/" target="_blank">&#8599; DIA FOIA Report</a>
+      <a class="link-pill" href="https://huntsvillebusinessjournal.com/news/2023/07/30/solving-the-mystery-of-huntsvilles-brilliant-scientist-disappearing/" target="_blank">&#8599; Huntsville Business Journal 2023</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Eugene_Podkletnov" target="_blank">&#8599; Podkletnov &#8212; Wikipedia</a>
     </div>
   </div>
 </section>
@@ -466,39 +667,46 @@
 <section class="chapter" id="ch7">
   <div class="ch-header">
     <span class="ch-num">CH 07</span><span class="ch-time">29:10 &amp; 1:08:30</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1750s" target="_blank">▶ Jump to segment</a>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=1750s" target="_blank">&#9654; Jump to segment</a>
   </div>
-  <h2>Salvatore Pais &amp; the Navy's Extraordinary Patents</h2>
+  <h2>Salvatore Pais &amp; the Navy&#8217;s Extraordinary Patents</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~29:10</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~29:10</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"The Pais patents — look at what they claim. Inertial mass reduction. A craft that engineers the fabric of reality at the most fundamental level. High-frequency gravitational wave generator. These are engineering patents. They have math. They reference real physics. And the Navy defended them — the patent office rejected the craft patent and the Navy CTO sent a letter saying 'this is operable and China is working on the same thing.' Patent gets granted. What does that tell you?"</div>
+      <div class="d-text">&#8220;The Pais patents &#8212; look at what they claim. Inertial mass reduction. A craft that engineers the fabric of reality at the most fundamental level. High-frequency gravitational wave generator. Engineering patents with math referencing real physics. And the Navy defended them &#8212; the CTO sent a letter saying &#8216;this is operable and China is working on the same thing.&#8217; Patent gets granted. What does that tell you?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"Either they believe it works, or they're signalling something."</div>
+      <div class="d-text">&#8220;Either they believe it works, or they&#8217;re signalling something.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Or both. The patents map exactly onto what UAP are observed to do — inertial mass reduction, high-frequency gravity manipulation, electromagnetic shielding. That's not a coincidence."</div>
+      <div class="d-text">&#8220;Or both. The patents map exactly onto what UAP are observed to do. That&#8217;s not a coincidence.&#8221;</div>
     </div>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Dr. Salvatore Cezar Pais</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">↗ Wikipedia</a><a class="ext-link" href="https://patents.google.com/patent/US10144532B2/en" target="_blank">↗ Inertial Mass Reduction Patent</a><a class="ext-link" href="https://patents.google.com/patent/US10322827B2/en" target="_blank">↗ Gravity Wave Generator Patent</a></div>
-    <p>Aerospace engineer at Naval Air Warfare Center Aircraft Division (NAWCAD). Filed Navy patents 2015–2019 including: an inertial mass reduction device (craft that "engineers the fabric of our reality at the most fundamental level"), a high-frequency gravitational wave generator, a plasma compression fusion device, and an EM field generator. Initial patent rejection was overturned after the Navy's CTO asserted operability and warned of Chinese competition. Navy spent ~$500k testing the "Pais Effect" — concluded it could not be demonstrated. His 2020 plasma compression fusion paper was accepted by IEEE Transactions on Plasma Science.</p>
+  <div class="person-card-photo">
+    <div class="person-avatar-placeholder">&#9875;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Dr. Salvatore Cezar Pais</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">&#8599; Wikipedia</a>
+        <a class="ext-link" href="https://patents.google.com/patent/US10144532B2/en" target="_blank">&#8599; Inertial Mass Reduction Patent</a>
+        <a class="ext-link" href="https://patents.google.com/patent/US10322827B2/en" target="_blank">&#8599; Gravity Wave Generator Patent</a>
+      </div>
+      <p>Aerospace engineer at Naval Air Warfare Center Aircraft Division (NAWCAD). Filed Navy patents 2015&#8211;2019 for: an inertial mass reduction device, a high-frequency gravitational wave generator, a plasma compression fusion device, and an EM field generator. Initial rejection overturned after the Navy&#8217;s CTO asserted operability and warned of Chinese competition. Navy spent ~$500k testing the &#8220;Pais Effect&#8221; &#8212; concluded it could not be demonstrated.</p>
+    </div>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Patent &amp; Concept Links</div>
     <div class="link-row">
-      <a class="link-pill" href="https://patents.google.com/patent/US10144532B2/en" target="_blank">↗ Craft: Inertial Mass Reduction (Google Patents)</a>
-      <a class="link-pill" href="https://patents.google.com/patent/US10322827B2/en" target="_blank">↗ High-Freq Gravitational Wave Generator</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Casimir_effect" target="_blank">↗ Casimir Effect (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">↗ Salvatore Pais — Wikipedia</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=advanced+propulsion+UAP+physics" target="_blank">📚 Advanced Propulsion Physics — Amazon</a>
+      <a class="link-pill" href="https://patents.google.com/patent/US10144532B2/en" target="_blank">&#8599; Craft: Inertial Mass Reduction (Google Patents)</a>
+      <a class="link-pill" href="https://patents.google.com/patent/US10322827B2/en" target="_blank">&#8599; High-Freq Gravitational Wave Generator</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Casimir_effect" target="_blank">&#8599; Casimir Effect (Wikipedia)</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=advanced+propulsion+UAP+physics" target="_blank">&#128218; Advanced Propulsion Physics &#8212; Amazon</a>
     </div>
   </div>
 </section>
@@ -506,47 +714,59 @@
 <!-- CH 8 -->
 <section class="chapter" id="ch8">
   <div class="ch-header">
-    <span class="ch-num">CH 08</span><span class="ch-time">1:11:24 – 1:24:37</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4284s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 08</span><span class="ch-time">1:11:24 &#8211; 1:24:37</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4284s" target="_blank">&#9654; Jump to segment</a>
   </div>
-  <h2>DNA Teleportation: Montagnier's Nobel Heresy</h2>
+  <h2>DNA Teleportation: Montagnier&#8217;s Nobel Heresy</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~1:18:04</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~1:18:04</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Montagnier — Nobel Prize winner for discovering HIV — showed that DNA produces electromagnetic signatures. That you can take those signatures, transmit them electronically to a different location, and have the DNA reconstruct in pure water. That's not homeopathy. That's physics. The scalar potential of the molecule imprinting on the water's quantum coherence structure. DNA is an antenna. It's an EM transducer."</div>
+      <div class="d-text">&#8220;Montagnier &#8212; Nobel Prize winner for discovering HIV &#8212; showed that DNA produces electromagnetic signatures. That you can take those signatures, transmit them electronically to a different location, and have the DNA reconstruct in pure water. That&#8217;s not homeopathy. That&#8217;s physics. DNA is an antenna. It&#8217;s an EM transducer.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"And you connect this to potential healing or biological modification technology?"</div>
+      <div class="d-text">&#8220;And you connect this to potential healing or biological modification technology?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"Without a doubt. If scalar fields interact with DNA electromagnetically — and Montagnier's work suggests they can — you have a mechanism for non-chemical biological modification. That could heal. It could also destroy. That's why it's classified."</div>
+      <div class="d-text">&#8220;Without a doubt. If scalar fields interact with DNA electromagnetically, you have a mechanism for non-chemical biological modification. That could heal. It could also destroy. That&#8217;s why it&#8217;s classified.&#8221;</div>
     </div>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Luc Montagnier</span><span class="person-dates">1932–2022</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Luc_Montagnier" target="_blank">↗ Wikipedia</a><a class="wiki-link" href="https://en.wikipedia.org/wiki/DNA_teleportation" target="_blank">↗ DNA Teleportation (Wikipedia)</a><a class="ext-link" href="https://arxiv.org/abs/1501.01620" target="_blank">↗ 2015 Paper (arXiv)</a></div>
-    <p>French virologist. Nobel Prize in Physiology or Medicine 2008 for co-discovery of HIV. In 2009 published papers claiming bacterial/viral DNA sequences emit low-frequency EM signals (500–3000 Hz) when highly diluted in water — signals persisting after DNA is filtered out. In 2011 claimed these signals could be transmitted electronically to a distant pure water sample, where PCR then produced DNA identical to the original. No independent lab has replicated this. He published in a journal of which he was editor-in-chief. Died 8 Feb 2022.</p>
+  <div class="person-card-photo">
+    <img class="person-avatar"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Luc_Montagnier-press_conference_Dec_06_2008-1.jpg/440px-Luc_Montagnier-press_conference_Dec_06_2008-1.jpg"
+         alt="Luc Montagnier"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="person-avatar-placeholder" style="display:none;">&#129516;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Luc Montagnier</span>
+        <span class="person-dates">1932&#8211;2022</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Luc_Montagnier" target="_blank">&#8599; Wikipedia</a>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/DNA_teleportation" target="_blank">&#8599; DNA Teleportation</a>
+        <a class="ext-link" href="https://arxiv.org/abs/1501.01620" target="_blank">&#8599; 2015 Paper (arXiv)</a>
+      </div>
+      <p>French virologist. Nobel Prize in Physiology or Medicine 2008 for co-discovery of HIV. In 2009 published papers claiming bacterial/viral DNA sequences emit low-frequency EM signals (500&#8211;3000 Hz) when highly diluted in water &#8212; persisting after DNA is filtered out. In 2011 claimed these signals could be transmitted electronically to a distant water sample, where PCR then produced identical DNA. No independent lab has replicated this. Died 8 Feb 2022.</p>
+    </div>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">🧬</div><div class="sci-title">Physics Explainer: Water Memory &amp; Quantum Biology</div></div>
-    <p>Montagnier's framework drew on physicist <strong>Emilio Del Giudice</strong>'s proposal that water forms <em>quantum coherence domains</em> — ~100nm ordered regions that can store EM information. This is related to "water memory" (Jacques Benveniste, 1988 — published in Nature, subsequently retracted after failed replication by a Nature team including James Randi).</p>
-    <p><strong>Quantum biology</strong> is a legitimate and active field: quantum coherence in photosynthesis (Fleming et al., 2007, confirmed), possible quantum effects in bird navigation via cryptochrome molecules, and tunnelling in enzyme catalysis. But whether liquid water at body temperature can store DNA's EM "signature" in a stable quantum coherent domain is a much larger claim — currently without independent experimental support.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#129516;</div><div class="sci-title">Physics Explainer: Water Memory &amp; Quantum Biology</div></div>
+    <p>Montagnier&#8217;s framework drew on physicist Emilio Del Giudice&#8217;s proposal that water forms <em>quantum coherence domains</em> &#8212; ~100nm ordered regions that store EM information. Related to &#8220;water memory&#8221; (Jacques Benveniste, 1988; retracted after failed Nature replication).</p>
+    <p><strong>Quantum biology</strong> is a legitimate active field: quantum coherence in photosynthesis (confirmed, Fleming et al., 2007), quantum effects in bird navigation. Whether water at body temperature stores DNA&#8217;s EM signature is a much larger claim &#8212; currently without independent support.</p>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Links &amp; Books</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/DNA_teleportation" target="_blank">↗ DNA Teleportation (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Water_memory" target="_blank">↗ Water Memory (Wikipedia)</a>
-      <a class="link-pill" href="https://arxiv.org/abs/1501.01620" target="_blank">↗ Montagnier 2015 paper (arXiv)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Quantum_biology" target="_blank">↗ Quantum Biology (Wikipedia)</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=Life+on+the+Edge+quantum+biology+mcfadden+al-khalili" target="_blank">📚 Life on the Edge: Quantum Biology — Amazon</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+field+lynne+mctaggart" target="_blank">📚 The Field — Lynne McTaggart</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/DNA_teleportation" target="_blank">&#8599; DNA Teleportation (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Water_memory" target="_blank">&#8599; Water Memory (Wikipedia)</a>
+      <a class="link-pill" href="https://arxiv.org/abs/1501.01620" target="_blank">&#8599; Montagnier 2015 paper (arXiv)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Quantum_biology" target="_blank">&#8599; Quantum Biology (Wikipedia)</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=Life+on+the+Edge+quantum+biology+mcfadden+al-khalili" target="_blank">&#128218; Life on the Edge: Quantum Biology</a>
     </div>
   </div>
 </section>
@@ -555,40 +775,39 @@
 <section class="chapter" id="ch9">
   <div class="ch-header">
     <span class="ch-num">CH 09</span><span class="ch-time">1:11:24</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4284s" target="_blank">▶ Jump to segment</a>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=4284s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>The Third Strand of DNA</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~1:11:24</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~1:11:24</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"There's research — some in the classified space — suggesting our DNA may have a third component. Not chemical. Electromagnetic. A field layer that encodes information beyond the base-pair sequence. If you can write to that field with the right EM frequencies — you can change biology without touching the molecule chemically."</div>
+      <div class="d-text">&#8220;There&#8217;s research &#8212; some in the classified space &#8212; suggesting our DNA may have a third component. Not chemical. Electromagnetic. A field layer that encodes information beyond the base-pair sequence. If you can write to that field with the right EM frequencies &#8212; you can change biology without touching the molecule chemically.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"This connects to the contact experience narrative around genetic modification?"</div>
+      <div class="d-text">&#8220;This connects to the contact experience narrative around genetic modification?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"It's consistent with it. If a non-human intelligence understands this field layer of biology — and we don't yet — then modification without surgery, without chemistry, becomes conceivable. That's what some experiencers describe. I'm not saying it's proven. I'm saying the physics allows it."</div>
+      <div class="d-text">&#8220;It&#8217;s consistent with it. I&#8217;m not saying it&#8217;s proven. I&#8217;m saying the physics allows it.&#8221;</div>
     </div>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">🔬</div><div class="sci-title">Biology Explainer: DNA Structure &amp; Triplex DNA</div></div>
-    <p><strong>Standard DNA:</strong> A double-stranded helix (Watson, Crick, Franklin, Wilkins — 1953). Two anti-parallel strands held by complementary base pairing (A-T, C-G). The base sequence encodes all genetic information. This is among the most robustly confirmed structures in all of science.</p>
-    <p><strong>Triplex DNA</strong> is a real, documented laboratory phenomenon (not speculative). A third strand of DNA or RNA can bind to the major groove of the double helix via <em>Hoogsteen base pairing</em>. Triplex structures are studied for gene silencing and potential cancer therapy. This is entirely different from the "electromagnetic third strand" Rossi describes, but the terminology overlap is worth noting.</p>
-    <p>An <em>electromagnetic informational component</em> of DNA — beyond the chemical molecule — appears in Montagnier's work, in Russian biophysicist Garjajev's "DNA as a biocomputer" claims (largely unverified), and in various contact experiencer narratives. It is not accepted in mainstream molecular biology.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#128300;</div><div class="sci-title">Biology Explainer: DNA Structure &amp; Triplex DNA</div></div>
+    <p><strong>Standard DNA:</strong> A double-stranded helix (Watson, Crick, Franklin, Wilkins &#8212; 1953). Two anti-parallel strands held by complementary base pairing (A-T, C-G). Among the most robustly confirmed structures in all of science.</p>
+    <p><strong>Triplex DNA</strong> is a real, documented laboratory phenomenon &#8212; a third strand of DNA or RNA can bind to the major groove of the double helix via Hoogsteen base pairing. Studied for gene silencing and cancer therapy. Entirely different from the &#8220;electromagnetic third strand&#8221; Rossi describes.</p>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Links</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/DNA" target="_blank">↗ DNA — Wikipedia</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Triplex_nucleic_acid" target="_blank">↗ Triplex DNA (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Rosalind_Franklin" target="_blank">↗ Rosalind Franklin — Wikipedia</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+double+helix+watson+crick" target="_blank">📚 The Double Helix — Watson</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/DNA" target="_blank">&#8599; DNA &#8212; Wikipedia</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Triplex_nucleic_acid" target="_blank">&#8599; Triplex DNA (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Rosalind_Franklin" target="_blank">&#8599; Rosalind Franklin &#8212; Wikipedia</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+double+helix+watson+crick" target="_blank">&#128218; The Double Helix &#8212; Watson</a>
     </div>
   </div>
 </section>
@@ -596,68 +815,78 @@
 <!-- CH 10 -->
 <section class="chapter" id="ch10">
   <div class="ch-header">
-    <span class="ch-num">CH 10</span><span class="ch-time">1:24:37 – 1:56:19</span>
-    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=5077s" target="_blank">▶ Jump to segment</a>
+    <span class="ch-num">CH 10</span><span class="ch-time">1:24:37 &#8211; 1:56:19</span>
+    <a class="ch-yt" href="https://www.youtube.com/watch?v=5OUzGygIrSw&t=5077s" target="_blank">&#9654; Jump to segment</a>
   </div>
   <h2>Time, Consciousness &amp; the Ethics of Power</h2>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~1:24:37</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~1:24:37</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"The same physics that gives you propulsion gives you surveillance. It gives you temporal displacement. If you can create a gravitational potential gradient locally — time runs differently inside it versus outside. That's not theory. That's GPS. GPS satellites correct for relativistic time dilation every single day. Scale it up. Intensify it. You have a time weapon."</div>
+      <div class="d-text">&#8220;The same physics that gives you propulsion gives you surveillance. It gives you temporal displacement. If you can create a gravitational potential gradient locally &#8212; time runs differently inside it versus outside. That&#8217;s not theory. That&#8217;s GPS. GPS satellites correct for relativistic time dilation every single day. Scale it up. Intensify it. You have a time weapon.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"And you think this is part of why knowledge is being suppressed?"</div>
+      <div class="d-text">&#8220;And you think this is part of why knowledge is being suppressed?&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"It's not suppression, it's control. There's a difference. The question is: who controls it? If a private group has time displacement technology — you've lost. You've already lost. The entire geopolitical order collapses. That's not conspiracy; that's game theory."</div>
+      <div class="d-text">&#8220;It&#8217;s not suppression, it&#8217;s control. If a private group has time displacement technology &#8212; you&#8217;ve lost. The entire geopolitical order collapses. That&#8217;s not conspiracy; that&#8217;s game theory.&#8221;</div>
     </div>
   </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">📼 Dialogue Excerpt · ~1:49:06 — Consciousness</div>
+    <div class="dialogue-header">&#128924; Dialogue Excerpt &#183; ~1:49:06 &#8212; Consciousness</div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"When you work at the boundary of space and time — at the zero-point level — you run into consciousness. It's not separable. The observer and the observed are entangled at that scale. Penrose and Hameroff are pointing at it with Orch-OR. But I think it goes deeper than microtubules. I think consciousness is in the structure of space-time itself."</div>
+      <div class="d-text">&#8220;When you work at the boundary of space and time &#8212; at the zero-point level &#8212; you run into consciousness. It&#8217;s not separable. The observer and the observed are entangled at that scale. Penrose and Hameroff are pointing at it with Orch-OR. But I think it goes deeper than microtubules. I think consciousness is in the structure of space-time itself.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker jesse">Jesse</div>
-      <div class="d-text">"That's a profoundly different physics worldview."</div>
+      <div class="d-text">&#8220;That&#8217;s a profoundly different physics worldview.&#8221;</div>
     </div>
     <div class="d-line">
       <div class="d-speaker rossi">Dave Rossi</div>
-      <div class="d-text">"It's the only worldview that makes sense of the data. Contact experiences. UAP behaviour. The response of biology to field effects. They're all pointing at the same thing: consciousness is primary, not epiphenomenal. Physics just hasn't caught up."</div>
+      <div class="d-text">&#8220;It&#8217;s the only worldview that makes sense of the data. Contact experiences. UAP behaviour. The response of biology to field effects. They&#8217;re all pointing at the same thing: consciousness is primary, not epiphenomenal. Physics just hasn&#8217;t caught up.&#8221;</div>
     </div>
   </div>
 
   <div class="sci-box">
-    <div class="sci-box-header"><div class="sci-icon">⏱</div><div class="sci-title">Physics Explainer: Time Dilation &amp; GPS — This Part Is Correct</div></div>
-    <p><strong>Time dilation</strong> is experimentally confirmed by both Special Relativity (moving clocks run slow) and General Relativity (clocks in stronger gravity run slow). GPS satellites orbit at ~20,200 km altitude in a weaker gravitational field. Their clocks run ~45 μs/day fast (GR) and ~7 μs/day slow (SR orbit velocity) — net: ~38 μs/day fast. If uncorrected, GPS position errors would accumulate at ~10 km/day. The correction runs continuously. Rossi's use of this as evidence that time can be affected by gravity manipulation is factually grounded. His extrapolation to "time weapons" is speculative.</p>
+    <div class="sci-box-header"><div class="sci-icon">&#9201;</div><div class="sci-title">Physics Explainer: Time Dilation &amp; GPS &#8212; This Part Is Factually Correct</div></div>
+    <p>GPS satellites orbit at ~20,200km in a weaker gravitational field. Their clocks run ~45 &#956;s/day fast (GR) and ~7 &#956;s/day slow (SR orbital velocity) &#8212; net: ~38 &#956;s/day fast. If uncorrected, GPS position errors accumulate at ~10 km/day. The correction runs continuously &#8212; one of the most practical demonstrations of General Relativity in everyday life. Rossi&#8217;s extrapolation to &#8220;time weapons&#8221; is speculative; the underlying physics is real.</p>
   </div>
 
-  <div class="person-card">
-    <div class="person-head"><span class="person-name">Roger Penrose &amp; Stuart Hameroff</span><a class="wiki-link" href="https://en.wikipedia.org/wiki/Roger_Penrose" target="_blank">↗ Penrose — Wikipedia</a><a class="wiki-link" href="https://en.wikipedia.org/wiki/Orchestrated_objective_reduction" target="_blank">↗ Orch-OR Theory</a></div>
-    <p>Penrose (Nobel Physics 2020, black holes) and Hameroff (anesthesiologist) developed Orchestrated Objective Reduction (Orch-OR): consciousness arises from quantum computations in microtubules within neurons, tied to an objective (non-observer-dependent) collapse of quantum superpositions linked to fundamental space-time geometry. Mainstream neuroscience is skeptical; it remains the most discussed serious non-computational theory of consciousness and is published in peer-reviewed journals.</p>
+  <div class="person-card-photo">
+    <img class="person-avatar"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Roger_Penrose-2005.jpg/440px-Roger_Penrose-2005.jpg"
+         alt="Roger Penrose"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <div class="person-avatar-placeholder" style="display:none;">&#127744;</div>
+    <div class="person-card-content">
+      <div class="person-head">
+        <span class="person-name">Roger Penrose &amp; Stuart Hameroff</span>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Roger_Penrose" target="_blank">&#8599; Penrose &#8212; Wikipedia</a>
+        <a class="wiki-link" href="https://en.wikipedia.org/wiki/Orchestrated_objective_reduction" target="_blank">&#8599; Orch-OR Theory</a>
+      </div>
+      <p>Penrose (Nobel Physics 2020, black holes) and Hameroff (anesthesiologist) developed Orchestrated Objective Reduction (Orch-OR): consciousness arises from quantum computations in microtubules within neurons, tied to an objective collapse of quantum superpositions linked to fundamental space-time geometry. Mainstream neuroscience is skeptical; it remains the most discussed serious non-computational theory of consciousness.</p>
+    </div>
   </div>
 
   <div class="pull-quote">
-    <blockquote>"These technologies are dual use in nature and their development is a forcing function for humanity's spiritual evolution."</blockquote>
-    <cite>— Dave Rossi, American Alchemy, February 2025</cite>
+    <blockquote>&#8220;These technologies are dual use in nature and their development is a forcing function for humanity&#8217;s spiritual evolution.&#8221;</blockquote>
+    <cite>&#8212; Dave Rossi, American Alchemy, February 2025</cite>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">Concepts &amp; Books</div>
     <div class="link-row">
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Time_dilation" target="_blank">↗ Time Dilation (Wikipedia)</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Global_Positioning_System#Relativity" target="_blank">↗ GPS &amp; Relativity</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Orchestrated_objective_reduction" target="_blank">↗ Orch-OR Consciousness Theory</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Hard_problem_of_consciousness" target="_blank">↗ Hard Problem of Consciousness</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=The+Emperor%27s+New+Mind+Penrose" target="_blank">📚 The Emperor's New Mind — Penrose</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=shadows+of+the+mind+penrose" target="_blank">📚 Shadows of the Mind — Penrose</a>
-      <a class="link-pill amber" href="https://www.amazon.com/s?k=the+conscious+universe+menas+kafatos" target="_blank">📚 The Conscious Universe — Kafatos</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Time_dilation" target="_blank">&#8599; Time Dilation (Wikipedia)</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Global_Positioning_System#Relativity" target="_blank">&#8599; GPS &amp; Relativity</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Orchestrated_objective_reduction" target="_blank">&#8599; Orch-OR Consciousness Theory</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Hard_problem_of_consciousness" target="_blank">&#8599; Hard Problem of Consciousness</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=The+Emperor%27s+New+Mind+Penrose" target="_blank">&#128218; The Emperor&#8217;s New Mind &#8212; Penrose</a>
+      <a class="link-pill amber" href="https://www.amazon.com/s?k=shadows+of+the+mind+penrose" target="_blank">&#128218; Shadows of the Mind &#8212; Penrose</a>
     </div>
   </div>
 </section>
@@ -669,35 +898,34 @@
   </div>
   <h2>What to Make of All This</h2>
   <div class="prose">
-    <p>Dave Rossi is not a credentialled physicist. His specific claims — scalar longitudinal waves, superconductor gravity effects, DNA teleportation, electromagnetic third strands — sit in contested, unverified, or outright rejected regions of the scientific map. Extended electrodynamics has peer-reviewed papers but no independently replicated experiments.</p>
-    <p>And yet every major figure he cites has made serious claims at the frontier of accepted knowledge. Ning Li's papers are in Physical Review. Montagnier won the Nobel Prize. Pais's patents were defended by the U.S. Navy. Penrose won the Nobel. The history of physics is a history of contested edges — not a smooth consensus.</p>
-    <p>What Rossi represents is the <strong>liminal technologist</strong>: formed by anomalous experience, drawn to heterodox physics, apparently taken seriously by people with clearances and institutional access. That defence officials reportedly listened to a construction worker's presentations on superconductors says something — even if we're not yet sure what it says.</p>
-    <p><em>This blog exists to sit at exactly these intersections — not credulously, not dismissively, but with the discipline of checking primary sources and the honesty to say what is verified and what is not.</em></p>
+    <p>Dave Rossi is not a credentialled physicist. His claims &#8212; scalar waves, superconductor gravity, DNA teleportation, electromagnetic third strands &#8212; sit in contested, unverified, or outright rejected regions of the scientific map.</p>
+    <p>And yet every major figure he cites has made serious claims at the frontier of accepted knowledge. Ning Li&#8217;s papers are in Physical Review. Montagnier won the Nobel Prize. Pais&#8217;s patents were defended by the U.S. Navy. Penrose won the Nobel. The history of physics is a history of contested edges.</p>
+    <p>What Rossi represents is the <strong>liminal technologist</strong>: formed by anomalous experience, drawn to heterodox physics, apparently taken seriously by people with clearances and institutional access. That defence officials reportedly listened to a construction worker&#8217;s presentations on superconductors says something &#8212; even if we&#8217;re not yet sure what.</p>
+    <p><em>This blog exists to sit at exactly these intersections &#8212; not credulously, not dismissively, but with the discipline of checking primary sources and the honesty to say what is verified and what is not.</em></p>
   </div>
 
   <div class="link-cluster">
     <div class="link-cluster-title">All Primary Links from Episode</div>
     <div class="link-row">
-      <a class="link-pill green" href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank">▶ Full Episode YouTube</a>
-      <a class="link-pill green" href="https://www.youtube.com/@generationzed4767" target="_blank">▶ Generation Zed Channel</a>
-      <a class="link-pill green" href="https://www.jesse-michels.com/" target="_blank">↗ Jesse Michels Website</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank">↗ Maxwell</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">↗ Tesla</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">↗ Ning Li</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Eugene_Podkletnov" target="_blank">↗ Podkletnov</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">↗ Salvatore Pais</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Luc_Montagnier" target="_blank">↗ Montagnier</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Harold_E._Puthoff" target="_blank">↗ Hal Puthoff</a>
-      <a class="link-pill" href="https://en.wikipedia.org/wiki/Roger_Penrose" target="_blank">↗ Penrose</a>
+      <a class="link-pill green" href="https://www.youtube.com/watch?v=5OUzGygIrSw" target="_blank">&#9654; Full Episode YouTube</a>
+      <a class="link-pill green" href="https://www.youtube.com/@generationzed4767" target="_blank">&#9654; Generation Zed Channel</a>
+      <a class="link-pill green" href="https://www.jesse-michels.com/" target="_blank">&#8599; Jesse Michels Website</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank">&#8599; Maxwell</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">&#8599; Tesla</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Ning_Li_(physicist)" target="_blank">&#8599; Ning Li</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Eugene_Podkletnov" target="_blank">&#8599; Podkletnov</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">&#8599; Salvatore Pais</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Luc_Montagnier" target="_blank">&#8599; Montagnier</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Harold_E._Puthoff" target="_blank">&#8599; Hal Puthoff</a>
+      <a class="link-pill" href="https://en.wikipedia.org/wiki/Roger_Penrose" target="_blank">&#8599; Penrose</a>
     </div>
   </div>
 </section>
 
-</div><!-- end .content -->
+</div><!-- end .article-body -->
 </main>
 
 <!-- Footer injected by site.js -->
-
 <script src="/js/site.js"></script>
 </body>
 </html>
