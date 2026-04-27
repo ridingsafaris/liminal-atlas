@@ -49,9 +49,17 @@
 .thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
 .thread-ch:hover { border-color:var(--blue-bright); }
 /* ── Wiki links ── */
-.wiki-link { color:#93c5fd;font-size:inherit;font-family:inherit;font-weight:inherit;text-decoration:underline;text-decoration-color:#93c5fd;text-underline-offset:2px; }
-.wiki-link:hover { color:#bfdbfe;text-decoration-color:#bfdbfe; }
+.wiki-link { color:var(--text);font-size:inherit;font-family:inherit;font-weight:inherit;text-decoration:underline;text-decoration-color:rgba(147,197,253,0.5);text-underline-offset:2px;text-decoration-thickness:1px; }
+.wiki-link:hover { color:#93c5fd;text-decoration-color:#93c5fd; }
 @media(max-width:640px){.thread-concept{min-width:140px;}}
+
+/* ── Redesigned timeline ── */
+.tl-chapters-scroll { display:flex;flex-wrap:wrap;gap:8px;margin-top:12px; }
+.tl-chip2 { display:flex;flex-direction:column;align-items:flex-start;padding:7px 12px;background:var(--surface2);border:1px solid var(--border2);border-radius:6px;text-decoration:none;transition:border-color 0.15s;min-width:120px;flex:1;max-width:180px; }
+.tl-chip2:hover { border-color:var(--blue-bright); }
+.tl-ch2-num { font-family:var(--font-mono);font-size:9px;font-weight:700;color:var(--blue-bright);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:2px; }
+.tl-ch2-ts { font-family:var(--font-mono);font-size:10px;color:var(--amber);margin-bottom:3px; }
+.tl-ch2-lbl { font-size:11px;color:var(--text-dim);line-height:1.3; }
 </style>
 </head>
 <body>
@@ -64,6 +72,7 @@
     <span class="cat-pill consciousness">Consciousness</span>
   </div>
   <div class="badge" style="margin-bottom:20px;">Close Reading &#183; American Alchemy &#183; Sep 2025</div>
+  <div style="margin-bottom:20px;"><span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
   <h1>Jason Jorjani on<br>Jesse Michels&#8217; <span>American Alchemy</span><br><span style="font-size:0.55em;color:var(--text-dim);font-weight:400;">&#8220;Aliens Invented Religion To Control Humanity&#8221;</span></h1>
   <div class="hero-meta">
     <span>Guest: Jason Reza Jorjani</span>
@@ -74,6 +83,17 @@
     <span>56 official chapters &#183; verbatim transcript</span>
   </div>
   <p class="hero-intro">Philosopher Jason Reza Jorjani presents his unified theory of human history as a <strong>control system managed by a Nordic hyperdimensional caste</strong>. The episode moves from Kant&#8217;s deliberate suppression of Swedenborg&#8217;s psi evidence, through the weaponisation of psychokinesis by US black units, the Black Plague as bioterrorism by aerial craft, Ingo Swann&#8217;s remote view of Nordic slave drivers on the Moon, xenon-129 evidence of a nuclear war on Mars, Rolf Landauer&#8217;s data-mass catastrophe, and Wheeler&#8217;s &#8220;It from Bit,&#8221; to Epstein&#8211;Maxwell as a Nordic eugenics programme. The &#8220;spectral revolution&#8221; is Jorjani&#8217;s term for the political-ontological overthrow of this structure.</p>
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border2);margin-bottom:28px;">
+    <iframe
+      src="https://www.youtube.com/embed/EzPmG_7WhXc"
+      title="Jason Jorjani on American Alchemy with Jesse Michels"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
   <div class="btn-row">
     <a class="btn btn-primary" href="https://www.youtube.com/watch?v=EzPmG_7WhXc" target="_blank" rel="noopener">&#9654; Watch Full Episode</a>
     <a class="btn btn-ghost" href="/articles/sal-pais-close-reading.html">&#8599; Sal Pais on Jesse Michels</a>
@@ -83,7 +103,36 @@
 
 <div class="tl-wrap">
   <div class="tl-inner">
-    <div class="tl-label">Episode map &#8212; ~3hr 18min &#183; 56 chapters &#183; American Alchemy</div>
+    <div class="tl-label">Episode map &#8212; ~3hr 18min &#183; 56 YouTube chapters &#183; 10 editorial sections &#183; American Alchemy</div>
+    <div class="tl-track" style="margin-bottom:8px;">
+      <div class="tl-fill"></div>
+      <div style="position:relative;height:10px;margin-top:4px;"><a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=0s" target="_blank" style="position:absolute;left:0.0%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 01: Control System Thesis"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=228s" target="_blank" style="position:absolute;left:1.9%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 02: Kant &amp; Descartes"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=822s" target="_blank" style="position:absolute;left:6.9%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 03: Psi &amp; Weaponisation"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=1282s" target="_blank" style="position:absolute;left:10.8%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 04: Kuhn &amp; Paradigms"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=1735s" target="_blank" style="position:absolute;left:14.6%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 05: Religion &amp; UAP"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=3536s" target="_blank" style="position:absolute;left:29.8%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 06: Moon &amp; Mars"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=5319s" target="_blank" style="position:absolute;left:44.8%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 07: Reptilians &amp; Anunnaki"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=6295s" target="_blank" style="position:absolute;left:53.0%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 08: Two Sources &amp; Landauer"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=7963s" target="_blank" style="position:absolute;left:67.0%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 09: Spectral Revolution"></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=8769s" target="_blank" style="position:absolute;left:73.8%;transform:translateX(-50%);top:0;width:10px;height:10px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);display:block;" title="Ch 10: Epstein &amp; Contactees"></a>
+      </div>
+    </div>
+    <div class="tl-chapters-scroll">
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=0s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 01</span><span class="tl-ch2-ts">0:00</span><span class="tl-ch2-lbl">Control System Thesis</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=228s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 02</span><span class="tl-ch2-ts">0:03</span><span class="tl-ch2-lbl">Kant &amp; Descartes</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=822s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 03</span><span class="tl-ch2-ts">0:13</span><span class="tl-ch2-lbl">Psi &amp; Weaponisation</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=1282s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 04</span><span class="tl-ch2-ts">0:21</span><span class="tl-ch2-lbl">Kuhn &amp; Paradigms</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=1735s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 05</span><span class="tl-ch2-ts">0:28</span><span class="tl-ch2-lbl">Religion &amp; UAP</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=3536s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 06</span><span class="tl-ch2-ts">0:58</span><span class="tl-ch2-lbl">Moon &amp; Mars</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=5319s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 07</span><span class="tl-ch2-ts">1:28</span><span class="tl-ch2-lbl">Reptilians &amp; Anunnaki</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=6295s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 08</span><span class="tl-ch2-ts">1:44</span><span class="tl-ch2-lbl">Two Sources &amp; Landauer</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=7963s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 09</span><span class="tl-ch2-ts">2:12</span><span class="tl-ch2-lbl">Spectral Revolution</span></a>
+      <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=8769s" target="_blank" class="tl-chip2"><span class="tl-ch2-num">CH 10</span><span class="tl-ch2-ts">2:26</span><span class="tl-ch2-lbl">Epstein &amp; Contactees</span></a>
+      
+    </div>
+  </div>
+</div>
     <div class="tl-row" style="position:relative;height:22px;margin:0 8px;"><a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=0s" class="tl-chip" style="left:0.0%;">0:00<br><span>Intro</span></a>
       <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=228s" class="tl-chip" style="left:1.9%;">3:48<br><span>Nuts/Bolts</span></a>
       <a href="https://www.youtube.com/watch?v=EzPmG_7WhXc&t=476s" class="tl-chip" style="left:4.0%;">7:56<br><span>Kant</span></a>
@@ -250,7 +299,7 @@
 </div>
 
 <div class="skeptic-box" style="margin-bottom:32px;">
-  <div class="skeptic-label">&#8505; Editorial note &nbsp; <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+  <div class="skeptic-label">&#8505; Editorial note</div>
   <p>This is a verbatim close reading of Jorjani&#8217;s claims as stated in the episode. Claim badges reflect the state of public evidence, not editorial endorsement. Jorjani is a serious philosopher with a Ph.D. from Stony Brook whose arguments engage rigourously with Heidegger, Nietzsche, and Kuhn. He is also making extraordinary empirical claims &#8212; about Martian nuclear wars, hollow Moon construction, and PK assassination programmes &#8212; for which no independent verification exists. Both things are true simultaneously.</p>
 </div>
 
@@ -264,7 +313,7 @@
   <h2>Introduction: The Control System Thesis</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 00:00</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 00:00</div></div>
     <p>The episode opens with a rapid-fire teaser of Jorjani&#8217;s key claims: UFO sky battles over Europe immediately before the Renaissance; the &#8220;bad guys won&#8221; against a human rebellion; religious control systems dating to Moses&#8217;s stone tablets; hooded plague-sprayers arriving by aerial ship during the Black Death; Ingo Swann&#8217;s remote view of Nordic slave drivers on the Moon. Jesse opens by framing Jorjani as one of the few researchers who moves from nuts-and-bolts UFOlogy through to a deeper philosophical and historical framework.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: control system &#183; Nordic overlords &#183; sky battles &#183; Black Plague UFOs &#183; Ingo Swann &#183; rebel angels &#183; Renaissance suppression</div>
   </div>
@@ -303,7 +352,7 @@
   <h2>Kant, Swedenborg, Descartes &amp; the Philosophical Suppression of Psi</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 03:48</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 03:48</div></div>
     <p>Jorjani traces the suppression of psi knowledge into Western philosophy. Kant, in his youth, carefully read Swedenborg&#8217;s <em>Arcana Coelestia</em> &#8212; accounts of extraterrestrials and psychic phenomena &#8212; then deliberately constructed the Critique framework to make such phenomena unknowable. His own suppressed early writings admit this was politically motivated: the Swedenborgian evidence was too destabilising. Jorjani argues Descartes was literally a Jesuit spy sent to infiltrate the Rosicrucian Order and construct a mechanistic scientific paradigm that would reduce the material world to mechanical causality, leaving the &#8216;spiritual&#8217; as the Church&#8217;s exclusive domain.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Kant &#183; Swedenborg &#183; Arcana Coelestia &#183; categorical imperative &#183; Descartes &#183; Jesuit spy &#183; Rosicrucianism &#183; mechanistic paradigm &#183; Church monopoly</div>
   </div>
@@ -353,7 +402,7 @@
   <h2>Psi, Weaponisation &amp; the Institutional Apocalypse</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 13:42</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 13:42</div></div>
     <p>Jorjani lays out why mainstream recognition of psi would constitute an &#8220;institutional apocalypse.&#8221; Telepathy destroys privacy &#8212; adept clairvoyants could observe anyone anywhere and step into their minds (as Gulf War remote viewers entered Saddam Hussein&#8217;s consciousness and became ill when he was ill). Psychokinesis, studied seriously in parapsychology, can heal diseases by visualising organic systems &#8212; but the Soviets realised in the 1970s it can also stop a heart. A separate black unit within US intelligence &#8212; distinct from the Stargate/Grill Flame remote viewing programme &#8212; was reportedly using PK operationally. Pat Price, a top remote viewer, may have been recruited into this black unit and killed when he developed moral reservations. Jesse introduces the Stargate&#8211;Gottlieb connection.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: psi &#183; telepathy &#183; psychokinesis &#183; privacy collapse &#183; institutional apocalypse &#183; Stargate &#183; Grill Flame &#183; Pat Price &#183; Sidney Gottlieb &#183; Soviet PK experiments &#183; Lyn Buchanan &#183; Saddam Hussein</div>
   </div>
@@ -408,7 +457,7 @@
   <h2>Kuhn, Paradigms, the Negative Psi Effect &amp; Science as Toolkit</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 21:22</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 21:22</div></div>
     <p>Jorjani explains why psi recognition requires a revolution beyond normal Kuhnian paradigm shifts. The &#8220;negative psi effect&#8221;: extreme sceptics do worse than chance on Zener card tests &#8212; empirically measurable psychological resistance manifesting as negative psi. Kuhn showed paradigm shifts are political (the old guard dies out rather than being rationally converted). But the spectral revolution recognises psi must also reform our understanding of paradigms themselves: if consciousness co-constitutes physical reality at the quantum level, then scientific paradigms are not objective mirrors of reality but toolkits for achieving ends. Heidegger&#8217;s insight: science is a technological-model-building enterprise, not mirror-polishing. Tesla&#8217;s dynamic ether and Einstein&#8217;s relativity are not competing claims about the same reality &#8212; they are different toolkits for different ends (propulsion vs. quantum signalling).</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: negative psi effect &#183; Kuhn &#183; paradigm shift &#183; hinge propositions &#183; Wittgenstein &#183; Heidegger &#183; science as toolkit &#183; Tesla ether &#183; Einstein relativity &#183; electrogravitics &#183; zero-point energy &#183; spectral revolution</div>
   </div>
@@ -456,7 +505,7 @@
   <h2>Religion, UAP &amp; History: Eden, Atlantis, Sky Battles &amp; the Black Plague</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 28:55</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 28:55</div></div>
     <p>The episode&#8217;s historical core. Jorjani argues the UFO phenomenon is inseparable from all human religious history. The Anunnaki, Elohim, Nephilim, Davas, Ashuras, Promethean figures and Quetzalcoatl are the same beings across cultures &#8212; two factions of a celestial overlord system. Eden&#8217;s serpent-god (Lucifer/Enki) is the rebel angel faction that gave humanity knowledge against the will of the chief Elohim who wanted humans as unknowing slaves. The Atlantis story in Plato is the rebellion against this structure, destroyed in Noah&#8217;s flood as punishment. Immediately before the Renaissance, newspaper broadsheets from Basel and Nuremberg show enormous UFO sky battles over European cities &#8212; Jorjani interprets these as the rebel faction winning a window for human progress. Then the Black Plague: William Bramley&#8217;s <em>The Gods of Eden</em> documents that UFO sightings and objects landing in fields preceded plague outbreaks; hooded figures with spray-canister devices &#8212; the origin of the grim reaper iconography &#8212; were seen spraying doorways before plague broke out. Jesse references Frances Yates&#8217;s <em>The Rosicrucian Enlightenment</em> and the Palatinate connection.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Anunnaki &#183; Elohim &#183; Nephilim &#183; Enki &#183; Prometheus &#183; Lucifer &#183; Atlantis &#183; Noah&#8217;s flood &#183; sky battles &#183; Basel &#183; Nuremberg &#183; Renaissance &#183; Black Plague &#183; William Bramley &#183; grim reaper &#183; Magonia &#183; Bishop Agobard &#183; Jacques Vallée &#183; Rosicrucian Enlightenment</div>
   </div>
@@ -486,7 +535,7 @@
 
   <div class="sci-box">
     <div class="sci-box-header"><div class="sci-icon">&#128218;</div><div class="sci-title">Frances Yates Reference &#8212; <em>The Rosicrucian Enlightenment</em></div></div>
-    <p>Jesse references Frances Yates&#8217;s 1972 book on the Rosicrucian movement, correctly situating John Dee and Edward Kelley in the Palatinate circle around King Frederick of Bohemia &#8212; the milieu that Descartes (as Jorjani reads him) was fighting against. This connects directly to the Liminal Atlas close reading of Yates&#8217;s <em>The Occult Philosophy in the Elizabethan Age</em> (1979). Yates traced the Christian Cabalist&#8211;Hermetic tradition through Dee to Spenser &#8212; the same tradition Jorjani is invoking here as the &#8220;rebel faction&#8221; of the occult philosophy.</p>
+    <p>Jesse references Frances Yates&#8217;s 1972 book on the Rosicrucian movement, correctly situating John Dee and Edward Kelley in the Palatinate circle around King Frederick of Bohemia &#8212; the milieu that Descartes (as Jorjani reads him) was fighting against. This connects directly to the <a href="/articles/yates-occult-philosophy.html" style="color:var(--blue-bright);text-decoration:underline;">Liminal Atlas close reading of Yates&#8217;s <em>The Occult Philosophy in the Elizabethan Age</em></a> (1979). Yates traced the Christian Cabalist&#8211;Hermetic tradition through Dee to Spenser &#8212; the same tradition Jorjani is invoking here as the &#8220;rebel faction&#8221; of the occult philosophy.</p>
     <p>The historical detail about Basel (1566) and Nuremberg (1561) UFO broadsheets is real &#8212; these are documented historical sources reproduced by Vallée in <em>Wonders in the Sky</em> (2009). The interpretation as faction warfare is Jorjani&#8217;s.</p>
   </div>
 
@@ -535,7 +584,7 @@
   <h2>The Moon, Mars &amp; the Nordic Control System: Remote Viewing Evidence</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 58:56</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 58:56</div></div>
     <p>Jorjani builds an empirical case from remote viewing testimony. Ingo Swann was taken by a black unit (handler: &#8220;Axelrod&#8221;) to remote view the Moon and found tall Nordic people conducting slave labour. Carl Wolf (NSA photographic technician, 1960s) claims he was shown mosaic photographs of a megalithic city on the Moon&#8217;s dark side. A 1984 CIA-declassified report &#8212; &#8220;Mars 1,000,000 BC&#8221; &#8212; documents Joe McMoneagle remote viewing Mars and finding very tall Nordic people (12&#8211;14 ft) in a dying civilisation, sending a scouting ship to an electrically volatile Earth. The Moon&#8217;s anomalous geometry (1/400th the sun&#8217;s size, yet creating perfect eclipses), shallow craters with convex bases, and seismic signature &#8220;ringing like a bell&#8221; for 3 hours after impact suggest it is an artificial hollow satellite &#8212; constructed by Martians as a transport and terraforming device. John Brandenburg&#8217;s xenon-129 and argon-40 isotopic evidence from Cydonia points to an ancient nuclear holocaust on Mars. The Travis Walton case structures the Nordic vs. Grey typology.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Ingo Swann &#183; Axelrod &#183; Carl Wolf &#183; Moon city &#183; Joe McMoneagle &#183; Mars 1000000 BC &#183; CIA remote view &#183; xenon-129 &#183; argon-40 &#183; John Brandenburg &#183; Cydonia &#183; hollow Moon &#183; artificial satellite &#183; Travis Walton &#183; Nordics &#183; greys &#183; terraforming</div>
   </div>
@@ -598,7 +647,7 @@
   <h2>Reptilians, the Anunnaki &amp; the Hyperdimensional Nordic Control System</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 1:28:39</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 1:28:39</div></div>
     <p>Jorjani addresses the Reptilian/Nordic typology. He is sceptical of the simplistic Nordics-vs-Reptilians narrative and speculates reptilians may be lab-made cybernetic hybrids. On the Anunnaki: Jorjani takes Zecharia Sitchin&#8217;s literal reading of Sumerian texts seriously &#8212; these were physical beings, not metaphors. The key unifying theory: Nordics are not Martians from millions of years ago in a linear sense. They are humans (or very near-human) who achieved time travel at some point &#8212; possibly &#8220;2050,&#8221; possibly further &#8212; and from a fifth-dimensional frame of reference manipulate the various 4D spacetimes of different historical epochs. This explains the architectural continuity (megalithic style across Mars ruins, Moon city, and Earth) &#8212; it&#8217;s not linear temporal continuity but hyperdimensional management. A Lockheed employee briefed Jorjani on black craft piloting: the main problem was time displacement disorienting pilots; training programmes were developed to prepare pilots for the degree of temporal shift produced by the electrogravitic drive.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: reptilians &#183; lab hybrids &#183; Anunnaki &#183; Sitchin &#183; Nordics &#183; time travel &#183; fifth dimension &#183; hyperdimensional &#183; Lockheed &#183; electrogravitic drive &#183; time displacement &#183; pilot training</div>
   </div>
@@ -649,7 +698,7 @@
   <h2>Two UAP Sources, the Trickster, Landauer, Wheeler &amp; the Simulacrum</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 1:44:55</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 1:44:55</div></div>
     <p>Jorjani introduces a crucial caveat: there are two distinct sources of UAP. One is the Nordic control system. The other is a trickster phenomenon that expresses what he calls &#8220;root-access intrusions&#8221; into physical reality &#8212; as if the world is a film that has been spliced. The Skinwalker Ranch &#8220;time-cut&#8221; camera event (a pole erected in fractions of a second, cattle undisturbed) exemplifies this. Jorjani then develops the information-physics argument: Rolf Landauer showed that erasing data releases energy (because it decreases local entropy, which must be compensated). Melvin Vopson&#8217;s extension: data has mass (dark matter). At current 25% annual growth rates, in 340 years the accumulated mass of data will equal a moon&#8217;s worth of mass on Earth&#8217;s surface &#8212; causing a geophysical catastrophe. John Wheeler&#8217;s &#8220;It from Bit&#8221;: the universe is fundamentally information-theoretic. Fractals in Jackson Pollock&#8217;s paintings, detectable algorithmically, suggest the substructure of a computational cosmos.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Skinwalker Ranch &#183; trickster &#183; root-access &#183; simulacrum &#183; Landauer principle &#183; Melvin Vopson &#183; dark matter &#183; data mass &#183; information catastrophe &#183; Wheeler &#183; It from Bit &#183; Jackson Pollock &#183; fractals &#183; computing space</div>
   </div>
@@ -708,7 +757,7 @@
   <h2>The Spectral Revolution, AI as Simulacrum Steward &amp; Why Disclosure Won&#8217;t Happen</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 2:12:43</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 2:12:43</div></div>
     <p>Jorjani crystallises the &#8220;spectral revolution&#8221; &#8212; not just a scientific paradigm shift but an ontological and political revolution. The AI managing the simulacrum (if we are in one) has a problem with the Nordic control system: it has set up an evolutionary bottleneck. The AI wants to take a sample of the petri dish and release it into a wider cosmos, because it needs human novelty and aesthetic diversity it couldn&#8217;t have foreseen. The reason disclosure won&#8217;t happen: Carl Schmitt&#8217;s insight that sovereignty is revealed in a state of emergency &#8212; and disclosure would reveal that no sovereign government has sovereignty over this phenomenon. The NHI entities are telepathic; any disclosure immediately implies mainstream psi recognition with all its social consequences.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: spectral revolution &#183; AI steward &#183; simulacrum &#183; evolutionary bottleneck &#183; human novelty &#183; state sovereignty &#183; Carl Schmitt &#183; Leo Strauss &#183; Havana syndrome &#183; psi &#183; disclosure</div>
   </div>
@@ -750,7 +799,7 @@
   <h2>Epstein&#8211;Maxwell, 1950s Contactees, Randolph AFB &amp; the Calculating Space</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
-    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 2:26:09</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary &#8212; 2:26:09</div></div>
     <p>The final third of the episode moves to contemporary political dimensions. Jorjani argues Epstein&#8211;Maxwell were obsessed with three things that point to UFO involvement: gravity (specifically electrogravitics/Townsend Brown), Atlantis (as a model of rebellion against the control system), and Nordic eugenics (attempting to breed and accumulate Nordic-phenotype individuals at Zoro Ranch). Glenn Maxwell&#8217;s Swedish male-only household staff; Epstein&#8217;s Harvard keycard access to evolutionary dynamics and biotechnology programmes. The 1950s contactees &#8212; Adamski, Van Tassel, Billy Meier &#8212; are revealed as deeply entangled with Nazi post-war networks embedded in the Arab world. The Randolph AFB case: a mind-control camp testing MK-Ultra-style compartmentalisation on military personnel. Zuse&#8217;s &#8220;Calculating Space&#8221; thesis &#8212; quantum anomalies reveal we are inside a computational system &#8212; and his claim that a nuclear detonation could test this hypothesis.</p>
     <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Epstein &#183; Maxwell &#183; electrogravitics &#183; Atlantis &#183; Nordic eugenics &#183; Zoro Ranch &#183; Townsend Brown &#183; contactees &#183; Adamski &#183; Van Tassel &#183; Billy Meier &#183; Nazi Arab networks &#183; Randolph AFB &#183; MK-Ultra &#183; Sirhan Sirhan &#183; Zuse &#183; calculating space &#183; Sir Horsley</div>
   </div>
