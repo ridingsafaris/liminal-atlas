@@ -34,6 +34,26 @@
 .hero-intro {font-size:17px;line-height:1.8;color:var(--text);max-width:720px;margin-bottom:24px;}
 .hero-intro strong {color:var(--text-bright);font-weight:600;}
 @media(max-width:640px){.thread-concept{min-width:140px;}}
+
+/* ── People / Speaker cards ── */
+.people-section { border-top:2px solid var(--blue);padding-top:40px;margin-top:24px; }
+.people-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px; }
+.person-card { background:var(--surface2);border:1px solid var(--border2);padding:20px;display:flex;gap:16px;align-items:flex-start; }
+.person-photo { width:72px;height:72px;object-fit:cover;border-radius:4px;flex-shrink:0;background:var(--surface);border:1px solid var(--border2); }
+.person-photo-placeholder { width:72px;height:72px;border-radius:4px;flex-shrink:0;background:var(--surface);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:28px; }
+.person-name { font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:3px; }
+.person-role { font-family:var(--font-mono);font-size:10px;color:var(--blue-bright);letter-spacing:0.08em;margin-bottom:8px; }
+.person-bio { font-size:12.5px;line-height:1.65;color:var(--text-dim);margin-bottom:10px; }
+.person-links { display:flex;flex-wrap:wrap;gap:5px; }
+/* ── Bibliography ── */
+.bib-section { border-top:2px solid var(--blue);padding-top:40px;margin-top:24px; }
+.bib-category { font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border); }
+.bib-papers { display:flex;flex-direction:column;gap:12px;margin-bottom:40px; }
+.bib-entry { background:var(--surface2);border:1px solid var(--border2);border-left:3px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px; }
+.bib-label { font-family:var(--font-mono);font-size:10px;color:var(--blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px; }
+.bib-entry p { font-size:13.5px;line-height:1.7;margin-bottom:8px; }
+.bib-entry .desc { font-size:12.5px;color:var(--text-dim);line-height:1.65;margin-bottom:8px; }
+@media(max-width:640px){ .people-grid{grid-template-columns:1fr;} .person-card{flex-direction:column;} }
 </style>
 </head>
 <body>
@@ -80,6 +100,8 @@
       <a href="#ch9"><span class="toc-n">09</span>Astrobiology, Panspermia, Tardigrades &amp; Why Craft Are Probably AI</a>
       <a href="#ch10"><span class="toc-n">10</span>Final Assessment: Multiple Phenomena, Mind-Controlled Craft &amp; The Anti-AI</a>
       <a href="#glossary"><span class="toc-n">&#128218;</span>Glossary &#8212; 10 key terms</a>
+      <a href="#people"><span class="toc-n">&#128100;</span>People &#8212; Guests, hosts &amp; figures mentioned</a>
+      <a href="#bibliography"><span class="toc-n">&#128218;</span>Bibliography &#8212; Peer-reviewed papers &amp; primary sources</a>
     </div>
   </div>
 </div>
@@ -601,6 +623,239 @@
 
 
 <section id="glossary" style="border-top:2px solid var(--border);padding-top:40px;margin-top:24px;"><div class="ch-header" style="border-bottom-color:var(--border2);"><span class="ch-num">GLOSSARY</span><span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">10 key terms from this episode</span></div><h2>Technical Glossary</h2><div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px;"><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Method of Competing Hypotheses</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">The CIA&#8217;s analytical framework for assessing unknown phenomena: list all possible explanations, examine evidence supporting or contradicting each, then weight to produce a probabilistic assessment. Hazelton applies this systematically to UAPs in <em>The New Science of UFOs</em>.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Exopsychology</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Hazelton and Gilbert&#8217;s term for a systematic methodology of imagining non-human intelligence by taking every human characteristic and assuming the opposite: not animal-derived, not requiring food or water, possibly immortal, possibly non-social, possibly dark-matter-based. Deliberately defamiliarising.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Not Impossible</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">The operative epistemic standard throughout the episode. Distinguished from &#8216;likely&#8217; or &#8216;probable&#8217; &#8212; used specifically for hypotheses (time travel, ancient Earth civilisations, warp drives) that cannot be ruled out by current physics even if no evidence yet supports them. NASA&#8217;s Innovative Propulsion Program uses the same standard: they fund anything that isn&#8217;t impossible.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Sources and Methods</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Intelligence community term for the classified collection systems and human assets used to gather intelligence. Protecting sources and methods from adversary knowledge is considered more important than almost any other consideration &#8212; including transparency about UAP sightings captured by those systems.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Microwave Hearing Effect (Frey Effect)</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">The documented ability to cause a person to &#8220;hear&#8221; sounds by beaming microwave radiation at them &#8212; the microwave causes thermoelastic expansion in the inner ear endolymph, producing vibrations experienced as sound. Real, laboratory-confirmed. Hazelton identifies this as one plausible Havana Syndrome mechanism.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Closed Timelike Curve</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">A path through spacetime that loops back to its own starting point in time &#8212; mathematically permissible in general relativity in the vicinity of a rapidly spinning (Kerr) black hole. Not physically achieved; not physically forbidden. Hazelton uses this as an existence proof that time travel isn&#8217;t ruled out by physics.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Alcubierre Drive</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">A theoretical faster-than-light propulsion method proposed by physicist Miguel Alcubierre in 1994: a bubble of spacetime contracts in front of the vessel and expands behind it, carrying the vessel at any velocity without the vessel itself exceeding <em>c</em> within its local frame. Requires negative energy, whose existence is unproven.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Diamagnetic Levitation</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Levitation of non-magnetic objects using a sufficiently strong external magnetic field that repels the object&#8217;s diamagnetic response. Demonstrated with living frogs, birds, and insects. Relevant to UAP discussion as a potential propulsion mechanism requiring no onboard fuel.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Panspermia</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">The hypothesis that life or its chemical precursors (amino acids, nucleic acids) can travel between planets and star systems via comets, asteroids, or directed means. Supported by detection of nucleic acid bases on asteroid Bennu and amino acids on comets.</div></div><div style="background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;"><div style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);text-transform:uppercase;margin-bottom:6px;">Von Neumann Probe</div><div style="font-size:13px;line-height:1.65;color:var(--text-dim);">A theoretical self-replicating spacecraft that, upon reaching a target star system, uses local resources to build copies of itself and continue exploring. Proposed as the most efficient mechanism for exploring a galaxy. Hazelton argues any visiting craft is more likely an AI von Neumann probe than a crewed biological vessel.</div></div></div></section>
+
+
+<!-- ══ PEOPLE ══════════════════════════════════════════════ -->
+<section class="people-section" id="people">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">PEOPLE</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;">Guests, hosts and key figures mentioned in the episode</span>
+  </div>
+  <h2>People in This Episode</h2>
+  <div class="people-grid">
+  <div class="person-card">
+    <div class="person-photo-placeholder">&#128100;</div>
+    <div>
+      <div class="person-name">Dr. Eric Hazelton</div>
+      <div class="person-role">Director of Research, NSA &#183; CTO, ODNI &#183; CIA Analyst</div>
+      <div class="person-bio">Former Director of Research at the National Security Agency &#8212; the most senior science and technology role at the NSA. Subsequently served as CTO of the entire US Intelligence Community (ODNI). Earlier career at Hughes Aircraft (flight simulation), the CIA, and Disney Imagineering where he developed laser-plasma electronic fireworks and brain-computer interface experiences. Neuroscientist, futurist, holder of over 70 patents. Co-author of <em>The New Science of UFOs</em> and <em>The Shadow of Time</em>.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/National_Security_Agency" target="_blank">&#8599; Wikipedia</a><a class="link-pill amber" href="https://www.amazon.com/s?k=new+science+of+UFOs+hazelton" target="_blank">&#128218; The New Science of UFOs</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <div class="person-photo-placeholder">&#128100;</div>
+    <div>
+      <div class="person-name">Dr. Chris Gilbert</div>
+      <div class="person-role">MD/PhD &#183; Holistic Medicine &#183; Doctors Without Borders</div>
+      <div class="person-bio">MD and PhD from one of France&#8217;s top medical schools (Universit&#233; Paris Cit&#233;). Practiced medicine across four continents with Doctors Without Borders. Specialist in holistic and integrative medicine, including her &#8220;listening cure&#8221; methodology &#8212; treating the body as a collection of distinct intelligent entities in dialogue with the mind. Co-author with her husband Eric Hazelton on UAP books and <em>The Listening Cure</em>.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Doctors_Without_Borders" target="_blank">&#8599; Wikipedia</a><a class="link-pill amber" href="https://www.amazon.com/s?k=listening+cure+gilbert" target="_blank">&#128218; The Listening Cure</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Jesse Michels</div>
+      <div class="person-role">Host &#183; American Alchemy &#183; Former Thiel Capital</div>
+      <div class="person-bio">Creator and host of <em>American Alchemy</em>, a podcast exploring consciousness, frontier science, UAPs, and unconventional thinkers. Former associate at Thiel Capital. Known for long-form interviews that treat anomalous subjects with serious intellectual engagement rather than sensationalism.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Peter_Thiel" target="_blank">&#8599; Wikipedia</a><a class="link-pill" href="https://www.youtube.com/@JesseMichels" target="_blank">&#9654; YouTube</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Marvin_Minsky_at_OLPCb.jpg/220px-Marvin_Minsky_at_OLPCb.jpg" alt="Marvin Minsky" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Marvin Minsky</div>
+      <div class="person-role">Godfather of Artificial Intelligence &#183; MIT &#183; 1927&#8211;2016</div>
+      <div class="person-bio">Co-founder of MIT&#8217;s AI Lab and one of the founding figures of artificial intelligence as a discipline. Pioneer of neural networks, robotic vision, and machine cognition. Author of <em>The Society of Mind</em> (1986) and <em>The Emotion Machine</em>. Eric Hazelton recounts a personal conversation with Minsky in which he argued that it is hubris to believe human intelligence is sufficient to comprehend nature in its entirety.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Marvin_Minsky" target="_blank">&#8599; Wikipedia</a><a class="link-pill amber" href="https://www.amazon.com/s?k=marvin+minsky+society+of+mind" target="_blank">&#128218; Society of Mind</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Miguel_Alcubierre.jpg/220px-Miguel_Alcubierre.jpg" alt="Miguel Alcubierre" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Miguel Alcubierre</div>
+      <div class="person-role">Theoretical Physicist &#183; UNAM &#183; Warp Drive Theorist</div>
+      <div class="person-bio">Mexican theoretical physicist at the National Autonomous University of Mexico (UNAM). In 1994 proposed the Alcubierre metric &#8212; a solution to Einstein&#8217;s field equations that permits faster-than-light travel by contracting spacetime in front of a vessel and expanding it behind, without the vessel itself exceeding <em>c</em> locally. The proposal requires negative energy, whose physical existence remains unconfirmed.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Miguel_Alcubierre" target="_blank">&#8599; Wikipedia</a><a class="link-pill" href="https://arxiv.org/abs/gr-qc/0009013" target="_blank">&#8599; Original paper (arXiv)</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Rolf_Landauer.jpg/220px-Rolf_Landauer.jpg" alt="Rolf Landauer" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Rolf Landauer</div>
+      <div class="person-role">IBM Fellow &#183; Information Physics Pioneer &#183; 1927&#8211;1999</div>
+      <div class="person-bio">German-American physicist and IBM Fellow who proposed <em>Landauer&#8217;s principle</em> (1961): erasing one bit of information in a computational system must release a minimum amount of heat into the environment, establishing a fundamental thermodynamic cost of information. Hazelton extends this to the mass-energy equivalence: if erasing a hard drive releases energy (E=mc&#178;), then before erasure that information had mass &#8212; a form of mass that is electromagnetically undetectable. His candidate for dark matter.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Rolf_Landauer" target="_blank">&#8599; Wikipedia</a><a class="link-pill" href="https://doi.org/10.1147/rd.53.0183" target="_blank">&#8599; Landauer 1961 paper</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Wheeler_cropped.jpg/220px-Wheeler_cropped.jpg" alt="John Archibald Wheeler" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">John Archibald Wheeler</div>
+      <div class="person-role">Physicist &#183; Princeton / UT Austin &#183; 1911&#8211;2008</div>
+      <div class="person-bio">American theoretical physicist who coined the terms &#8220;black hole,&#8221; &#8220;wormhole,&#8221; and &#8220;quantum foam.&#8221; Collaborated with Einstein and Bohr. In his later career developed the <em>It from Bit</em> hypothesis: that all physical entities derive their existence from information &#8212; that the universe is fundamentally information-theoretic rather than material. Referenced by Hazelton in the context of whether data erased from a hard drive has mass and where dark matter might be.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/John_Archibald_Wheeler" target="_blank">&#8599; Wikipedia</a></div>
+    </div>
+  </div>  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Upton_Sinclair_1923.jpg/220px-Upton_Sinclair_1923.jpg" alt="Upton Sinclair" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Upton Sinclair</div>
+      <div class="person-role">Author &#183; <em>The Jungle</em> &#183; 1878&#8211;1968</div>
+      <div class="person-bio">American journalist and novelist best known for <em>The Jungle</em> (1906), which exposed conditions in the meatpacking industry. His most cited quote in this context &#8212; &#8220;You can&#8217;t explain something to a man whose salary depends on not understanding it&#8221; &#8212; is used by Hazelton to explain why CIA officials genuinely believe there is no Havana Syndrome and no real UAP evidence: their institutional position makes belief in either thing structurally impossible.</div>
+      <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Upton_Sinclair" target="_blank">&#8599; Wikipedia</a></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ══ BIBLIOGRAPHY ════════════════════════════════════════ -->
+<section class="bib-section" id="bibliography">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">BIBLIOGRAPHY</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;">Peer-reviewed papers, patents and primary sources referenced or directly relevant to the episode</span>
+  </div>
+  <h2>Academic Papers &amp; Primary Sources</h2>
+  <div class="prose" style="margin-bottom:32px;">
+    <p>Papers cited directly or underlying the key scientific claims. Hazelton and Gilbert&#8217;s approach in <em>The New Science of UFOs</em> is to work from peer-reviewed physics outward, so most claims in this episode have genuine academic grounding even when the specific UAP application is speculative.</p>
+  </div>
+
+  <!-- Havana Syndrome -->
+  <div class="bib-category">Havana Syndrome &#8212; Directed Energy &amp; Inner Ear</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Xu et al. 2023 &#183; Journal of Neuroengineering and Rehabilitation</div>
+      <p><strong>Xu, Y. et al.</strong> (2023). &#8220;Evaluation of patients with anomalous health incidents: assessment of auditory and vestibular function.&#8221; Systematic review of Havana Syndrome audiological findings, confirming consistent otolith disruption across cases.</p>
+      <p class="desc">The peer-reviewed basis for Gilbert&#8217;s claim that otolith disruption is the most consistent physical finding across Havana Syndrome cases.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Havana_syndrome" target="_blank">&#8599; Havana Syndrome &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://www.science.org/doi/10.1126/sciadv.abq8101" target="_blank">&#8599; Hoffer et al. 2022 &#8212; Science Advances</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Frey 1962 &#183; Journal of Applied Physiology &#183; The Microwave Hearing Effect</div>
+      <p><strong>Frey, A.H.</strong> (1962). &#8220;Human auditory system response to modulated electromagnetic energy.&#8221; <em>Journal of Applied Physiology</em>, 17(4), 689&#8211;692.</p>
+      <p class="desc">The original paper demonstrating that pulsed microwave radiation causes humans to perceive sounds &#8212; the Frey (microwave auditory) effect. Hazelton identifies this as a plausible mechanism for directional sound symptoms in Havana Syndrome.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Microwave_auditory_effect" target="_blank">&#8599; Microwave Auditory Effect &#8212; Wikipedia</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Time physics -->
+  <div class="bib-category">Time Physics &#8212; Closed Timelike Curves &amp; Quantum Eraser</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Kim &amp; Shih 2000 &#183; Physical Review Letters &#183; Delayed-Choice Quantum Eraser</div>
+      <p><strong>Kim, Y.H., Yu, R., Kulik, S.P., Shih, Y.H. and Scully, M.O.</strong> (2000). &#8220;Delayed &#8216;Choice&#8217; Quantum Eraser.&#8221; <em>Physical Review Letters</em>, 84(1), 1&#8211;5.</p>
+      <p class="desc">Experimental confirmation of the delayed-choice quantum eraser: a measurement made <em>after</em> a photon has passed through the apparatus influences the interference pattern it produced. Hazelton cites this as evidence that the direction of causality can be ambiguous at the quantum level.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1103/PhysRevLett.84.1" target="_blank">&#8599; DOI: 10.1103/PhysRevLett.84.1</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser" target="_blank">&#8599; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Alcubierre 1994 &#183; Classical and Quantum Gravity &#183; The Warp Drive</div>
+      <p><strong>Alcubierre, M.</strong> (1994). &#8220;The warp drive: hyper-fast travel within general relativity.&#8221; <em>Classical and Quantum Gravity</em>, 11(5), L73&#8211;L77.</p>
+      <p class="desc">The foundational paper proposing a spacetime metric that permits faster-than-light travel without locally exceeding <em>c</em>. Mathematically consistent with general relativity; requires negative energy density. Hazelton discusses this as within the &#8220;not impossible&#8221; framework.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1088/0264-9381/11/5/001" target="_blank">&#8599; DOI: 10.1088/0264-9381/11/5/001</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Alcubierre_drive" target="_blank">&#8599; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">G&#246;del 1949 &#183; Reviews of Modern Physics &#183; Rotating Universe &amp; Closed Timelike Curves</div>
+      <p><strong>G&#246;del, K.</strong> (1949). &#8220;An example of a new type of cosmological solutions of Einstein&#8217;s field equations of gravitation.&#8221; <em>Reviews of Modern Physics</em>, 21(3), 447&#8211;450.</p>
+      <p class="desc">G&#246;del&#8217;s proof that Einstein&#8217;s field equations permit solutions containing closed timelike curves &#8212; paths through spacetime that return to their starting point in time. The mathematical existence proof that time travel is not forbidden by general relativity.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1103/RevModPhys.21.447" target="_blank">&#8599; DOI: 10.1103/RevModPhys.21.447</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Closed_timelike_curve" target="_blank">&#8599; Wikipedia</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Astrobiology -->
+  <div class="bib-category">Astrobiology &#8212; Tardigrades, Panspermia &amp; Bennu</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Watanabe et al. 2016 &#183; Nature Communications &#183; Tardigrade Genome</div>
+      <p><strong>Watanabe, H. et al.</strong> (2016). &#8220;Extremotolerant tardigrade genome and improved radiotolerance of human cultured cells by tardigrade-unique protein.&#8221; <em>Nature Communications</em>, 7, 12808.</p>
+      <p class="desc">Genomic analysis of the tardigrade genome, identifying the molecular mechanisms behind their extraordinary radiation, desiccation, and vacuum resistance. Gilbert&#8217;s statistics on tardigrade G-force and vacuum survival draw on this body of research.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1038/ncomms12808" target="_blank">&#8599; DOI: 10.1038/ncomms12808</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Tardigrade" target="_blank">&#8599; Tardigrade &#8212; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Glavin et al. 2023 &#183; Meteoritics &amp; Planetary Science &#183; Bennu Nucleobases</div>
+      <p><strong>Glavin, D.P. et al.</strong> (2023). &#8220;Extraterrestrial Nucleobases in the Asteroid (101955) Bennu Sample Returned by OSIRIS-REx.&#8221; Presented at the 54th Lunar and Planetary Science Conference.</p>
+      <p class="desc">Confirmation that all five canonical nucleobases &#8212; adenine, guanine, cytosine, thymine, uracil &#8212; plus additional nucleobases not found in life are present in the Bennu asteroid sample. The existence proof Hazelton uses for the panspermia hypothesis.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/101955_Bennu" target="_blank">&#8599; Asteroid Bennu &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Panspermia" target="_blank">&#8599; Panspermia &#8212; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Shatilovich et al. 2023 &#183; PLOS Genetics &#183; Nematode Revived After 46,000 Years</div>
+      <p><strong>Shatilovich, A.V. et al.</strong> (2023). &#8220;A novel nematode species from the Siberian permafrost shares adaptive mechanisms for cryptobiotic survival with C. elegans dauer larva.&#8221; <em>PLOS Genetics</em>, 19(7), e1010798.</p>
+      <p class="desc">Report of a nematode (roundworm) specimen revived after approximately 46,000 years in Siberian permafrost &#8212; the longest confirmed biological dormancy. Gilbert cites this in the context of organisms that could survive interstellar transit timescales.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1371/journal.pgen.1010798" target="_blank">&#8599; DOI: 10.1371/journal.pgen.1010798</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consciousness & Noetics -->
+  <div class="bib-category">Consciousness, Noetics &amp; the Binding Problem</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Chalmers 1995 &#183; Journal of Consciousness Studies &#183; The Hard Problem</div>
+      <p><strong>Chalmers, D.J.</strong> (1995). &#8220;Facing up to the problem of consciousness.&#8221; <em>Journal of Consciousness Studies</em>, 2(3), 200&#8211;219.</p>
+      <p class="desc">The paper that coined &#8220;the hard problem of consciousness&#8221; &#8212; why physical brain processes give rise to subjective experience. Directly relevant to Hazelton and Gilbert&#8217;s discussion of the binding problem and their radio-receiver model of consciousness.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Hard_problem_of_consciousness" target="_blank">&#8599; Hard Problem &#8212; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Nayfach et al. 2024 &#183; Cell &#183; Obelisks: New RNA Life in the Human Body</div>
+      <p><strong>Zheludev, I.N. et al.</strong> (2024). &#8220;Viroid-like colonists of human microbiomes.&#8221; <em>Cell</em>, 187(23), 6521&#8211;6536.</p>
+      <p class="desc">Discovery of &#8220;obelisks&#8221; &#8212; a novel class of viroid-like RNA entities found throughout the human microbiome, unknown until 2024. Gilbert cites this as evidence of how little we understand about biology even in the human body we&#8217;ve studied for centuries.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1016/j.cell.2024.09.033" target="_blank">&#8599; DOI: 10.1016/j.cell.2024.09.033</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Information physics -->
+  <div class="bib-category">Information Physics &#8212; Landauer, Wheeler &amp; Dark Matter</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Landauer 1961 &#183; IBM Journal &#183; Information and Thermodynamics</div>
+      <p><strong>Landauer, R.</strong> (1961). &#8220;Irreversibility and heat generation in the computing process.&#8221; <em>IBM Journal of Research and Development</em>, 5(3), 183&#8211;191.</p>
+      <p class="desc">Landauer&#8217;s principle: erasing one bit of information must release kT ln 2 of heat into the environment. Hazelton extends this via E=mc&#178; to argue that before erasure, information had <em>mass</em> &#8212; and proposes this as a candidate mechanism for dark matter.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1147/rd.53.0183" target="_blank">&#8599; DOI: 10.1147/rd.53.0183</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Landauer%27s_principle" target="_blank">&#8599; Landauer&#8217;s Principle &#8212; Wikipedia</a>
+      </div>
+    </div>
+    <div class="bib-entry">
+      <div class="bib-label">Wheeler 1990 &#183; &#8220;It from Bit&#8221; &#183; Information as the Foundation of Physics</div>
+      <p><strong>Wheeler, J.A.</strong> (1990). &#8220;Information, physics, quantum: the search for links.&#8221; In W. Zurek (Ed.), <em>Complexity, Entropy, and the Physics of Information</em>. Addison-Wesley.</p>
+      <p class="desc">Wheeler&#8217;s &#8220;It from Bit&#8221; hypothesis: every physical entity &#8212; every particle, field, spacetime geometry &#8212; derives its existence from information. &#8220;All things physical are information-theoretic in origin.&#8221; The philosophical foundation underlying Hazelton&#8217;s Landauer extension.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/It_from_bit" target="_blank">&#8599; It from Bit &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/John_Archibald_Wheeler" target="_blank">&#8599; John Archibald Wheeler</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BCI -->
+  <div class="bib-category">Brain-Computer Interface &#8212; Mind-Controlled Craft</div>
+  <div class="bib-papers">
+    <div class="bib-entry">
+      <div class="bib-label">Hochberg et al. 2006 &#183; Nature &#183; BrainGate &#8212; Neural Control of Robotic Limbs</div>
+      <p><strong>Hochberg, L.R. et al.</strong> (2006). &#8220;Neuronal ensemble control of prosthetic devices by a human with tetraplegia.&#8221; <em>Nature</em>, 442, 164&#8211;171.</p>
+      <p class="desc">The BrainGate trial: neural implants in a quadriplegic patient enabling direct brain control of a robotic arm, a cursor, and a television. The existence proof Hazelton cites for mind-controlled craft as a current technology, not a future speculation.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://doi.org/10.1038/nature04970" target="_blank">&#8599; DOI: 10.1038/nature04970</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/BrainGate" target="_blank">&#8599; BrainGate &#8212; Wikipedia</a>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 </div>
 </main>
