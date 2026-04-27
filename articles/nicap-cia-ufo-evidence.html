@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIA vs NICAP &#8212; The UFO Evidence &amp; the CIA&#8217;s Monitoring of Civilian Oversight (1956&#8211;1969) | Liminal Atlas</title>
+<meta name="description" content="Close reading of CIA-RDP81R00560R000100010001-0: NICAP&#8217;s 1964 congressional brief filed in CIA intelligence files, alongside the CIA&#8217;s internal monitoring reports and institutional history of its relationship with the National Investigations Committee on Aerial Phenomena.">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.doc-card{background:var(--surface2);border:1px solid var(--border2);border-left:4px solid var(--amber);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0;}
+.doc-card-header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+.doc-folio{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:var(--amber);border:1px solid rgba(245,158,11,0.3);border-radius:3px;padding:2px 8px;white-space:nowrap;}
+.doc-class{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);border-radius:3px;padding:2px 8px;white-space:nowrap;}
+.doc-class.unclassified{background:rgba(34,197,94,0.08);color:#22c55e;border-color:rgba(34,197,94,0.25);}
+.doc-date{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
+.doc-from-to{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-bottom:10px;}
+.doc-from-to strong{color:var(--text-bright);}
+.doc-summary{font-size:14px;line-height:1.75;color:var(--text);margin-bottom:12px;}
+.doc-quote{background:var(--surface);border:1px solid var(--border2);border-left:3px solid var(--blue);padding:12px 16px;margin:12px 0;font-size:13.5px;font-style:italic;color:var(--text);border-radius:0 4px 4px 0;}
+.doc-names{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.doc-name-pill{font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(59,130,246,0.08);color:var(--blue-bright);border:1px solid rgba(59,130,246,0.2);}
+.doc-type{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;}
+.doc-header-title{font-size:12px;font-family:var(--font-mono);letter-spacing:0.06em;color:var(--text-bright);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border2);}
+.timeline-spine{position:relative;padding-left:28px;}
+.timeline-spine::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--amber),var(--blue));opacity:0.3;}
+.timeline-dot{position:absolute;left:4px;width:14px;height:14px;border-radius:50%;background:var(--surface2);border:2px solid var(--amber);margin-top:22px;}
+.pgref{font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap;}
+.bib-entry{background:var(--surface2);border:1px solid var(--border2);border-left:3px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;margin:12px 0;}
+.bib-label{font-family:var(--font-mono);font-size:10px;color:var(--blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+.bib-entry p{font-size:13.5px;line-height:1.7;margin-bottom:8px;}
+.bib-entry .desc{font-size:12.5px;color:var(--text-dim);line-height:1.65;}
+.link-cluster{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:16px 20px;margin:20px 0;}
+.link-cluster-title{font-family:var(--font-mono);font-size:10px;letter-spacing:0.18em;color:var(--text-dim);text-transform:uppercase;margin-bottom:12px;}
+.link-row{display:flex;flex-wrap:wrap;gap:8px;}
+.link-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;transition:all 0.12s;}
+.link-pill:hover{background:rgba(59,130,246,0.08);border-color:var(--blue);color:var(--blue-bright);}
+.link-pill.amber{color:var(--amber);border-color:rgba(245,158,11,0.3);}
+.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;}
+.person-card{background:var(--surface2);border:1px solid var(--border2);padding:20px;display:flex;gap:16px;align-items:flex-start;}
+.person-photo-placeholder{width:72px;height:72px;border-radius:4px;flex-shrink:0;background:var(--surface);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:28px;}
+.person-name{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:3px;}
+.person-role{font-family:var(--font-mono);font-size:10px;color:var(--blue-bright);letter-spacing:0.08em;margin-bottom:8px;}
+.person-bio{font-size:12.5px;line-height:1.65;color:var(--text-dim);margin-bottom:10px;}
+.person-links{display:flex;flex-wrap:wrap;gap:5px;}
+@media(max-width:640px){.people-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<main data-pagefind-body>
+<div class="article-hero fade-up">
+  <div style="margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;">
+    <span class="cat-pill uap">UAP</span>
+  </div>
+  <div style="margin-bottom:16px;"><span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+  <div class="badge" style="margin-bottom:20px;">Primary Source &#183; CIA FOIA &#183; Declassified 2001</div>
+  <h1>CIA vs. NICAP<br><span style="color:var(--amber);">The UFO Evidence &amp; the CIA&#8217;s Monitoring of Civilian Oversight</span><br><span style="font-size:clamp(1rem,2vw,1.4rem);color:var(--text-dim);">1956&#8211;1969</span></h1>
+  <div class="hero-meta">
+    <span>Document: CIA-RDP81R00560R000100010001-0</span>
+    <span>Classification: UNCLASSIFIED (civilian publication filed by CIA)</span>
+    <span>Declassified: 2001/04/02</span>
+    <span>3 primary documents &#183; 20-event timeline</span>
+  </div>
+
+  <p class="hero-intro">CIA document CIA-RDP81R00560R000100010001-0 is not a CIA-authored assessment. It is <strong>NICAP&#8217;s own 1964 congressional brief</strong>, <em>The UFO Evidence</em>, edited by Richard H. Hall &#8212; 388 pages, 746 cases, 14 sections &#8212; which the CIA obtained and filed in its CREST intelligence database, where it remained on four physical terminals in Washington DC until a 2017 MuckRock lawsuit forced it online. Its presence in CIA files is the document&#8217;s story: the agency was treating a civilian research organisation&#8217;s output as intelligence material requiring active monitoring. Read alongside the CIA&#8217;s internal NICAP profile (document 0005516120) and its 1997 institutional history, a detailed picture emerges of how the CIA managed, penetrated, and ultimately neutralised the most credible civilian UAP oversight body of the Cold War era.</p>
+
+  <div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.2);border-radius:var(--radius);padding:20px 24px;margin-bottom:28px;">
+    <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--amber);text-transform:uppercase;margin-bottom:12px;">The Central Irony</div>
+    <p style="font-size:13.5px;line-height:1.75;color:var(--text);margin:0;">NICAP&#8217;s Board of Governors included <strong>Roscoe H. Hillenkoetter</strong> &#8212; the founding Director of the CIA &#8212; publicly calling for Congress to investigate the CIA&#8217;s suppression of UFO evidence. The CIA&#8217;s response was to debate internally whether to show their former director the classified documents he was demanding be released, as a way to neutralise him. He resigned from the board in 1962 under circumstances the CIA&#8217;s own history declines to fully explain. NICAP was eventually run into the ground by a successor director whose CIA connections were later confirmed in interviews. Cross-reference: <a href="/articles/australian-jio-ufo-file.html" style="color:var(--amber);">Australian JIO File 3092/2</a> names both Fahrney and Hillenkoetter as officers who publicly broke from official policy.</p>
+  </div>
+
+  <div class="btn-row" style="margin-bottom:0;">
+    <a class="btn btn-primary" href="https://www.cia.gov/readingroom/docs/CIA-RDP81R00560R000100010001-0.pdf" target="_blank" rel="noopener">&#128218; CIA FOIA Document</a>
+    <a class="btn btn-ghost" href="https://www.nicap.org/ufoe/UFO%20Evidence%201964.pdf" target="_blank">&#8599; Full UFO Evidence PDF</a>
+    <a class="btn btn-ghost" href="/articles/australian-jio-ufo-file.html">&#8599; Australian JIO File 3092/2</a>
+    <a class="btn btn-ghost" href="/people.html">&#128100; People Directory</a>
+  </div>
+</div>
+
+<div class="toc-section">
+  <div class="toc-inner">
+    <div class="toc-label">Contents</div>
+    <div class="toc-grid">
+      <a href="#doc-CIA-RDP81R00560R000100010001-0"><span class="toc-n">01</span>CIA-RDP81R00560R000100010001-0 &#8212; <em>The UFO Evidence</em> (1964), filed by CIA</a>
+      <a href="#doc-CIA-0005516120"><span class="toc-n">02</span>CIA-0005516120 &#8212; Internal NICAP profile (c.1966&#8211;67)</a>
+      <a href="#doc-Studies_in_Intelligence_Vol.1_No.1_1997"><span class="toc-n">03</span>CIA History &#8212; Haines 1997: &#8220;CIA&#8217;s Role in the Study of UFOs&#8221;</a>
+      <a href="#nicap-timeline"><span class="toc-n">&#9670;</span>Timeline &#8212; NICAP vs. CIA 1956&#8211;2001</a>
+      <a href="#people"><span class="toc-n">&#128100;</span>People &#8212; Key figures</a>
+      <a href="#bibliography"><span class="toc-n">&#128218;</span>Bibliography &#8212; Primary sources</a>
+    </div>
+  </div>
+</div>
+
+<div class="article-body">
+
+  <div style="background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:40px;">
+    <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px;">Document context</div>
+    <p style="font-size:13.5px;line-height:1.75;color:var(--text);margin:0;">This close reading covers three related documents: NICAP&#8217;s <em>The UFO Evidence</em> (1964) as filed by CIA; an internal CIA profile of NICAP&#8217;s operations (~1966); and the CIA&#8217;s 1997 declassified institutional history of its UFO involvement. Together they document the complete arc of the CIA&#8217;s relationship with the most credible civilian UAP oversight body of the Cold War era.</p>
+  </div>
+
+<div class="timeline-spine"><div class="timeline-dot"></div>
+<div class="doc-card" id="doc-CIA-RDP81R00560R000100010001-0">
+  <div class="doc-header-title">&#128196; The UFO Evidence (1964) &#8212; NICAP&#8217;s 388-page congressional brief, filed by CIA</div>
+  <div class="doc-card-header">
+    <span class="doc-folio">CIA-RDP81R00560R000100010001-0</span>
+    <span class="doc-class unclassified">UNCLASSIFIED (NICAP publication)</span>
+    <span class="doc-type">Civilian Report — obtained and filed by CIA</span>
+    <span class="doc-date">1964 (CIA filing date: declassified 2001/04/02)</span>
+  </div>
+  <div class="doc-from-to"><strong>Origin:</strong> National Investigations Committee on Aerial Phenomena (NICAP), 1536 Connecticut Ave. NW, Washington DC &nbsp;&rarr;&nbsp; <strong>Filed by:</strong> CIA CREST database — Central Intelligence Agency</div>
+  <div class="doc-summary">The primary document — CIA-RDP81R00560R000100010001-0 — is not a CIA-authored assessment of NICAP. It <em>is</em> NICAP&#8217;s own flagship publication, <strong>&#8220;The UFO Evidence&#8221;</strong> (1964), edited by Richard H. Hall. The CIA obtained a copy and filed it in their CREST intelligence database, where it remained accessible only on four physical terminals in Washington DC until a 2017 MuckRock lawsuit forced it online. The document&#8217;s presence in the CIA&#8217;s own filing system is itself significant: the agency was actively monitoring NICAP&#8217;s published output and treating a civilian research report as intelligence material. The report is 388 pages, presenting 746 selected cases from NICAP&#8217;s database of over 5,000 signed reports, organised into fourteen sections targeting a congressional audience.</div>
+  <div class="doc-quote">&#8220;The foremost question which remains is: What are the UFOs? The importance of these objects, if the above hypothesis is correct, is readily apparent. In order to settle this question, we strongly recommend that a much larger scale and more thorough scientific investigation be undertaken.&#8221;</div><div class="link-cluster"><div class="link-cluster-title">Primary Sources</div><div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/readingroom/docs/CIA-RDP81R00560R000100010001-0.pdf" target="_blank">&#128218; CIA FOIA &#8212; Original PDF</a>
+      <a class="link-pill" href="https://archive.org/details/CIA-RDP81R00560R000100010001-0" target="_blank">&#8599; Internet Archive copy</a>
+      <a class="link-pill" href="https://www.nicap.org/ufoe/UFO%20Evidence%201964.pdf" target="_blank">&#8599; Full text &#8212; NICAP.org</a>
+    </div></div><div class="doc-names"><span class="doc-name-pill">&#128100; Richard H. Hall (Editor)</span><span class="doc-name-pill">&#128100; Maj. Donald E. Keyhoe (Director)</span><span class="doc-name-pill">&#128100; Rear Adm. Delmer S. Fahrney (Board Chair)</span><span class="doc-name-pill">&#128100; VADM Roscoe H. Hillenkoetter (Board Governor)</span><span class="doc-name-pill">&#128100; Col. J. Bryan III (Board Governor)</span><span class="doc-name-pill">&#128100; Dewey J. Fournet (Board Governor)</span><span class="doc-name-pill">&#128100; Rear Adm. H.B. Knowles (Board Governor)</span></div>
+</div></div>
+<div class="timeline-spine"><div class="timeline-dot"></div>
+<div class="doc-card" id="doc-CIA-0005516120">
+  <div class="doc-header-title">&#128196; CIA internal profile of NICAP &#8212; budget, membership, &#8216;Project AcDas&#8217; computer programme</div>
+  <div class="doc-card-header">
+    <span class="doc-folio">CIA-0005516120</span>
+    <span class="doc-class ">SECRET</span>
+    <span class="doc-type">Internal CIA Intelligence Assessment</span>
+    <span class="doc-date">c. 1966&#8211;1967 (declassified)</span>
+  </div>
+  <div class="doc-from-to"><strong>Origin:</strong> CIA Contact Division / Office of Scientific Intelligence &nbsp;&rarr;&nbsp; <strong>Filed by:</strong> CIA internal files</div>
+  <div class="doc-summary">A separate CIA document (0005516120) provides a live intelligence profile of NICAP&#8217;s operations, almost certainly written during the 1966&#8211;67 UFO flap when NICAP&#8217;s membership peaked at ~14,000. It reveals the CIA was tracking NICAP&#8217;s internal structure in granular detail: <strong>budget ($640,000/year)</strong>, membership (3,500 dues-paying at time of writing, expected to rise substantially), and a classified computer programme inside NICAP codenamed <strong>&#8220;Project AcDas&#8221;</strong> &#8212; an effort to develop pattern analysis from NICAP&#8217;s 15,000+ raw reports. The CIA profiled AcDas&#8217;s data schema: events (time, place, terrain, weather, speed, colour, shape), principals (witness data, medical info, psychological aspects), and investigation notes. The document also profiles NICAP&#8217;s investigator network: at the time of writing, 35 investigators nationwide, with 7 PhDs, 2 MAs/MSs, 23 BAs/BSs, and 24 with college training. 12 of 35 were pilots. The CIA was building an intelligence picture of a civilian oversight body as if it were a foreign target.</div>
+  <div class="link-cluster"><div class="link-cluster-title">Source</div><div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/readingroom/document/0005516120" target="_blank">&#128218; CIA FOIA &#8212; NICAP profile document</a>
+    </div></div><div class="doc-names"><span class="doc-name-pill">&#128100; Contact Division officers</span><span class="doc-name-pill">&#128100; OSI analysts</span></div>
+</div></div>
+<div class="timeline-spine"><div class="timeline-dot"></div>
+<div class="doc-card" id="doc-Studies_in_Intelligence_Vol.1_No.1_1997">
+  <div class="doc-header-title">&#128196; CIA&#8217;s official history of its UFO involvement &#8212; written after DCI Woolsey&#8217;s 1993 review</div>
+  <div class="doc-card-header">
+    <span class="doc-folio">Studies in Intelligence Vol.1 No.1 1997</span>
+    <span class="doc-class unclassified">UNCLASSIFIED (declassified)</span>
+    <span class="doc-type">CIA Institutional History</span>
+    <span class="doc-date">1997 &#8212; Gerald K. Haines, CIA historian</span>
+  </div>
+  <div class="doc-from-to"><strong>Origin:</strong> CIA Office of the Historian &nbsp;&rarr;&nbsp; <strong>Filed by:</strong> Studies in Intelligence &#8212; CIA&#8217;s internal journal, declassified</div>
+  <div class="doc-summary">The most comprehensive CIA self-account of its UFO activities. Written by CIA historian Gerald K. Haines after DCI R. James Woolsey ordered a full review of CIA UFO files in 1993. Key revelations relevant to the NICAP story: (1) CIA officials debated showing Hillenkoetter the Robertson Panel report &#8220;as a possible way to defuse the situation&#8221; &#8212; they were worried he would use his NICAP platform to force disclosure; (2) CIA officer Frank Chapin hinted that UFO researcher Leon Davidson &#8220;might have ulterior motives, some of them perhaps not in the best interest of this country&#8221; and suggested FBI investigation; (3) In 1964, DCI John McCone &#8212; prompted by White House discussions on what to do if alien intelligence were discovered in space &#8212; asked for an updated CIA evaluation of UFOs; OSI officers then met directly with Richard H. Hall, NICAP&#8217;s acting director, to obtain NICAP&#8217;s recent reports and samples; (4) Hillenkoetter resigned from NICAP&#8217;s board in 1962 &#8212; the CIA history does not record whether CIA pressure was applied, but notes the agency had been actively concerned about Hillenkoetter&#8217;s insider knowledge.</div>
+  <div class="doc-quote">&#8220;CIA officials confirmed their opposition to the declassification of the full report and worried that Keyhoe had the ear of former DCI VAdm. Roscoe Hillenkoetter, who served on the board of governors of NICAP.&#8221;</div><div class="link-cluster"><div class="link-cluster-title">Source</div><div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/static/105bd8290b90de13ee136fecc9fe863f/cia-role-study-UFOs.pdf" target="_blank">&#128218; Full PDF &#8212; CIA.gov</a>
+      <a class="link-pill" href="https://sgp.fas.org/library/ciaufo.html" target="_blank">&#8599; FAS mirror (full text)</a>
+    </div></div><div class="doc-names"><span class="doc-name-pill">&#128100; Gerald K. Haines (CIA historian)</span><span class="doc-name-pill">&#128100; DCI R. James Woolsey</span><span class="doc-name-pill">&#128100; DCI John McCone</span><span class="doc-name-pill">&#128100; DCI Walter Bedell Smith</span><span class="doc-name-pill">&#128100; H. Marshall Chadwell (ASt. Director OSI)</span><span class="doc-name-pill">&#128100; Philip Strong (Dep. Asst. Director OSI)</span><span class="doc-name-pill">&#128100; Frank Chapin (CIA officer)</span><span class="doc-name-pill">&#128100; A. Ray Gordon (OSI officer)</span><span class="doc-name-pill">&#128100; Robert Amory Jr. (DDI)</span></div>
+</div></div>
+
+
+<div id="nicap-timeline" style="margin:32px 0;border:1px solid rgba(245,158,11,0.25);border-radius:8px;overflow:hidden;background:#0a0c12;">
+  <div style="background:rgba(245,158,11,0.08);border-bottom:1px solid rgba(245,158,11,0.2);padding:20px 24px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;">
+    <span style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:var(--amber);">&#9670; Declassified Chronology</span>
+    <span style="font-family:var(--font-mono);font-size:14px;font-weight:700;color:#fff;">NICAP vs. CIA &mdash; 1956&ndash;2001</span>
+    <span style="font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);margin-left:auto;">Sources: CIA history (Haines 1997) &middot; CIA FOIA docs &middot; NICAP.org</span>
+  </div>
+  <div style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.06);">
+    <button onclick="filterNicap('all')" id="ntab-all" style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 16px;background:rgba(245,158,11,0.15);color:var(--amber);border:none;border-bottom:2px solid var(--amber);cursor:pointer;">All</button>
+    <button onclick="filterNicap('nicap')" id="ntab-nicap" style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 16px;background:transparent;color:rgba(96,165,250,0.7);border:none;border-bottom:2px solid transparent;cursor:pointer;">NICAP</button>
+    <button onclick="filterNicap('cia')" id="ntab-cia" style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 16px;background:transparent;color:rgba(239,68,68,0.7);border:none;border-bottom:2px solid transparent;cursor:pointer;">CIA</button>
+    <button onclick="filterNicap('congress')" id="ntab-congress" style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 16px;background:transparent;color:rgba(168,85,247,0.7);border:none;border-bottom:2px solid transparent;cursor:pointer;">Congress</button>
+    <button onclick="filterNicap('disclosure')" id="ntab-disclosure" style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 16px;background:transparent;color:rgba(34,197,94,0.7);border:none;border-bottom:2px solid transparent;cursor:pointer;">Disclosure</button>
+  </div>
+  <div id="ntl-container" style="position:relative;padding:0 0 8px;">
+        <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">Nov 1956</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">NICAP incorporated in Washington DC — T. Townsend Brown, first director</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Founded by physicist T. Townsend Brown alongside retired officers. Initial mission: scientific investigation of UFOs and forcing full public disclosure by responsible authorities. Already on the CIA's radar before it formally began operations.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="disclosure" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">Jan 1957</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(34,197,94,0.06);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;padding:1px 6px;border-radius:2px;">DISCLOSURE</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Rear Admiral Fahrney press conference — objects &#8216;intelligently controlled&#8217;</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">NICAP&#8217;s first major public statement. Board Chairman Rear Admiral Delmer S. Fahrney — former head of the Navy&#8217;s guided missile programme — publicly declares that UFOs are entering the atmosphere at high speeds and performing accelerations beyond known capabilities, directed by some form of intelligence. Sets NICAP&#8217;s technical, credibility-based tone for the next decade.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">NICAP.org — leadership statements</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">Jan 1957</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Maj. Donald E. Keyhoe elected Director; Fahrney as Board Chair</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Keyhoe — retired Marine Corps Major, Naval Academy classmate of Hillenkoetter, and already the author of three bestselling UFO books — assumes the directorship. His strategy: use elite military credibility to force congressional hearings. He immediately recruits Hillenkoetter to the board.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1957</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">CIA begins monitoring NICAP; Robertson Panel report under pressure</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">NICAP and researcher Edward Ruppelt (former Blue Book head) publicly reveal the existence of the Robertson Panel. NICAP immediately demands full release. CIA&#8217;s Philip Strong (Deputy Asst. Director of OSI) refuses declassification and declines to disclose CIA sponsorship. A sanitised version is prepared deleting all CIA references.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA history — Haines 1997</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1957</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">VADM Roscoe H. Hillenkoetter joins NICAP Board of Governors</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">The first Director of the CIA — Hillenkoetter had run the agency from its founding in 1947 until 1950 — joins the board of the organisation dedicated to exposing the government&#8217;s UFO cover-up. He publicly accuses the Air Force of misleading the American public and urges Congress to act to &#8216;reduce the danger from secrecy.&#8217; The CIA&#8217;s concern is immediate.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">1958</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">CIA obtains UFO photographs from KYW-TV journalist — Keyhoe alleges CIA suppression</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">CIA&#8217;s Contact Division approaches Ralph C. Mayher (KYW-TV photographer) for copies of 1952 UFO photographs. After analysis, they are returned without comment. When Mayher asks for CIA&#8217;s evaluation, the CIA officer John Hazen declines to respond. Keyhoe publicly charges the CIA is deliberately asking eyewitnesses not to make sightings public.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA history — Haines 1997</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">1958</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Richard H. Hall joins NICAP as secretary</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Hall — former airman with scientific training — joins the organisation and becomes its most important researcher and writer. He will edit The UFO Evidence (1964) and The UFO Evidence Vol. II (2001). His arrival stabilises the organisation&#8217;s research output.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="disclosure" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1960</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(34,197,94,0.06);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;padding:1px 6px;border-radius:2px;">DISCLOSURE</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Hillenkoetter calls for congressional inquiry — criticises &#8216;secrecy and ridicule&#8217;</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">From the NICAP board, the former CIA Director publicly calls for Congress to investigate UFO secrecy. CIA officials are alarmed. They debate whether to show Hillenkoetter the full classified Robertson Panel report &#8212; the document CIA had actively suppressed &#8212; as a way to neutralise his advocacy.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA history; NICAP chronology</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1961</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">CIA debates showing Hillenkoetter Robertson Panel to neutralise him</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Internal CIA debate: should they brief their former Director &#8212; now sitting on NICAP&#8217;s board and publicly calling for disclosure &#8212; on the Robertson Panel they had classified? CIA officer Frank Chapin also suggests the FBI investigate UFO researcher Leon Davidson, hinting at &#8216;ulterior motives not in the best interest of this country.&#8217;</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA history — Haines 1997</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1962</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Hillenkoetter resigns from NICAP board — under circumstances that remain unclear</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">The former CIA Director abruptly resigns. His resignation letter states &#8216;The Air Force cannot do more under the circumstances&#8217; — a complete reversal of his previous public stance. Researcher Todd Zechel later documents CIA pressure was applied following Air Force complaints about Hillenkoetter&#8217;s NICAP role. He had been close to forcing open congressional hearings on Keyhoe&#8217;s evidence.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">Wikipedia; Podcast UFO analysis</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">1963</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">NICAP membership peaks at ~14,000 — public interest surges</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">The organisation reaches its maximum credibility and membership. Subcommittees of technically trained volunteer investigators operate nationally and internationally. 35 credentialled investigators on file with 7 PhDs. The CIA&#8217;s internal profile tracks this growth in real time.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA profile doc 0005516120</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1964</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">The UFO Evidence published &#8212; 388-page congressional brief</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Edited by Richard H. Hall. 746 cases selected from 5,000+ signed reports, categorised by witness type: USAF pilots, scientists, engineers, police, international. 14 sections covering intelligent control, EM effects, radar cases, congressional interest, foreign reports, and chronology. The CIA obtains a copy and files it as document CIA-RDP81R00560R000100010001-0.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA-RDP81R00560R000100010001-0</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1964</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">DCI McCone requests updated CIA UFO evaluation; OSI meets with NICAP&#8217;s Richard Hall</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Following White House discussions on what to do if alien intelligence were confirmed, DCI McCone asks for a fresh CIA assessment of UFOs. OSI&#8217;s Contact Division meets directly with Richard Hall (acting NICAP director) to obtain recent reports and samples. The CIA is now sourcing intelligence from the organisation it had spent years monitoring.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA history — Haines 1997</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1965</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">NICAP codenamed internal computer programme &#8216;Project AcDas&#8217;</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">CIA&#8217;s internal profile records NICAP is developing computerised pattern analysis of 15,000+ raw reports under the codename &#8216;Project AcDas.&#8217; The CIA documents its data schema in detail: event parameters, witness profiles, psychological assessment fields. Remarkable that a civilian UFO organisation in 1965 was running a structured database intelligence programme the CIA felt needed monitoring.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">CIA profile doc 0005516120</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="congress" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1966</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#a855f7;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(168,85,247,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;padding:1px 6px;border-radius:2px;">CONGRESS</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">House Armed Services Committee UFO hearing — NICAP forces congressional action</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">After years of pressure from NICAP, Congress holds hearings on Blue Book. The Air Force&#8217;s identification of the Michigan &#8216;swamp gas&#8217; sightings causes public outrage. The committee recommends university investigation — directly leading to the Condon Committee contract with Colorado.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">1966</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Col. Joseph Bryan III joins NICAP board — CIA connections later confirmed</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">Bryan — founder and original chief of the CIA&#8217;s Psychological Warfare Staff 1947&#8211;53 — joins the NICAP board. Years later, in interviews with researcher Todd Zechel, Bryan confirms his CIA connections while claiming no ongoing communication with the agency during his NICAP service.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">Podcast UFO — CIA-NICAP analysis</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">1968</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">NICAP severs ties with Condon Committee</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">NICAP had initially aided the Condon Committee&#8217;s investigations. Keyhoe becomes disillusioned with its direction and NICAP formally withdraws. The committee&#8217;s negative conclusion (January 1969) devastates NICAP&#8217;s membership and credibility.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="cia" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:#f59e0b;line-height:1.3;">Dec 1969</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(239,68,68,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(239,68,68,0.15);color:#f87171;padding:1px 6px;border-radius:2px;">CIA</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">Keyhoe forced out; CIA-connected leadership installed</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">NICAP&#8217;s board — headed by Col. Joseph Bryan III — forces Keyhoe to retire. His successor John L. Acuff, and then Alan N. Hall, shift the organisation away from investigation toward newsletter fundraising. By 1969 Keyhoe had concluded the CIA, not the Air Force, was the true source of the cover-up.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">Wikipedia; Disclosdex</div>
+      </div>
+    </div>    <div class="tl-event" data-cat="civilian" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">1980</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#3b82f6;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(59,130,246,0.08);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;padding:1px 6px;border-radius:2px;">NICAP</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">NICAP dissolved; archive transferred to J. Allen Hynek&#8217;s CUFOS</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">90 linear feet of case files, correspondence, and clippings transferred to Hynek&#8217;s Center for UFO Studies. The organisation that had most credibly threatened official secrecy — and which the CIA had monitored, profiled, and arguably penetrated — quietly closed.</div>
+        
+      </div>
+    </div>    <div class="tl-event" data-cat="disclosure" style="display:flex;gap:0;border-bottom:1px solid rgba(255,255,255,0.04);transition:background 0.15s;">
+      <div style="width:110px;min-width:110px;padding:14px 12px 14px 20px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:var(--font-mono);font-size:10px;font-weight:700;color:rgba(245,158,11,0.45);line-height:1.3;">2001</div>
+        <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;margin-top:2px;flex-shrink:0;"></div>
+      </div>
+      <div style="flex:1;padding:14px 16px;background:rgba(34,197,94,0.06);">
+        <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;">
+          <span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;padding:1px 6px;border-radius:2px;">DISCLOSURE</span>
+          <span style="font-size:12.5px;font-weight:600;color:#e2e8f0;line-height:1.4;">CIA-RDP81R00560R000100010001-0 approved for release from CREST database</span>
+        </div>
+        <div style="font-size:11.5px;line-height:1.65;color:rgba(203,213,225,0.7);">The document — NICAP&#8217;s own 1964 report, held in CIA files for 37 years — is declassified. Released online in 2017 following a MuckRock lawsuit and the work of researcher Emma Best, making the CIA&#8217;s filing of a civilian UFO report publicly searchable for the first time.</div>
+        <div style="margin-top:5px;font-family:var(--font-mono);font-size:9px;color:rgba(245,158,11,0.5);">Internet Archive metadata</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  function filterNicap(cat) {
+    document.querySelectorAll('#ntl-container .tl-event').forEach(function(e) {
+      e.style.display = (cat==='all' || e.dataset.cat===cat) ? 'flex' : 'none';
+    });
+    var cfg = {all:['rgba(245,158,11,0.15)','var(--amber)','var(--amber)'],nicap:['rgba(59,130,246,0.15)','#60a5fa','#3b82f6'],cia:['rgba(239,68,68,0.15)','#f87171','#ef4444'],congress:['rgba(168,85,247,0.15)','#c084fc','#a855f7'],disclosure:['rgba(34,197,94,0.1)','#4ade80','#22c55e']};
+    ['all','nicap','cia','congress','disclosure'].forEach(function(t) {
+      var b=document.getElementById('ntab-'+t); var a=(t===cat); var c=cfg[t];
+      b.style.background=a?c[0]:'transparent'; b.style.color=a?c[1]:c[1].replace('1)','0.5)'); b.style.borderBottomColor=a?c[2]:'transparent';
+    });
+  }
+  </script>
+</div>
+
+<section style="border-top:2px solid var(--blue);padding-top:40px;margin-top:40px;" id="people">
+  <div style="display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:2px solid var(--border2);margin-bottom:28px;">
+    <span class="ch-num">PEOPLE</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">Key figures in the NICAP / CIA relationship</span>
+  </div>
+  <h2>People Named in These Documents</h2>
+  <div class="people-grid">    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">Rear Adm. Delmer S. Fahrney</div>
+        <div class="person-role">NICAP Board Chair &#183; Father of Navy Guided Missiles</div>
+        <div class="person-bio">Retired Rear Admiral who directed the US Navy&#8217;s guided missile programme from its inception. NICAP&#8217;s first Board Chairman. In January 1957 he called the first NICAP press conference declaring UFOs were entering the atmosphere at high speeds performing accelerations beyond known capabilities &#8212; directed by some form of intelligence. His military stature made NICAP immediately credible to the press corps. He resigned in April 1957, citing his wife&#8217;s illness, though he was also troubled by the ridicule his UAP interests attracted among his military peers. Also cited by name in the Australian JIO file 3092/2.</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Delmer_S._Fahrney" target="_blank">&#8599; More info</a><a class="link-pill" href="/articles/australian-jio-ufo-file.html">&#8599; JIO File 3092/2</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">VADM Roscoe H. Hillenkoetter</div>
+        <div class="person-role">First CIA Director 1947&#8211;1950 &#183; NICAP Board Governor 1957&#8211;1962</div>
+        <div class="person-bio">The founding Director of the CIA, serving from the agency&#8217;s creation in 1947 until 1950. Naval Academy classmate of Major Keyhoe. Joined NICAP&#8217;s board in 1957 and publicly accused the Air Force of misleading Americans and urged Congress to act to &#8216;reduce the danger from secrecy.&#8217; The CIA actively worried about his insider knowledge &#8212; debating whether to brief him on the Robertson Panel to neutralise him. He resigned from NICAP&#8217;s board in 1962 under pressure from the CIA following Air Force complaints, abruptly reversing his public position. His behaviour in the years between &#8212; sending contradictory signals to Keyhoe and to sceptic Donald Menzel &#8212; remains one of the murkiest figures in UAP disclosure history.</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Roscoe_H._Hillenkoetter" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">Maj. Donald E. Keyhoe</div>
+        <div class="person-role">NICAP Director 1957&#8211;1969 &#183; Author &#183; Marine Corps (Ret.)</div>
+        <div class="person-bio">Retired Marine Corps Major and author of three bestselling UFO books in 1950, 1953, and 1955, in which he argued the Air Force knew UFOs were extraterrestrial and was covering it up. NICAP Director for 12 years. His strategy was to use military credibility and congressional pressure to force disclosure. He was forced out of NICAP in December 1969 by a board led by Col. Joseph Bryan III — whom Keyhoe did not know had CIA connections. In his final book, Aliens from Space (1973), he concluded the CIA was the real source of the cover-up.</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Donald_Keyhoe" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">Richard H. Hall</div>
+        <div class="person-role">NICAP Secretary &amp; Assistant Director &#183; Editor, <em>The UFO Evidence</em></div>
+        <div class="person-bio">Joined NICAP in 1958 as secretary-researcher. Edited The UFO Evidence (1964) — the 388-page congressional brief that the CIA filed in its CREST database &#8212; selecting 746 cases from 5,000+ signed reports. When Keyhoe became inactive, Hall served as acting director and met directly with CIA&#8217;s OSI officers in 1964 when DCI McCone requested an updated UFO evaluation. His two-volume UFO Evidence (1964 and 2001) represents the most systematic civilian documentation of UAP reports in the Cold War era.</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Richard_Hall_(ufologist)" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">Col. Joseph Bryan III</div>
+        <div class="person-role">NICAP Board Governor &#183; Founder, CIA Psychological Warfare Staff 1947&#8211;53</div>
+        <div class="person-bio">Retired Air Force Colonel who founded and served as the original chief of the CIA&#8217;s Psychological Warfare Staff (1947&#8211;53). Joined NICAP&#8217;s Board of Governors during the 1960s. In December 1969, as board head, he forced Keyhoe&#8217;s removal as NICAP Director. In interviews with researcher Todd Zechel, Bryan confirmed his CIA connections while claiming no ongoing communication with the agency during his NICAP tenure. His son, author C.D.B. Bryan, disputes CIA infiltration claims, arguing NICAP &#8216;simply self-destructed.&#8217;</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/NICAP" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">H. Marshall Chadwell</div>
+        <div class="person-role">Assistant Director, CIA Office of Scientific Intelligence &#183; 1952</div>
+        <div class="person-bio">Key CIA figure in the early UFO response. In December 1952, he briefed DCI Smith that &#8216;something was going on that must have immediate attention&#8217; and that sightings near major US defence installations &#8216;are not attributable to natural phenomena or known types of aerial vehicles.&#8217; He drafted the proposed NSC directive that would have made UFO investigation a community-wide priority. He also organised the Robertson Panel. His 1952 internal alarm stands in sharp contrast to the public debunking posture the CIA adopted weeks later.</div>
+        <div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Robertson_Panel" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>    <div class="person-card">
+      <div class="person-photo-placeholder">&#128100;</div>
+      <div>
+        <div class="person-name">Gerald K. Haines</div>
+        <div class="person-role">CIA Historian &#183; Author, <em>CIA&#8217;s Role in the Study of UFOs 1947&#8211;90</em></div>
+        <div class="person-bio">CIA National Reconnaissance Office historian who wrote the agency&#8217;s official account of its UFO involvement, published in Studies in Intelligence (1997) after DCI Woolsey ordered a full file review in 1993. His paper is the primary CIA self-disclosure document, and despite its institutional framing, it confirms: CIA involvement from 1947; the Robertson Panel&#8217;s debunking recommendation; active monitoring of NICAP; the Hillenkoetter neutralisation debate; and DCI McCone&#8217;s 1964 request for updated UFO intelligence sourced from NICAP&#8217;s own files.</div>
+        <div class="person-links"><a class="link-pill" href="https://sgp.fas.org/library/ciaufo.html" target="_blank">&#8599; More info</a></div>
+      </div>
+    </div>  </div>
+</section>
+
+<section style="border-top:2px solid var(--blue);padding-top:40px;margin-top:40px;" id="bibliography">
+  <div style="display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:2px solid var(--border2);margin-bottom:28px;">
+    <span class="ch-num">BIB</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);">Primary sources</span>
+  </div>
+  <h2>Primary Sources</h2>
+
+  <div class="bib-entry">
+    <div class="bib-label">CIA-RDP81R00560R000100010001-0 &#183; The UFO Evidence (1964) &#183; NICAP</div>
+    <p><strong>Hall, R.H.</strong> (ed.) (1964). <em>The UFO Evidence</em>. National Investigations Committee on Aerial Phenomena, Washington DC. [Filed as CIA-RDP81R00560R000100010001-0; declassified 2001/04/02]</p>
+    <p class="desc">388 pages. 746 cases from 5,000+ signed reports. 14 sections targeting Congress as primary audience. The CIA obtained this civilian publication and held it in its CREST intelligence database for 37 years before declassification. Its presence in CIA files confirms the agency was treating NICAP&#8217;s research output as intelligence material requiring monitoring.</p>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/readingroom/docs/CIA-RDP81R00560R000100010001-0.pdf" target="_blank">&#128218; CIA FOIA PDF</a>
+      <a class="link-pill" href="https://archive.org/details/CIA-RDP81R00560R000100010001-0" target="_blank">&#8599; Internet Archive</a>
+      <a class="link-pill" href="https://www.nicap.org/ufoe/UFO%20Evidence%201964.pdf" target="_blank">&#8599; NICAP.org full text</a>
+    </div>
+  </div>
+
+  <div class="bib-entry">
+    <div class="bib-label">CIA 0005516120 &#183; NICAP internal profile &#183; c.1966&#8211;67</div>
+    <p>CIA Contact Division internal document profiling NICAP&#8217;s budget ($640,000/yr), membership (3,500 dues-paying), investigator network (35 investigators, 7 PhDs), and internal computer programme &#8220;Project AcDas.&#8221; Declassified.</p>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/readingroom/document/0005516120" target="_blank">&#128218; CIA FOIA</a>
+    </div>
+  </div>
+
+  <div class="bib-entry">
+    <div class="bib-label">Haines, G.K. (1997) &#183; &#8220;CIA&#8217;s Role in the Study of UFOs, 1947&#8211;90&#8221;</div>
+    <p><strong>Haines, G.K.</strong> (1997). &#8220;CIA&#8217;s Role in the Study of UFOs, 1947&#8211;90.&#8221; <em>Studies in Intelligence</em>, Vol. 1, No. 1. Central Intelligence Agency.</p>
+    <p class="desc">The CIA&#8217;s official institutional history of its UFO involvement. Written after DCI Woolsey ordered a full file review in 1993. Confirms Robertson Panel, active NICAP monitoring, the Hillenkoetter neutralisation debate, and DCI McCone&#8217;s 1964 UFO intelligence request sourced from NICAP&#8217;s Richard Hall.</p>
+    <div class="link-row">
+      <a class="link-pill amber" href="https://www.cia.gov/static/105bd8290b90de13ee136fecc9fe863f/cia-role-study-UFOs.pdf" target="_blank">&#128218; CIA PDF</a>
+      <a class="link-pill" href="https://sgp.fas.org/library/ciaufo.html" target="_blank">&#8599; FAS full text</a>
+    </div>
+  </div>
+
+  <div class="bib-entry">
+    <div class="bib-label">Cross-reference &#183; Australian JIO File 3092/2 (1957&#8211;1971)</div>
+    <p>The Australian intelligence community&#8217;s 14-year SECRET file on UFOs names Admiral Fahrney and Admiral Hillenkoetter as retired officers who publicly stated the US government knew UFOs were extraterrestrial. The JIO file and the NICAP documents are two parallel threads of the same story: governments treating UAP as a real intelligence problem while publicly denying it, and civilian oversight bodies populated by insiders who knew enough to make the cover-up difficult to maintain.</p>
+    <div class="link-row">
+      <a class="link-pill" href="/articles/australian-jio-ufo-file.html">&#8599; JIO File 3092/2 &#8212; Close Reading</a>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+<script src="/js/site.js"></script>
+</body>
+</html>
