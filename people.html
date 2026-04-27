@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>People Directory | Liminal Atlas</title>
-<meta name="description" content="All hosts, guests, and figures mentioned across Liminal Atlas close readings. Click any card for a full profile and links to the articles they appear in.">
+<meta name="description" content="All hosts, guests, and figures mentioned across Liminal Atlas close readings.">
 <style>
 :root{--surface:#0f1117;--surface2:#161b25;--border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.11);--text:#b0bec5;--text-bright:#e8eaf0;--text-dim:#6b7a8d;--blue:#3b82f6;--blue-bright:#60a5fa;--amber:#f59e0b;--radius:8px;--max-width:1100px;--font-mono:'JetBrains Mono','Fira Code',monospace;--bg:#0a0d14;}
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -29,18 +29,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
 .pdir-card-inner{display:flex;gap:14px;padding:16px;align-items:flex-start;}
 .pdir-photo{width:60px;height:60px;object-fit:cover;border-radius:50%;flex-shrink:0;border:1px solid var(--border2);}
 .pdir-photo-placeholder{width:60px;height:60px;border-radius:50%;flex-shrink:0;background:var(--surface);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-dim);}
-.pdir-name-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap;}
-.pdir-name{font-size:15px;font-weight:700;color:var(--text-bright);}
+.pdir-name{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:5px;}
 .pdir-role{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);line-height:1.5;}
 
 .pdir-profile{padding:0 16px 16px;border-top:1px solid var(--border);}
-.pdir-profile.open{display:block !important;}
 .pdir-bio{font-size:13px;line-height:1.7;color:var(--text);margin-top:12px;margin-bottom:12px;}
 .pdir-bio em{color:var(--text-bright);}
 .pdir-bio strong{color:var(--text-bright);}
 .pdir-links{display:flex;flex-wrap:wrap;gap:6px;}
-.link-pill{display:inline-flex;align-items:center;font-size:11px;font-family:var(--font-mono);padding:3px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;}
-.link-pill:hover{border-color:var(--blue-bright);color:var(--blue-bright);}
+.art-pill:hover{border-color:var(--blue-bright) !important;color:var(--blue-bright) !important;}
 
 .pdir-stats{padding:16px 24px;max-width:var(--max-width);margin:0 auto;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);border-bottom:1px solid var(--border);}
 .pdir-stats strong{color:var(--text-bright);}
@@ -52,7 +49,7 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
 <main>
 <div class="pdir-hero">
   <h1>People in <span>Liminal Atlas</span></h1>
-  <p>Everyone who has appeared as a host or guest, or been discussed as a significant figure, across all close readings. Click any card for a full profile. Linked to every article they appear in.</p>
+  <p>Everyone who has appeared as a host or guest, or been discussed as a significant figure, across all close readings. Click any card for a full profile and links to the articles they appear in.</p>
 </div>
 
 <div class="pdir-stats">
@@ -77,15 +74,18 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.35);border-radius:3px;padding:2px 8px;">Host</span> <span class="pdir-name">Jesse Michels</span></div>
+        <div class="pdir-name">Jesse Michels</div>
         <div class="pdir-role">Host, American Alchemy &#183; CEO, American Alchemy Holdings &#183; Thiel Capital Portfolio Manager</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Creator and host of <em>American Alchemy</em>, one of the most research-intensive UAP and frontier-science interview series. CEO of American Alchemy Holdings. Manages a venture portfolio for Peter Thiel&#8217;s family office, where he began his career and met many of the researchers he later interviewed. Has broken major stories: the Townsend Brown anti-gravity lineage, the 1971 Australian JIO document, and the Nazca mummy case. Columbia University graduate (History, Jon Jay Scholar). Previous stints at Google and The Daily Show. Has personally examined the M-type Nazca specimens in Peru.</div>
+      <div class="pdir-bio">Creator and host of <em>American Alchemy</em>. CEO of American Alchemy Holdings. Manages a venture portfolio for Peter Thiel&#8217;s family office, where he began his career. Has broken major stories: the Townsend Brown anti-gravity lineage, the 1971 Australian JIO document, and the Nazca mummy case. Columbia University graduate (History, Jon Jay Scholar). Previous stints at Google and The Daily Show. Has personally examined the M-type Nazca specimens in Peru.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/American_Alchemy_(podcast)" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/dave-rossi-close-reading.html">&#8594; Dave Rossi on American Alchemy</a><a class="link-pill" href="/articles/sal-pais-close-reading.html">&#8594; Sal Pais on American Alchemy</a><a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a><a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/American_Alchemy_(podcast)" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/dave-rossi-close-reading.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; Dave Rossi on American Alchemy</a>
+        <a class="art-pill" href="/articles/sal-pais-close-reading.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; Sal Pais on American Alchemy</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -93,15 +93,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Joe_Rogan_2022.jpg/220px-Joe_Rogan_2022.jpg" alt="Joe Rogan" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.35);border-radius:3px;padding:2px 8px;">Host</span> <span class="pdir-name">Joe Rogan</span></div>
+        <div class="pdir-name">Joe Rogan</div>
         <div class="pdir-role">Host, The Joe Rogan Experience &#183; Comedian &amp; Podcaster</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Host of the Joe Rogan Experience, the most downloaded podcast in the world. MMA commentator for the UFC. Stand-up comedian. Self-described as &#8220;allergic to BS&#8221; on UFO disclosure &#8212; frustrated with the slow-drip process but deeply interested in the underlying phenomenon. The Comedy Mothership (his Austin comedy club) features UAP art throughout. Has hosted Hal Puthoff, Jacques Vallée, Ryan Graves, Eric Weinstein, Elon Musk, Donald Trump, and hundreds of other researchers and public figures.</div>
+      <div class="pdir-bio">Host of the Joe Rogan Experience, the most downloaded podcast in the world. MMA commentator for the UFC. Self-described as &#8220;allergic to BS&#8221; on UFO disclosure &#8212; frustrated with the slow drip but deeply interested in the underlying phenomenon. The Comedy Mothership (his Austin comedy club) features UAP art throughout. Has hosted Hal Puthoff, Jacques Vallée, Ryan Graves, Eric Weinstein, Elon Musk, Donald Trump, and hundreds of other researchers and public figures.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Joe_Rogan" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Joe_Rogan" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -109,15 +109,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.35);border-radius:3px;padding:2px 8px;">Host</span> <span class="pdir-name">Ashton Forbes</span></div>
+        <div class="pdir-name">Ashton Forbes</div>
         <div class="pdir-role">Host, Hard Truths &#183; Four Orbs UAP Research</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Independent UAP researcher and host of the <em>Hard Truths</em> podcast and the Four Orbs YouTube channel. Known for deep-dive analysis of UAP footage and interviews with technical researchers on the fringe of mainstream UAP discourse. Hosted Sal Pais and Dave Rossi in a joint episode that became one of the most-discussed conversations in the extended electrodynamics space.</div>
+      <div class="pdir-bio">Independent UAP researcher and host of the <em>Hard Truths</em> podcast and the Four Orbs YouTube channel. Known for deep-dive analysis of UAP footage and interviews with technical researchers on the fringe of mainstream UAP discourse. Hosted Sal Pais and Dave Rossi in a joint session covering extended electrodynamics and the Pais Effect.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://www.youtube.com/@FourOrbs" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/pais-rossi-hard-truths.html">&#8594; Pais &amp; Rossi on Hard Truths</a>
+        <a class="art-pill" href="https://www.youtube.com/@FourOrbs" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/pais-rossi-hard-truths.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Host</span>&#8594; Pais &amp; Rossi on Hard Truths</a>
       </div>
     </div>
   </div>
@@ -125,15 +125,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.12);color:#c084fc;border:1px solid rgba(168,85,247,0.35);border-radius:3px;padding:2px 8px;">Guest</span> <span class="pdir-name">Dr. Eric Hazelton</span></div>
+        <div class="pdir-name">Dr. Eric Hazelton</div>
         <div class="pdir-role">Director of Research, NSA &#183; CTO, ODNI &#183; CIA Analyst &#183; Neuroscientist</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Former Director of Research at the National Security Agency &#8212; the most senior science and technology role at the NSA. Subsequently served as CTO of the entire US Intelligence Community (ODNI). Earlier career included Hughes Aircraft (flight simulation), the CIA as an analyst, and Disney Imagineering where he developed laser-plasma electronic fireworks and brain-computer interfaces. Neuroscientist, 70+ patents. Co-author of <em>The New Science of UFOs</em> (2024) and <em>The Shadow of Time</em> (2024) with his wife Dr. Chris Gilbert. His personal conclusion on UAPs: a few dozen cases are genuinely real and beyond current science.</div>
+      <div class="pdir-bio">Former Director of Research at the NSA &#8212; the most senior science role at the agency. Then CTO of the entire US Intelligence Community (ODNI). Earlier: Hughes Aircraft (flight simulation), CIA analyst, Disney Imagineering (laser-plasma fireworks, brain-computer interfaces). Neuroscientist, 70+ patents. Co-author of <em>The New Science of UFOs</em> and <em>The Shadow of Time</em> with Chris Gilbert. His conclusion on UAPs: a few dozen cases are genuinely real and beyond current science.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/National_Security_Agency" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/National_Security_Agency" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
@@ -141,15 +141,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.12);color:#c084fc;border:1px solid rgba(168,85,247,0.35);border-radius:3px;padding:2px 8px;">Guest</span> <span class="pdir-name">Dr. Chris Gilbert</span></div>
+        <div class="pdir-name">Dr. Chris Gilbert</div>
         <div class="pdir-role">MD/PhD &#183; Doctors Without Borders &#183; Holistic Medicine Pioneer</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">MD and PhD from a top French medical school (Universit&#233; Paris Cit&#233;). Practiced medicine across four continents with Doctors Without Borders. Pioneer of the &#8220;listening cure&#8221; &#8212; a methodology treating the body as a collection of intelligent sub-entities (gut neurons, heart neurons, cellular cognition) in dialogue with the brain. Co-author of <em>The New Science of UFOs</em> and <em>The Shadow of Time</em> with her husband Eric Hazelton. Her research interest in organisms with radically different neuroanatomy from humans feeds directly into their exopsychology framework for UAP analysis.</div>
+      <div class="pdir-bio">MD and PhD from a top French medical school. Practiced medicine across four continents with Doctors Without Borders. Pioneer of the &#8220;listening cure&#8221; &#8212; treating the body as a collection of intelligent sub-entities (gut neurons, heart neurons, cellular cognition) in dialogue with the brain. Co-author of <em>The New Science of UFOs</em> and <em>The Shadow of Time</em>. Her research into organisms with radically different neuroanatomy feeds their exopsychology framework for UAP analysis.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Doctors_Without_Borders" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Doctors_Without_Borders" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
@@ -157,15 +157,16 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.12);color:#c084fc;border:1px solid rgba(168,85,247,0.35);border-radius:3px;padding:2px 8px;">Guest</span> <span class="pdir-name">Dave Rossi</span></div>
+        <div class="pdir-name">Dave Rossi</div>
         <div class="pdir-role">DoD Contract Engineer &#183; Founder, SAALT LLC &amp; Phase Helix &#183; Host, Generation Zed</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Former construction worker who became a DoD contract engineer through an unusual path. During COVID lockdown, boredom led him to start the Generation Zed UFO podcast. About a year and a half in, he had a spontaneous encounter with a blue plasma-like being that left him with an overwhelming compulsion to study electrical engineering and quantum physics &#8212; despite having failed maths in high school. Two years of self-directed study (Soviet ZPE papers, Tesla, Maxwell, homemade device experiments) later, he was presenting to researchers affiliated with Hal Puthoff and Eric Davis. Now a DoD contract engineer and founder of SAALT LLC (Consciousness, Zero Point Energy, Propulsion, Medical) and Phase Helix.</div>
+      <div class="pdir-bio">Former construction worker who became a DoD contract engineer through an unusual path. During COVID lockdown boredom led him to start the Generation Zed UFO podcast. About a year and a half in, he had a spontaneous encounter with a blue plasma-like being that left him compelled to study electrical engineering and quantum physics &#8212; despite having failed maths in high school. Two years of self-directed study later he was presenting to researchers affiliated with Hal Puthoff and Eric Davis. Now a DoD contract engineer and founder of SAALT LLC and Phase Helix.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://www.youtube.com/@generationzed" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/dave-rossi-close-reading.html">&#8594; Dave Rossi on American Alchemy</a><a class="link-pill" href="/articles/pais-rossi-hard-truths.html">&#8594; Pais &amp; Rossi on Hard Truths</a>
+        <a class="art-pill" href="https://www.youtube.com/@generationzed" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/dave-rossi-close-reading.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; Dave Rossi on American Alchemy</a>
+        <a class="art-pill" href="/articles/pais-rossi-hard-truths.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; Pais &amp; Rossi on Hard Truths</a>
       </div>
     </div>
   </div>
@@ -173,15 +174,16 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.12);color:#c084fc;border:1px solid rgba(168,85,247,0.35);border-radius:3px;padding:2px 8px;">Guest</span> <span class="pdir-name">Dr. Salvatore Cesar Pais</span></div>
+        <div class="pdir-name">Dr. Salvatore Cesar Pais</div>
         <div class="pdir-role">U.S. Navy Engineer &#183; Author of the Navy UAP Patents</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Aerospace engineer who worked for the US Naval Air Warfare Center Aircraft Division (NAWCAD). Filed a series of extraordinary patents on behalf of the US Navy between 2016 and 2019 describing technologies including: a room-temperature superconductor, an electromagnetic field generator capable of creating high-energy electromagnetic fields, a compact fusion reactor, and &#8212; most controversially &#8212; a &#8220;hybrid aerospace-undersea craft&#8221; (the &#8216;UAP patent&#8217;). The patents describe mechanisms that align closely with theoretical UAP propulsion. His academic papers reference a &#8220;Pais Effect&#8221; &#8212; high-frequency vibration of electrically charged matter. The Navy confirmed these are real patents filed in earnest.</div>
+      <div class="pdir-bio">Aerospace engineer who worked for the US Naval Air Warfare Center Aircraft Division (NAWCAD). Filed a series of extraordinary patents on behalf of the US Navy between 2016 and 2019 describing a room-temperature superconductor, a high-energy electromagnetic field generator, a compact fusion reactor, and a &#8220;hybrid aerospace-undersea craft.&#8221; His papers reference the &#8220;Pais Effect&#8221; &#8212; high-frequency vibration of electrically charged matter. The Navy confirmed these are real patents filed in earnest.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/sal-pais-close-reading.html">&#8594; Sal Pais on American Alchemy</a><a class="link-pill" href="/articles/pais-rossi-hard-truths.html">&#8594; Pais &amp; Rossi on Hard Truths</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Salvatore_Pais" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/sal-pais-close-reading.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; Sal Pais on American Alchemy</a>
+        <a class="art-pill" href="/articles/pais-rossi-hard-truths.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.4);border-radius:3px;padding:1px 5px;white-space:nowrap;">Guest</span>&#8594; Pais &amp; Rossi on Hard Truths</a>
       </div>
     </div>
   </div>
@@ -189,15 +191,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Thomas_Townsend_Brown.jpg/220px-Thomas_Townsend_Brown.jpg" alt="Thomas Townsend Brown" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Thomas Townsend Brown</span></div>
+        <div class="pdir-name">Thomas Townsend Brown</div>
         <div class="pdir-role">Inventor &#183; Biefeld-Brown Effect &#183; 1905&#8211;1985</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Ohio-born electrical engineer and inventor who in the early 1920s discovered what he called electrogravitic thrust: movement produced by a high-voltage asymmetric capacitor. Discovered the effect using Coolidge X-ray tubes while at Caltech under Robert Millikan. Studied under Paul Biefield at Denison University. Demonstrated vacuum thrust in Paris (1955) at the Montgolfier facilities and at Bahnson Labs in North Carolina (1958). Funded in the 1960s by Floyd Odlum (Northrop majority owner) at Guidance Technologies, Santa Monica. Associated with Bill Lear, Edward Teller, and Robert Sarbacher. His 1954 Winterhaven proposal named magnesium-bismuth as the ideal high-K dielectric &#8212; the same material appearing in alleged UAP crash samples analysed by Gary Nolan.</div>
+      <div class="pdir-bio">Ohio-born electrical engineer who in the early 1920s discovered electrogravitic thrust &#8212; movement produced by a high-voltage asymmetric capacitor. Studied under Paul Biefield at Denison University and Robert Millikan at Caltech. Demonstrated vacuum thrust in Paris (1955) and at Bahnson Labs NC (1958). Funded in the 1960s by Floyd Odlum (Northrop majority owner) at Guidance Technologies, Santa Monica. His 1954 Winterhaven proposal named magnesium-bismuth as the ideal dielectric &#8212; the same material found in alleged UAP crash samples analysed by Gary Nolan at Stanford.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Thomas_Townsend_Brown" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Thomas_Townsend_Brown" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -205,15 +207,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Bob_Lazar_2019.jpg/220px-Bob_Lazar_2019.jpg" alt="Bob Lazar" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Bob Lazar</span></div>
+        <div class="pdir-name">Bob Lazar</div>
         <div class="pdir-role">S4 Physicist &#183; Area 51 Whistleblower &#183; Element 115</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Self-described physicist who in 1989 claimed to have worked at a classified facility (S4) near Area 51 reverse-engineering extraterrestrial craft. Described a &#8216;sport model&#8217; disc powered by a gravity wave amplifier using Element 115 (now known as moscovium) as fuel. His educational credentials were erased from MIT and Caltech records. The craft&#8217;s interior was sized for beings approximately three to four feet tall with three-fingered hands &#8212; consistent with Nazca mummy descriptions. His FBI lab was raided during Jeremy Corbell&#8217;s documentary, reportedly searching for a sample of Element 115. John Lear was his friend before his S4 employment, which Jesse argues is either evidence of a limited hangout or an extraordinary coincidence.</div>
+      <div class="pdir-bio">Self-described physicist who in 1989 claimed to have worked at a classified facility (S4) near Area 51 reverse-engineering extraterrestrial craft. Described a sport model disc powered by a gravity wave amplifier using Element 115 (moscovium) as fuel. His educational records were erased from MIT and Caltech. The craft&#8217;s interior was sized for beings approximately three to four feet tall with three-fingered hands &#8212; consistent with Nazca mummy descriptions. His FBI lab was raided during Jeremy Corbell&#8217;s documentary, reportedly for a sample of Element 115.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Bob_Lazar" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Bob_Lazar" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -221,15 +223,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Catherine_Austin_Fitts_%282019%29.jpg/220px-Catherine_Austin_Fitts_%282019%29.jpg" alt="Catherine Austin Fitts" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Catherine Austin Fitts</span></div>
-        <div class="pdir-role">Former Assistant Secretary, HUD &#183; Bush 41 Administration &#183; Financial Analyst</div>
+        <div class="pdir-name">Catherine Austin Fitts</div>
+        <div class="pdir-role">Former Assistant Secretary, HUD &#183; Bush 41 &#183; &#8220;$21 Trillion Breakaway Civilisation&#8221;</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Former Assistant Secretary of Housing and Urban Development under President George H.W. Bush and former managing director of Dillon, Read &amp; Co. investment bank. After leaving government, she founded Solari, Inc. and began tracking what she describes as &#8220;undocumentable adjustments&#8221; in the federal budget. Working with researcher Mark Skidmore (Michigan State University economist), she documented approximately $21 trillion in transactions that could not be accounted for in the federal budget between 1998 and 2015. On Tucker Carlson&#8217;s show, she attributed these funds to a &#8220;breakaway civilisation&#8221; space programme &#8212; citing Richard Dolan&#8217;s framework. When asked where the money was going, she said: &#8220;Space.&#8221; Jesse uses this figure as his scale reference for the real black budget behind any genuine UAP reverse-engineering programme.</div>
+      <div class="pdir-bio">Former Assistant Secretary of Housing and Urban Development under President George H.W. Bush and former MD of Dillon, Read &amp; Co. investment bank. Founded Solari, Inc. Working with economist Mark Skidmore (Michigan State), she documented approximately $21 trillion in unaccountable federal budget adjustments between 1998 and 2015. On Tucker Carlson she attributed these funds to a breakaway civilisation space programme &#8212; citing Richard Dolan&#8217;s framework. When Tucker asked where the money was going, she said: &#8220;Space.&#8221;</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Catherine_Austin_Fitts" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Catherine_Austin_Fitts" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -237,15 +239,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Gary Nolan</span></div>
+        <div class="pdir-name">Gary Nolan</div>
         <div class="pdir-role">Stanford Professor &#183; Immunologist &#183; UAP Materials Analyst</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Tenured professor at Stanford School of Medicine, founder of multiple biotechnology companies each valued at over $100M. Runs the Sol Foundation studying non-human intelligence. Has received alleged UAP crash material samples from Jacques Vallée and others, including magnesium-bismuth specimens whose isotopic ratios he cannot explain by conventional manufacturing. Co-authored peer-reviewed papers on UAP brain abnormalities (modified caudate-putamen in UAP experiencers). Jesse Michels references him as one of the most credentialled scientists currently engaged with the material evidence question.</div>
+      <div class="pdir-bio">Tenured professor at Stanford School of Medicine, founder of multiple biotechnology companies each valued over $100M. Runs the Sol Foundation studying non-human intelligence. Has received alleged UAP crash material samples from Jacques Vallée and others, including magnesium-bismuth specimens whose isotopic ratios he cannot explain by conventional manufacturing. Co-authored peer-reviewed papers on UAP-related brain abnormalities in experiencers.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Garry_Nolan" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Garry_Nolan" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -253,15 +255,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">John Lear</span></div>
+        <div class="pdir-name">John Lear</div>
         <div class="pdir-role">CIA Cargo Pilot &#183; UFO Researcher &#183; Son of Lear Jet Inventor</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Son of Bill Lear (inventor of the Lear Jet, autopilot, and associate of Townsend Brown). Flew cargo jets for CIA-connected operations, officially disaffiliating in 1983 (though George Knapp and Jeremy Corbell place this later). Security guards at Area 51 knew him by name &#8212; he had been camping near the base for a decade with photographer Jim Goodall. Was friends with Bob Lazar before Lazar&#8217;s S4 employment. Claims to have been used as a deliberate &#8220;blabbermouth&#8221; by Admiral Mike McClendon in a limited hangout operation to release the Lazar story and gauge public reaction. Also promoted claims about alien bases on the Moon and a soul-catcher device. Photographed with G. Gordon Liddy (Watergate).</div>
+      <div class="pdir-bio">Son of Bill Lear (Lear Jet inventor, associate of Townsend Brown). Flew cargo jets for CIA-connected operations. Security guards at Area 51 knew him by name after years of camping near the base. Was friends with Bob Lazar before Lazar&#8217;s S4 employment. Claims to have been used as a deliberate blabbermouth by Admiral Mike McClendon in a limited hangout to release the Lazar story. Also promoted claims about alien bases on the Moon and a soul-catcher device. Photographed with G. Gordon Liddy (Watergate).</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/John_Lear_(conspiracy_theorist)" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/John_Lear_(conspiracy_theorist)" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -269,15 +271,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Joe_McMoneagle.jpg/220px-Joe_McMoneagle.jpg" alt="Joe McMoneagle" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Joe McMoneagle</span></div>
+        <div class="pdir-name">Joe McMoneagle</div>
         <div class="pdir-role">CIA Remote Viewer &#183; Stargate Programme &#183; Remote Viewer #001</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Considered the most decorated remote viewer in the US Army&#8217;s Stargate programme, designated Remote Viewer #001. Reportedly tasked by the CIA (declassified) with remote viewing Mars &#8216;one million BC,&#8217; during which he described ruins, pyramidal structures, and humanoid beings 12&#8211;14 feet tall. The session is in the public CIA Stargate archive. Also involved in remote viewing lunar structures. Author of <em>Mind Trek</em> and <em>Remote Viewing Secrets</em>. Jesse describes him as &#8220;remote viewer number one&#8221; and notes the Mars session is a documented government activity regardless of what one concludes about the results.</div>
+      <div class="pdir-bio">The most decorated remote viewer in the US Army&#8217;s Stargate programme, designated Remote Viewer #001. CIA-tasked (declassified) with remote viewing Mars &#8216;one million BC,&#8217; describing ruins, pyramidal structures, and humanoid beings 12&#8211;14 feet tall. The session is in the public CIA Stargate archive. Author of <em>Mind Trek</em> and <em>Remote Viewing Secrets</em>.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Joe_McMoneagle" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Joe_McMoneagle" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -285,15 +287,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">John Brandenberg</span></div>
+        <div class="pdir-name">John Brandenberg</div>
         <div class="pdir-role">Plasma Physicist &#183; Sandia / Lawrence Livermore &#183; Mars Nuclear Hypothesis</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">PhD plasma physicist who worked at Sandia National Labs and Lawrence Livermore National Laboratory &#8212; two of the US&#8217;s primary nuclear weapons research facilities. Proposed the &#8216;Xenon-129 hypothesis&#8217; for Mars: the isotopic abundance of Xenon-129 and Argon-40 in the Martian atmosphere significantly exceeds what normal radioactive decay would produce, and is consistent with thermonuclear detonations of planetary scale. Published in peer-reviewed form. Interviewed on American Alchemy. Jesse Michels notes his credentials make the claim worth examining even if the conclusion is extraordinary.</div>
+      <div class="pdir-bio">PhD plasma physicist who worked at Sandia National Labs and Lawrence Livermore. Proposed the Xenon-129 hypothesis for Mars: that isotopic abundance of Xenon-129 and Argon-40 in the Martian atmosphere is consistent only with thermonuclear detonations of planetary scale, not normal radioactive decay. Published in peer-reviewed form. Interviewed on American Alchemy.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/John_Brandenberg" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/John_Brandenberg" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -301,15 +303,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Jaime Maussan</span></div>
+        <div class="pdir-name">Jaime Maussan</div>
         <div class="pdir-role">Mexican Journalist &#183; UAP Researcher &#183; Nazca Mummy Presenter</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Former 60 Minutes correspondent in Mexico, now one of the most prominent UAP researchers in Latin America. In September 2023 presented two J-type Nazca specimens before the Mexican Congress, attracting global attention and significant controversy when artist Manuel Caceras was simultaneously arrested at a Peruvian airport with handmade fake specimens. Has invested significant personal resources in protecting and studying the Nazca specimens. Jesse Michels describes him as &#8220;awesome&#8221; and motivated by a genuine desire for scientific examination, despite reservations about the J-type specimens specifically. The Mexican Navy forensics chief who supported the case was briefly jailed and has since been reinstated.</div>
+      <div class="pdir-bio">Former 60 Minutes correspondent in Mexico. In September 2023 presented two J-type Nazca specimens before the Mexican Congress, attracting global attention and controversy when artist Manuel Caceras was simultaneously arrested with handmade fakes. Has invested significant resources in protecting and studying the Nazca specimens. Jesse Michels describes him as &#8220;awesome&#8221; despite reservations about the J-type specimens specifically.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Jaime_Maus%C3%A1n" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Jaime_Maus%C3%A1n" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -317,15 +319,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <div class="pdir-photo-placeholder">&#128100;</div>
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Richard Dolan</span></div>
-        <div class="pdir-role">UFO Historian &#183; Author, &#8216;Breakaway Civilisation&#8217; Concept</div>
+        <div class="pdir-name">Richard Dolan</div>
+        <div class="pdir-role">UFO Historian &#183; Author &#183; Originator of &#8216;Breakaway Civilisation&#8217; Concept</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Independent UFO historian and author of the <em>UFOs and the National Security State</em> series &#8212; considered among the most rigorously sourced historical accounts of government UAP awareness. Originated the &#8220;breakaway civilisation&#8221; concept: the hypothesis that a secret parallel civilisation has been developing, funded by off-budget black programmes, with technology decades or centuries ahead of the public sector. Catherine Austin Fitts cites Dolan&#8217;s framework explicitly in her Tucker Carlson interview when attributing $21 trillion in unaccounted federal funds to a space programme. Jesse notes Tucker Carlson didn&#8217;t know who Dolan was during that interview.</div>
+      <div class="pdir-bio">Independent UFO historian and author of the <em>UFOs and the National Security State</em> series. Originated the &#8220;breakaway civilisation&#8221; concept: a secret parallel civilisation funded by off-budget black programmes with technology decades ahead of the public sector. Catherine Austin Fitts cites Dolan&#8217;s framework explicitly on Tucker Carlson when attributing $21 trillion in unaccounted federal funds to a space programme.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Richard_Dolan_(author)" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Richard_Dolan_(author)" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -333,15 +335,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Marvin_Minsky_at_OLPCb.jpg/220px-Marvin_Minsky_at_OLPCb.jpg" alt="Marvin Minsky" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Marvin Minsky</span></div>
+        <div class="pdir-name">Marvin Minsky</div>
         <div class="pdir-role">Godfather of AI &#183; MIT &#183; 1927&#8211;2016</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Co-founder of MIT&#8217;s Artificial Intelligence Laboratory and one of the founding figures of artificial intelligence as a discipline. Pioneer of neural networks, robotic vision, and machine cognition. Author of <em>The Society of Mind</em> (1986). Eric Hazelton recounts a personal conversation in which he asked Minsky whether humans are collectively capable of comprehending nature in its entirety. Minsky replied: &#8220;Of course not &#8212; I&#8217;ll never teach my cat French.&#8221; Hazelton uses this as the epistemological foundation for why UAP phenomena may be permanently beyond human comprehension &#8212; and why studying them is still worth doing.</div>
+      <div class="pdir-bio">Co-founder of MIT&#8217;s AI Lab and founding figure of artificial intelligence. Pioneer of neural networks and robotic vision. Author of <em>The Society of Mind</em> (1986). Eric Hazelton recounts asking Minsky whether humans can comprehend nature in its entirety. Minsky: &#8220;Of course not &#8212; I&#8217;ll never teach my cat French.&#8221; Hazelton uses this as the epistemological foundation for why UAP phenomena may be permanently beyond human comprehension.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Marvin_Minsky" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Marvin_Minsky" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
@@ -349,15 +351,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Miguel_Alcubierre.jpg/220px-Miguel_Alcubierre.jpg" alt="Miguel Alcubierre" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Miguel Alcubierre</span></div>
+        <div class="pdir-name">Miguel Alcubierre</div>
         <div class="pdir-role">Theoretical Physicist &#183; UNAM &#183; Warp Drive Theorist</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">Mexican theoretical physicist at the National Autonomous University of Mexico (UNAM). In 1994 proposed the Alcubierre metric &#8212; a solution to Einstein&#8217;s field equations that permits faster-than-light travel by contracting spacetime ahead of a vessel and expanding it behind, without the vessel itself exceeding <em>c</em> locally. Often described as the &#8220;warp drive&#8221; paper. Requires negative energy density, whose physical existence remains unconfirmed. NASA has funded research into whether a practical implementation is conceivable. Discussed by Eric Hazelton as one of the &#8220;not impossible&#8221; propulsion mechanisms.</div>
+      <div class="pdir-bio">Mexican theoretical physicist at UNAM. In 1994 proposed the Alcubierre metric &#8212; a solution to Einstein&#8217;s field equations permitting faster-than-light travel by contracting spacetime ahead of a vessel and expanding it behind, without the vessel exceeding <em>c</em> locally. Requires negative energy density, whose physical existence remains unconfirmed. Discussed by Eric Hazelton as within the &#8220;not impossible&#8221; propulsion framework.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Miguel_Alcubierre" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Miguel_Alcubierre" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
@@ -365,15 +367,15 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Rolf_Landauer.jpg/220px-Rolf_Landauer.jpg" alt="Rolf Landauer" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Rolf Landauer</span></div>
+        <div class="pdir-name">Rolf Landauer</div>
         <div class="pdir-role">IBM Fellow &#183; Information Physics Pioneer &#183; 1927&#8211;1999</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">German-American physicist and IBM Fellow who proposed Landauer&#8217;s principle (1961): erasing one bit of information must release a minimum amount of heat into the environment, establishing a fundamental thermodynamic cost of computation. Eric Hazelton extends this via E=mc&#178; to argue that before erasure, information has mass &#8212; a form of mass that is electromagnetically undetectable and that he proposes as a candidate dark matter mechanism. The paper has been experimentally confirmed to within 20% of Landauer&#8217;s predicted value.</div>
+      <div class="pdir-bio">German-American physicist and IBM Fellow who proposed Landauer&#8217;s principle (1961): erasing one bit of information must release a minimum amount of heat, establishing a fundamental thermodynamic cost of computation. Eric Hazelton extends this via E=mc&#178; to argue that before erasure, information has mass &#8212; electromagnetically undetectable &#8212; and proposes this as a dark matter candidate mechanism. Experimentally confirmed to within 20% of the predicted value.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Rolf_Landauer" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Rolf_Landauer" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
@@ -381,15 +383,16 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Wheeler_cropped.jpg/220px-Wheeler_cropped.jpg" alt="John Archibald Wheeler" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">John Archibald Wheeler</span></div>
+        <div class="pdir-name">John Archibald Wheeler</div>
         <div class="pdir-role">Physicist &#183; Princeton / UT Austin &#183; 1911&#8211;2008</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">American theoretical physicist who coined the terms &#8220;black hole,&#8221; &#8220;wormhole,&#8221; and &#8220;quantum foam.&#8221; Collaborated with both Einstein and Bohr. In later career developed the <em>It from Bit</em> hypothesis: all physical entities derive their existence from information &#8212; the universe is fundamentally information-theoretic. Also appears in the 1971 Australian JIO document naming him as a participant in secret US anti-gravity research alongside Oppenheimer, Teller, and Dyson. Wheeler was at the 1957 Chapel Hill Conference on gravity at the same time Townsend Brown was being funded in the back room.</div>
+      <div class="pdir-bio">Coined &#8220;black hole,&#8221; &#8220;wormhole,&#8221; and &#8220;quantum foam.&#8221; Developed the <em>It from Bit</em> hypothesis: all physical entities derive from information. Also appears in the 1971 Australian JIO document naming him as a participant in secret US anti-gravity research alongside Oppenheimer, Teller, and Dyson. Was present at the 1957 Chapel Hill Conference on gravity at the same time Townsend Brown was funded in the back room.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/John_Archibald_Wheeler" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a><a class="link-pill" href="/articles/jre-jesse-michels.html">&#8594; Jesse Michels on JRE #2331</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/John_Archibald_Wheeler" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="/articles/jre-jesse-michels.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; Jesse Michels on JRE #2331</a>
       </div>
     </div>
   </div>
@@ -397,32 +400,29 @@ p{margin-bottom:1em;font-size:14px;line-height:1.7;}
     <div class="pdir-card-inner">
       <img class="pdir-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Upton_Sinclair_1923.jpg/220px-Upton_Sinclair_1923.jpg" alt="Upton Sinclair" onerror="this.style.display='none'">
       <div class="pdir-info">
-        <div class="pdir-name-row"><span style="display:inline-flex;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:2px 8px;">Figure</span> <span class="pdir-name">Upton Sinclair</span></div>
+        <div class="pdir-name">Upton Sinclair</div>
         <div class="pdir-role">Author &#183; <em>The Jungle</em> &#183; 1878&#8211;1968</div>
       </div>
     </div>
     <div class="pdir-profile" style="display:none;">
-      <div class="pdir-bio">American journalist and novelist best known for <em>The Jungle</em> (1906). His most cited quote in this context: &#8220;You can&#8217;t explain something to a man whose salary depends on not understanding it.&#8221; Eric Hazelton uses this to explain why CIA officials genuinely believe there is no Havana Syndrome and no real UAP evidence &#8212; their institutional position makes belief in either thing structurally incompatible with their role and self-image. Sinclair also wrote <em>Mental Radio</em> (1930), a book about his wife&#8217;s alleged telepathic abilities that was endorsed in a foreword by Albert Einstein.</div>
+      <div class="pdir-bio">American journalist best known for <em>The Jungle</em> (1906). His most cited quote here: &#8220;You can&#8217;t explain something to a man whose salary depends on not understanding it.&#8221; Eric Hazelton uses this to explain why CIA officials genuinely believe there is nothing to Havana Syndrome or UAPs &#8212; their institutional position makes belief in either thing structurally incompatible with their role. Sinclair also wrote <em>Mental Radio</em> (1930) about his wife&#8217;s alleged telepathic abilities &#8212; endorsed in a foreword by Albert Einstein.</div>
       <div class="pdir-links">
-        <a class="link-pill" href="https://en.wikipedia.org/wiki/Upton_Sinclair" target="_blank">&#8599; More info</a>
-        <a class="link-pill" href="/articles/nsa-director-ufo.html">&#8594; NSA Director Breaks Silence on UAPs</a>
+        <a class="art-pill" href="https://en.wikipedia.org/wiki/Upton_Sinclair" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;">&#8599; More info</a>
+        <a class="art-pill" href="/articles/nsa-director-ufo.html" style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);transition:all 0.12s;text-decoration:none;"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.35);border-radius:3px;padding:1px 5px;white-space:nowrap;">Figure</span>&#8594; NSA Director Breaks Silence on UAPs</a>
       </div>
     </div>
   </div>
 </div>
-
 </main>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   var cards = document.querySelectorAll('.pdir-card');
   var btns  = document.querySelectorAll('.filter-btn');
 
-  // Toggle profile expand
   cards.forEach(function(card){
     card.querySelector('.pdir-card-inner').addEventListener('click',function(){
       var profile = card.querySelector('.pdir-profile');
       var isOpen  = card.classList.contains('open');
-      // close all
       document.querySelectorAll('.pdir-card.open').forEach(function(c){
         c.classList.remove('open');
         c.querySelector('.pdir-profile').style.display='none';
@@ -434,7 +434,6 @@ document.addEventListener('DOMContentLoaded',function(){
     });
   });
 
-  // Filter buttons
   btns.forEach(function(btn){
     btn.addEventListener('click',function(){
       btns.forEach(function(b){b.classList.remove('active');});
@@ -443,10 +442,9 @@ document.addEventListener('DOMContentLoaded',function(){
       cards.forEach(function(card){
         if(filter==='all'){
           card.classList.remove('hidden');
-        } else if(filter==='host'||filter==='guest'||filter==='figure'){
+        } else if(['host','guest','figure'].includes(filter)){
           card.classList.toggle('hidden', card.dataset.label !== filter);
         } else {
-          // category filter
           card.classList.toggle('hidden', !card.hasAttribute('data-cat-'+filter));
         }
       });
