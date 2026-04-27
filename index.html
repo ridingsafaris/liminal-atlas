@@ -1,72 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liminal Atlas — Knowledge at the Edge of the Map</title>
-  <meta name="description" content="Close readings at the intersection of frontier physics, UAP research, comparative religion, and consciousness studies.">
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-    :root{--mono:'JetBrains Mono','Fira Code',monospace;}
-    .news-wrap{max-width:1200px;margin:0 auto;padding:0 24px 80px;}
-    .topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:7px 24px;font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:0.08em;}
-    .topbar strong{color:var(--amber);}
-    .section-label{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:0 0 10px;border-bottom:2px solid var(--blue);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
-    .section-label::after{content:'';flex:1;height:1px;background:var(--border);}
-    /* Hero */
-    .hero-row{display:grid;grid-template-columns:1fr 340px;gap:2px;margin-bottom:2px;}
-    .hero-story{display:block;text-decoration:none;position:relative;overflow:hidden;height:480px;}
-    .hero-story:hover .hero-img img{transform:scale(1.02);}
-    .hero-img{width:100%;height:100%;position:relative;overflow:hidden;}
-    .hero-img img{transition:transform 0.4s ease;width:100%;height:100%;object-fit:cover;}
-    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,7,12,0.96) 0%,rgba(5,7,12,0.45) 55%,transparent 100%);}
-    .hero-text{position:absolute;bottom:0;left:0;right:0;padding:28px;}
-    .hero-cats{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
-    .hero-title{font-size:clamp(1.2rem,2.2vw,1.75rem);font-weight:800;color:#fff;line-height:1.2;letter-spacing:-0.02em;margin-bottom:10px;}
-    .hero-deck{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.6;margin-bottom:10px;max-width:580px;}
-    .hero-meta{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;}
-    /* Hero summary strip */
-    /* Secondary col */
-    .sec-col{display:flex;flex-direction:column;gap:2px;}
-    .sec-story{display:block;text-decoration:none;flex:1;background:var(--surface2);overflow:hidden;transition:background 0.15s;}
-    .sec-story:hover{background:#1a2133;}
-    .sec-img{height:130px;overflow:hidden;}
-    .sec-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
-    .sec-story:hover .sec-img img{transform:scale(1.03);}
-    .sec-text{padding:14px 16px;}
-    .sec-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:5px;}
-    .sec-deck{font-size:11px;color:var(--text-dim);line-height:1.5;margin-bottom:6px;}
-    .sec-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
-    /* Main layout */
-    .main-layout{display:grid;grid-template-columns:1fr 280px;gap:40px;padding-top:32px;}
-    /* Grids */
-    .article-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-bottom:2px;}
-    .grid-card{display:block;text-decoration:none;background:var(--surface2);overflow:hidden;transition:background 0.15s;}
-    .grid-card:hover{background:#1a2133;}
-    .grid-img{height:160px;overflow:hidden;}
-    .grid-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
-    .grid-card:hover .grid-img img{transform:scale(1.03);}
-    .grid-text{padding:14px;}
-    .grid-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:5px;}
-    .grid-deck{font-size:11px;color:var(--text-dim);line-height:1.5;margin-bottom:6px;}
-    .grid-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
-    /* Sidebar */
-    .sidebar-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:flex-start;transition:opacity 0.15s;}
-    .sidebar-item:last-child{border-bottom:none;}
-    .sidebar-item:hover{opacity:0.8;}
-    .sidebar-num{font-family:var(--mono);font-size:22px;font-weight:800;color:var(--border2);line-height:1;flex-shrink:0;min-width:32px;}
-    .sidebar-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:4px;}
-    .sidebar-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
-    @media(max-width:900px){.hero-row{grid-template-columns:1fr;}.sec-col{flex-direction:row;}.main-layout{grid-template-columns:1fr;}.article-grid{grid-template-columns:1fr 1fr;}.hero-story{height:340px;}}
-    @media(max-width:600px){.article-grid{grid-template-columns:1fr;}.sec-col{flex-direction:column;}}
-  </style>
-</head>
-<body data-theme="light">
-<!-- Header injected by site.js -->
-
-<div class="topbar">
-  <strong>Liminal Atlas</strong> &nbsp;&middot;&nbsp; Knowledge at the edge of the map &nbsp;&middot;&nbsp; Frontier physics &middot; UAP research &middot; Comparative religion &middot; Consciousness
-</div>
+<!DOC
 
 
 <div class="news-wrap" style="max-width:1200px;margin:0 auto;padding:32px 24px 80px;">
@@ -77,16 +9,26 @@
     <div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:2px solid var(--amber);margin-bottom:4px;">
         <span style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);">&#9654; Video Close Reads</span>
-        <span style="font-family:var(--mono);font-size:9px;color:var(--text-dim);">9 episodes</span>
+        <span style="font-family:var(--mono);font-size:9px;color:var(--text-dim);">10 episodes</span>
       </div>
-    <a href="/articles/townsend-brown-documentary.html" style="display:grid;grid-template-columns:120px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+    <a href="/articles/jorjani-nazi-breakaway-civilization.html" style="display:grid;grid-template-columns:120px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
       <div style="width:120px;height:68px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/ABw7EsWh2Us/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:5px;">Jason Jorjani — "There&#39;s a Nazi Breakaway Civilisation with UFOs"</div>
+        <div style="font-size:12px;color:var(--text-dim);line-height:1.55;margin-bottom:6px;">Part II: Die Glocke, Magenta crash, Roswell as Nazi PSYOP, Operation Paperclip &amp; Gehlen Organisation, ODESSA / the Spider, Martin Borman in Argentina, Betty Hill&#39;s Nazi face, Thule Society / Antarctic Atlantis, Thousand-Year Reich as polemos, the Magic Theater of Cruelty.</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Jesse Michels</div>
+      </div>
+    </a>
+    <a href="/articles/townsend-brown-documentary.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
         <img src="https://img.youtube.com/vi/RTEWLSTyUic/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:5px;">Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</div>
-        <div style="font-size:12px;color:var(--text-dim);line-height:1.55;margin-bottom:6px;">Brown's electrogravitic thrust, the five witnesses (Teller, Cornon, Haugen), the B2 stealth bomber IP transfer, Nazi UFO retrieval, NICAP as counter-intelligence, and extended electrodynamics. 27 chapters, 109 minutes.</div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</div>
         <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Documentary · 109 min</div>
       </div>
     </a>
