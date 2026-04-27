@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npx -y pagefind --site . --output-path _pagefind",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}

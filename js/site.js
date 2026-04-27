@@ -14,7 +14,7 @@ const SITE = {
 
 // Add new nav items here — they appear everywhere
 const NAV_LINKS = [
-  { label: 'Home',          href: '/index.html' },
+  { label: 'Home',          href: '/' },
   { label: 'Physics',       href: '/categories/physics.html' },
   { label: 'Religion',      href: '/categories/religion.html' },
   { label: 'UAP',           href: '/categories/uap.html' },
@@ -26,7 +26,7 @@ const FOOTER_COLS = [
   {
     heading: 'Liminal Atlas',
     links: [
-      { label: 'Est. 2026',           href: '/index.html' },
+      { label: 'Est. 2026',           href: '/' },
       { label: 'Subscribe',           href: '/subscribe.html' },
     ],
   },
@@ -58,8 +58,8 @@ function buildHeader() {
 
   const navHTML = NAV_LINKS.map(link => {
     // Mark link active if URL matches
-    const isActive = currentPath === link.href ||
-      (link.href !== '/index.html' && currentPath.startsWith(link.href.replace('.html', '')));
+    const isActive = currentPath === link.href || (link.href === '/' && currentPath === '/index.html') ||
+      (link.href !== '/' && currentPath.startsWith(link.href.replace('.html', '')));
     return `<li><a href="${link.href}" ${isActive ? 'class="active"' : ''}>${link.label}</a></li>`;
   }).join('');
 
@@ -69,10 +69,10 @@ function buildHeader() {
   const header = document.createElement('header');
   header.className = 'site-header';
   header.innerHTML = `
-    <a href="/index.html" class="site-logo">${SITE.name}</a>
+    <a href="/" class="site-logo">${SITE.name}</a>
     <div class="site-search-wrap">
-      <input type="search" class="site-search" id="siteSearch" placeholder="Search articles…" autocomplete="off">
-      <div class="site-search-results" id="searchResults"></div>
+      <input type="search" class="site-search" id="siteSearch" placeholder="Search…" autocomplete="off">
+      <div class="site-search-hint" id="searchHint" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);z-index:300;">Press Enter to search</div>
     </div>
     <div class="site-header-right">
       <nav><ul class="site-nav">${navHTML}</ul></nav>
@@ -99,40 +99,23 @@ function buildHeader() {
     }
   });
 
-  // ── Search
-  const SEARCH_INDEX = [
-    { title: 'Jesse Michels on The Joe Rogan Experience #2331', url: '/articles/jre-jesse-michels.html', tags: 'townsend brown lazar nazca rogan uap' },
-    { title: 'Former NSA Director Breaks Silence on UAPs', url: '/articles/nsa-director-ufo.html', tags: 'hazelton gilbert nsa havana syndrome warp drive' },
-    { title: 'Jason Jorjani on American Alchemy', url: '/articles/jorjani-american-alchemy.html', tags: 'jorjani kant swedenborg epstein spectral revolution' },
-    { title: 'Pais & Rossi on Hard Truths', url: '/articles/pais-rossi-hard-truths.html', tags: 'pais rossi zpe electrodynamics casimir' },
-    { title: 'Navy Scientist: A Cosmic War Is Happening', url: '/articles/sal-pais-close-reading.html', tags: 'salvatore pais navy patents hybrid craft pais effect' },
-    { title: 'Dave Rossi on American Alchemy', url: '/articles/dave-rossi-close-reading.html', tags: 'dave rossi electrodynamics scalar waves superconductor' },
-    { title: 'William Bramley — The Gods of Eden', url: '/articles/bramley-gods-of-eden.html', tags: 'bramley custodians black plague brotherhood snake' },
-    { title: 'Frances Yates — The Rosicrucian Enlightenment', url: '/articles/yates-rosicrucian-enlightenment.html', tags: 'yates rosicrucian dee palatinate royal society' },
-    { title: 'Swedenborg — Arcana Coelestia', url: '/articles/swedenborg-arcana-coelestia.html', tags: 'swedenborg kant arcana genesis heaven hell' },
-    { title: 'Frances Yates — The Occult Philosophy', url: '/articles/yates-occult-philosophy.html', tags: 'yates hermetic cabalist elizabethan dee spenser' },
-    { title: 'Swedenborg — The Earths in the Universe', url: '/articles/swedenborg-earths-in-universe.html', tags: 'swedenborg mars mercury planets kant jorjani' },
-    { title: 'People Directory', url: '/people.html', tags: 'people hosts guests figures directory' },
-  ];
-
+  // ── Search — sends to /search?q=... for Pagefind results
   const searchInput = document.getElementById('siteSearch');
-  const searchResults = document.getElementById('searchResults');
 
-  searchInput.addEventListener('input', function() {
-    const q = this.value.trim().toLowerCase();
-    if (q.length < 2) { searchResults.style.display = 'none'; return; }
-    const matches = SEARCH_INDEX.filter(a =>
-      a.title.toLowerCase().includes(q) || a.tags.includes(q)
-    ).slice(0, 5);
-    if (!matches.length) { searchResults.style.display = 'none'; return; }
-    searchResults.innerHTML = matches.map(a =>
-      `<a href="${a.url}" class="sr-item">${a.title}</a>`
-    ).join('');
-    searchResults.style.display = 'block';
+  function doSearch(q) {
+    if (q.trim().length > 1) {
+      window.location.href = '/search?q=' + encodeURIComponent(q.trim());
+    }
+  }
+
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') doSearch(this.value);
   });
 
-  document.addEventListener('click', function(e) {
-    if (!header.contains(e.target)) searchResults.style.display = 'none';
+  // Show a small "press Enter" hint while typing
+  searchInput.addEventListener('input', function() {
+    const hint = document.getElementById('searchHint');
+    if (hint) hint.style.display = this.value.length > 1 ? 'block' : 'none';
   });
 }
 
