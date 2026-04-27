@@ -1,183 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>William Cooper — Behold a Pale Horse (1991) | Close Reading | Liminal Atlas</title>
-  <meta name="description" content="Close reading of Behold a Pale Horse by Bill Cooper: MJ-12, the Eisenhower alien treaty, Silent Weapons for Quiet Wars, FEMA emergency powers, the AIDS bioweapon claim, the Protocols chapter, and the 9/11 prediction — with 27 subsequent-view annotations.">
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-.article-hero {
-  position: relative; z-index: 1;
-  padding: 72px 24px 56px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  border-bottom: 1px solid var(--border);
-}
-.article-hero h1 {
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 700; letter-spacing: -0.03em;
-  color: var(--text-bright); line-height: 1.1; margin-bottom: 20px;
-}
-.article-hero h1 span { color: var(--blue-bright); }
-.hero-meta {
-  display: flex; flex-wrap: wrap; gap: 20px;
-  font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);
-  letter-spacing: 0.06em;
-  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-  padding: 12px 0; margin-bottom: 24px;
-}
-.hero-intro {
-  font-size: 17px; line-height: 1.8;
-  color: var(--text); max-width: 720px; margin-bottom: 24px;
-}
-.hero-intro strong { color: var(--text-bright); font-weight: 600; }
-.speakers-section {
-  position: relative; z-index: 1;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 40px 24px;
-}
-.speakers-inner { max-width: var(--max-width); margin: 0 auto; }
-.speakers-label {
-  font-family: var(--font-mono); font-size: 10px;
-  letter-spacing: 0.25em; color: var(--blue);
-  text-transform: uppercase; margin-bottom: 24px;
-}
-.speakers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.speaker-card {
-  background: var(--surface2); border: 1px solid var(--border2);
-  border-radius: var(--radius); padding: 20px;
-  display: flex; gap: 18px; align-items: flex-start;
-}
-.speaker-photo {
-  width: 72px; height: 72px; border-radius: 50%;
-  object-fit: cover; border: 2px solid var(--blue-dim); flex-shrink: 0;
-}
-.speaker-photo-placeholder {
-  width: 72px; height: 72px; border-radius: 50%;
-  border: 2px solid var(--blue-dim); flex-shrink: 0;
-  background: var(--blue-glow);
-  display: flex; align-items: center; justify-content: center; font-size: 26px;
-}
-.speaker-name { font-size: 15px; font-weight: 700; color: var(--text-bright); margin-bottom: 2px; }
-.speaker-role {
-  font-family: var(--font-mono); font-size: 10px;
-  letter-spacing: 0.08em; color: var(--blue-bright);
-  text-transform: uppercase; margin-bottom: 8px;
-}
-.speaker-bio { font-size: 13px; line-height: 1.65; color: var(--text-dim); margin-bottom: 10px; }
-.speaker-links { display: flex; flex-wrap: wrap; gap: 6px; }
-.toc-section {
-  position: relative; z-index: 1;
-  padding: 32px 24px;
-  max-width: var(--max-width); margin: 0 auto;
-}
-.article-body {
-  position: relative; z-index: 1;
-  max-width: var(--max-width); margin: 0 auto;
-  padding: 0 24px 100px;
-}
-.person-card-photo {
-  background: var(--surface); border: 1px solid var(--border2);
-  border-radius: var(--radius); padding: 18px 22px; margin: 20px 0;
-  display: flex; gap: 18px; align-items: flex-start;
-}
-.person-avatar {
-  width: 64px; height: 64px; border-radius: 50%;
-  object-fit: cover; border: 2px solid var(--blue-dim);
-  flex-shrink: 0; background: var(--surface2);
-}
-.person-avatar-placeholder {
-  width: 64px; height: 64px; border-radius: 50%;
-  border: 2px solid var(--blue-dim); flex-shrink: 0;
-  background: var(--blue-glow);
-  display: flex; align-items: center; justify-content: center; font-size: 22px;
-}
-.person-card-content { flex: 1; min-width: 0; }
-.person-card-content .person-head {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px;
-}
-.person-card-content p { font-size: 14px; line-height: 1.7; }
-@media (max-width: 640px) {
-  .speakers-grid { grid-template-columns: 1fr; }
-  .speaker-card { flex-direction: column; }
-  .person-card-photo { flex-direction: column; }
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>William Cooper &#8212; Behold a Pale Horse (1991) | Close Reading | Liminal Atlas</title>
+<meta name="description" content="Complete close reading of Behold a Pale Horse by Bill Cooper &#8212; all 17 chapters and 7 appendices with subsequent-view annotations.">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+.claim-verified   {display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap;}
+.claim-disputed   {display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap;}
+.claim-unsupported{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap;}
+.claim-legend {display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim);}
+.claim-legend span {display:flex;align-items:center;gap:6px;}
+.key-claims {background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0;}
+.key-claims-label {font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px;}
+.key-claims ol {margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;}
+.key-claims li {font-size:13.5px;line-height:1.6;color:var(--text);}
+.mainstream-box {background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0;}
+.mainstream-label {font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px;}
+.mainstream-box p {font-size:13px;line-height:1.7;margin-bottom:0;}
+.tl-wrap {background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px 20px;}
+.tl-inner {max-width:var(--max-width);margin:0 auto;}
+.tl-label {font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;}
+.tl-row {position:relative;height:22px;margin:0 8px;}
+.tl-chip {position:absolute;transform:translateX(-50%);font-family:var(--font-mono);font-size:8px;color:var(--text-dim);text-decoration:none;text-align:center;white-space:nowrap;line-height:1.3;}
+.tl-chip span {color:var(--blue-bright);font-size:7.5px;}
+.tl-chip:hover {color:var(--text-bright);}
+.tl-track {position:relative;height:4px;background:var(--surface2);border-radius:2px;margin:4px 8px;}
+.tl-fill {height:100%;border-radius:2px;background:linear-gradient(90deg,var(--blue) 0%,var(--blue-bright) 60%,#a78bfa 100%);}
+.tl-dots {position:relative;height:9px;margin:0 8px;}
+.toc-section {padding:32px 24px;max-width:var(--max-width);margin:0 auto;}
+.article-body {max-width:var(--max-width);margin:0 auto;padding:0 24px 100px;}
+.article-hero {padding:72px 24px 56px;max-width:var(--max-width);margin:0 auto;border-bottom:1px solid var(--border);}
+.article-hero h1 {font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-0.03em;color:var(--text-bright);line-height:1.1;margin-bottom:20px;}
+.article-hero h1 span {color:var(--blue-bright);}
+.hero-meta {display:flex;flex-wrap:wrap;gap:20px;font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0;margin-bottom:24px;}
+.hero-intro {font-size:17px;line-height:1.8;color:var(--text);max-width:720px;margin-bottom:24px;}
+.hero-intro strong {color:var(--text-bright);font-weight:600;}
+.part-header {margin:40px 0 8px;padding:20px 0;border-top:2px solid var(--blue);border-bottom:1px solid var(--border2);}
+.part-header h2 {margin:8px 0 0;font-size:1.6rem;}
+@media(max-width:640px) {.toc-grid{grid-template-columns:1fr;}}
 
-/* ── Enhancement styles ── */
-
-/* Claim status badges */
-.claim-verified   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
-.claim-disputed   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
-.claim-unsupported{ display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
-.claim-classified { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
-
-/* Claim key legend */
-.claim-legend { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim); }
-.claim-legend span { display:flex;align-items:center;gap:6px; }
-
-/* Glossary term link */
-.gterm { color:var(--blue-bright);text-decoration:none;border-bottom:1px dashed rgba(96,165,250,0.4);cursor:help;font-weight:500; }
-.gterm:hover { border-bottom-color:var(--blue-bright); }
-
-/* Episode timeline bar */
-.ep-timeline { position:relative;margin:0 0 32px;padding:20px 0 8px; }
-.ep-timeline-track { position:relative;height:6px;background:var(--surface2);border-radius:3px;margin:0 12px; }
-.ep-timeline-fill { position:absolute;left:0;top:0;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blue-bright)); }
-.ep-timeline-markers { position:relative;height:32px; }
-.ep-timeline-marker { position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px; }
-.ep-marker-dot { width:8px;height:8px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);margin-top:-4px; }
-.ep-marker-label { font-family:var(--font-mono);font-size:8px;color:var(--text-dim);letter-spacing:0.05em;white-space:nowrap; }
-.ep-timeline-label { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;padding:0 12px; }
-
-/* Key claims box */
-.key-claims { background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0; }
-.key-claims-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px; }
-.key-claims ol { margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px; }
-.key-claims li { font-size:13.5px;line-height:1.6;color:var(--text); }
-
-/* Glossary section */
-.glossary-section { border-top:2px solid var(--border);padding-top:40px;margin-top:16px; }
-.glossary-grid { display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px; }
-.glossary-entry { background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px; }
-.glossary-entry:hover { border-color:var(--blue-dim); }
-.g-term { font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);letter-spacing:0.05em;margin-bottom:6px;text-transform:uppercase; }
-.g-def { font-size:13px;line-height:1.65;color:var(--text-dim); }
-.g-status { margin-top:6px; }
-.g-chapters { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);margin-top:4px; }
-
-/* Concept thread index */
-.thread-index { background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px; }
-.thread-index-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px; }
-.thread-row { display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px; }
-.thread-row:last-child { border-bottom:none; }
-.thread-concept { font-weight:600;color:var(--text-bright);min-width:220px;flex-shrink:0; }
-.thread-links { display:flex;flex-wrap:wrap;gap:5px; }
-.thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
-.thread-ch:hover { border-color:var(--blue-bright); }
-
-/* Speaker confidence on dialogue lines */
-.d-confidence { font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block; }
-.conf-fact { background:rgba(34,197,94,0.1);color:#22c55e; }
-.conf-spec { background:rgba(245,158,11,0.1);color:#f59e0b; }
-.conf-classified { background:rgba(139,92,246,0.1);color:#a78bfa; }
-.conf-declined { background:rgba(239,68,68,0.1);color:#ef4444; }
-
-/* "What mainstream physics says" sidebars */
-.mainstream-box { background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0; }
-.mainstream-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px; }
-.mainstream-box p { font-size:13px;line-height:1.7;margin-bottom:6px; }
-.mainstream-box p:last-child { margin-bottom:0; }
-
-@media(max-width:640px){
-  .glossary-grid{grid-template-columns:1fr;}
-  .thread-concept{min-width:140px;}
-}
-
-    .wiki-link { color: #93c5fd !important; font-size: inherit; font-family: inherit; font-weight: inherit; text-decoration: underline; text-decoration-color: rgba(147,197,253,0.4); text-underline-offset: 2px; text-decoration-thickness: 1px; }
-    .wiki-link:hover { color: #bfdbfe !important; text-decoration-color: #bfdbfe; }
-  </style>
+  .toc-grid a { font-size: 12.5px; color: var(--text-dim); text-decoration: none; padding: 4px 0; }
+  .toc-grid a:hover { color: var(--text-bright); }
+  .toc-n { color: var(--amber); opacity: 1; min-width: 52px; }
+</style>
 </head>
 <body>
 <main data-pagefind-body>
@@ -189,41 +56,55 @@
     <span class="cat-pill religion">Religion</span>
   </div>
   <div class="badge" style="margin-bottom:20px;">Book Close Reading &#183; Light Technology Publishing &#183; 1991</div>
-  <h1>William Cooper<br><span>Behold a Pale Horse</span></h1>
+  <h1>William Cooper &#8212;<br><span>Behold a Pale Horse</span></h1>
   <div class="hero-meta">
-    <span>Author: Milton William &#8220;Bill&#8221; Cooper</span>
+    <span>Author: Milton William &#8220;Bill&#8221; Cooper (1943&#8211;2001)</span>
     <span>Published: 1991 &#183; Light Technology Publishing</span>
     <span>500 pages &#183; 17 chapters &#183; 7 appendices</span>
-    <span>9 chapters &#183; 27 subsequent-view annotations</span>
+    <span>All 25 sections covered &#183; Subsequent views throughout</span>
   </div>
-
-  <p class="hero-intro"><em>Behold a Pale Horse</em> is the most widely circulated underground text of the late 20th century — one of the most shoplifted books in American publishing history, the unofficial manifesto of the militia movement, and foundational reading in hip-hop culture. Written by Navy veteran Bill Cooper, it weaves together <strong>documented institutional facts</strong> (the CFR, FEMA emergency powers, REX 84, Oliver North's Iran-Contra admissions) with <strong>unverifiable first-hand claims</strong> (the Eisenhower alien treaty, MJ-12) and <strong>demonstrable fabrications</strong> (the Protocols of the Elders of Zion, the AIDS bioweapon mechanism). Cooper himself admitted mixing true and false information and acknowledged he could not always tell them apart. This close reading covers each major claim section by section, with green / amber / red annotations tracking what has since been confirmed, refuted, or contextualised. Cooper is referenced — directly or through the ideas he popularised — across multiple Liminal Atlas close readings. This article is the reference page for those connections.</p>
-
+  <p class="hero-intro"><em>Behold a Pale Horse</em> is the most widely circulated underground text of the late 20th century &#8212; one of the most shoplifted books in American publishing history, the unofficial manifesto of the militia movement, foundational reading in hip-hop culture, and the template for almost every subsequent American conspiracy framework from QAnon backwards. Written by Navy veteran Bill Cooper, it weaves together <strong>documented institutional facts</strong> (the CFR, FEMA emergency powers, REX 84, Oliver North&#8217;s Iran-Contra admissions, CIA drug trafficking) with <strong>unverifiable first-hand claims</strong> (the Eisenhower alien treaty, MJ-12) and <strong>demonstrable fabrications</strong> (the Protocols of the Elders of Zion, the AIDS bioweapon claim). Cooper himself admitted mixing true and false information. This close reading covers <strong>all 17 chapters and all 7 appendices</strong> with colour-coded annotations tracking what has since been confirmed, refuted, or contextualised in the 35 years since publication.</p>
   <div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius);padding:14px 20px;margin-bottom:24px;">
     <div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9888; Note on Chapter 15</div>
-    <p style="font-size:13px;line-height:1.7;color:var(--text);margin:0;">This book contains <em>The Protocols of the Elders of Zion</em> in full — a proven antisemitic forgery. Cooper reframed it as an Illuminati document. Later editions removed the chapter. We cover it here because understanding how it re-entered circulation through this book is historically important. The Protocols are a fabrication; that finding is not contested.</p>
+    <p style="font-size:13px;line-height:1.7;color:var(--text);margin:0;">This book contains <em>The Protocols of the Elders of Zion</em> in full &#8212; a proven antisemitic forgery. Cooper reframed it as an Illuminati document. Later editions removed the chapter. We cover it here because understanding how it re-entered circulation through this book is historically important.</p>
   </div>
-
   <div class="btn-row">
     <a class="btn btn-primary" href="https://www.amazon.com/Behold-Pale-Horse-Milton-William/dp/0929385225" target="_blank">&#128218; Buy the Book</a>
     <a class="btn btn-ghost" href="https://www.amazon.com/Pale-Horse-Rider-Conspiracy-America/dp/0399169954" target="_blank">&#8599; Pale Horse Rider (biography)</a>
-    <a class="btn btn-ghost" href="#connections">&#8599; Connections to Other Articles</a>
+    <a class="btn btn-ghost" href="#connections">&#8599; Connections to Liminal Atlas</a>
   </div>
 </div>
 
 <div class="toc-section">
-  <div style="background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:24px;">
-    <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);margin-bottom:16px;">Contents &#8212; 9 sections with subsequent views</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-        <a href="#ch01"><span class="ch-num" style="min-width:44px;">CH 01</span>Foreword — Cooper's Background & Method</a>
-        <a href="#ch02"><span class="ch-num" style="min-width:44px;">CH 02</span>Ch 1 — Silent Weapons for Quiet Wars</a>
-        <a href="#ch03"><span class="ch-num" style="min-width:44px;">CH 03</span>Ch 2 — Secret Societies & the New World Order</a>
-        <a href="#ch04"><span class="ch-num" style="min-width:44px;">CH 04</span>Ch 12 — The Secret Government (MJ-12, Alien Treaty)</a>
-        <a href="#ch05"><span class="ch-num" style="min-width:44px;">CH 05</span>Ch 15 — The Protocols of the Elders of Zion</a>
-        <a href="#ch06"><span class="ch-num" style="min-width:44px;">CH 06</span>Appendix D — AIDS as Bioweapon</a>
-        <a href="#ch07"><span class="ch-num" style="min-width:44px;">CH 07</span>Chs 6–8 — FEMA & Emergency Powers</a>
-        <a href="#ch08"><span class="ch-num" style="min-width:44px;">CH 08</span>Ch 2 (partial) — JFK Assassination</a>
-        <a href="#ch09"><span class="ch-num" style="min-width:44px;">CH 09</span>Legacy — 9/11 Prediction & Cultural Impact</a>
+  <div class="toc-inner">
+    <div class="toc-label">Contents &#8212; 25 sections (17 chapters + 7 appendices)</div>
+    <div class="toc-grid">
+<a href="#foreword"><span class="toc-n">Intro</span>Foreword &amp; Introduction</a>
+<a href="#ch1"><span class="toc-n">Ch. 1</span>Silent Weapons for Quiet Wars</a>
+<a href="#ch2"><span class="toc-n">Ch. 2</span>Secret Societies and the New World Order</a>
+<a href="#ch3"><span class="toc-n">Ch. 3</span>Oath of Initiation</a>
+<a href="#ch4"><span class="toc-n">Ch. 4</span>Secret Treaty of Verona</a>
+<a href="#ch5"><span class="toc-n">Ch. 5</span>Good-by USA, Hello New World Order</a>
+<a href="#ch6"><span class="toc-n">Ch. 6</span>H.R. 4079 and FEMA</a>
+<a href="#ch7"><span class="toc-n">Ch. 7</span>Anti-Drug Abuse Act of 1988</a>
+<a href="#ch8"><span class="toc-n">Ch. 8</span>Are the Sheep Ready to Shear?</a>
+<a href="#ch9"><span class="toc-n">Ch. 9</span>Anatomy of an Alliance</a>
+<a href="#ch10"><span class="toc-n">Ch. 10</span>Lessons from Lithuania</a>
+<a href="#ch11"><span class="toc-n">Ch. 11</span>Coup de Grace</a>
+<a href="#ch12"><span class="toc-n">Ch. 12</span>The Secret Government</a>
+<a href="#ch13"><span class="toc-n">Ch. 13</span>Treason in High Places</a>
+<a href="#ch14"><span class="toc-n">Ch. 14</span>Newstates of America (Full Text)</a>
+<a href="#ch15"><span class="toc-n">Ch. 15</span>Protocols of the Elders of Zion</a>
+<a href="#ch16"><span class="toc-n">Ch. 16</span>The Story of Jonathan May</a>
+<a href="#ch17"><span class="toc-n">Ch. 17</span>Army Intelligence &amp; Satanic Church</a>
+<a href="#appa"><span class="toc-n">App. A</span>Military Service Record</a>
+<a href="#appb"><span class="toc-n">App. B</span>UFOs and Area 51</a>
+<a href="#appc"><span class="toc-n">App. C</span>Alien Implants</a>
+<a href="#appd"><span class="toc-n">App. D</span>AIDS</a>
+<a href="#appe"><span class="toc-n">App. E</span>New World Order (Club of Rome)</a>
+<a href="#appf"><span class="toc-n">App. F</span>U.S. Government Drug Involvement</a>
+<a href="#appg"><span class="toc-n">App. G</span>Kurzweil vs. Hopkins</a>
+<a href="#connections"><span class="toc-n">&#8599;</span>Connections to Liminal Atlas</a>
     </div>
   </div>
 </div>
@@ -232,201 +113,374 @@
 <div class="claim-legend">
   <strong style="color:var(--text-bright);margin-right:6px;">Claim status:</strong>
   <span><span class="claim-verified">&#10003; Verified</span> Independently confirmed</span>
-  <span><span class="claim-disputed">&#9651; Disputed</span> Real data, disputed interpretation</span>
-  <span><span class="claim-unsupported">&#10007; Unverifiable</span> First-hand / uncorroborated</span>
-  <span><span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span> Disproven / forgery</span>
+  <span><span class="claim-disputed">&#9651; Disputed</span> Real data, contested interpretation</span>
+  <span><span class="claim-unsupported">&#10007; Unverifiable</span> Uncorroborated / first-hand only</span>
+  <span><span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span> Disproven / known forgery</span>
 </div>
-<div class="chapter" id="ch01">
+
+<div class="sci-box" style="margin-bottom:36px;"><div class="sci-box-header"><div class="sci-icon">&#128218;</div><div class="sci-title">Complete Contents &#8212; All 17 Chapters &amp; 7 Appendices</div></div><div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;"><thead><tr style="border-bottom:2px solid var(--border2);"><th style="text-align:left;padding:8px 12px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);">Section</th><th style="text-align:left;padding:8px 12px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);">Title</th><th style="text-align:left;padding:8px 12px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);">Pages</th><th style="text-align:left;padding:8px 12px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);">Status</th></tr></thead><tbody><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#foreword" style="color:var(--blue-bright);text-decoration:none;">Intro</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Foreword &amp; Introduction</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">1&#8211;33</td><td style="padding:8px 12px;"><span class="claim-unsupported">&#10007; Unverifiable credentials; self-admitted disinformation</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch1" style="color:var(--blue-bright);text-decoration:none;">Ch. 1</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Silent Weapons for Quiet Wars</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">35&#8211;65</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Document of disputed origin and authorship</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch2" style="color:var(--blue-bright);text-decoration:none;">Ch. 2</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Secret Societies and the New World Order</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">67&#8211;97</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; CFR/JASON real; occult superstructure unverifiable</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch3" style="color:var(--blue-bright);text-decoration:none;">Ch. 3</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Oath of Initiation of an Unidentified Secret Order</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">99&#8211;101</td><td style="padding:8px 12px;"><span class="claim-unsupported">&#10007; Unknown provenance</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch4" style="color:var(--blue-bright);text-decoration:none;">Ch. 4</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Secret Treaty of Verona</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">103&#8211;107</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Document in Congressional Record &#8212; verified</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch5" style="color:var(--blue-bright);text-decoration:none;">Ch. 5</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Good-by USA, Hello New World Order</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">109&#8211;119</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Documents real; conspiratorial intent disputed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch6" style="color:var(--blue-bright);text-decoration:none;">Ch. 6</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">H.R. 4079 and FEMA</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">121&#8211;157</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; REX 84 and executive orders confirmed; Oliver North confirmed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch7" style="color:var(--blue-bright);text-decoration:none;">Ch. 7</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Anti-Drug Abuse Act of 1988</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">151&#8211;157</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Civil liberties concerns confirmed by subsequent scholarship</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch8" style="color:var(--blue-bright);text-decoration:none;">Ch. 8</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Are the Sheep Ready to Shear?</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">159&#8211;162</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Oklahoma law real; NWO extrapolation speculative</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch9" style="color:var(--blue-bright);text-decoration:none;">Ch. 9</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Anatomy of an Alliance</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">163&#8211;178</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Bilderberg real; alien pretext speculative</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch10" style="color:var(--blue-bright);text-decoration:none;">Ch. 10</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Lessons from Lithuania (Neal Knox)</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">179&#8211;182</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Historical account accurate</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch11" style="color:var(--blue-bright);text-decoration:none;">Ch. 11</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Coup de Grace</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">183&#8211;193</td><td style="padding:8px 12px;"><span class="claim-unsupported">&#10007; Unnamed sources; unverifiable</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch12" style="color:var(--blue-bright);text-decoration:none;">Ch. 12</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">The Secret Government</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">195&#8211;237</td><td style="padding:8px 12px;"><span class="claim-unsupported">&#10007; MJ-12 documents proven fabrications by FBI</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch13" style="color:var(--blue-bright);text-decoration:none;">Ch. 13</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Treason in High Places</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">239&#8211;249</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; UN documents real; treason claim disputed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch14" style="color:var(--blue-bright);text-decoration:none;">Ch. 14</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Newstates of America &#8212; Full Text</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">251&#8211;265</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Document is real and authentic</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch15" style="color:var(--blue-bright);text-decoration:none;">Ch. 15</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Protocols of the Elders of Zion</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">267&#8211;330</td><td style="padding:8px 12px;"><span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Proven antisemitic forgery &#8212; later editions removed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch16" style="color:var(--blue-bright);text-decoration:none;">Ch. 16</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">The Story of Jonathan May</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">331&#8211;359</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Hunt silver corner real; NWO appropriation unverifiable</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#ch17" style="color:var(--blue-bright);text-decoration:none;">Ch. 17</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">U.S. Army Intelligence &amp; Satanic Church</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">361&#8211;380</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Aquino&#8217;s facts independently verified</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appa" style="color:var(--blue-bright);text-decoration:none;">App. A</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">William Cooper&#8217;s Military Service Record</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">381&#8211;395</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Record real; clearance claim incompatible with rank</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appb" style="color:var(--blue-bright);text-decoration:none;">App. B</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">UFOs and Area 51</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">397&#8211;441</td><td style="padding:8px 12px;"><span class="claim-disputed">&#9651; Area 51 real (CIA confirmed 2013); alien content unverifiable</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appc" style="color:var(--blue-bright);text-decoration:none;">App. C</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Alien Implants</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">442&#8211;444</td><td style="padding:8px 12px;"><span class="claim-unsupported">&#10007; Contested; not peer-reviewed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appd" style="color:var(--blue-bright);text-decoration:none;">App. D</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">AIDS</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">445&#8211;447</td><td style="padding:8px 12px;"><span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; HIV origin proven as natural zoonosis circa 1908</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appe" style="color:var(--blue-bright);text-decoration:none;">App. E</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">New World Order (Club of Rome Report)</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">448&#8211;472</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Document real; conspiratorial framing disputed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appf" style="color:var(--blue-bright);text-decoration:none;">App. F</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">U.S. Government Drug Involvement</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">473&#8211;489</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Kerry Report (1989) and CIA IG report (1998) confirmed</span></td></tr><tr style="border-bottom:1px solid var(--border2);"><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;"><a href="#appg" style="color:var(--blue-bright);text-decoration:none;">App. G</a></td><td style="padding:8px 12px;font-size:13px;color:var(--text);">Kurzweil vs. Hopkins</td><td style="padding:8px 12px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);white-space:nowrap;">490&#8211;500</td><td style="padding:8px 12px;"><span class="claim-verified">&#10003; Legal dispute is real</span></td></tr></tbody></table></div></div>
+<div class="chapter" id="foreword">
   <div class="ch-header">
-    <span class="ch-num">CH 01</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Foreword — Cooper's Background & Stated Method</h2>
+    <span class="ch-num">Intro</span><span class="ch-time">Foreword &amp; Introduction &#8212; Cooper&#8217;s Background and Method</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper establishes his credentials: he claims to have served on the Commander in Chief of the Pacific Fleet (CINCPACFLT) Intelligence Briefing Team, where he read Top Secret documents about the alien presence, MJ-12, and a secret government. <span class="claim-unsupported">&#10007; Unverifiable</span> His documented Navy rank was E-5 (petty officer second class) — a level incompatible with the security clearances he describes. <span class="claim-verified">&#10003; Verified</span></p><p>Critically, Cooper admits in the same foreword that he deliberately fabricated information — mixing it with true information to feed to researchers he believed were government disinformation agents (Bill Moore, Stanton Friedman). He writes: <em>"None of that information was intended to go to the public."</em> Spieser, who was supposed to pass the material only to Moore, posted it publicly. <span class="claim-verified">&#10003; Verified</span> This is the most important epistemological fact about the book: Cooper himself confirms that corrupted information is present throughout, and acknowledges he cannot always distinguish it from the real material.</p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Mark Jacobson, <em>Pale Horse Rider</em> (2018)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Jacobson's biography is the only serious attempt to verify Cooper's background. He found Cooper's Navy service confirmed but at E-5 rank — a low-level clerical position. No evidence of the security clearances needed to access the materials Cooper described. Jacobson's conclusion: Cooper was a genuine believer in what he said, not a conscious fraudster — but his 'documents' evolved over years to fit whatever he was currently arguing.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Cooper's own 1989 public statement</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Cooper publicly stated in 1989 that Stanton Friedman and Bill Moore were government agents and that the Eisenhower MJ-12 briefing document was a fraud. He later incorporated MJ-12 into his narrative anyway. This reversal is his own, not a critic's imposition.</div></div></p>
+  <h2>Foreword &amp; Introduction &#8212; Cooper&#8217;s Background and Method</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper opens by establishing his credentials: he claims to have served on the Commander in Chief of the Pacific Fleet (CINCPACFLT) Intelligence Briefing Team, where he read Top Secret documents about MJ-12, the alien presence, and a Secret Government. <span class="claim-unsupported">&#10007; Unverifiable</span> His documented Navy rank was E-5 (petty officer second class) &#8212; incompatible with the security clearances he describes. <span class="claim-disputed">&#9651; Disputed</span><br><br>Critically, Cooper admits he deliberately fabricated information &#8212; mixing it with true material to feed to researchers he believed were government agents (Bill Moore, Stanton Friedman). He writes: <em>&#8220;None of that information was intended to go to the public.&#8221;</em> This is the most important epistemological fact about the book: Cooper himself confirms corrupted information is present throughout, and that he cannot always distinguish it from the real material. <span class="claim-verified">&#10003; Verified</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: CINCPACFLT Intelligence Briefing Team &#183; MJ-12 &#183; Majesty Twelve &#183; Secret Government &#183; disinformation</div>
   </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Cooper&#8217;s documented Navy rank (E-5)</div><p>Biographer Mark Jacobson (<em>Pale Horse Rider</em>, 2018) confirmed Cooper&#8217;s Navy service at E-5 &#8212; a low-level position. No evidence of the security clearances needed to access the materials he described. Jacobson&#8217;s conclusion: Cooper was a genuine believer, not a conscious fraudster, but his &#8220;documents&#8221; evolved over years to fit whatever argument he was currently making.</p></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Cooper&#8217;s own 1989 public statement</div><p>In 1989 Cooper publicly declared that Friedman and Moore were government agents and that the Eisenhower MJ-12 briefing document was a fraud. He later incorporated MJ-12 into his narrative anyway. This reversal is his own, not a critic&#8217;s imposition.</p></div>
 </div>
-<div class="chapter" id="ch02">
+<div class="chapter" id="ch1">
   <div class="ch-header">
-    <span class="ch-num">CH 02</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapter 1 — Silent Weapons for Quiet Wars</h2>
+    <span class="ch-num">Ch. 1</span><span class="ch-time">Silent Weapons for Quiet Wars</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper reproduces a document he says was found in an IBM photocopier purchased at a military surplus sale. Titled <em>Silent Weapons for Quiet Wars: An Introductory Programming Manual</em>, it claims to be a 1954 Bilderberg Group policy document outlining economic and social control of populations through manipulation of money supply, media, and education — what it calls "silent weapons." Cooper frames it as the Illuminati's declaration of war on the American people. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p>The document contains sophisticated economic circuit diagrams that Cooper's version omits entirely — which is one reason researchers concluded he received it from elsewhere rather than authored it. The economic modelling it contains exceeds Cooper's stated expertise. <span class="claim-disputed">&#9651; Disputed</span></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Lyle Hartford Van Dyke Jr. (1990s)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Van Dyke, who was incarcerated, emerged claiming authorship — calling it 'a collage of ideas I compiled, not an original work.' This is the most specific attribution available but remains unverifiable. Hartford Van Dyke was released from federal prison in 2011.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — <em>The Skeptic</em> (UK), 2023</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Analysis confirmed that large parts of the book — including this chapter — were not written by Cooper. 'Chapters 1, 3, 4, 10, 14, 15, and 17, plus all of the appendices, were written by other people.' Cooper is the compiler and framer of Silent Weapons for Quiet Wars, not its author.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — Paranoia Magazine analysis (2013)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Comparison of Cooper's stripped version with the full original pamphlet (which includes diagrams Cooper omitted) concluded he received the document from a third party. The presence of sophisticated economic mathematics beyond Cooper's expertise is cited as evidence he did not originate it. Whether the document is itself a hoax — and by whom — remains unresolved.</div></div></p>
+  <h2>Silent Weapons for Quiet Wars</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces a document he says was found inside an IBM photocopier purchased at a military surplus sale. Titled <em>Silent Weapons for Quiet Wars: An Introductory Programming Manual</em>, it claims to be a 1954 Bilderberg Group policy document outlining economic and social control through manipulation of money supply, media, and education &#8212; what it calls &#8220;silent weapons.&#8221; Cooper frames it as the Illuminati&#8217;s declaration of war on the American people. <span class="claim-unsupported">&#10007; Unverifiable</span><br><br>The document contains sophisticated economic circuit diagrams that Cooper&#8217;s version omits entirely &#8212; evidence that he received it from a third party rather than authored it himself.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: silent weapons &#183; quiet war &#183; Bilderberg Group &#183; Operations Research &#183; economic inductance &#183; social engineering</div>
   </div>
+  
+  <div class="dialogue" style="border-left-color:#a78bfa;"><div class="d-line"><div class="d-text" style="font-style:italic;font-size:15px;line-height:1.8;">&#8220;All science is merely a means to an end. The means is knowledge. The end is control.&#8221;</div></div><div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-top:6px;">&#8212; Silent Weapons for Quiet Wars, as reproduced by Cooper</div></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Lyle Hartford Van Dyke Jr. &#8212; claimed authorship</div><p>Van Dyke emerged from prison claiming authorship, calling it &#8220;a collage of ideas I compiled, not an original work.&#8221; His claim is the most specific attribution available but remains unverified.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; <em>The Skeptic</em> (UK), 2023</div><p>Analysis confirmed that large parts of the book &#8212; including this chapter &#8212; were not written by Cooper. &#8220;Chapters 1, 3, 4, 10, 14, 15, and 17, plus all of the appendices, were written by other people.&#8221; Cooper is the compiler and framer, not the author of Silent Weapons for Quiet Wars.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Paranoia Magazine, 2013</div><p>Comparison of Cooper&#8217;s stripped version with the full pamphlet (which includes diagrams Cooper omitted) concluded he received the document from a third party. The sophisticated economic mathematics exceed Cooper&#8217;s stated expertise.</p></div>
 </div>
-<div class="chapter" id="ch03">
+<div class="chapter" id="ch2">
   <div class="ch-header">
-    <span class="ch-num">CH 03</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapter 2 — Secret Societies and the New World Order</h2>
+    <span class="ch-num">Ch. 2</span><span class="ch-time">Secret Societies and the New World Order</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper maps a network connecting: Illuminati → Skull &amp; Bones / Scroll &amp; Key → Council on Foreign Relations (CFR) → Trilateral Commission → JASON Society → MJ-12. He claims every CIA director has been a CFR member, and that this network is pursuing a one-world government. <span class="claim-disputed">&#9651; Disputed</span></p><p>Documented facts embedded throughout: The CFR is real and influential. <span class="claim-verified">&#10003; Verified</span> The JASON Group is real — a classified scientific advisory body administered by the Mitre Corporation, with protocol rank of rear admiral when visiting military bases. <span class="claim-verified">&#10003; Verified</span> Its membership has been partially confirmed through Pentagon Papers and other sources; Cooper's claim that it is the highest degree of an occult order called the JASON Society is unverifiable. <span class="claim-unsupported">&#10007; Unverifiable</span> He names Dr. Edward Teller as a member of MJ-12 — Teller's proximity to classified government science is independently documented. <span class="claim-disputed">&#9651; Disputed</span></p><p>Cooper also claims Pope John Paul II was formerly a Nazi cyanide gas salesman involved in creating AIDS. This is historically false. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><p><div style="border-left:3px solid #4ade80;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#4ade80;margin-bottom:6px;">&#9650; Supports — CFR membership — mainstream scholarship</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Laurence Shoup's <em>Wall Street's Think Tank</em> (2015) documents the CFR's role in shaping US foreign policy through rigorous academic analysis — reaching similar conclusions about elite coordination to Cooper's, without the occult superstructure. The CFR's influence is not a fringe claim.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — Michael Barkun, <em>A Culture of Conspiracy</em> (2003)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Political scientist Barkun characterises Behold a Pale Horse as 'among the most complex superconspiracy theories' and among the most influential. His analysis: Cooper fuses verifiable institutional facts (CFR, Trilateral Commission) with unverifiable occult superstructure (JASON Society, Illuminati) in a way that makes the whole package feel confirmed by the verified parts.</div></div></p>
+  <h2>Secret Societies and the New World Order</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper maps a network: Illuminati &#8594; Skull &amp; Bones / Scroll &amp; Key &#8594; Council on Foreign Relations (CFR) &#8594; Trilateral Commission &#8594; JASON Society &#8594; MJ-12. He claims every CIA director has been a CFR member and that this network is pursuing a world government. He places the Knights of Malta, the Vatican, and the Black Nobility within the same overarching structure. <span class="claim-disputed">&#9651; Disputed</span><br><br>The CFR is real and influential. <span class="claim-verified">&#10003; Verified</span> The JASON Group is a real classified scientific advisory body administered by the Mitre Corporation. <span class="claim-verified">&#10003; Verified</span> Cooper&#8217;s claim that JASON is the highest degree of a secret occult order is unverifiable. <span class="claim-unsupported">&#10007; Unverifiable</span> He also claims Pope John Paul II was formerly a Nazi cyanide gas salesman involved in creating AIDS &#8212; historically false. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Council on Foreign Relations &#183; JASON Group &#183; Trilateral Commission &#183; Skull &amp; Bones &#183; Knights of Malta &#183; Black Nobility &#183; Illuminati</div>
   </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; CFR &#8212; mainstream scholarship</div><p>Laurence Shoup&#8217;s <em>Wall Street&#8217;s Think Tank</em> (2015) documents the CFR&#8217;s role in shaping US foreign policy through rigorous academic analysis &#8212; reaching similar conclusions about elite coordination without the occult superstructure. The CFR&#8217;s influence is not a fringe claim.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Michael Barkun, <em>A Culture of Conspiracy</em> (2003)</div><p>Political scientist Barkun characterises <em>Behold a Pale Horse</em> as &#8220;among the most complex superconspiracy theories&#8221; and among the most influential. His analysis: Cooper fuses verifiable institutional facts (CFR, Trilateral Commission) with unverifiable occult superstructure in a way that makes the whole package feel confirmed by the verified parts.</p></div>
 </div>
-<div class="chapter" id="ch04">
+<div class="chapter" id="ch3">
   <div class="ch-header">
-    <span class="ch-num">CH 04</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapter 12 — The Secret Government (MJ-12, Alien Treaty, EBE)</h2>
+    <span class="ch-num">Ch. 3</span><span class="ch-time">Oath of Initiation of an Unidentified Secret Order</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>This is the book's most consequential chapter — the one that most directly shaped subsequent UFO disclosure discourse. Cooper's claims:</p><p><strong>The Eisenhower Alien Treaty (1954):</strong> President Eisenhower met with an alien nation at Edwards Air Force Base on February 20, 1954. A formal treaty was signed: the aliens could abduct humans for medical examination and provide technology; in exchange the US would keep their presence secret. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p><strong>MJ-12 (Majesty Twelve):</strong> A secret 19-member committee established by Eisenhower. Members included Nelson Rockefeller, Allen Dulles, John Foster Dulles, J. Edgar Hoover, and Dr. Edward Teller. The committee operated outside congressional oversight as the core of what Cooper calls the Secret Government. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p><strong>EBE (Extraterrestrial Biological Entity):</strong> A live alien survivor of the 1949 Roswell crash, held in captivity, dying of illness in 1952. The film <em>E.T.</em> is described as a thinly disguised account. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p><strong>The Alien Deception:</strong> By 1955, the aliens had broken the treaty — mutilating humans, not providing complete abductee lists, and manipulating humanity through secret societies, religion, and the occult. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p><strong>Underground Bases:</strong> Jointly occupied alien-human bases beneath the Four Corners area and at Area 51 (Dreamland), housing at least 600 alien beings full time alongside CIA personnel. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p><strong>James Forrestal murdered:</strong> The first Secretary of Defence was strangled with a bedsheet and thrown from a window at Bethesda Naval Hospital by CIA agents because he wanted to inform the public about the aliens. <span class="claim-unsupported">&#10007; Unverifiable</span></p><p>Cooper himself writes: <em>"Whether this is true or disinformation depends solely upon the existence of aliens."</em> He cannot verify it independently.</p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — The MJ-12 documents — FBI investigation</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">The FBI investigated the MJ-12 documents and concluded they were fabrications. The Air Force Office of Special Investigations reached the same conclusion. The key anachronism: the typewriter font used in the Eisenhower Briefing Document did not exist in 1952, providing a hard physical date-of-fabrication tell. Academic consensus is firmly against the documents' authenticity.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Bill Moore's 1989 MUFON confession</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Bill Moore — one of the MJ-12 documents' main distributors and a figure Cooper called a 'government agent' — confessed at the 1989 MUFON symposium that he had knowingly spread disinformation as part of a 'work relationship' with Air Force intelligence. He also confirmed the Paul Benowitz operation — deliberately feeding false UFO information to a researcher until he suffered a breakdown. Documented in Mark Pilkington's <em>Mirage Men</em>.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — David Grusch testimony (2023)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Grusch's Congressional testimony confirmed the existence of legacy UAP crash retrieval programmes but did not name MJ-12. His confirmed existence of reverse-engineering programmes with unaccountable funding structures rhymes with Cooper's general architecture, approached through a completely different evidential path. Grusch was a USAF intelligence officer with documented clearances — the access Cooper only claimed.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — James Forrestal — historical record</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Forrestal died at Bethesda Naval Hospital on May 22, 1949 — officially ruled a suicide. Cooper's CIA murder claim is unverifiable, but the case has genuine anomalies noted by historians. His brother had visited the day before and found him in good spirits. Jorjani also flags Forrestal's death as suspicious, connecting it to his knowledge of Operation High Jump. The questions are not frivolous, but Cooper's specific CIA-bedsheet-window mechanism is unsupported.</div></div></p>
+  <h2>Oath of Initiation of an Unidentified Secret Order</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces what he claims is the initiation oath of a secret society he declines to name. The text is ceremonial &#8212; invoking loyalty above national law and punishment for betrayal. <span class="claim-unsupported">&#10007; Unverifiable</span><br><br>Not written by Cooper; contributed by an unnamed source. Its function in the book is atmospheric: establishing that secret oaths superseding civil law exist and are taken seriously at the apex of the network he describes.</p>
   </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Masonic oath literature</div><p>Many versions of Masonic initiation oaths have been published &#8212; most famously by William Morgan in 1826, whose subsequent disappearance sparked a national political movement. Cooper&#8217;s text resembles these but cannot be attributed to any specific order.</p></div>
 </div>
-<div class="chapter" id="ch05">
+<div class="chapter" id="ch4">
   <div class="ch-header">
-    <span class="ch-num">CH 05</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapter 15 — The Protocols of the Elders of Zion</h2>
+    <span class="ch-num">Ch. 4</span><span class="ch-time">Secret Treaty of Verona</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper reproduces the entirety of <em>The Protocols of the Elders of Zion</em> — an early 20th century antisemitic forgery describing a supposed Jewish conspiracy to dominate the world. Cooper instructs readers to replace "Zion" with "Sion", "Jews" with "Illuminati", and "goyim" with "cattle." He claims the Protocols were written by the Prieuré de Sion to describe Illuminati plans, and that Jews were falsely inserted as the villains. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><p><div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius);padding:14px 18px;margin:14px 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:8px;">&#9888; Editorial Note — Liminal Atlas</div><p style="font-size:13px;line-height:1.7;color:var(--text);margin:0;">The Protocols of the Elders of Zion is one of the most thoroughly debunked documents in modern history — proven to be a plagiarised fabrication by the Okhrana (Russian Tsarist secret police) in 1903, drawn from an 1864 French political satire by Maurice Joly. Its forgery was demonstrated conclusively in August 1921 by Philip Graves in <em>The Times</em> of London. Cooper's 'substitution' instruction does not change the text — it reframes a known antisemitic fabrication as an Illuminati blueprint, and in doing so gave the document renewed circulation in communities that would not have otherwise encountered it. Later printings of <em>Behold a Pale Horse</em> removed this chapter. We cover it here because its inclusion explains the document's re-emergence in conspiracy circuits in the 1990s and beyond.</p></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Graves exposé, <em>The Times</em> of London (1921)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Philip Graves proved in August 1921 that the Protocols were plagiarised word-for-word in multiple passages from Maurice Joly's 1864 satirical novel <em>Dialogue in Hell Between Machiavelli and Montesquieu</em>. This original debunking has never been credibly contested.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Norman Cohn, <em>Warrant for Genocide</em> (1967)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Cohn's definitive historical study traces the Protocols from Okhrana fabrication through their use in Nazi propaganda. The scholarly consensus on their fraudulent origin is unanimous across all serious historians.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Real-world consequences</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">In 2000, South Africa's Minister of Health Manto Tshabalala-Msimang distributed Cooper's Protocols chapter to senior government officials. Researchers including Nicoli Nattrass documented how this contributed to AIDS denialism policies that cost lives — a direct downstream consequence of Cooper's repackaging of the forgery.</div></div></p>
+  <h2>Secret Treaty of Verona</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces the Secret Treaty of Verona (1822), entered into the Congressional Record by Senator Robert Latham Owen (D-OK) in 1916. Signed by Austria, France, Prussia, and Russia, it committed the Holy Alliance to suppress democratic and constitutional government wherever it emerged. Cooper presents this as evidence that monarchical-oligarchical forces have been operating continuously against American democracy since 1822. <br><br>The treaty is real and is in the Congressional Record. <span class="claim-verified">&#10003; Verified</span> Senator Owen&#8217;s interpretation &#8212; that it directly threatened American democracy and motivated the Monroe Doctrine &#8212; is a documented historical argument. <span class="claim-disputed">&#9651; Disputed</span> Cooper&#8217;s inference that its signatories&#8217; descendants run the modern New World Order is speculative. <span class="claim-unsupported">&#10007; Unverifiable</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Secret Treaty of Verona 1822 &#183; Holy Alliance &#183; Monroe Doctrine &#183; Congressional Record 1916 &#183; Senator Robert Owen</div>
   </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Congressional Record</div><p>The treaty does appear in the Congressional Record of April 25, 1916, introduced by Senator Owen, who argued it explained the necessity of the Monroe Doctrine. A verified historical document &#8212; not a Cooper invention.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Historical scope</div><p>Historians generally regard the Holy Alliance as a short-lived arrangement that collapsed in the 1820s rather than a continuous operative conspiracy. Cooper&#8217;s extension of its lineage into the 20th century is extrapolation without documentary support.</p></div>
 </div>
-<div class="chapter" id="ch06">
+<div class="chapter" id="ch5">
   <div class="ch-header">
-    <span class="ch-num">CH 06</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Appendix D — AIDS as Bioweapon</h2>
+    <span class="ch-num">Ch. 5</span><span class="ch-time">Good-by USA, Hello New World Order</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper argues AIDS was created as a population-reduction tool targeting Blacks, Hispanics, and gay men. His chain of claims: (1) In 1969 the US Department of Defense requested $10 million to create a synthetic biological agent that would destroy the immune system. <span class="claim-disputed">&#9651; Disputed</span> (2) A hepatitis B vaccine trial in New York (1978–81) was the delivery mechanism. <span class="claim-disputed">&#9651; Disputed</span> (3) The mastermind was Dr. Wolf Szmuness, who Cooper claims was the ex-roommate of Pope John Paul II. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><p>The 1969 Congressional Record statement is real — a Congressman did oppose a biological warfare programme. <span class="claim-verified">&#10003; Verified</span> The hepatitis B trials in gay men (1978–81) are historically documented. <span class="claim-verified">&#10003; Verified</span> Cooper's interpretation — that these funded and delivered HIV — is not supported by molecular evidence. <span class="claim-disputed">&#9651; Disputed</span></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Scientific consensus on HIV origin</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">HIV-1 is thoroughly documented as having crossed from chimpanzees to humans in approximately 1908 in Cameroon (Worobey et al., 2008, <em>Nature</em>). Phylogenetic analysis of preserved samples confirms natural zoonotic origin predating any laboratory programme. No credible molecular evidence of engineering has been found.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — The 1969 Congressional Record</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">The statement Cooper cites is real but does not say what he claims. The Congressman was opposing biological warfare programmes generally — not funding the creation of AIDS specifically. Cooper extrapolated the AIDS connection without documentary evidence.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — The Tuskegee context</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">The conspiracy theory's persistence reflects real historical injustices — the Tuskegee syphilis study (1932–1972), in which the US government deliberately withheld treatment from Black men — that give it plausibility in communities with genuine reason to distrust official medicine. This context does not validate Cooper's specific claims but explains their reception.</div></div></p>
+  <h2>Good-by USA, Hello New World Order</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper outlines what he believes to be the final stages of a programme to dissolve US national sovereignty and integrate the country into a world government. He documents executive orders, proposed legislation, and UN Charter provisions that he argues cumulatively amount to constitutional subversion. He identifies the CFR&#8217;s consistent promotion of &#8220;world federalism&#8221; as the policy throughline. <span class="claim-disputed">&#9651; Disputed</span><br><br>Many of the executive orders and legislative documents cited are real. <span class="claim-verified">&#10003; Verified</span> The CFR has historically supported multilateral institutions and international law. <span class="claim-verified">&#10003; Verified</span> Cooper&#8217;s interpretation &#8212; that this constitutes deliberate conspiracy rather than a contested but publicly argued policy position &#8212; is not supportable from the documented facts alone. <span class="claim-disputed">&#9651; Disputed</span></p>
   </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; UN Charter Article 25</div><p>Article 25 of the UN Charter (which Cooper cites) does require member states to accept Security Council decisions &#8212; a real provision that has generated genuine debate about sovereignty. The US veto makes this less binding in practice than Cooper suggests.</p></div>
 </div>
-<div class="chapter" id="ch07">
+<div class="chapter" id="ch6">
   <div class="ch-header">
-    <span class="ch-num">CH 07</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapters 6–8 — FEMA & Emergency Powers</h2>
+    <span class="ch-num">Ch. 6</span><span class="ch-time">H.R. 4079 and FEMA &#8212; Federal Emergency Management Agency</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper documents the executive order infrastructure giving FEMA extraordinary emergency powers: EO 10995 (communications), EO 10997 (energy and minerals), EO 11000 (civilian labour brigades), EO 11490 (Nixon consolidation), Carter's EO 12148. He argues these constitute a hidden infrastructure for suspending the Constitution under any declared national emergency. <span class="claim-disputed">&#9651; Disputed</span></p><p>He also covers REX 84 — a 1984 readiness exercise testing government response to civil unrest — and H.R. 4079, a proposed drug emergency declaration. The executive orders are real and publicly documented. <span class="claim-verified">&#10003; Verified</span> Oliver North confirmed in the Iran-Contra hearings that plans existed to suspend the Constitution. <span class="claim-verified">&#10003; Verified</span></p><p><div style="border-left:3px solid #4ade80;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#4ade80;margin-bottom:6px;">&#9650; Supports — Oliver North confirmation (1987)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">North confirmed under oath during the Iran-Contra hearings that he had been involved in developing continuity-of-government plans that included suspending the Constitution. Congressman Jack Brooks (D-TX) was cut off by committee chairman Daniel Inouye when he tried to pursue this line of questioning. This is one of Cooper's most solidly documented claims.</div></div></p><p><div style="border-left:3px solid #4ade80;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#4ade80;margin-bottom:6px;">&#9650; Supports — REX 84 — confirmed</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">REX 84 (Readiness Exercise 1984) was confirmed as real by documents obtained by the Miami Herald and discussed in the Iran-Contra hearings. It involved planning for the detention of large numbers of undocumented immigrants and American citizens in the event of a national emergency.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — Post-9/11 architecture</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">The USA PATRIOT Act (2001), the creation of the Department of Homeland Security, and subsequent executive expansions of surveillance power closely parallel the emergency architecture Cooper described. This doesn't confirm his specific conspiracy claims but validates the general concern that emergency frameworks were being built that could bypass constitutional constraints.</div></div></p>
+  <h2>H.R. 4079 and FEMA &#8212; Federal Emergency Management Agency</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper documents the executive order infrastructure giving FEMA extraordinary emergency powers: EO 10995 (communications), EO 10997 (energy and minerals), EO 11000 (civilian labour brigades), EO 11490 (Nixon consolidation), Carter&#8217;s EO 12148. He argues these constitute a hidden infrastructure for suspending the Constitution under any declared national emergency. He also covers REX 84 &#8212; a 1984 readiness exercise &#8212; and H.R. 4079, a proposed drug emergency declaration. The executive orders are real and publicly documented. <span class="claim-verified">&#10003; Verified</span> Oliver North confirmed in the Iran-Contra hearings that plans existed to suspend the Constitution. <span class="claim-verified">&#10003; Verified</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: REX 84 &#183; FEMA &#183; Executive Order 11490 &#183; Oliver North &#183; H.R. 4079 &#183; Mount Weather &#183; Continuity of Government</div>
   </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Oliver North &#8212; Iran-Contra hearings (1987)</div><p>North confirmed under oath that he had been involved in developing continuity-of-government plans that included suspending the Constitution. Congressman Jack Brooks (D-TX) was cut off by committee chairman Daniel Inouye when he tried to pursue this line of questioning. One of Cooper&#8217;s most solidly documented claims.</p></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; REX 84 &#8212; confirmed by Miami Herald and Senate hearings</div><p>REX 84 (Readiness Exercise 1984) was confirmed as real by documents obtained by the Miami Herald and discussed in the Iran-Contra hearings. It involved planning for the detention of large numbers of people in the event of a declared national emergency.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Post-9/11 architecture</div><p>The USA PATRIOT Act (2001), creation of the Department of Homeland Security, and subsequent executive expansions of surveillance power closely parallel the emergency architecture Cooper described. This validates his general concern even if it does not confirm his specific conspiratorial framing.</p></div>
 </div>
-<div class="chapter" id="ch08">
+<div class="chapter" id="ch7">
   <div class="ch-header">
-    <span class="ch-num">CH 08</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Chapter 2 (partial) — JFK Assassination</h2>
+    <span class="ch-num">Ch. 7</span><span class="ch-time">Anti-Drug Abuse Act of 1988 (H.R. 5210, P.L. 100-690)</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>Cooper claims Kennedy was assassinated because he was about to reveal the alien presence. The mechanism: Secret Service agent William Greer (the driver) fired the fatal shot using a "gas pressure device developed by aliens from the Trilateral Commission." Cooper circulated a video purporting to prove this. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — Video analysis — multiple stations</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Multiple television stations that examined Cooper's video concluded it was fabricated from existing Zapruder footage. The frames purportedly showing Greer firing were created by manipulation of frames in which Greer simply turned to look at Kennedy after the first shot.</div></div></p><p><div style="border-left:3px solid #f87171;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:6px;">&#9660; Contradicts — House Select Committee on Assassinations (1979)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">While finding a probable conspiracy based on acoustic evidence (suggesting a second shooter on the grassy knoll), the HSCA did not identify the driver as a shooter. No serious JFK researcher across the political spectrum has credited the Greer-alien-weapon theory.</div></div></p>
+  <h2>Anti-Drug Abuse Act of 1988 (H.R. 5210, P.L. 100-690)</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper analyses the Anti-Drug Abuse Act of 1988, arguing it contains provisions that dramatically expand powers of search, seizure, and asset forfeiture in ways that amount to constitutional violations. He argues the &#8220;war on drugs&#8221; is a pretext for building the domestic enforcement infrastructure of an emerging police state. <span class="claim-disputed">&#9651; Disputed</span><br><br>Many of his civil liberties concerns were subsequently confirmed by mainstream legal scholarship. <span class="claim-verified">&#10003; Verified</span> Michelle Alexander&#8217;s <em>The New Jim Crow</em> (2010) and the subsequent prison reform movement documented the racially disproportionate impact of exactly the enforcement mechanisms Cooper flagged in 1991.</p>
   </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Michelle Alexander, <em>The New Jim Crow</em> (2010)</div><p>Alexander documented in exhaustive detail how the war on drugs functioned as a system of racialised mass incarceration, using the same statutory mechanisms Cooper flagged. The ACLU and mainstream legal scholars reached similar conclusions on asset forfeiture provisions.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Conspiracy vs. systemic critique</div><p>The documented harms of the war on drugs do not require a conspiratorial explanation &#8212; they can be explained by institutional incentives, racial bias, and political economy. Cooper&#8217;s framing (deliberate design by the secret government) and the mainstream civil liberties framing (systemic structural racism) reach similar factual conclusions through different analytical frameworks.</p></div>
 </div>
-<div class="chapter" id="ch09">
+<div class="chapter" id="ch8">
   <div class="ch-header">
-    <span class="ch-num">CH 09</span>
-    <h2 style="font-size:1.1rem;font-weight:700;color:var(--text-bright);margin:0;flex:1;">Legacy — The 9/11 Prediction & Cultural Impact</h2>
+    <span class="ch-num">Ch. 8</span><span class="ch-time">Are the Sheep Ready to Shear?</span>
   </div>
-  <div class="sci-box" style="border-left:3px solid var(--text-dim);">
-    <div class="sci-box-header">
-      <div class="sci-icon">&#128203;</div>
-      <div class="sci-title">Chapter Summary</div>
-      <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span>
-    </div>
-    <p>On June 28, 2001, Cooper broadcast: <em>"Whatever they're going to blame on Usama bin Laden — don't you believe it… They will soon do something outlandish to gain the support of the sheeple."</em> He referenced a CNN report from June 24 in which bin Laden had vowed to attack US interests. Three months later, 9/11 occurred. <span class="claim-verified">&#10003; Verified</span></p><p>Whether this constitutes prophecy or extrapolation from public reporting is genuinely contested. Bin Laden had been a named terrorist since the late 1990s, with his own CIA unit since 1996, and had carried out the USS Cole bombing ten months earlier. The "prediction" contained no date, method, or specific target. <span class="claim-disputed">&#9651; Disputed</span></p><p>Cooper was killed on November 5, 2001 — two months after 9/11 — in a shootout with Apache County sheriff's deputies who had come to arrest him on outstanding aggravated assault charges. He had publicly vowed he would not be taken alive. One deputy was shot in the head (survived); Cooper was killed. <span class="claim-verified">&#10003; Verified</span></p><p><strong>Cultural reach:</strong> <em>Behold a Pale Horse</em> is one of the most shoplifted books in American publishing history. <span class="claim-verified">&#10003; Verified</span> It circulated heavily in US prisons throughout the 1990s, particularly in Black communities. It is cited by Wu-Tang Clan affiliates (Killarmy named their 1997 debut album <em>Silent Weapons for Quiet Wars</em>), Public Enemy, and Ice Cube. Timothy McVeigh ordered Cooper materials before the Oklahoma City bombing. Alex Jones has cited Cooper extensively, though Cooper publicly despised Jones. <span class="claim-verified">&#10003; Verified</span></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — Mark Jacobson, <em>Pale Horse Rider</em> (2018)</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">The definitive biography. Jacobson traces the book's spread through prisons, barbershops, militia compounds, and hip-hop circles. He argues Cooper was 'the man who saw the deep state before it had a name' — a figure whose genuine disillusionment with government legitimised a framework that mixed true institutional critique with irresponsible fabrication.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — <em>The Skeptic</em> (UK), 2023</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">'Why inaccuracies in Bill Cooper's influential conspiracy theory book serve as its strength': the mixture of documented facts with false claims is not a weakness but the mechanism of the book's persuasion — each true fact borrows credibility to the false claims around it, and every debunking of a false claim can be reframed as confirmation that the cover-up is working.</div></div></p><p><div style="border-left:3px solid #f59e0b;padding:12px 16px;margin:10px 0;background:var(--surface2);border-radius:0 var(--radius) var(--radius) 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f59e0b;margin-bottom:6px;">&#9632; Contextualises — QAnon lineage</div><div style="font-size:13.5px;line-height:1.7;color:var(--text-dim);">Media scholars including Adrienne LaFrance (<em>The Atlantic</em>, 2020) traced QAnon's mythology directly to Cooper's framework: the secret government, satanic child abuse in elite networks, sealed indictments, the deep state. These are Cooper's architecture, updated for the social media age. Cooper himself would likely have disavowed QAnon, as he publicly despised imitators.</div></div></p>
+  <h2>Are the Sheep Ready to Shear?</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>A short chapter focused on an Oklahoma state law (H.B. 1750, 1989) requiring property holders to submit detailed asset inventories &#8212; including guns, coins, art, and bank accounts &#8212; to the state tax assessor. Cooper presents this as a pilot programme for the nationwide asset registry the New World Order requires. The Oklahoma law is real. <span class="claim-verified">&#10003; Verified</span> Cooper&#8217;s extrapolation that it was a deliberate NWO test run is speculative. <span class="claim-unsupported">&#10007; Unverifiable</span><br><br>The chapter concludes with Cooper&#8217;s most inflammatory rhetoric: &#8220;IT IS TIME TO STAND UP WITH A WEAPON AND SCREAM, ENOUGH!&#8221;</p>
   </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; The militia movement and Oklahoma City</div><p><em>The Guardian</em> described Cooper&#8217;s book as &#8220;the manifesto of the militia movement&#8221; during the 1997 Terry Nichols trial. Oklahoma City bomber Timothy McVeigh was a documented reader of Cooper&#8217;s materials. The connection between this chapter&#8217;s rhetoric and subsequent political violence is historically documented.</p></div>
 </div>
-<section style="border-top:2px solid var(--blue);padding-top:40px;margin-top:40px;" id="connections">
-  <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-bright);margin-bottom:6px;">Connections to Other Liminal Atlas Articles</h2>
-  <p style="font-size:14px;line-height:1.8;color:var(--text-dim);margin-bottom:20px;">Cooper is referenced — directly or through the ideas he popularised — across multiple threads on this site.</p>
-  <div style="display:flex;flex-direction:column;gap:8px;"><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/jorjani-nazi-breakaway-civilization.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Jason Jorjani — Nazi Breakaway Civilisation (Part II)</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Direct reference — John Lear connection</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Jorjani co-guest John Lear wrote anonymous pieces with Cooper. Cooper's ODESSA / Nazi breakaway narrative parallels Jorjani's — both argue the SS never surrendered and continued operating through the American deep state.</div>
-  </div><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/jre-jesse-michels.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Jesse Michels on The Joe Rogan Experience #2331</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Cultural context</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">The MJ-12 framework, the alien treaty, the secret government with unaccountable black budgets — these are Cooper's architecture, filtered through 30 years of subsequent research.</div>
-  </div><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/townsend-brown-documentary.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">NICAP overlap</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Cooper's chapter on NICAP characterises it as a civilian UFO organisation infiltrated and eventually controlled by the CIA — consistent with Jesse's reading of Brown co-founding NICAP as probable counter-intelligence.</div>
-  </div><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/nicap-cia-ufo-evidence.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">CIA vs. NICAP — The UFO Evidence</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Directly relevant</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Cooper's framework for the CIA's relationship to civilian UFO organisations provides the conspiratorial context for the CIA's documented monitoring of NICAP.</div>
-  </div><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/john-brandenburg-mars-nuclear-war.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Dr. John Brandenburg — Life on Mars</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Paul Benowitz / Rick Doty overlap</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Cooper documents the Paul Benowitz operation — in which Rick Doty fed Benowitz false alien information that drove him to a breakdown. Brandenburg was similarly targeted by Doty.</div>
-  </div><div class="sci-box" style="margin:0;padding:14px 18px;">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-      <a href="/articles/australian-jio-ufo-file.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Australian JIO File 3092/2</a>
-      <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Anti-gravity programme overlap</span>
-    </div>
-    <div style="font-size:13px;line-height:1.65;color:var(--text-dim);">Edward Teller appears in both — in the JIO file as a participant in the classified anti-gravity programme, and in Cooper's account as a member of MJ-12.</div>
-  </div></div></section>
-<section style="border-top:2px solid var(--blue);padding-top:40px;margin-top:40px;" id="bibliography">
-  <h2 style="font-size:1.5rem;font-weight:700;color:var(--text-bright);margin-bottom:16px;">Key Sources — Subsequent Views</h2>
-  <div style="display:flex;flex-direction:column;gap:8px;">
-    <div class="sci-box" style="margin:0;padding:14px 18px;border-left:3px solid var(--blue);">
-      <div class="sci-title" style="margin-bottom:5px;">Primary — The Book</div>
-      <p style="font-size:13px;margin:0;"><strong>Cooper, M.W.</strong> (1991). <em>Behold a Pale Horse</em>. Light Technology Publishing. <a href="https://www.amazon.com/Behold-Pale-Horse-Milton-William/dp/0929385225" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p>
-    </div>
-    <div class="sci-box" style="margin:0;padding:14px 18px;border-left:3px solid var(--blue);">
-      <div class="sci-title" style="margin-bottom:5px;">Biography</div>
-      <p style="font-size:13px;margin:0;"><strong>Jacobson, M.</strong> (2018). <em>Pale Horse Rider: William Cooper, the Rise of Conspiracy, and the Fall of Trust in America</em>. Blue Rider Press. <a href="https://www.amazon.com/Pale-Horse-Rider-Conspiracy-America/dp/0399169954" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p>
-    </div>
-    <div class="sci-box" style="margin:0;padding:14px 18px;border-left:3px solid var(--blue);">
-      <div class="sci-title" style="margin-bottom:5px;">On MJ-12 & Disinformation</div>
-      <p style="font-size:13px;margin:0;"><strong>Pilkington, M.</strong> (2010). <em>Mirage Men: A Journey in Disinformation, Paranoia and UFOs</em>. Constable. <a href="https://www.amazon.com/Mirage-Men-Journey-Disinformation-Paranoia/dp/1602397716" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p>
-    </div>
-    <div class="sci-box" style="margin:0;padding:14px 18px;border-left:3px solid var(--blue);">
-      <div class="sci-title" style="margin-bottom:5px;">On the Protocols — Debunking</div>
-      <p style="font-size:13px;margin:0;"><strong>Cohn, N.</strong> (1967). <em>Warrant for Genocide</em>. Harper. <a href="https://www.amazon.com/s?k=Warrant+for+Genocide+Cohn" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a> &nbsp; Original exposé: Graves, P. (1921). <em>The Times</em> of London, "The Truth about the Protocols."</p>
-    </div>
-    <div class="sci-box" style="margin:0;padding:14px 18px;border-left:3px solid var(--blue);">
-      <div class="sci-title" style="margin-bottom:5px;">On Conspiracy Culture</div>
-      <p style="font-size:13px;margin:0;"><strong>Barkun, M.</strong> (2003). <em>A Culture of Conspiracy</em>. UC Press. <a href="https://www.amazon.com/s?k=Barkun+Culture+of+Conspiracy" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p>
-    </div>
+<div class="chapter" id="ch9">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 9</span><span class="ch-time">Anatomy of an Alliance &#8212; The Logic for the New World Order</span>
   </div>
-</section>
+  <h2>Anatomy of an Alliance &#8212; The Logic for the New World Order</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper addresses a recurring question from his lectures: which group is responsible &#8212; Jews, Catholics, communists, or bankers? His answer: none of them alone. The real power is the Illuminati, which has co-opted leaders from all these groups and unified them through the Bilderberg Group. <span class="claim-disputed">&#9651; Disputed</span><br><br>He introduces the idea that the alien threat may have been invented precisely to create the conditions for world government &#8212; that whether or not aliens are real, a manufactured alien threat serves the same political purpose as a real one. <span class="claim-unsupported">&#10007; Unverifiable</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Bilderberg Group &#183; Illuminati &#183; alien threat hypothesis &#183; manufactured crisis &#183; world government &#183; Club of Rome</div>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Alien threat as political tool &#8212; Reagan at the UN (1987)</div><p>The idea that a manufactured alien threat could serve as a unifying geopolitical device was explicitly discussed in mainstream policy circles. Ronald Reagan told the UN General Assembly in 1987: &#8220;How quickly our differences worldwide would vanish if we were facing an alien threat from outside this world.&#8221; This does not confirm Cooper&#8217;s conspiracy framing but shows the idea was in mainstream political circulation.</p></div>
+</div>
+<div class="chapter" id="ch10">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 10</span><span class="ch-time">Lessons from Lithuania</span>
+  </div>
+  <h2>Lessons from Lithuania</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>This chapter is not written by Cooper. It consists entirely of a reprint of an article by Neal Knox of The Firearms Coalition, which Cooper says he could not improve upon. <span class="claim-verified">&#10003; Verified</span><br><br>Knox&#8217;s argument: when Lithuania declared independence from the Soviet Union, the Soviets&#8217; first move was to demand the surrender of privately owned firearms. Lithuanian resistance and the eventual failure of Soviet suppression is presented as evidence that an armed citizenry is the last defence against government tyranny. Cooper uses this as his Second Amendment chapter.</p>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Historical accuracy of Knox&#8217;s account</div><p>The Soviet crackdown on Lithuania in January 1991 &#8212; after the declaration of independence &#8212; is historically documented. Soviet troops seized buildings and there was an attempt to disarm Lithuanian defence forces. Knox&#8217;s factual account is accurate.</p></div>
+</div>
+<div class="chapter" id="ch11">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 11</span><span class="ch-time">Coup de Grace</span>
+  </div>
+  <h2>Coup de Grace</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>A chapter of transcripts and supporting documents, primarily focused on corroborating Cooper&#8217;s claims about MJ-12 from additional sources. It includes testimony from a Navy radioman who claims to have encountered the code words MAJESTY and MAJORITY during a 1970s Apollo-Soyuz mission, where all special-category message traffic was directed to a location identifying itself only as &#8220;MAJORITY CONTROL.&#8221; <span class="claim-unsupported">&#10007; Unverifiable</span><br><br>The witness is unnamed and the testimony is uncorroborated. The chapter also covers the Bilderberg Group&#8217;s founding, funding, and documented activities. <span class="claim-disputed">&#9651; Disputed</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: MAJORITY CONTROL &#183; Apollo-Soyuz &#183; SPECAT (Special Category) &#183; off-line encryption &#183; Bilderberg Group</div>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Bilderberg Group &#8212; documented activities</div><p>The Bilderberg Group is a real annual gathering of Western political and business leaders, founded in 1954. Its existence was denied for decades; its meetings are now publicly acknowledged though guest lists and discussions remain private. Cooper&#8217;s claims about its founding purpose (alien coordination) are unverifiable; its role as a Western elite coordination mechanism is documented.</p></div>
+</div>
+<div class="chapter" id="ch12">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 12</span><span class="ch-time">The Secret Government</span>
+  </div>
+  <h2>The Secret Government</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>The book&#8217;s most consequential chapter &#8212; the one that most directly shaped subsequent UFO disclosure discourse. Cooper&#8217;s core claims:<span class="claim-unsupported">&#10007; Unverifiable</span><ul style="font-size:14px;line-height:1.9;padding-left:20px;margin:10px 0 0 0;"><li><strong>Eisenhower alien treaty (Feb 20, 1954):</strong> Signed at Edwards AFB. Aliens could abduct humans for medical examination (providing lists to MJ-12); in exchange the US received technology and kept their presence secret.</li><li><strong>MJ-12 (Majesty Twelve):</strong> A secret 19-member committee including Nelson Rockefeller, Allen Dulles, John Foster Dulles, J. Edgar Hoover, and Dr. Edward Teller, controlling all covert alien-related activity.</li><li><strong>EBE (Extraterrestrial Biological Entity):</strong> A live alien survivor from the 1949 Roswell crash, held in captivity until his death in 1952. The film <em>E.T.</em> is a thinly disguised account.</li><li><strong>Underground bases:</strong> Area 51 (Dreamland) housing at least 600 alien beings full-time; joint facilities beneath the Four Corners area.</li><li><strong>James Forrestal murdered:</strong> The first Secretary of Defence was thrown from a Bethesda Naval Hospital window by CIA agents because he wanted to tell the public.</li><li><strong>The alien deception:</strong> By 1955 aliens had broken the treaty &#8212; continuing unreported abductions, and manipulating humanity through secret societies, religion, and the occult.</li></ul></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: MJ-12 &#183; Majesty Twelve &#183; Operation SIGMA &#183; Project PLATO &#183; Project REDLIGHT &#183; Project SNOWBIRD &#183; Dreamland &#183; EBE &#183; Yellow Book &#183; Trilateral Insignia &#183; JASON Society</div>
+  </div>
+  
+  <div class="dialogue" style="border-left-color:#a78bfa;"><div class="d-line"><div class="d-text" style="font-style:italic;font-size:15px;line-height:1.8;">&#8220;Whether this is true or disinformation depends solely upon the existence of aliens.&#8221;</div></div><div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-top:6px;">&#8212; Cooper, Ch. 12, p.214</div></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; MJ-12 documents &#8212; FBI investigation</div><p>The FBI investigated the MJ-12 documents and concluded they were fabrications. The Air Force Office of Special Investigations reached the same conclusion. Key anachronism: the typewriter font used in the Eisenhower Briefing Document did not exist in 1952 &#8212; a hard physical tell. Academic consensus is firmly against the documents&#8217; authenticity.</p></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Bill Moore&#8217;s 1989 MUFON confession</div><p>Bill Moore &#8212; one of the MJ-12 documents&#8217; main distributors and a figure Cooper called a &#8220;government agent&#8221; &#8212; confessed at the 1989 MUFON symposium that he had knowingly spread disinformation as part of a working relationship with Air Force intelligence. He also confirmed the Paul Benowitz operation &#8212; deliberately feeding false UFO information to a researcher until he suffered a mental breakdown. Documented in Mark Pilkington&#8217;s <em>Mirage Men</em>.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; David Grusch congressional testimony (2023)</div><p>Grusch confirmed legacy UAP crash retrieval programmes with unaccountable funding structures &#8212; rhyming with Cooper&#8217;s general architecture, through a completely different evidential path. Grusch was a USAF intelligence officer with documented clearances &#8212; the access Cooper only claimed. He did not name MJ-12.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; James Forrestal &#8212; historical anomalies</div><p>Forrestal died at Bethesda Naval Hospital on May 22, 1949, officially ruled a suicide. Genuine anomalies exist: his brother had visited the day before and found him in good spirits; he was mid-sentence in a Sophocles translation when found. Cooper&#8217;s CIA-bedsheet-window mechanism is unsupported, but the questions around Forrestal&#8217;s death are not frivolous.</p></div>
+</div>
+<div class="chapter" id="ch13">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 13</span><span class="ch-time">Treason in High Places</span>
+  </div>
+  <h2>Treason in High Places</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper documents what he views as deliberate acts of treason by American officials in service of world government: the UN Charter Article 25, the &#8220;Uniting for Peace&#8221; Resolution of 1950, and subsequent expansions of UN authority over US military forces. <span class="claim-disputed">&#9651; Disputed</span><br><br>He includes extensive excerpts from the proposed &#8220;Newstates of America&#8221; constitution prepared by the Rockefeller-funded Center for the Study of Democratic Institutions, which mentions &#8220;national emergency&#8221; 134 times and contains no Bill of Rights. He presents it as the blueprint for the post-constitutional America the New World Order intends to install.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: United Nations Charter Article 25 &#183; Uniting for Peace Resolution 1950 &#183; Center for the Study of Democratic Institutions &#183; Newstates of America &#183; Nelson Rockefeller</div>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; &#8220;Newstates of America&#8221; document &#8212; verified</div><p>The Center for the Study of Democratic Institutions did produce a proposed new US constitution under political scientist Rexford Tugwell, published in 1974. The document exists. Cooper&#8217;s characterisation of its contents is accurate. His interpretation of it as an operative blueprint rather than an academic exercise is not verified.</p></div>
+</div>
+<div class="chapter" id="ch14">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 14</span><span class="ch-time">A Proposed Constitutional Model for the Newstates of America</span>
+  </div>
+  <h2>A Proposed Constitutional Model for the Newstates of America</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces in full the &#8220;Newstates of America&#8221; proposed constitution from the Center for the Study of Democratic Institutions. The document dramatically expands executive power, contains no Second Amendment equivalent, and explicitly provides for extensive emergency powers. Cooper presents it without extensive commentary &#8212; letting it speak for itself as evidence of what the planners intend. <span class="claim-verified">&#10003; Verified</span> for document authenticity.</p>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Academic context</div><p>The Newstates constitution was an academic thought experiment &#8212; one of many constitutional revision proposals produced in the 1970s. The Center was funded by the Ford Foundation among others. Its proposals were never seriously advanced as legislation. Whether it represents an operative elite plan or an academic document that happens to align with elite preferences is the interpretive question.</p></div>
+</div>
+<div class="chapter" id="ch15">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 15</span><span class="ch-time">Protocols of the Elders of Zion</span>
+  </div>
+  <h2>Protocols of the Elders of Zion</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces the entirety of <em>The Protocols of the Elders of Zion</em> &#8212; a proven antisemitic forgery. He instructs readers to replace &#8220;Zion&#8221; with &#8220;Sion&#8221;, &#8220;Jews&#8221; with &#8220;Illuminati&#8221;, and &#8220;goyim&#8221; with &#8220;cattle&#8221;. He argues it was originally written by the Prieur&#233; de Sion to describe Illuminati plans, and that Jews were falsely substituted as the villains at a later stage. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p>
+  </div>
+  <div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius);padding:14px 18px;margin:14px 0;"><div style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#f87171;margin-bottom:8px;">&#9888; Editorial Note</div><p style="font-size:13px;line-height:1.7;color:var(--text);margin:0;">The Protocols of the Elders of Zion is one of the most thoroughly debunked documents in modern history &#8212; proven to be a plagiarised fabrication by the Okhrana (Russian Tsarist secret police) circa 1903, drawn from an 1864 French political satire by Maurice Joly. Its forgery was demonstrated conclusively in August 1921 by Philip Graves in <em>The Times</em> of London and confirmed by every subsequent historian who has examined it. Cooper&#8217;s substitution instruction does not change the text &#8212; it reframes a known antisemitic fabrication as an Illuminati blueprint, giving it renewed circulation. Later printings of <em>Behold a Pale Horse</em> removed this chapter entirely.</p></div>
+  
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Philip Graves, <em>The Times</em> of London (1921)</div><p>Graves proved the Protocols were plagiarised word-for-word in multiple passages from Maurice Joly&#8217;s 1864 satirical novel <em>Dialogue in Hell Between Machiavelli and Montesquieu</em>. This original debunking has never been credibly contested.</p></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Norman Cohn, <em>Warrant for Genocide</em> (1967)</div><p>Cohn&#8217;s definitive historical study traces the Protocols from Okhrana fabrication through their use in Nazi propaganda. The scholarly consensus on their fraudulent origin is unanimous.</p></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Real-world consequences &#8212; South Africa (2000)</div><p>South Africa&#8217;s Minister of Health Manto Tshabalala-Msimang distributed Cooper&#8217;s Protocols chapter to senior government officials. Researchers including Nicoli Nattrass documented how this contributed to AIDS denialism policies that cost lives &#8212; a direct downstream consequence of Cooper&#8217;s repackaging of the forgery.</p></div>
+</div>
+<div class="chapter" id="ch16">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 16</span><span class="ch-time">The Story of Jonathan May</span>
+  </div>
+  <h2>The Story of Jonathan May</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Jonathan May is presented as a British entrepreneur who attempted to create an alternative banking system backed by land, raw materials, and mineral holdings &#8212; bypassing the Federal Reserve. Cooper frames his story as evidence that the world banking cartel will destroy anyone who creates a genuinely independent financial system. <span class="claim-disputed">&#9651; Disputed</span><br><br>May&#8217;s sworn account (reproduced in his own words) describes inheriting a 17th-century trust document signed by Charles I, building a network of 4,000 non-domiciled entities across non-communist nations, financing the Hunt brothers&#8217; attempt to corner the silver market, and his eventual imprisonment at the federal facility in Terre Haute, Indiana. The Hunt brothers&#8217; attempted silver corner is a documented historical event. <span class="claim-verified">&#10003; Verified</span> May&#8217;s imprisonment is documented. <span class="claim-verified">&#10003; Verified</span> Cooper&#8217;s claim that his banking model was appropriated for the World Conservation Bank is unverifiable. <span class="claim-unsupported">&#10007; Unverifiable</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Federal Reserve &#183; Hunt brothers &#183; silver corner 1979&#8211;80 &#183; World Conservation Bank &#183; International Equity Trust &#183; Governor Connally</div>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Hunt brothers silver corner &#8212; historical record</div><p>The Hunt family&#8217;s attempt to corner the silver market in 1979&#8211;80 is a well-documented historical event. Nelson and William Herbert Hunt accumulated approximately 100 million ounces of silver. The subsequent &#8220;Silver Thursday&#8221; crash (March 27, 1980) nearly caused a broader financial crisis.</p></div>
+</div>
+<div class="chapter" id="ch17">
+  <div class="ch-header">
+    <span class="ch-num">Ch. 17</span><span class="ch-time">Documentation: U.S. Army Intelligence Connection with Satanic Church</span>
+  </div>
+  <h2>Documentation: U.S. Army Intelligence Connection with Satanic Church</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces documentation he claims establishes a connection between US Army intelligence and the Church of Satan / Temple of Set. Michael Aquino &#8212; a US Army lieutenant colonel who founded the Temple of Set &#8212; maintained an active security clearance and was involved in psychological warfare operations. <span class="claim-disputed">&#9651; Disputed</span><br><br>Michael Aquino is a real person. <span class="claim-verified">&#10003; Verified</span> He held a US Army rank. <span class="claim-verified">&#10003; Verified</span> He did found the Temple of Set. <span class="claim-verified">&#10003; Verified</span> He co-authored (with General Paul Vallely) a 1980 Army paper titled &#8220;From PSYOP to MindWar: The Psychology of Victory.&#8221; <span class="claim-verified">&#10003; Verified</span> Cooper frames this as evidence of a Satanic presence at the heart of the US military-intelligence complex.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Michael Aquino &#183; Temple of Set &#183; Church of Satan &#183; Anton LaVey &#183; PSYOP &#183; MindWar &#183; Army Intelligence</div>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Michael Aquino &#8212; verified facts</div><p>Aquino&#8217;s Army career, his founding of the Temple of Set, his co-authorship of &#8220;From PSYOP to MindWar&#8221; with General Paul Vallely, and his active-duty status are all verifiable public record. He was investigated and cleared in connection with the Presidio child abuse scandal of 1987.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Aquino&#8217;s own position</div><p>Aquino argued throughout his career that his religious beliefs were constitutionally protected and separate from his professional work. The &#8220;MindWar&#8221; paper is a genuine unclassified document arguing for more aggressive psychological warfare against enemy populations &#8212; its content is provocative but not occult.</p></div>
+</div>
+<div class="part-header" id="appendices">
+  <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.18em;color:var(--blue);text-transform:uppercase;">Appendices</div>
+  <h2>Appendices A&#8211;G</h2>
+</div>
+<div class="chapter" id="appa">
+  <div class="ch-header">
+    <span class="ch-num">App. A</span><span class="ch-time">William Cooper&#8217;s Military Service Record</span>
+  </div>
+  <h2>William Cooper&#8217;s Military Service Record</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces his actual Navy service record including his DD-214 discharge document. <span class="claim-verified">&#10003; Verified</span><br><br>The record confirms service in the US Navy, a tour in Vietnam, and an honourable discharge. His rank upon discharge was E-5 (petty officer second class). The service record does not confirm his claimed assignment to the CINCPACFLT Intelligence Briefing Team, nor does it evidence the security clearances he claims. Cooper acknowledges this, arguing the most sensitive aspects would be expunged from the public record.</p>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Rank incompatibility</div><p>E-5 (petty officer second class) is a junior enlisted rank. Access to compartmented intelligence programmes like those Cooper describes typically requires officer rank and specific programme-based clearances &#8212; not simply a general security clearance level. The rank documented is inconsistent with the access claimed.</p></div>
+</div>
+<div class="chapter" id="appb">
+  <div class="ch-header">
+    <span class="ch-num">App. B</span><span class="ch-time">UFOs and Area 51</span>
+  </div>
+  <h2>UFOs and Area 51</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>A collection of photographs and documents relating to UFO sightings and the Area 51 facility. The appendix is primarily visual &#8212; photographs that do not reproduce well in text extraction. Cooper presents this as photographic corroboration of the craft and facilities described in Chapter 12. Area 51 is a real classified facility. <span class="claim-verified">&#10003; Verified</span> Its use for testing classified aircraft (U-2, SR-71, F-117) is declassified. <span class="claim-verified">&#10003; Verified</span> Whether it houses alien technology is unverifiable. <span class="claim-unsupported">&#10007; Unverifiable</span></p>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Area 51 &#8212; CIA declassification (2013)</div><p>The CIA formally acknowledged Area 51&#8217;s existence in a 2013 declassified history of the U-2 reconnaissance programme. The classified aircraft programmes explain many of the UFO sightings in the area &#8212; the U-2 flew at altitudes then thought impossible for conventional aircraft.</p></div>
+</div>
+<div class="chapter" id="appc">
+  <div class="ch-header">
+    <span class="ch-num">App. C</span><span class="ch-time">Alien Implants</span>
+  </div>
+  <h2>Alien Implants</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces what he claims are medical documents and X-rays relating to surgically removed implants from alleged alien abductees. The appendix is largely visual. <span class="claim-unsupported">&#10007; Unverifiable</span><br><br>The study of alleged alien implants was continued after Cooper&#8217;s publication most prominently by Dr. Roger Leir, who performed approximately 17 surgical removals and submitted materials for laboratory analysis. Results were inconclusive and the research was never published in peer-reviewed journals.</p>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Dr. Roger Leir&#8217;s research (1995&#8211;2014)</div><p>Leir performed surgical removals of claimed implants and had materials analysed at various laboratories. Some samples showed unusual isotope ratios. The research remains outside mainstream medicine and was never peer-reviewed. Leir died in 2014; his collection was acquired by various researchers.</p></div>
+</div>
+<div class="chapter" id="appd">
+  <div class="ch-header">
+    <span class="ch-num">App. D</span><span class="ch-time">AIDS</span>
+  </div>
+  <h2>AIDS</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper argues AIDS was deliberately created as a population-reduction tool targeting Blacks, Hispanics, and gay men. His chain of claims: (1) In 1969 the US Department of Defense requested $10 million to create a synthetic biological agent that would destroy the immune system. <span class="claim-disputed">&#9651; Disputed</span> (2) A hepatitis B vaccine trial in New York (1978&#8211;81) was the delivery mechanism. <span class="claim-disputed">&#9651; Disputed</span> (3) The mastermind was Dr. Wolf Szmuness, who Cooper falsely links to Pope John Paul II. <span class="claim-unsupported" style="background:rgba(239,68,68,0.1);color:#f87171;border-color:rgba(239,68,68,0.3);">&#9888; Known fabrication</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: HIV/AIDS &#183; hepatitis B vaccine trials &#183; Dr. Wolf Szmuness &#183; WHO &#183; CDC &#183; bioweapon &#183; population control</div>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; Scientific consensus on HIV origin</div><p>HIV-1 is thoroughly documented as having crossed from chimpanzees to humans around 1908 in Cameroon (Worobey et al., 2008, <em>Nature</em>). Phylogenetic analysis of preserved samples confirms natural zoonotic origin predating any laboratory programme. No credible molecular evidence of engineering has been found.</p></div>
+  <div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed or refuted &#8212; The 1969 Congressional Record statement</div><p>The Congressman&#8217;s statement is real but does not say what Cooper claims. He was opposing biological warfare programmes generally &#8212; not funding the creation of AIDS specifically. Cooper extrapolated the AIDS connection without documentary evidence.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; The Tuskegee legacy</div><p>The conspiracy theory&#8217;s persistence reflects real historical injustices &#8212; the Tuskegee syphilis study (1932&#8211;1972), in which the US government deliberately withheld treatment from Black men &#8212; that give it plausibility in communities with genuine reason to distrust official medicine. This context does not validate Cooper&#8217;s specific claims.</p></div>
+</div>
+<div class="chapter" id="appe">
+  <div class="ch-header">
+    <span class="ch-num">App. E</span><span class="ch-time">New World Order (Club of Rome Report)</span>
+  </div>
+  <h2>New World Order (Club of Rome Report)</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces a 1973 Club of Rome document: the confidential strategy report <em>Regionalized and Adaptive Model of the Global World System</em>, outlining a world-regions model dividing the planet into ten zones for integrated resource management. <span class="claim-verified">&#10003; Verified</span> for document authenticity. <br><br>The Club of Rome is a real organisation. <span class="claim-verified">&#10003; Verified</span> The document is real. <span class="claim-verified">&#10003; Verified</span> Cooper presents the ten-region model as the New World Order&#8217;s administrative blueprint for world government. The Club of Rome&#8217;s own stated mission is the study of humanity&#8217;s global challenges rather than conspiratorial world domination. <span class="claim-disputed">&#9651; Disputed</span></p>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Club of Rome &#8212; what it actually is</div><p>The Club of Rome is a Swiss non-profit founded in 1968, best known for commissioning the 1972 report <em>The Limits to Growth</em>. It advocates for sustainable development and global governance reforms. Its regionalism proposals reflect systems thinking about global resource management rather than a conspiracy for totalitarian world government.</p></div>
+</div>
+<div class="chapter" id="appf">
+  <div class="ch-header">
+    <span class="ch-num">App. F</span><span class="ch-time">U.S. Government Drug Involvement</span>
+  </div>
+  <h2>U.S. Government Drug Involvement</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces documentation he claims establishes CIA facilitation of drug trafficking to fund covert operations, most prominently the Contra programme. <span class="claim-disputed">&#9651; Disputed</span><br><br>This is one of the most subsequently vindicated sections of the entire book. The Kerry Committee Report (1989) documented extensive evidence of drug trafficking associated with the Contra network and the failure of federal agencies to investigate it. <span class="claim-verified">&#10003; Verified</span> The CIA Inspector General&#8217;s own report (1998) confirmed the Agency had failed to report drug trafficking by Contra assets to the Department of Justice. <span class="claim-verified">&#10003; Verified</span></p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Contra programme &#183; Kerry Committee &#183; CIA drug trafficking &#183; Gary Webb &#183; Dark Alliance &#183; Iran-Contra</div>
+  </div>
+  
+  
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Kerry Committee Report (1989)</div><p>The Senate Foreign Relations Committee report documented extensive evidence that drug traffickers had flown drugs into the US using facilities associated with Contra supply operations, and that federal agencies had turned a blind eye. A published Senate document &#8212; one of Cooper&#8217;s most strongly vindicated claims.</p></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; CIA Inspector General report (1998)</div><p>Following Gary Webb&#8217;s 1996 reporting, the CIA&#8217;s own Inspector General acknowledged the Agency had failed to report drug trafficking by Contra assets to the Department of Justice &#8212; confirming the core of Webb&#8217;s reporting.</p></div>
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Gary Webb &#8212; subsequent vindication</div><p>Webb&#8217;s 1996 &#8220;Dark Alliance&#8221; series in the San Jose Mercury News was initially attacked by major newspapers. The subsequent CIA Inspector General report substantially vindicated his core findings. Webb died in 2004 of two gunshot wounds to the head &#8212; ruled a suicide, though controversy persists.</p></div>
+</div>
+<div class="chapter" id="appg">
+  <div class="ch-header">
+    <span class="ch-num">App. G</span><span class="ch-time">Kurzweil vs. Hopkins</span>
+  </div>
+  <h2>Kurzweil vs. Hopkins</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
+    <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
+    <p>Cooper reproduces documents from a legal dispute between Ray Kurzweil&#8217;s company and Hopkins Technology over alleged theft of intellectual property related to text-to-speech and music synthesis technology. <span class="claim-verified">&#10003; Verified</span> for document existence. <br><br>The book&#8217;s most puzzling appendix. Cooper presents it without extensive contextual explanation, seemingly using it as evidence of how corporate and legal warfare suppresses independent technological development. The dispute is a real legal matter. <span class="claim-verified">&#10003; Verified</span></p>
+  </div>
+  
+  
+  <div class="mainstream-box"><div class="mainstream-label">&#9632; Contextualises &#8212; Ray Kurzweil &#8212; subsequent prominence</div><p>Kurzweil went on to become one of the most prominent figures in AI and futurism, authoring <em>The Singularity Is Near</em> (2005) and joining Google as a director of engineering in 2012. His inclusion in Cooper&#8217;s 1991 book as a victim of corporate suppression is an interesting historical artefact.</p></div>
+</div>
+<div class="part-header" id="connections">
+  <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.18em;color:var(--blue);text-transform:uppercase;">Connections</div>
+  <h2>Connections to Other Liminal Atlas Articles</h2>
+</div><p style="font-size:14px;line-height:1.8;color:var(--text-dim);margin:0 0 16px 0;">Cooper is referenced &#8212; directly or through the ideas he popularised &#8212; across multiple threads on this site.</p><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/jorjani-nazi-breakaway-civilization.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Jason Jorjani &#8212; Nazi Breakaway Civilisation (Part II)</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 2, 9, 12 &#8212; John Lear / ODESSA</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">Jorjani&#8217;s co-guest John Lear wrote anonymous pieces with Cooper. Cooper&#8217;s Nazi breakaway / ODESSA narrative parallels Jorjani&#8217;s &#8212; both argue the SS never surrendered and continued operating through the American deep state.</p></div><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/jre-jesse-michels.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Jesse Michels on The Joe Rogan Experience #2331</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 12 &#8212; secret government architecture</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">The MJ-12 framework, alien treaty, secret government with unaccountable black budgets &#8212; these are Cooper&#8217;s architecture, filtered through 30 years of subsequent research.</p></div><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/townsend-brown-documentary.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Thomas Townsend Brown &#8212; The CIA Scientist Who Cracked Antigravity</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 12 &#8212; NICAP as counter-intelligence</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">Cooper&#8217;s chapter on NICAP characterises it as a civilian UFO organisation infiltrated and controlled by the CIA &#8212; consistent with Jesse&#8217;s reading of Brown co-founding NICAP as probable counter-intelligence.</p></div><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/nicap-cia-ufo-evidence.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">CIA vs. NICAP &#8212; The UFO Evidence</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 12 &#8212; CIA relationship to civilian UFO orgs</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">Cooper&#8217;s framework for the CIA&#8217;s relationship to civilian UFO organisations provides the conspiratorial context for the CIA&#8217;s documented monitoring of NICAP.</p></div><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/john-brandenburg-mars-nuclear-war.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Dr. John Brandenburg &#8212; Life on Mars</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 12 &#8212; Paul Benowitz / Rick Doty</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">Cooper documents the Paul Benowitz operation &#8212; Rick Doty feeding Benowitz false UFO information until he suffered a mental breakdown. Brandenburg was similarly targeted by Doty.</p></div><div class="sci-box" style="margin:0 0 6px 0;padding:14px 18px;"><div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;"><a href="/articles/australian-jio-ufo-file.html" style="font-size:13.5px;font-weight:700;color:var(--blue-bright);text-decoration:none;">Australian JIO File 3092/2</a><span style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Ch. 12 &#8212; Edward Teller connection</span></div><p style="font-size:13px;line-height:1.65;color:var(--text-dim);margin:0;">Teller appears in both &#8212; in the JIO file as a participant in the classified anti-gravity programme, and in Cooper&#8217;s MJ-12 membership list.</p></div>
+<div class="part-header" id="bibliography" style="margin-top:40px;">
+  <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.18em;color:var(--blue);text-transform:uppercase;">Bibliography</div>
+  <h2>Key Sources &#8212; Subsequent Views</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+  <div class="sci-box" style="margin:0;padding:14px 18px;"><div class="sci-title" style="margin-bottom:5px;">Primary &#8212; The Book</div><p style="font-size:13px;margin:0;"><strong>Cooper, M.W.</strong> (1991). <em>Behold a Pale Horse</em>. Light Technology Publishing. <a href="https://www.amazon.com/Behold-Pale-Horse-Milton-William/dp/0929385225" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p></div>
+  <div class="sci-box" style="margin:0;padding:14px 18px;"><div class="sci-title" style="margin-bottom:5px;">Biography</div><p style="font-size:13px;margin:0;"><strong>Jacobson, M.</strong> (2018). <em>Pale Horse Rider</em>. Blue Rider Press. <a href="https://www.amazon.com/Pale-Horse-Rider-Conspiracy-America/dp/0399169954" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p></div>
+  <div class="sci-box" style="margin:0;padding:14px 18px;"><div class="sci-title" style="margin-bottom:5px;">On MJ-12 &amp; Disinformation</div><p style="font-size:13px;margin:0;"><strong>Pilkington, M.</strong> (2010). <em>Mirage Men</em>. Constable. <a href="https://www.amazon.com/Mirage-Men-Journey-Disinformation-Paranoia/dp/1602397716" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p></div>
+  <div class="sci-box" style="margin:0;padding:14px 18px;"><div class="sci-title" style="margin-bottom:5px;">On the Protocols</div><p style="font-size:13px;margin:0;"><strong>Cohn, N.</strong> (1967). <em>Warrant for Genocide</em>. Harper. <a href="https://www.amazon.com/s?k=Warrant+for+Genocide+Cohn" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a> &nbsp; Original: Graves, P. (1921). <em>The Times</em> of London.</p></div>
+  <div class="sci-box" style="margin:0;padding:14px 18px;"><div class="sci-title" style="margin-bottom:5px;">On Conspiracy Culture</div><p style="font-size:13px;margin:0;"><strong>Barkun, M.</strong> (2003). <em>A Culture of Conspiracy</em>. UC Press. <a href="https://www.amazon.com/s?k=Barkun+Culture+of+Conspiracy" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a></p></div>
+</div>
 </div>
 
 </main>
