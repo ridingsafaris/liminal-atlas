@@ -7,344 +7,244 @@
   <meta name="description" content="Close readings at the intersection of frontier physics, UAP research, comparative religion, and consciousness studies.">
   <link rel="stylesheet" href="/css/style.css">
   <style>
-    :root { --mono: 'JetBrains Mono','Fira Code',monospace; }
-
-    /* ── Top bar ── */
-    .topbar {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 8px 24px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--text-dim);
-      letter-spacing: 0.08em;
-    }
-    .topbar span { color: var(--amber); font-weight: 700; }
-
-    /* ── Section labels ── */
-    .section-label {
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      padding: 0 0 10px;
-      border-bottom: 2px solid var(--blue);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    /* ── Hero ── */
-    .hero-row {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 2px;
-      margin-bottom: 2px;
-    }
-    .hero-story {
-      display: block;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      height: 480px;
-    }
-    .hero-story:hover .hero-img img { transform: scale(1.02); }
-    .hero-img {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-img img { transition: transform 0.4s ease; width: 100%; height: 100%; object-fit: cover; }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(5,7,12,0.95) 0%, rgba(5,7,12,0.5) 50%, transparent 100%);
-    }
-    .hero-text {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 28px;
-    }
-    .hero-cats { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 10px; }
-    .hero-title {
-      font-size: clamp(1.3rem, 2.5vw, 1.85rem);
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin-bottom: 10px;
-    }
-    .hero-deck { font-size: 13.5px; color: rgba(255,255,255,0.75); line-height: 1.6; margin-bottom: 10px; max-width: 600px; }
-    .hero-meta { font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.45); letter-spacing: 0.08em; }
-
-    /* ── Secondary column ── */
-    .sec-col {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .sec-story {
-      display: block;
-      text-decoration: none;
-      flex: 1;
-      background: var(--surface2);
-      overflow: hidden;
-      transition: background 0.15s;
-    }
-    .sec-story:hover { background: #1a2133; }
-    .sec-img { height: 130px; overflow: hidden; }
-    .sec-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-    .sec-story:hover .sec-img img { transform: scale(1.03); }
-    .sec-text { padding: 14px 16px; }
-    .sec-title { font-size: 13.5px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 5px; }
-    .sec-deck { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 6px; }
-    .sec-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
-
-    /* ── Main layout (grid + sidebar) ── */
-    .main-layout {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 40px;
-      padding-top: 32px;
-    }
-
-    /* ── Grid ── */
-    .article-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2px;
-    }
-    .grid-card {
-      display: block;
-      text-decoration: none;
-      background: var(--surface2);
-      overflow: hidden;
-      transition: background 0.15s;
-    }
-    .grid-card:hover { background: #1a2133; }
-    .grid-img { height: 160px; overflow: hidden; }
-    .grid-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-    .grid-card:hover .grid-img img { transform: scale(1.03); }
-    .grid-text { padding: 14px; }
-    .grid-title { font-size: 13px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 5px; }
-    .grid-deck { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 6px; }
-    .grid-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
-
-    /* ── Sidebar ── */
-    .sidebar {}
-    .sidebar-item {
-      display: flex;
-      gap: 12px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-      text-decoration: none;
-      align-items: flex-start;
-      transition: opacity 0.15s;
-    }
-    .sidebar-item:last-child { border-bottom: none; }
-    .sidebar-item:hover { opacity: 0.8; }
-    .sidebar-num {
-      font-family: var(--mono);
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--border2);
-      line-height: 1;
-      flex-shrink: 0;
-      min-width: 32px;
-    }
-    .sidebar-title { font-size: 13px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 4px; }
-    .sidebar-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
-
-    /* ── Page wrapper ── */
-    .news-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
-
-    @media (max-width: 900px) {
-      .hero-row { grid-template-columns: 1fr; }
-      .sec-col { flex-direction: row; }
-      .main-layout { grid-template-columns: 1fr; }
-      .article-grid { grid-template-columns: 1fr 1fr; }
-      .hero-story { height: 340px; }
-    }
-    @media (max-width: 600px) {
-      .article-grid { grid-template-columns: 1fr; }
-      .sec-col { flex-direction: column; }
-    }
+    :root{--mono:'JetBrains Mono','Fira Code',monospace;}
+    .news-wrap{max-width:1200px;margin:0 auto;padding:0 24px 80px;}
+    .topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:7px 24px;font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:0.08em;}
+    .topbar strong{color:var(--amber);}
+    .section-label{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);padding:0 0 10px;border-bottom:2px solid var(--blue);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+    .section-label::after{content:'';flex:1;height:1px;background:var(--border);}
+    /* Hero */
+    .hero-row{display:grid;grid-template-columns:1fr 340px;gap:2px;margin-bottom:2px;}
+    .hero-story{display:block;text-decoration:none;position:relative;overflow:hidden;height:480px;}
+    .hero-story:hover .hero-img img{transform:scale(1.02);}
+    .hero-img{width:100%;height:100%;position:relative;overflow:hidden;}
+    .hero-img img{transition:transform 0.4s ease;width:100%;height:100%;object-fit:cover;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,7,12,0.96) 0%,rgba(5,7,12,0.45) 55%,transparent 100%);}
+    .hero-text{position:absolute;bottom:0;left:0;right:0;padding:28px;}
+    .hero-cats{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
+    .hero-title{font-size:clamp(1.2rem,2.2vw,1.75rem);font-weight:800;color:#fff;line-height:1.2;letter-spacing:-0.02em;margin-bottom:10px;}
+    .hero-deck{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.6;margin-bottom:10px;max-width:580px;}
+    .hero-meta{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;}
+    /* Hero summary strip */
+    .hero-summary{background:var(--surface2);border:1px solid var(--border2);padding:16px 20px;margin-bottom:2px;font-size:13px;line-height:1.6;color:var(--text-dim);}
+    .hero-summary strong{color:var(--text-bright);}
+    /* Secondary col */
+    .sec-col{display:flex;flex-direction:column;gap:2px;}
+    .sec-story{display:block;text-decoration:none;flex:1;background:var(--surface2);overflow:hidden;transition:background 0.15s;}
+    .sec-story:hover{background:#1a2133;}
+    .sec-img{height:130px;overflow:hidden;}
+    .sec-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
+    .sec-story:hover .sec-img img{transform:scale(1.03);}
+    .sec-text{padding:14px 16px;}
+    .sec-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:5px;}
+    .sec-deck{font-size:11px;color:var(--text-dim);line-height:1.5;margin-bottom:6px;}
+    .sec-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
+    /* Main layout */
+    .main-layout{display:grid;grid-template-columns:1fr 280px;gap:40px;padding-top:32px;}
+    /* Grids */
+    .article-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-bottom:2px;}
+    .grid-card{display:block;text-decoration:none;background:var(--surface2);overflow:hidden;transition:background 0.15s;}
+    .grid-card:hover{background:#1a2133;}
+    .grid-img{height:160px;overflow:hidden;}
+    .grid-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
+    .grid-card:hover .grid-img img{transform:scale(1.03);}
+    .grid-text{padding:14px;}
+    .grid-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:5px;}
+    .grid-deck{font-size:11px;color:var(--text-dim);line-height:1.5;margin-bottom:6px;}
+    .grid-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
+    /* Sidebar */
+    .sidebar-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:flex-start;transition:opacity 0.15s;}
+    .sidebar-item:last-child{border-bottom:none;}
+    .sidebar-item:hover{opacity:0.8;}
+    .sidebar-num{font-family:var(--mono);font-size:22px;font-weight:800;color:var(--border2);line-height:1;flex-shrink:0;min-width:32px;}
+    .sidebar-title{font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.4;margin-bottom:4px;}
+    .sidebar-meta{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;}
+    @media(max-width:900px){.hero-row{grid-template-columns:1fr;}.sec-col{flex-direction:row;}.main-layout{grid-template-columns:1fr;}.article-grid{grid-template-columns:1fr 1fr;}.hero-story{height:340px;}}
+    @media(max-width:600px){.article-grid{grid-template-columns:1fr;}.sec-col{flex-direction:column;}}
   </style>
 </head>
 <body>
-
 <!-- Header injected by site.js -->
 
 <div class="topbar">
-  <span>Liminal Atlas</span>
-  Knowledge at the edge of the map &nbsp;·&nbsp; Frontier physics · UAP research · Comparative religion · Consciousness
+  <strong>Liminal Atlas</strong> &nbsp;&middot;&nbsp; Knowledge at the edge of the map &nbsp;&middot;&nbsp; Frontier physics &middot; UAP research &middot; Comparative religion &middot; Consciousness
 </div>
 
 <div class="news-wrap">
 
-  <!-- Hero row -->
-  <div style="padding: 24px 0 2px;">
-    <div class="section-label">Latest</div>
+  <div style="padding:24px 0 2px;">
+    <div class="section-label">&#9654; Video Close Readings &mdash; Latest</div>
   </div>
+
   <div class="hero-row">
-    <a href="/articles/jre-jesse-michels.html" class="hero-story">
+<a href="/articles/jre-jesse-michels.html" class="hero-story">
     <div class="hero-img">
-      <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/maxresdefault.jpg" alt="Jesse Michels on The Joe Rogan Experience #2331" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'">
+      <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/maxresdefault.jpg" alt="Jesse Michels on The Joe Rogan Experience #2331" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'">
       <div class="hero-overlay"></div>
       <div class="hero-text">
         <div class="hero-cats"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <h1 class="hero-title">Jesse Michels on The Joe Rogan Experience #2331</h1>
-        <p class="hero-deck">Townsend Brown's anti-gravity tech tree. Bob Lazar's limited hangout. The $21 trillion breakaway civilisation. Nazca tridactyl mummies.</p>
-        <span class="hero-meta">JRE #2331 &nbsp;·&nbsp; 2025</span>
+        <h2 class="hero-title">Jesse Michels on The Joe Rogan Experience #2331</h2>
+        <p class="hero-deck">Townsend Brown's anti-gravity tech tree from 1923 to the B2. Bob Lazar's limited hangout. Nitinol at Battelle. The $21 trillion breakaway civilisation. Nazca tridactyl mummies.</p>
+        <span class="hero-meta">JRE #2331 &nbsp;&middot;&nbsp; 2025</span>
       </div>
     </div>
   </a>
     <div class="sec-col">
-      <a href="/articles/nsa-director-ufo.html" class="sec-story">
-      <div class="sec-img"><img src="https://img.youtube.com/vi/jMCavr3dVP0/maxresdefault.jpg" alt="Former NSA Director Breaks Silence on UAPs" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+<a href="/articles/nsa-director-ufo.html" class="sec-story">
+      <div class="sec-img" style="overflow:hidden;"><img src="https://img.youtube.com/vi/jMCavr3dVP0/maxresdefault.jpg" alt="Former NSA Director Breaks Silence on UAPs" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'"></div>
       <div class="sec-text">
         <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
         <div class="sec-title">Former NSA Director Breaks Silence on UAPs</div>
-        <div class="sec-deck">Dr. Eric Hazelton (NSA Director of Research, ODNI CTO) applies intelligence tradecraft: competing hypotheses, Havana Syn…</div>
-        <span class="sec-meta">American Alchemy &nbsp;·&nbsp; 2025</span>
+        <div class="sec-deck">Dr. Eric Hazelton (NSA Director of Research, ODNI CTO) applies intelligence tradecraft to UAPs: Havana Syndrome, laser p&#8230;</div>
+        <span class="sec-meta">American Alchemy &nbsp;&middot;&nbsp; 2025</span>
       </div>
     </a>
 <a href="/articles/jorjani-american-alchemy.html" class="sec-story">
-      <div class="sec-img"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/maxresdefault.jpg" alt="Jason Jorjani — "Aliens Invented Religion To Control Humanity"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="sec-img" style="overflow:hidden;"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/maxresdefault.jpg" alt="Jason Jorjani — "Aliens Invented Religion To Control Humanity"" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'"></div>
       <div class="sec-text">
         <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
         <div class="sec-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
-        <div class="sec-deck">Philosopher Jorjani's unified theory: a Nordic hyperdimensional caste managing human history. Kant suppressing Swedenbor…</div>
-        <span class="sec-meta">American Alchemy &nbsp;·&nbsp; Sep 2025</span>
+        <div class="sec-deck">Philosopher Jorjani's unified theory: a Nordic hyperdimensional caste managing human history. Kant suppressing Swedenbor&#8230;</div>
+        <span class="sec-meta">American Alchemy &nbsp;&middot;&nbsp; Sep 2025</span>
       </div>
     </a>
     </div>
   </div>
 
-  <!-- Main layout -->
-  <div class="main-layout">
+  <!-- Summary strip below hero -->
+  <div class="hero-summary">
+    <strong>What is a Video Close Reading?</strong> Each episode is followed chapter by chapter through a verbatim transcript &#8212; every claim is identified and given a status badge (Documented / Disputed / No Evidence), key dialogue is quoted directly, concept threads link the same idea across chapters, and every named person and paper links to a reference or profile. These are not summaries &#8212; they are structured analyses.
+  </div>
 
-    <!-- Article grid -->
+  <div class="main-layout">
     <div>
-      <div class="section-label" style="margin-top: 0;">More Articles</div>
+      <div class="section-label" style="margin-top:0;">More Video Close Readings</div>
       <div class="article-grid">
-        <a href="/articles/pais-rossi-hard-truths.html" class="grid-card">
-        <div class="grid-img"><img src="https://img.youtube.com/vi/jMCavr3dVP0/hqdefault.jpg" alt="Pais & Rossi on Hard Truths — "UFO Disclosure"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="grid-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
-          <div class="grid-deck">Pais couldn't sleep. He's worked out how the orbs move. With Dave Rossi: ZPE, EVOs, Casimir, Lagnov's supercon…</div>
-          <span class="grid-meta">Hard Truths &nbsp;·&nbsp; Dec 2024</span>
-        </div>
-      </a>
+<a href="/articles/pais-rossi-hard-truths.html" class="grid-card">
+      <div class="grid-img"><img src="https://img.youtube.com/vi/jMCavr3dVP0/hqdefault.jpg" alt="Pais & Rossi on Hard Truths — "UFO Disclosure"" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="grid-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
+        <div class="grid-deck">Pais couldn't sleep. He's worked out how the orbs move. With Dave Rossi: ZPE, EVOs, Casimir, Lagnov's supercon&#8230;</div>
+        <span class="grid-meta">Hard Truths &nbsp;&middot;&nbsp; Dec 2024</span>
+      </div>
+    </a>
 <a href="/articles/sal-pais-close-reading.html" class="grid-card">
-        <div class="grid-img"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/hqdefault.jpg" alt="Navy Scientist: A Cosmic War Is Happening" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="grid-title">Navy Scientist: A Cosmic War Is Happening</div>
-          <div class="grid-deck">Salvatore Pais — the Navy engineer behind four extraordinary propulsion patents — explains the Pais Effect and…</div>
-          <span class="grid-meta">American Alchemy &nbsp;·&nbsp; 2024</span>
-        </div>
-      </a>
+      <div class="grid-img"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/hqdefault.jpg" alt="Navy Scientist: A Cosmic War Is Happening" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="grid-title">Navy Scientist: A Cosmic War Is Happening</div>
+        <div class="grid-deck">Salvatore Pais — author of four extraordinary Navy propulsion patents — explains the Pais Effect and calls for&#8230;</div>
+        <span class="grid-meta">American Alchemy &nbsp;&middot;&nbsp; 2024</span>
+      </div>
+    </a>
 <a href="/articles/dave-rossi-close-reading.html" class="grid-card">
-        <div class="grid-img"><img src="https://img.youtube.com/vi/r9Ldl70x5Fg/hqdefault.jpg" alt="Dave Rossi — "Aliens Taught Me Advanced Physics"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="grid-title">Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
-          <div class="grid-deck">Extended electrodynamics, longitudinal scalar waves, Ning Li's anti-gravity research, Salvatore Pais's Navy pa…</div>
-          <span class="grid-meta">American Alchemy &nbsp;·&nbsp; Feb 2025</span>
-        </div>
-      </a>
+      <div class="grid-img"><img src="https://img.youtube.com/vi/r9Ldl70x5Fg/hqdefault.jpg" alt="Dave Rossi — "Aliens Taught Me Advanced Physics"" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.35s ease;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="grid-title">Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
+        <div class="grid-deck">Extended electrodynamics, longitudinal scalar waves, Ning Li's anti-gravity research, Pais's Navy patents, and&#8230;</div>
+        <span class="grid-meta">American Alchemy &nbsp;&middot;&nbsp; Feb 2025</span>
+      </div>
+    </a>
+      </div>
+
+      <div class="section-label" style="margin-top:32px;">&#128218; Book Close Readings</div>
+      <div class="hero-summary" style="margin-bottom:2px;">
+        <strong>What is a Book Close Reading?</strong> Canonical texts &#8212; primary sources cited by guests across multiple episodes &#8212; dissected chapter by chapter. Every claim, concept, and disputed passage annotated. Currently covering Yates, Swedenborg, and Bramley; more to follow as the episode library grows.
+      </div>
+      <div class="article-grid">
 <a href="/articles/bramley-gods-of-eden.html" class="grid-card">
-        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="grid-title">William Bramley — The Gods of Eden</div>
-          <div class="grid-deck">The book Jorjani cites for the Black Plague bioweapon claim. 41 chapters: Custodians, Brotherhood of the Snake…</div>
-          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1989</span>
-        </div>
-      </a>
+      <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="grid-title">William Bramley — The Gods of Eden</div>
+        <div class="grid-deck">The book Jorjani cites for the Black Plague bioweapon claim. 41 chapters: Custodians, Brotherhood of the Snake&#8230;</div>
+        <span class="grid-meta">Close Reading &nbsp;&middot;&nbsp; 1989</span>
+      </div>
+    </a>
 <a href="/articles/yates-rosicrucian-enlightenment.html" class="grid-card">
-        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span></div>
-          <div class="grid-title">Frances Yates — The Rosicrucian Enlightenment</div>
-          <div class="grid-deck">How Dee's Elizabethan occult philosophy migrated to the Palatinate, generated the Rosicrucian manifestos, and …</div>
-          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1972</span>
-        </div>
-      </a>
+      <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div class="grid-title">Frances Yates — The Rosicrucian Enlightenment</div>
+        <div class="grid-deck">How John Dee's Elizabethan occult philosophy migrated to the Palatinate court, generated the Rosicrucian manif&#8230;</div>
+        <span class="grid-meta">Close Reading &nbsp;&middot;&nbsp; 1972</span>
+      </div>
+    </a>
 <a href="/articles/swedenborg-arcana-coelestia.html" class="grid-card">
-        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
-        <div class="grid-text">
-          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
-          <div class="grid-title">Swedenborg — Arcana Coelestia Vol. 1</div>
-          <div class="grid-deck">The text Kant read in full and then built a philosophy to contain. Swedenborg's verse-by-verse commentary on G…</div>
-          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1749</span>
-        </div>
-      </a>
+      <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+        <div class="grid-title">Swedenborg — Arcana Coelestia Vol. 1</div>
+        <div class="grid-deck">The text Kant read in full and then built a philosophy to contain. Verse-by-verse commentary on Genesis with f&#8230;</div>
+        <span class="grid-meta">Close Reading &nbsp;&middot;&nbsp; 1749</span>
+      </div>
+    </a>
+<a href="/articles/yates-occult-philosophy.html" class="grid-card">
+      <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+        <div class="grid-title">Frances Yates — The Occult Philosophy in the Elizabethan Age</div>
+        <div class="grid-deck">20 chapters tracking the Hermetic-Cabalist tradition from Ramon Lull to Milton, with every reference linked an&#8230;</div>
+        <span class="grid-meta">Close Reading &nbsp;&middot;&nbsp; 1979</span>
+      </div>
+    </a>
+<a href="/articles/swedenborg-earths-in-universe.html" class="grid-card">
+      <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
+      <div class="grid-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="grid-title">Swedenborg — The Earths in the Universe</div>
+        <div class="grid-deck">Mercury's telepathic interstellar travellers, Mars's celestial communicators, and five earths in the starry he&#8230;</div>
+        <span class="grid-meta">Close Reading &nbsp;&middot;&nbsp; 1758</span>
+      </div>
+    </a>
       </div>
     </div>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="section-label" style="margin-top: 0;">Latest Five</div>
-      <a href="/articles/jre-jesse-michels.html" class="sidebar-item">
-        <span class="sidebar-num">01</span>
-        <div>
-          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="sidebar-title">Jesse Michels on The Joe Rogan Experience #2331</div>
-          <div class="sidebar-meta">JRE #2331 &nbsp;·&nbsp; 2025</div>
-        </div>
-      </a>
+    <div>
+      <div class="section-label" style="margin-top:0;">Latest Five</div>
+<a href="/articles/jre-jesse-michels.html" class="sidebar-item">
+      <span class="sidebar-num">01</span>
+      <div>
+        <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="sidebar-title">Jesse Michels on The Joe Rogan Experience #2331</div>
+        <div class="sidebar-meta">JRE #2331 &nbsp;&middot;&nbsp; 2025</div>
+      </div>
+    </a>
 <a href="/articles/nsa-director-ufo.html" class="sidebar-item">
-        <span class="sidebar-num">02</span>
-        <div>
-          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="sidebar-title">Former NSA Director Breaks Silence on UAPs</div>
-          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; 2025</div>
-        </div>
-      </a>
+      <span class="sidebar-num">02</span>
+      <div>
+        <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="sidebar-title">Former NSA Director Breaks Silence on UAPs</div>
+        <div class="sidebar-meta">American Alchemy &nbsp;&middot;&nbsp; 2025</div>
+      </div>
+    </a>
 <a href="/articles/jorjani-american-alchemy.html" class="sidebar-item">
-        <span class="sidebar-num">03</span>
-        <div>
-          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-          <div class="sidebar-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
-          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; Sep 2025</div>
-        </div>
-      </a>
+      <span class="sidebar-num">03</span>
+      <div>
+        <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div class="sidebar-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
+        <div class="sidebar-meta">American Alchemy &nbsp;&middot;&nbsp; Sep 2025</div>
+      </div>
+    </a>
 <a href="/articles/pais-rossi-hard-truths.html" class="sidebar-item">
-        <span class="sidebar-num">04</span>
-        <div>
-          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
-          <div class="sidebar-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
-          <div class="sidebar-meta">Hard Truths &nbsp;·&nbsp; Dec 2024</div>
-        </div>
-      </a>
+      <span class="sidebar-num">04</span>
+      <div>
+        <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div class="sidebar-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
+        <div class="sidebar-meta">Hard Truths &nbsp;&middot;&nbsp; Dec 2024</div>
+      </div>
+    </a>
 <a href="/articles/sal-pais-close-reading.html" class="sidebar-item">
-        <span class="sidebar-num">05</span>
-        <div>
-          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
-          <div class="sidebar-title">Navy Scientist: A Cosmic War Is Happening</div>
-          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; 2024</div>
-        </div>
-      </a>
+      <span class="sidebar-num">05</span>
+      <div>
+        <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div class="sidebar-title">Navy Scientist: A Cosmic War Is Happening</div>
+        <div class="sidebar-meta">American Alchemy &nbsp;&middot;&nbsp; 2024</div>
+      </div>
+    </a>
     </div>
-
   </div>
 
 </div>

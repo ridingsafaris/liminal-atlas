@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Michels — Profile | Liminal Atlas</title>
+  <meta name="description" content="Jesse Michels: creator of American Alchemy, CEO of American Alchemy Holdings, Thiel Capital portfolio manager. All episodes with Liminal Atlas close readings.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .profile-wrap{max-width:900px;margin:0 auto;padding:56px 24px 100px;}
+    .profile-header{display:grid;grid-template-columns:160px 1fr;gap:36px;align-items:start;padding-bottom:40px;border-bottom:1px solid var(--border);margin-bottom:40px;}
+    .profile-photo{width:160px;height:160px;border-radius:8px;object-fit:cover;border:1px solid var(--border2);}
+    .profile-name{font-size:2rem;font-weight:800;color:var(--text-bright);letter-spacing:-0.02em;margin-bottom:6px;}
+    .profile-role{font-family:var(--font-mono);font-size:11px;color:var(--blue-bright);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;line-height:1.6;}
+    .profile-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;}
+    .profile-tag{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:3px;border:1px solid var(--border2);color:var(--text-dim);}
+    .profile-links{display:flex;gap:8px;flex-wrap:wrap;}
+    .profile-link{font-family:var(--font-mono);font-size:10px;padding:4px 12px;border-radius:4px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-dim);text-decoration:none;transition:all 0.15s;}
+    .profile-link:hover{border-color:var(--blue-bright);color:var(--blue-bright);}
+    .bio-section{margin-bottom:40px;}
+    .bio-h{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .bio-p{font-size:15px;line-height:1.8;color:var(--text);margin-bottom:14px;}
+    .bio-p strong{color:var(--text-bright);}
+    .bio-p em{color:var(--text-bright);font-style:italic;}
+    .timeline{display:flex;flex-direction:column;}
+    .tl-item{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--border);font-size:14px;line-height:1.65;color:var(--text);}
+    .tl-year{font-family:var(--font-mono);font-size:11px;color:var(--amber);font-weight:700;padding-top:2px;}
+    .tl-item strong{color:var(--text-bright);}
+    .ep-list{display:flex;flex-direction:column;gap:2px;}
+    .ep-row{display:grid;grid-template-columns:36px 1fr auto;gap:14px;padding:14px 16px;align-items:center;background:var(--surface2);border:1px solid var(--border2);text-decoration:none;border-radius:4px;transition:border-color 0.15s;}
+    a.ep-row:hover{border-color:var(--blue-bright);}
+    .ep-pending{opacity:0.45;cursor:default;}
+    .ep-num{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--border2);}
+    .ep-title{font-size:14px;font-weight:600;color:var(--text-bright);margin-bottom:3px;line-height:1.35;}
+    .ep-guest{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
+    .ep-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
+    .ep-badge{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 8px;border-radius:3px;white-space:nowrap;}
+    .ep-badge.covered{background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);}
+    .ep-badge.guest-ep{background:rgba(59,130,246,0.12);color:var(--blue-bright);border:1px solid rgba(59,130,246,0.3);}
+    .ep-badge.pending{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+    .ep-year{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
+    .ep-stats{display:flex;gap:32px;padding:16px 0;margin-bottom:20px;border-bottom:1px solid var(--border);}
+    .ep-stat strong{font-family:var(--font-mono);font-size:22px;font-weight:800;color:var(--text-bright);display:block;margin-bottom:2px;}
+    .ep-stat span{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);letter-spacing:0.08em;text-transform:uppercase;}
+    @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:28px 1fr;}.ep-right{display:none;}}
+  </style>
+</head>
+<body>
+<!-- Header injected by site.js -->
+<div class="profile-wrap">
+
+  <div class="profile-header">
+    <img class="profile-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.outerHTML='<div style=&quot;width:160px;height:160px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:56px;&quot;>&#128100;</div>'">
+    <div>
+      <div class="profile-name">Jesse Michels</div>
+      <div class="profile-role">Creator &amp; Host, American Alchemy &#183; CEO, American Alchemy Holdings<br>Thiel Capital Portfolio Manager</div>
+      <div class="profile-tags">
+        <span class="profile-tag">UAP Research</span>
+        <span class="profile-tag">Frontier Physics</span>
+        <span class="profile-tag">Consciousness</span>
+        <span class="profile-tag">Venture Capital</span>
+        <span class="profile-tag">Investigative Documentary</span>
+      </div>
+      <div class="profile-links">
+        <a class="profile-link" href="https://www.youtube.com/@JesseMichels" target="_blank">&#9654; YouTube</a>
+        <a class="profile-link" href="https://twitter.com/AlchemyAmerican" target="_blank">&#8599; Twitter</a>
+        <a class="profile-link" href="https://www.instagram.com/jessemichelsofficial" target="_blank">&#8599; Instagram</a>
+        <a class="profile-link" href="/people.html">&#8592; All People</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Biography</div>
+    <p class="bio-p">Jesse Michels is the creator and host of <strong>American Alchemy</strong> &#8212; one of the most research-intensive interview series in the UAP and frontier science space. He is CEO of <strong>American Alchemy Holdings</strong> and manages a venture portfolio on behalf of <strong>Peter Thiel&#8217;s family office (Thiel Capital)</strong>, where his career began and where he first encountered many of the researchers he would later interview.</p>
+    <p class="bio-p">He grew up in Santa Monica. His father is Barry Michels, therapist and co-author of <em>The Tools</em>. He attended Columbia University as a <strong>Jon Jay Scholar</strong>, graduating with a BA in History. At Columbia he interned for <em>The Daily Show with Jon Stewart</em> and <em>Charlie Rose</em>. He then worked in AI Operations at Google, also producing the &#8220;Talks at Google&#8221; interview series.</p>
+    <p class="bio-p">At Thiel Capital in LA he engaged in traditional venture investing and organised intellectual events connecting thinkers across religion, politics, economics, and unconventional science &#8212; including hosting Erich von D&#228;niken. This exposure shifted his focus toward UAP, frontier physics, and suppressed science history. American Alchemy launched as a YouTube channel dedicated to &#8220;the most heretical thinkers and ideas of our time.&#8221;</p>
+    <p class="bio-p">Jesse produced one of the <strong>first major interviews with David Grusch</strong> (years before Grusch&#8217;s congressional testimony) and what may be the most technically detailed open-source treatment of the <strong>Townsend Brown anti-gravity tech tree</strong>. The deputy CTO of Northrop Grumman has reportedly recommended the video to investors as &#8220;actionable stuff.&#8221; He appeared on <strong>The Joe Rogan Experience #2331</strong> in 2025.</p>
+    <p class="bio-p">Jesse has personally examined the <strong>M-type Nazca specimens</strong> in Peru &#8212; the tridactyl mummified entities found in 2015 &#8212; and is producing a full documentary on the case.</p>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Career Timeline</div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-year">2007&#8211;11</div><div><strong>Columbia University</strong> &#8212; BA History, Jon Jay Scholar. Interned at <em>The Daily Show</em> and <em>Charlie Rose</em>.</div></div>
+      <div class="tl-item"><div class="tl-year">2011&#8211;14</div><div><strong>Google</strong> &#8212; AI Operations. Produced the Talks at Google interview series.</div></div>
+      <div class="tl-item"><div class="tl-year">2014&#8211;pres.</div><div><strong>Thiel Capital</strong> &#8212; Venture investing at Peter Thiel&#8217;s family office. Continues to manage a Thiel Capital portfolio alongside American Alchemy.</div></div>
+      <div class="tl-item"><div class="tl-year">2020</div><div><strong>American Alchemy</strong> launches on YouTube. Early focus on consciousness, psychedelics, frontier science.</div></div>
+      <div class="tl-item"><div class="tl-year">2023</div><div>Produces one of the <strong>first major Grusch interviews</strong>. Co-produces content with Y files. Channel reaches significant audience.</div></div>
+      <div class="tl-item"><div class="tl-year">2023&#8211;24</div><div>Personally examines <strong>Nazca M-type specimens</strong> in Peru. Begins full documentary production. Produces definitive Townsend Brown tech tree episode &#8212; cited by Northrop Grumman deputy CTO.</div></div>
+      <div class="tl-item"><div class="tl-year">2024</div><div>Founds <strong>American Alchemy Holdings</strong> as CEO. Channel expands to weekly releases across UAP, physics, ancient history, and consciousness.</div></div>
+      <div class="tl-item"><div class="tl-year">2025</div><div>Appears on <strong>The Joe Rogan Experience #2331</strong>. Covers Brown, Lazar, Nazca, and the $21T breakaway civilisation thesis &#8212; one of JRE&#8217;s most-shared UAP episodes.</div></div>
+    </div>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Key Research Contributions</div>
+    <p class="bio-p"><strong>The Townsend Brown Tech Tree</strong> &#8212; Jesse&#8217;s most cited work. A documented chain from Brown&#8217;s 1923 vacuum thrust experiments through the declassified 1971 Australian JIO document (naming Oppenheimer, Teller, Dyson, Wheeler in anti-gravity research), the 1957 Chapel Hill conference, Northrop&#8217;s 1968 electroaerodynamics paper, Aviation Week&#8217;s 1992 &#8220;surfs its own wave&#8221; claim, NASA Kennedy&#8217;s Charles Buhler attributing his electrostatics work to Brown, and the magnesium-bismuth link between Brown&#8217;s 1954 Winterhaven proposal and UAP crash material analysed by Gary Nolan at Stanford.</p>
+    <p class="bio-p"><strong>David Grusch Pre-Testimony Interview</strong> &#8212; One of the first substantive on-camera interviews with the UAP whistleblower, conducted before his congressional emergence. Gave the American Alchemy audience significant early access to Grusch&#8217;s claims about crash retrieval programmes.</p>
+    <p class="bio-p"><strong>Nazca Mummy Investigation</strong> &#8212; Among the first Western investigators to personally examine the M-type specimens. His coverage balances genuine forensic evidence (multi-expert consensus on real anatomy, CAT-scanned pregnant specimen) with honest acknowledgement of the contaminated DNA signal and the J-type hoax problem.</p>
+    <p class="bio-p"><strong>Synthesis platform</strong> &#8212; American Alchemy has become the primary venue for researchers across the UAP-consciousness-frontier-physics nexus who are too heterodox for mainstream media but too serious for most UFO YouTube. Guests include Jacques Vallée, Hal Puthoff, Gary Nolan, Eric Weinstein, Avi Loeb, Diana Pasulka, Ryan Graves, and Jason Reza Jorjani.</p>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Episodes &#8212; Liminal Atlas Coverage</div>
+    <div class="ep-stats">
+      <div class="ep-stat"><strong>6</strong><span>Close Readings</span></div>
+      <div class="ep-stat"><strong>18</strong><span>Episodes Listed</span></div>
+      <div class="ep-stat"><strong>&#8734;</strong><span>More Coming</span></div>
+    </div>
+    <p class="bio-p" style="font-size:13px;color:var(--text-dim);margin-bottom:16px;">Episodes with a &#10003; badge link to a full chapter-by-chapter Liminal Atlas close reading. Greyed-out episodes are on the research backlog.</p>
+    <div class="ep-list">
+    <a href="/articles/dave-rossi-close-reading.html" class="ep-row ep-covered"><span class="ep-num">01</span><div class="ep-info"><div class="ep-title">Dave Rossi — "Aliens Taught Me Advanced Physics"</div><div class="ep-guest">Dave Rossi</div></div><div class="ep-right"><span class="ep-badge covered">&#10003; Close Reading</span><span class="ep-year">2025</span></div></a>
+    <a href="/articles/sal-pais-close-reading.html" class="ep-row ep-covered"><span class="ep-num">02</span><div class="ep-info"><div class="ep-title">Sal Pais — Navy Scientist: A Cosmic War Is Happening</div><div class="ep-guest">Dr. Salvatore Pais</div></div><div class="ep-right"><span class="ep-badge covered">&#10003; Close Reading</span><span class="ep-year">2024</span></div></a>
+    <a href="/articles/pais-rossi-hard-truths.html" class="ep-row ep-covered"><span class="ep-num">03</span><div class="ep-info"><div class="ep-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div><div class="ep-guest">Sal Pais & Dave Rossi</div></div><div class="ep-right"><span class="ep-badge covered">&#10003; Close Reading</span><span class="ep-year">2024</span></div></a>
+    <a href="/articles/jorjani-american-alchemy.html" class="ep-row ep-covered"><span class="ep-num">04</span><div class="ep-info"><div class="ep-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div><div class="ep-guest">Jason Reza Jorjani</div></div><div class="ep-right"><span class="ep-badge covered">&#10003; Close Reading</span><span class="ep-year">Sep 2025</span></div></a>
+    <a href="/articles/nsa-director-ufo.html" class="ep-row ep-covered"><span class="ep-num">05</span><div class="ep-info"><div class="ep-title">Former NSA Director Breaks Silence on UAPs</div><div class="ep-guest">Dr. Eric Hazelton & Dr. Chris Gilbert</div></div><div class="ep-right"><span class="ep-badge covered">&#10003; Close Reading</span><span class="ep-year">2025</span></div></a>
+    <a href="/articles/jre-jesse-michels.html" class="ep-row ep-covered"><span class="ep-num">06</span><div class="ep-info"><div class="ep-title">Jesse Michels on The Joe Rogan Experience #2331</div><div class="ep-guest">Joe Rogan (host)</div></div><div class="ep-right"><span class="ep-badge guest-ep">&#8599; As Guest on JRE</span><span class="ep-year">2025</span></div></a>
+    <div class="ep-row ep-pending"><span class="ep-num">07</span><div class="ep-info"><div class="ep-title">Bob Lazar — The Full Story</div><div class="ep-guest">Bob Lazar</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">08</span><div class="ep-info"><div class="ep-title">Jacques Vallée — The Invisible College</div><div class="ep-guest">Jacques Vallée</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">09</span><div class="ep-info"><div class="ep-title">Hal Puthoff — Zero Point Energy & the Stargate Programme</div><div class="ep-guest">Hal Puthoff</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">10</span><div class="ep-info"><div class="ep-title">Eric Weinstein — Geometric Unity & the UAP Connection</div><div class="ep-guest">Eric Weinstein</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">11</span><div class="ep-info"><div class="ep-title">David Grusch — The Whistleblower Interview</div><div class="ep-guest">David Grusch</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2023</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">12</span><div class="ep-info"><div class="ep-title">Avi Loeb — Harvard's UAP Research Programme</div><div class="ep-guest">Avi Loeb</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">13</span><div class="ep-info"><div class="ep-title">Ryan Graves — Navy Pilot UAP Testimony</div><div class="ep-guest">Ryan Graves</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">14</span><div class="ep-info"><div class="ep-title">Diana Pasulka — Vatican & the UFO Religion</div><div class="ep-guest">Diana Pasulka</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">15</span><div class="ep-info"><div class="ep-title">Blake LeMoine — The Google Whistleblower on AI Sentience</div><div class="ep-guest">Blake LeMoine</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">16</span><div class="ep-info"><div class="ep-title">Gary Nolan — Stanford's UAP Materials Analysis</div><div class="ep-guest">Gary Nolan</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">17</span><div class="ep-info"><div class="ep-title">John Brandenberg — Mars Nuclear Holocaust</div><div class="ep-guest">John Brandenberg</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    <div class="ep-row ep-pending"><span class="ep-num">18</span><div class="ep-info"><div class="ep-title">Joe McMoneagle — Remote Viewing Mars</div><div class="ep-guest">Joe McMoneagle</div></div><div class="ep-right"><span class="ep-badge pending">Coming Soon</span><span class="ep-year">2024</span></div></div>
+    </div>
+  </div>
+
+</div>
+<script src="/js/site.js"></script>
+</body>
+</html>

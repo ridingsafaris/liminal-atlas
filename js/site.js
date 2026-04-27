@@ -42,13 +42,13 @@ const FOOTER_COLS = [
     ],
   },
   {
-    heading: 'Reference',
+    heading: 'Popular Topics',
     links: [
-      { label: "Maxwell's Equations", href: 'https://en.wikipedia.org/wiki/Maxwell%27s_equations', external: true },
-      { label: 'Superconductivity',   href: 'https://en.wikipedia.org/wiki/Superconductivity', external: true },
-      { label: 'General Relativity',  href: 'https://en.wikipedia.org/wiki/General_relativity', external: true },
-      { label: 'Zero-Point Energy',   href: 'https://en.wikipedia.org/wiki/Zero-point_energy', external: true },
-      { label: 'UAP (Wikipedia)',      href: 'https://en.wikipedia.org/wiki/Unidentified_aerial_phenomenon', external: true },
+      { label: 'Townsend Brown',         href: '/articles/jre-jesse-michels.html#ch4' },
+      { label: 'Biefeld-Brown Effect',   href: '/articles/jre-jesse-michels.html#ch4' },
+      { label: 'Havana Syndrome',        href: '/articles/nsa-director-ufo.html#ch6' },
+      { label: 'Nazca Mummies',          href: '/articles/jre-jesse-michels.html#ch8' },
+      { label: 'Alcubierre Warp Drive',  href: '/articles/nsa-director-ufo.html#ch8' },
     ],
   },
 ];
