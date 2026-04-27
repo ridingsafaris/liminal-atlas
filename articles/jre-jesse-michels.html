@@ -48,6 +48,14 @@
 .speaker-role{font-family:var(--font-mono);font-size:10px;color:var(--amber);letter-spacing:0.08em;margin-bottom:8px;}
 .speaker-bio{font-size:12.5px;line-height:1.65;color:var(--text-dim);}
 @media(max-width:640px){.people-grid,.speaker-grid,.toc-grid{grid-template-columns:1fr;}.thread-concept{min-width:140px;}}
+
+.bib-section{border-top:2px solid var(--blue);padding-top:40px;margin-top:24px;}
+.bib-category{font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.bib-papers{display:flex;flex-direction:column;gap:12px;margin-bottom:40px;}
+.bib-entry{background:var(--surface2);border:1px solid var(--border2);border-left:3px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;}
+.bib-label{font-family:var(--font-mono);font-size:10px;color:var(--blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+.bib-entry p{font-size:13.5px;line-height:1.7;margin-bottom:8px;}
+.bib-entry .desc{font-size:12.5px;color:var(--text-dim);line-height:1.65;margin-bottom:8px;}
 </style>
 </head>
 <body>
@@ -70,13 +78,19 @@
   </div>
 
   <!-- Speaker cards -->
+  <p class="hero-intro">Jesse Michels returns to Joe Rogan for a 2h44m deep dive that covers everything from <strong>AI switching to Sanskrit</strong> to <strong>Townsend Brown&#8217;s anti-gravity tech tree</strong>, Bob Lazar&#8217;s limited hangout, Roswell wreckage at Battelle, the $21 trillion breakaway civilisation, Jesse&#8217;s own UFO sightings, and a long final section on the Nazca tridactyl mummies &#8212; which Jesse has seen in person. The Townsend Brown section is the most technically detailed and most significant: Jesse argues there is a <strong>continuous documented chain</strong> from Brown&#8217;s 1923 vacuum thrust experiments through the 1971 Australian intelligence document (naming Oppenheimer, Teller, Wheeler, and Dyson in anti-gravity research) to the B2 stealth bomber and potentially the TR-3B triangular craft.</p>
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border2);margin-bottom:28px;">
+    <iframe src="https://www.youtube.com/embed/r9Ldl70x5Fg" title="Jesse Michels on JRE #2331" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+
   <div class="speaker-grid">
     <div class="speaker-card">
       <img class="speaker-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
       <div>
         <div class="speaker-name">Jesse Michels</div>
-        <div class="speaker-role">Guest &#183; Creator, American Alchemy &#183; Former Thiel Capital</div>
-        <div class="speaker-bio">Creator of <em>American Alchemy</em>, one of the most research-intensive UAP and frontier science podcasts. Former associate at Peter Thiel&#8217;s family office where he met many of the researchers he later covered. Has broken major stories including Townsend Brown&#8217;s anti-gravity lineage, the 1971 Australian JIO document, and extensive Nazca mummy coverage. Has personally seen the M-type Nazca specimens.</div>
+        <div class="speaker-role">Guest &#183; CEO, American Alchemy Holdings &#183; Thiel Capital Portfolio Manager</div>
+        <div class="speaker-bio">Creator and host of <em>American Alchemy</em>. CEO of American Alchemy Holdings. Manages a venture portfolio on behalf of Thiel Capital, where he began his career before American Alchemy became his primary focus. Has broken major stories including the Townsend Brown anti-gravity lineage, the 1971 Australian JIO document, and the Nazca mummy case. Has personally examined the M-type specimens in Peru.</div>
       </div>
     </div>
     <div class="speaker-card">
@@ -84,21 +98,17 @@
       <div>
         <div class="speaker-name">Joe Rogan</div>
         <div class="speaker-role">Host &#183; JRE &#183; Comedian &amp; Podcaster</div>
-        <div class="speaker-bio">Host of the Joe Rogan Experience, the most downloaded podcast in the world. Self-described frustrated UFO disclosure follower who is &#8220;allergic to BS&#8221; &#8212; not anti-UFO (the Comedy Mothership has UAP art throughout) but deeply sceptical of the slow-drip disclosure process. Has had Hal Puthoff, Jacques Vallée, Ryan Graves, Eric Weinstein, and many UAP researchers on previously.</div>
+        <div class="speaker-bio">Host of the Joe Rogan Experience, the most downloaded podcast in the world. Self-described frustrated UFO disclosure follower who is &#8220;allergic to BS&#8221; &#8212; not anti-UFO (the Comedy Mothership has UAP art throughout) but deeply sceptical of the slow-drip disclosure process. Has had Hal Puthoff, Jacques Vallée, Ryan Graves, and Eric Weinstein on previously.</div>
       </div>
     </div>
   </div>
 
-  <p class="hero-intro">Jesse Michels returns to Joe Rogan for a 2h44m deep dive that covers everything from <strong>AI switching to Sanskrit</strong> to <strong>Townsend Brown&#8217;s anti-gravity tech tree</strong>, Bob Lazar&#8217;s limited hangout, Roswell wreckage at Battelle, the $21 trillion breakaway civilisation, Jesse&#8217;s own UFO sightings, and a long final section on the Nazca tridactyl mummies &#8212; which Jesse has seen in person. The Townsend Brown section is the most technically detailed and most significant: Jesse argues there is a <strong>continuous documented chain</strong> from Brown&#8217;s 1923 vacuum thrust experiments through the 1971 Australian intelligence document (naming Oppenheimer, Teller, Wheeler, and Dyson in anti-gravity research) to the B2 stealth bomber and potentially the TR-3B triangular craft.</p>
-
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border2);margin-bottom:28px;">
-    <iframe src="https://www.youtube.com/embed/r9Ldl70x5Fg" title="Jesse Michels on JRE #2331" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-  </div>
   <div class="btn-row">
     <a class="btn btn-primary" href="https://www.youtube.com/watch?v=r9Ldl70x5Fg" target="_blank" rel="noopener">&#9654; Watch Full Episode</a>
     <a class="btn btn-ghost" href="https://www.youtube.com/@JesseMichels" target="_blank">&#8599; American Alchemy Channel</a>
     <a class="btn btn-ghost" href="/articles/jorjani-american-alchemy.html">&#8599; Jorjani on American Alchemy</a>
     <a class="btn btn-ghost" href="/articles/nsa-director-ufo.html">&#8599; NSA Director on UAPs</a>
+    <a class="btn btn-ghost" href="/people.html">&#128100; People Directory</a>
   </div>
 </div>
 
@@ -115,6 +125,7 @@
       <a href="#ch7"><span class="toc-n">07</span>Jesse&#8217;s Own Sightings: Laurel Canyon School Bus &amp; Holotropic Orbs</a>
       <a href="#ch8"><span class="toc-n">08</span>The Nazca Mummies: Three-Fingered Tridactyls, Forensics &amp; the DNA Problem</a>
       <a href="#people"><span class="toc-n">&#128100;</span>People &#8212; Guests &amp; figures mentioned</a>
+      <a href="#bibliography"><span class="toc-n">&#128218;</span>Bibliography &#8212; Documents, books &amp; primary sources</a>
     </div>
   </div>
 </div>
@@ -317,36 +328,80 @@
 
 <section class="chapter" id="ch6">
   <div class="ch-header"><span class="ch-num">CH 06</span><span class="ch-time">1:33:00 &#8211; 1:55:00</span><a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5580s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:33:00</a></div>
-  <h2>Disclosure Politics: UAP Disclosure Act, Misappropriation, &amp; the $21 Trillion Breakaway Civilisation</h2>
+  <h2>Disclosure Politics, Institutional Capture &amp; the $21 Trillion Breakaway Civilisation</h2>
 
   <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);">
     <div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div></div>
-    <p>Jesse and Joe assess the state of disclosure. Jesse&#8217;s frustration: 2017 NYT bombshell, then eight years of pilots doing podcasts, nobody showing actual data. On the legal structure: if black programmes have been running and misappropriating congressional funds for back-engineering non-human craft, those involved face jail &#8212; hence the calls for mass amnesty before anything can be released. The UAP Disclosure Act was killed by Rep. Mike Turner of Dayton, Ohio &#8212; who represents Wright-Patterson Air Force Base, home of Battelle. AARO (the official UAP investigation office, led by Sean Kirkpatrick) is run by a former Oak Ridge atomic scientist, and the person who recommended forming AARO (Ed Moltry, undersecretary of defense for intelligence) served on Battelle&#8217;s board and scrubbed it from his LinkedIn. Jesse estimates the real black budget for exotic programmes is on the order of Donald Rumsfeld&#8217;s September 10, 2001 statement that $2 trillion was missing from the Pentagon budget &#8212; not the $22 million AATIP figure that modern disclosure discussions fixate on. He references Catherine Austin Fitts describing a &#8220;$21 trillion breakaway civilisation&#8221; funded through Housing and Urban Development budget discrepancies.</p>
+    <p>The longest structural argument in the episode. Jesse builds a case that the conventional disclosure story &#8212; AATIP, the 2017 NYT, slow government transparency &#8212; is a distraction from the real scale of a possible black budget programme. The argument runs across four connected threads: the legal blockade (misappropriation of funds / amnesty problem), the institutional capture of the official investigation bodies (AARO, its founders&#8217; conflicts of interest), the absurd scale mismatch between AATIP&#8217;s $22 million and any real reverse-engineering programme, and Catherine Austin Fitts&#8217;s $21 trillion figure sourced from HUD budget discrepancies. Jesse also critiques Elon Musk / SpaceX as &#8220;soap box derby&#8221; chemical combustion in a world that possibly has electrogravitic propulsion. Joe pushes back with a 1994 <em>Wired</em> article about the TR-3 Black Manta and signals intelligence monitoring of classified aircraft communications.</p>
+  </div>
+
+  <div class="sci-box" style="border-left:3px solid rgba(139,92,246,0.5);background:rgba(139,92,246,0.04);margin-top:16px;">
+    <div class="sci-box-header"><div class="sci-icon">&#9881;</div><div class="sci-title">The Legal Architecture of Non-Disclosure</div></div>
+    <p>Jesse maps the structural reasons disclosure cannot happen even if officials want it to. Any programme that has been back-engineering non-human craft and lying to Congress about the budget line it&#8217;s drawing on has committed <strong>misappropriation of funds</strong> &#8212; a federal crime. Everyone involved faces jail. This is why the Age of Disclosure film&#8217;s central ask is not &#8220;release the files&#8221; but <strong>mass amnesty</strong>: until participants are legally protected, the programme cannot surface. The second legal blockade: if Lockheed Martin or Northrop was given exclusive access to crash material under a government contract, then revealing that programme would expose them to antitrust and procurement litigation from competitors. GE, Boeing, and other primes would sue for restraint of trade. The structural result is that the government has layered legal obligations on both sides that make transparency self-destructive without a legislative override.</p>
   </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">&#128924; JRE #2331 &#183; <a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5580s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:33:00</a> &#8212; The legal blockade to disclosure</div>
-    <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;In the Age of Disclosure one of the things they go into is that if these programmes have been running and if they have been back-engineering crafts that are not of this world, there&#8217;s a problem with lying to Congress because misappropriation of funds. So anybody who did that is going to jail. So what they&#8217;re calling for is mass amnesty &#8212; we&#8217;ve got to give amnesty to these people that were involved in this programme otherwise we&#8217;re never going to learn anything.&#8221;</div></div>
-    <div class="d-line"><div class="d-speaker" style="background:rgba(245,158,11,0.1);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Joe Rogan</div><div class="d-text">&#8220;There&#8217;s so many bottlenecks to disclosure. Like legal bottlenecks.&#8221;</div></div>
+    <div class="dialogue-header">&#128924; JRE #2331 &#183; <a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5580s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:33:00</a> &#8212; The amnesty problem</div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;In the Age of Disclosure one of the things they go into is that if these programmes have been running and if they have been back-engineering crafts that are not of this world, there&#8217;s a problem with lying to Congress because misappropriation of funds. So anybody who did that is going to jail. So what they&#8217;re calling for is mass amnesty &#8212; we&#8217;ve got to give amnesty to these people that were involved in this programme otherwise we&#8217;re never going to learn anything.&#8221;</div></div>
+        <div class="d-line"><div class="d-speaker" style="background:rgba(245,158,11,0.1);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Joe Rogan</div><div class="d-text">&#8220;There&#8217;s so many bottlenecks to disclosure. Like legal bottlenecks.&#8221;</div></div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;Especially the misappropriation of funds. I mean how much money was involved? You must be talking about billions and billions and billions of dollars if all these programmes are real. So if they&#8217;ve been lying to Congress it&#8217;s on the order of&#8230; a lot of modern disclosure talks about AATIP, these programmes from 2007 to 2012 under Harry Reid. That budget was $22 million. A single F-35 costs four times that. The B2 costs $2 billion. Like give me a break.&#8221;</div></div>
+  </div>
+
+  <div class="sci-box" style="border-left:3px solid rgba(239,68,68,0.5);background:rgba(239,68,68,0.04);margin-top:16px;">
+    <div class="sci-box-header"><div class="sci-icon">&#9888;</div><div class="sci-title">The AARO Conflict-of-Interest Chain</div></div>
+    <p>Jesse traces what he calls the institutional capture of the official investigation apparatus:</p>
+    <ol style="margin:10px 0 0 20px;display:flex;flex-direction:column;gap:10px;font-size:13.5px;line-height:1.6;color:var(--text);">
+      <li><strong>AARO</strong> (All-domain Anomaly Resolution Office) &#8212; the current authoritative government UAP body &#8212; Jesse describes as &#8220;the modern Blue Book: basically saying don&#8217;t look here.&#8221;</li>
+      <li>AARO was led by <strong>Sean Kirkpatrick</strong>, who worked at <strong>Oak Ridge National Laboratory</strong> &#8212; the atomic/nuclear research complex that appears repeatedly in the Battelle and black-budget money trails.</li>
+      <li>The person who recommended forming AARO was <strong>Ed Moltry</strong>, Under Secretary of Defense for Intelligence. He sat on <strong>Battelle Memorial Institute&#8217;s board</strong> &#8212; the same Battelle implicated in the 1949 Wright-Patterson contract studying Roswell material. He subsequently <strong>removed Battelle from his LinkedIn</strong>. UAP researcher UAP Gerb documented this.</li>
+      <li>The UAP Disclosure Act &#8212; the legislative mechanism that would compel document release &#8212; was killed by <strong>Rep. Mike Turner</strong> (R-OH), who represented <strong>Dayton, Ohio</strong>, home of <strong>Wright-Patterson Air Force Base</strong> &#8212; the facility where Roswell wreckage was reportedly taken. Turner has now left Congress.</li>
+    </ol>
   </div>
 
   <div class="dialogue">
-    <div class="dialogue-header">&#128924; JRE #2331 &#183; <a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5760s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:36:00</a> &#8212; Mike Turner kills the UAP Disclosure Act</div>
-    <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;The UAP Disclosure Act is up again &#8212; it was killed by a guy named Mike Turner who has a bunch of aerospace connections. And guess what &#8212; he represented Dayton Ohio, where Wright-Patterson Air Force Base is. And AARO &#8212; the all-domain anomaly resolution office &#8212; is run by Sean Kirkpatrick, who like worked at Oak Ridge for God&#8217;s sakes. The guy that formed AARO upon whose recommendation it was formed is Ed Moltry &#8212; undersecretary of defense for intelligence &#8212; and he was on Battelle&#8217;s board, and he scrubbed that from his LinkedIn.&#8221;</div></div>
+    <div class="dialogue-header">&#128924; JRE #2331 &#183; <a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5760s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:36:00</a> &#8212; The AARO conflict chain</div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;AARO &#8212; the all-domain anomaly resolution office &#8212; is run by Sean Kirkpatrick, who like worked at Oak Ridge for God&#8217;s sakes. The guy that formed AARO upon whose recommendation it was formed is Ed Moltry &#8212; undersecretary of defense for intelligence &#8212; and he was on Battelle&#8217;s board, and he scrubbed that from his LinkedIn. And my good friend UAP Gerb &#8212; an amazing channel, super deep UFO researcher &#8212; showed this: it was on his resume, and then he recommends that AARO forms. It&#8217;s like it&#8217;s a total conflict of interest.&#8221;</div></div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;And the UAP Disclosure Act &#8212; it was killed by Mike Turner who has a bunch of aerospace connections. And guess what &#8212; he represented Dayton Ohio, where Wright-Patterson Air Force Base is.&#8221;</div></div>
   </div>
 
-  <div class="key-claims"><div class="key-claims-label">&#9670; Key claims</div><ol>
-      <li>AATIP&#8217;s disclosed budget was $22 million &#8212; a single F-35 costs $80M+. <span class="claim-verified">&#10003; Documented</span></li>
-      <li>Rep. Mike Turner (Dayton, OH &#8212; Wright-Patterson AFB) was instrumental in blocking the UAP Disclosure Act. <span class="claim-verified">&#10003; Documented</span></li>
-      <li>AARO director Sean Kirkpatrick previously worked at Oak Ridge National Laboratory. <span class="claim-verified">&#10003; Documented</span></li>
-      <li>Ed Moltry, who recommended forming AARO, served on Battelle&#8217;s board and removed this from his LinkedIn. <span class="claim-verified">&#10003; Documented</span></li>
-      <li>Donald Rumsfeld announced $2 trillion was missing from the Pentagon on September 10, 2001. <span class="claim-verified">&#10003; Documented</span></li>
+  <div class="sci-box" style="border-left:3px solid rgba(245,158,11,0.5);background:rgba(245,158,11,0.04);margin-top:16px;">
+    <div class="sci-box-header"><div class="sci-icon">&#128176;</div><div class="sci-title">The Scale Problem: $22 Million vs. $21 Trillion</div></div>
+    <p>Jesse&#8217;s core budget argument. AATIP (the Advanced Aerospace Threat Identification Program, 2007&#8211;2012, Harry Reid&#8217;s initiative) had a disclosed budget of <strong>$22 million</strong>. One F-35 costs approximately $80 million. The B2 costs $2 billion per aircraft. A programme to reverse-engineer non-human craft over decades would require orders of magnitude more. Jesse cites two reference points for the real scale:</p>
+    <ul style="margin:10px 0 0 20px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;line-height:1.6;color:var(--text);">
+      <li><strong>Donald Rumsfeld, September 10, 2001</strong> &#8212; The day before 9/11, Rumsfeld announced that <strong>$2.3 trillion in Pentagon transactions could not be accounted for</strong>. This statement was buried by the following day&#8217;s events. Jesse treats this as a documented instance of unaccountable defence spending at the relevant scale.</li>
+      <li><strong>Catherine Austin Fitts</strong> &#8212; Former Assistant Secretary of Housing and Urban Development under President George H.W. Bush. On Tucker Carlson, she described tracking <strong>$21 trillion in undocumentable transactions</strong> in the federal budget, citing researcher Richard Dolan&#8217;s &#8220;breakaway civilisation&#8221; framework. When Tucker asked where the funds were going, she said: <strong>&#8220;Space.&#8221;</strong> Jesse&#8217;s point: SpaceX &#8212; the public tip of the spear in space technology &#8212; uses chemical combustion rockets. If a $21 trillion black programme exists, SpaceX is a &#8220;soap box derby car&#8221; relative to what it has funded.</li>
+    </ul>
+  </div>
+
+  <div class="dialogue">
+    <div class="dialogue-header">&#128924; JRE #2331 &#183; <a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5740s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 1:35:40</a> &#8212; Catherine Austin Fitts and the $21 trillion</div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;The core programme, if there is a core programme &#8212; which obviously I believe there is &#8212; it&#8217;s on the order of that speech that you&#8217;ve often cited that Donald Rumsfeld made on September 10th 2001, where he said $2 trillion was missing from the Pentagon&#8217;s budget. It&#8217;s that kind of thing. Or this woman named Catherine Austin Fitts who was just on Tucker Carlson &#8212; she was at Housing and Urban Development under George Bush 41 &#8212; where she&#8217;s talking about underground tunnel systems and billions of dollars missing in the budget. She&#8217;s talking about a <em>$21 trillion</em> breakaway civilisation that&#8217;s been developed.&#8221;</div></div>
+        <div class="d-line"><div class="d-speaker" style="background:rgba(245,158,11,0.1);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Joe Rogan</div><div class="d-text">&#8220;Yeah. And she says it at a moment. First of all she&#8217;s citing Richard Dolan &#8212; Richard Dolan is like a hardcore UFO researcher. Tucker Carlson doesn&#8217;t know who Richard Dolan is. And then Tucker asks where are the funds being used and she goes &#8216;space.&#8217;&#8221;</div></div>
+        <div class="d-line"><div class="d-speaker jesse">Jesse Michels</div><div class="d-text">&#8220;And it&#8217;s like, the where? It&#8217;s not being used at SpaceX &#8212; SpaceX is supposed to be the tip of the spear, right? SpaceX, Blue Origin. So like what do you mean &#8216;space&#8217;? SpaceX is basically like those go-karts that people send down hills with no engines &#8212; soap boxes. That&#8217;s what it&#8217;s like. That&#8217;s what SpaceX is. If we have any of this stuff, that&#8217;s what SpaceX is. It&#8217;s using really ancient technology to achieve these results.&#8221;</div></div>
+  </div>
+
+    <div class="key-claims"><div class="key-claims-label">&#9670; Key claims</div><ol>
+      <li>AATIP&#8217;s disclosed budget was $22 million &#8212; roughly a quarter of the cost of one F-35. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Sean Kirkpatrick, first AARO director, previously worked at Oak Ridge National Laboratory. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Ed Moltry served on Battelle Memorial Institute&#8217;s board and removed this from his LinkedIn before recommending AARO&#8217;s formation. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Rep. Mike Turner (Dayton, OH) was instrumental in blocking the UAP Disclosure Act. Wright-Patterson AFB is in his district. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Donald Rumsfeld announced $2.3 trillion in unaccountable Pentagon transactions on September 10, 2001. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Catherine Austin Fitts served as Assistant Secretary of HUD under President George H.W. Bush. <span class="claim-verified">&#10003; Documented</span></li>
+      <li>Fitts described $21 trillion in undocumentable federal transactions, attributing them to a &#8220;breakaway civilisation&#8221; space programme. <span class="claim-disputed">&#9651; Disputed</span></li>
+      <li>SpaceX and Blue Origin represent public-facing chemical combustion while a classified electrogravitic programme exists at far greater scale. <span class="claim-unsupported">&#10007; No evidence</span></li>
     </ol></div>
 
-  <div class="link-cluster"><div class="link-cluster-title">References &amp; Further Reading</div><div class="link-row"><a class="link-pill " href="https://en.wikipedia.org/wiki/AARO" target="_blank">&#8599; AARO &#8212; Wikipedia</a><a class="link-pill " href="https://en.wikipedia.org/wiki/UAP_Disclosure_Act" target="_blank">&#8599; UAP Disclosure Act</a><a class="link-pill " href="https://en.wikipedia.org/wiki/Mike_Turner_(politician)" target="_blank">&#8599; Mike Turner &#8212; Dayton, Ohio</a><a class="link-pill green" href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5580s" target="_blank">&#9654; Episode at 1:33:00</a></div></div>
+
+  <div class="link-cluster"><div class="link-cluster-title">References &amp; Further Reading</div><div class="link-row">
+    <a class="link-pill " href="https://en.wikipedia.org/wiki/AARO" target="_blank">&#8599; AARO &#8212; Wikipedia</a>
+    <a class="link-pill " href="https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program" target="_blank">&#8599; AATIP &#8212; Wikipedia</a>
+    <a class="link-pill " href="https://en.wikipedia.org/wiki/Catherine_Austin_Fitts" target="_blank">&#8599; Catherine Austin Fitts &#8212; Wikipedia</a>
+    <a class="link-pill " href="https://en.wikipedia.org/wiki/Richard_Dolan_(author)" target="_blank">&#8599; Richard Dolan &#8212; Wikipedia</a>
+    <a class="link-pill " href="https://en.wikipedia.org/wiki/Mike_Turner_(politician)" target="_blank">&#8599; Mike Turner &#8212; Wikipedia</a>
+    <a class="link-pill green" href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=5580s" target="_blank">&#9654; Episode at 1:33:00</a>
+  </div></div>
 
 </section>
-
 
 <section class="chapter" id="ch7">
   <div class="ch-header"><span class="ch-num">CH 07</span><span class="ch-time">2:09:00 &#8211; 2:15:00</span><a href="https://www.youtube.com/watch?v=r9Ldl70x5Fg&t=7740s" target="_blank" style="color:var(--amber);font-family:var(--font-mono);font-size:10px;border:1px solid rgba(245,158,11,0.3);padding:1px 6px;border-radius:3px;">&#9654; 2:09:00</a></div>
@@ -423,9 +478,261 @@
   <div class="person-card"><div class="person-photo-placeholder">&#128100;</div><div><div class="person-name">John Brandenberg</div><div class="person-role">Plasma Physicist &#183; Sandia / Lawrence Livermore &#183; Mars Nuclear Holocaust</div><div class="person-bio">PhD plasma physicist who worked at Sandia National Labs and Lawrence Livermore National Laboratory. Proposed the &#8216;Xenon-129 hypothesis&#8217; for Mars: that the isotopic abundance of Xenon-129 and Argon-40 in the Martian atmosphere is significantly above what normal radioactive decay would produce, and that the only explanation consistent with the data is a thermonuclear detonation of planetary scale. Published in peer-reviewed form. Jesse Michels notes he was interviewed on American Alchemy and that his credentials make the claim worth examining even if the conclusion is extraordinary.</div><div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/John_Brandenberg" target="_blank">&#8599; Wikipedia</a></div></div></div>
   <div class="person-card"><img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Joe_McMoneagle.jpg/220px-Joe_McMoneagle.jpg" alt="Joe McMoneagle" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'"><div><div class="person-name">Joe McMoneagle</div><div class="person-role">CIA Remote Viewer &#183; Stargate Programme &#183; Remote Viewer #001</div><div class="person-bio">Considered the most decorated remote viewer in the US Army&#8217;s Stargate programme. Reportedly tasked by the CIA in the 1990s (declassified) with remote viewing Mars &#8216;one million BC&#8217;, during which he described ruins and humanoid beings 12&#8211;14 feet tall around pyramidal structures. The session is in the declassified records. Author of <em>Mind Trek</em> and <em>Remote Viewing Secrets</em>. Also involved in remote viewing lunar structures.</div><div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Joe_McMoneagle" target="_blank">&#8599; Wikipedia</a></div></div></div>
   <div class="person-card"><div class="person-photo-placeholder">&#128100;</div><div><div class="person-name">Jaime Maussan</div><div class="person-role">Mexican Journalist &#183; UFO Researcher &#183; Nazca Mummy Presenter</div><div class="person-bio">Former 60 Minutes correspondent in Mexico, now one of the most prominent UAP researchers in Latin America. In September 2023 presented two J-type Nazca specimens before the Mexican Congress, attracting global attention and significant controversy. Has invested significant resources in protecting and studying the Nazca specimens. His approach &#8212; going public with incomplete evidence &#8212; is criticised by some researchers but defended as necessary to force scientific engagement. Jesse Michels describes him as &#8220;awesome&#8221; despite reservations about the J-types specifically.</div><div class="person-links"><a class="link-pill" href="https://en.wikipedia.org/wiki/Jaime_Maus%C3%A1n" target="_blank">&#8599; Wikipedia</a></div></div></div>
+  <div class="person-card">
+    <img class="person-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Catherine_Austin_Fitts_%282019%29.jpg/220px-Catherine_Austin_Fitts_%282019%29.jpg" alt="Catherine Austin Fitts" onerror="this.outerHTML='<div class=&quot;person-photo-placeholder&quot;>&#128100;</div>'">
+    <div>
+      <div class="person-name">Catherine Austin Fitts</div>
+      <div class="person-role">Former Assistant Secretary, HUD &#183; Bush 41 &#183; &#8220;$21 Trillion Breakaway Civilisation&#8221;</div>
+      <div class="person-bio">Former Assistant Secretary of Housing and Urban Development under President George H.W. Bush and former MD of Dillon, Read &amp; Co. investment bank. After leaving government she founded Solari, Inc. Working with economist Mark Skidmore (Michigan State), she documented approximately $21 trillion in unaccountable federal budget adjustments between 1998 and 2015. On Tucker Carlson she attributed these funds to a breakaway civilisation space programme &#8212; citing Richard Dolan&#8217;s framework. When Tucker asked where the money was going, she said: &#8220;Space.&#8221; Jesse uses this as his scale reference for any real black-budget reverse-engineering programme.</div>
+      <div class="person-links">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Catherine_Austin_Fitts" target="_blank">&#8599; Wikipedia</a>
+        <a class="link-pill" href="https://home.solari.com" target="_blank">&#8599; Solari.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="person-card">
+    <div class="person-photo-placeholder">&#128100;</div>
+    <div>
+      <div class="person-name">Richard Dolan</div>
+      <div class="person-role">UFO Historian &#183; Author &#183; Originator of &#8216;Breakaway Civilisation&#8217; Concept</div>
+      <div class="person-bio">Independent UFO historian and author of the <em>UFOs and the National Security State</em> series &#8212; considered among the most rigorously sourced historical accounts of government UAP awareness. Originated the &#8220;breakaway civilisation&#8221; concept: a secret parallel civilisation funded by off-budget black programmes, with technology decades ahead of the public sector. Catherine Austin Fitts cites Dolan&#8217;s framework explicitly on Tucker Carlson. Jesse notes Tucker didn&#8217;t recognise Dolan&#8217;s name.</div>
+      <div class="person-links">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Richard_Dolan_(author)" target="_blank">&#8599; Wikipedia</a>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 
+
+<!-- ══ BIBLIOGRAPHY ════════════════════════════════════════ -->
+<section class="bib-section" id="bibliography">
+  <div class="ch-header" style="border-bottom-color:var(--border2);">
+    <span class="ch-num">BIBLIOGRAPHY</span>
+    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;">Documents, papers, books and materials cited in the episode</span>
+  </div>
+  <h2>Documents &amp; Primary Sources</h2>
+  <div class="prose" style="margin-bottom:32px;">
+    <p>This episode is unusually rich in primary sources &#8212; Jesse cites specific declassified documents, intelligence memos, contracts, and aviation journalism that can be independently verified. Where something is publicly available, a link is provided. Where it exists but is not online, provenance is noted.</p>
+  </div>
+
+  <!-- Townsend Brown / Anti-Gravity -->
+  <div class="bib-category">Thomas Townsend Brown &#8212; Anti-Gravity Documents &amp; Primary Sources</div>
+  <div class="bib-papers">
+
+    <div class="bib-entry">
+      <div class="bib-label">1971 &#183; Australian Joint Intelligence Organisation &#183; Harry Turner Memo</div>
+      <p><strong>Turner, H.E.</strong> (1971). Internal assessment for the Australian Joint Intelligence Organisation on US anti-gravity research programmes. Declassified. Cited by David Grusch in congressional testimony.</p>
+      <p class="desc">The document Jesse describes as his strongest piece of evidence for a classified anti-gravity lineage. Harry Turner was head of Australia&#8217;s nuclear division &#8212; their Oppenheimer equivalent. He concluded that US anti-gravity efforts were &#8220;far deeper than meets the eye,&#8221; that Project Blue Book was a front, and that secret programmes involved Oppenheimer, Freeman Dyson, John Wheeler, and Edward Teller. The CIA&#8217;s Office of Scientific Intelligence is named as the coordinating body. University of North Carolina (where Brown was working under Agnew Bahnson) is listed as one of several anti-gravity research outposts.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://www.theblackvault.com/documentarchive/ufo-files-the-australian-government/" target="_blank">&#8599; Australian UFO documents &#8212; Black Vault</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Australian_Joint_Intelligence_Organisation" target="_blank">&#8599; AJIO &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1954 &#183; Townsend Brown &#183; Project Winterhaven Proposal</div>
+      <p><strong>Brown, T.T.</strong> (1954). &#8220;Project Winterhaven: A Proposal for Joint Services Research and Development Contract.&#8221; Internal document submitted to the US military proposing electrogravitic propulsion.</p>
+      <p class="desc">Brown&#8217;s formal proposal for a military-funded anti-gravity programme. The document lists magnesium-bismuth as the recommended high-K dielectric material for maximum electrogravitic thrust &#8212; the same material that appears in alleged Roswell wreckage samples analysed by Gary Nolan at Stanford. Jesse argues this is the smoking link between the anti-gravity tech tree and UAP crash material.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Thomas_Townsend_Brown" target="_blank">&#8599; Townsend Brown &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://www.bibliotecapleyades.net/ciencia/ciencia_flyingobjects44.htm" target="_blank">&#8599; Winterhaven document &#8212; archive</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1956 &#183; <em>Young Men&#8217;s Magazine</em> &#183; Michael Gladych, &#8220;G-Engines Are Coming&#8221;</div>
+      <p><strong>Gladych, M.</strong> (1956). &#8220;G-Engines Are Coming.&#8221; <em>Young Men&#8217;s Magazine</em> (aviation hobby journal). Quotes Bill Lear, VP George Trimble of Martin Corporation, and Bell Aircraft on imminent anti-gravity breakthroughs.</p>
+      <p class="desc">Jesse describes this as the open-source confirmation that the 1950s aerospace industry was taking anti-gravity seriously. George Trimble (VP at Martin Corp) states anti-gravity research will be solved in roughly the same time it took to develop the atomic bomb. Bell Aircraft (which had just broken the sound barrier with the X-1 in 1947) says it is experimenting with nuclear fuels to cancel gravity. Stanley Deser and Richard Arnowitt at Princeton are named as doing the theoretical work.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">&#8599; Biefeld-Brown effect &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1957 &#183; Chapel Hill Conference on the Role of Gravitation in Physics</div>
+      <p>January 1957, Institute of Field Physics, University of North Carolina, Chapel Hill. Convened the top theoretical physicists in the world: Richard Feynman, Bryce DeWitt, John Wheeler, Peter Bergmann, and others &#8212; to establish the field of quantum gravity (of which string theory is an offshoot).</p>
+      <p class="desc">Jesse&#8217;s key contextual point: at the same time as this prestigious conference, Townsend Brown was funded in the back room of the same institute by Agnew Bahnson. The same figures whose names appear on anti-gravity research in the 1971 Australian document &#8212; Wheeler, Dyson &#8212; were present at Chapel Hill. Jesse argues this is not coincidence but a deliberate structure: theoretical physics goes one direction publicly while experimental anti-gravity work is classified.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Chapel_Hill_conference_(1957)" target="_blank">&#8599; Chapel Hill Conference 1957 &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Agnew_Bahnson" target="_blank">&#8599; Agnew Bahnson &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1968 &#183; Northrop Corporation &#183; &#8220;Electroaerodyanamics in Supersonic Flow&#8221;</div>
+      <p>Northrop Corporation (1968). Internal technical paper on electrohydrodynamic effects in supersonic airflow. Published three months after Guidance Technologies (Brown&#8217;s company) shut down without explanation following a series of classified presentations.</p>
+      <p class="desc">Jesse&#8217;s documentary evidence that Brown&#8217;s anti-gravity work was absorbed into Northrop. The paper is, in his words, &#8220;part and parcel&#8221; of Brown&#8217;s electrohydrodynamic work, published under Northrop&#8217;s name shortly after Brown&#8217;s company closed. Northrop issued a press release then retracted it. Floyd Odlum, who funded Brown&#8217;s Guidance Technologies, was the majority owner of Northrop pre-merger with Grumman.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Northrop_Corporation" target="_blank">&#8599; Northrop Corporation &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1992 &#183; Bill Scott &#183; <em>Aviation Week &amp; Space Technology</em> &#183; B2 &#8220;Surfs Its Own Wave&#8221;</div>
+      <p><strong>Scott, W.B.</strong> (1992). Article in <em>Aviation Week &amp; Space Technology</em> claiming the B2 Spirit stealth bomber uses the Biefeld-Brown electrokinetic effect to reduce drag by electrically charging the leading edge of its wing &#8212; &#8220;surfing its own wave.&#8221;</p>
+      <p class="desc">One of Jesse&#8217;s strongest open-source claims: a piece of mainstream aerospace journalism explicitly naming the Biefeld-Brown effect in connection with the B2. Jesse also cites British aviation journalist Bill Gunston&#8217;s deliberate deflection in <em>Air International</em>: &#8220;I am familiar with the rudiments of Thomas Townsend Brown&#8217;s work but I don&#8217;t want to end up in the Tower of London, so I will refrain from talking about millions of volts charged positive to millions of volts charged negative on the trailing edge of the wing of the B2 stealth bomber.&#8221;</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Northrop_B-2_Spirit" target="_blank">&#8599; B2 Spirit &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Biefeld%E2%80%93Brown_effect" target="_blank">&#8599; Biefeld-Brown effect</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Battelle / Roswell / Nitinol -->
+  <div class="bib-category">Battelle, Roswell &amp; Material Science</div>
+  <div class="bib-papers">
+
+    <div class="bib-entry">
+      <div class="bib-label">1949 &#183; Wright-Patterson / Battelle Memorial Institute &#183; Contract on Special Alloys</div>
+      <p>Contract between Wright-Patterson Air Force Base (then Wright Field) and Battelle Memorial Institute (Columbus, Ohio), listing several titanium alloys under study including nickel-titanium (nitinol) &#8212; a shape-memory metal that returns to its original form when deformed.</p>
+      <p class="desc">Nitinol was officially &#8220;discovered&#8221; at the Naval Ordnance Laboratory in the 1960s. Jesse argues this 1949 contract &#8212; combined with Jesse Marcel&#8217;s Roswell testimony about a foil-like memory metal that reformed when crumpled &#8212; and the FOIA-confirmed presence of metallurgist Elroy John Center on that paper (who told MUFON researchers he examined alien material with hieroglyphics) suggests Battelle was studying crash material. The contract is publicly available via FOIA.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Nickel_titanium" target="_blank">&#8599; Nitinol &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Battelle_Memorial_Institute" target="_blank">&#8599; Battelle Memorial Institute</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Roswell_UFO_incident" target="_blank">&#8599; Roswell incident</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Books cited -->
+  <div class="bib-category">Books Mentioned in the Episode</div>
+  <div class="bib-papers">
+
+    <div class="bib-entry">
+      <div class="bib-label">Sitchin &#183; <em>The 12th Planet</em> (1976)</div>
+      <p><strong>Sitchin, Z.</strong> (1976). <em>The 12th Planet</em>. Stein and Day. The foundational text for the Anunnaki hypothesis: that an alien civilisation from the planet Nibiru came to Earth for gold and seeded human civilisation.</p>
+      <p class="desc">Jesse and Joe discuss whether Sitchin&#8217;s Sumerian translations are legitimate. Jesse references Michael Heiser&#8217;s &#8220;Sitchin is Wrong&#8221; site as a counter but notes debunkers in ancient language translation are equally unreliable given how contested the field is. Jesse has shifted toward &#8220;maybe the Anunnaki are real.&#8221;</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=sitchin+12th+planet" target="_blank">&#128218; Amazon</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/The_12th_Planet" target="_blank">&#8599; Wikipedia</a>
+        <a class="link-pill" href="https://www.sitchiniswrong.com" target="_blank">&#8599; Sitchin Is Wrong &#8212; Michael Heiser</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">Swann &#183; <em>Penetration</em> (1998)</div>
+      <p><strong>Swann, I.</strong> (1998). <em>Penetration: The Question of Extraterrestrial and Human Telepathy</em>. Ingo Swann Books. Swann&#8217;s account of being recruited by a mysterious government handler (&#8220;Axelrod&#8221;) to remote view an alien base on the dark side of the Moon.</p>
+      <p class="desc">Jesse describes this as the lowest-probability Moon hypothesis but notes that multiple Stargate programme remote viewers reported structures on the lunar dark side. The book ends with Swann in a supermarket sensing that a woman in the produce aisle is an alien &#8212; which Jesse acknowledges is a credibility problem.</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=ingo+swann+penetration" target="_blank">&#128218; Amazon</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Ingo_Swann" target="_blank">&#8599; Ingo Swann &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">Cooper &#183; <em>Behold a Pale Horse</em> (1991)</div>
+      <p><strong>Cooper, M.W.</strong> (1991). <em>Behold a Pale Horse</em>. Light Technology Publishing. Conspiracy theory classic linking UFOs, secret societies, and shadow government. Cited in connection with John Lear&#8217;s disinformation network.</p>
+      <p class="desc">Jesse mentions this as part of the milieu around John Lear &#8212; Lear was writing &#8220;disinfo-style stuff with Bill Cooper.&#8221; Jesse treats this as evidence of Lear&#8217;s role as a disinformation vector rather than as substantive evidence in itself.</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=behold+a+pale+horse+cooper" target="_blank">&#128218; Amazon</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">Hastings &#183; <em>UFOs and Nukes</em> (2008)</div>
+      <p><strong>Hastings, R.</strong> (2008). <em>UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites</em>. AuthorHouse. 600+ pages of testimony from 167 Q-cleared ICBM security personnel, radar operators, and nuclear base employees reporting UAP incursions.</p>
+      <p class="desc">Jesse cites this as his strongest evidence base for the nuclear-UAP connection &#8212; not anecdotal but systematically collected testimony from people with the highest security clearances. Reports include tic-tacs, orbs, and saucers disabling nuclear warheads.</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=robert+hastings+UFOs+nukes" target="_blank">&#128218; Amazon</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Robert_Hastings" target="_blank">&#8599; Robert Hastings &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">Vall&#233;e &#183; <em>The Invisible College</em> (1975)</div>
+      <p><strong>Vallée, J.</strong> (1975). <em>The Invisible College: What a Group of Scientists Has Discovered About UFO Influences on the Human Race</em>. Dutton. Chapter nine describes UAPs as an autonomous control system that activates when humanity crosses certain technological thresholds.</p>
+      <p class="desc">Jesse cites chapter nine specifically: the idea that UAPs &#8220;light up a node&#8221; when humans engage in super-advanced research or transport certain materials &#8212; analogous to a cellular automaton network. The book also describes methods of &#8220;interfering with the control system&#8221; that Vallée considers extremely dangerous.</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=vallee+invisible+college" target="_blank">&#128218; Amazon</a>
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Jacques_Vall%C3%A9e" target="_blank">&#8599; Jacques Vallée &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">Vall&#233;e &#183; <em>Messengers of Deception</em> (1979)</div>
+      <p><strong>Vallée, J.</strong> (1979). <em>Messengers of Deception: UFO Contacts and Cults</em>. And/Or Press. Contains Vallée&#8217;s account of the Bob Lazar-adjacent claim that S4 workers were given a memory-impairing liquid &#8212; and Vallée&#8217;s own scepticism about Lazar&#8217;s account.</p>
+      <p class="desc">Jesse cites this in the Lazar section: Lazar himself admits he was told to drink a liquid that tasted like pine and caused memory lapses. Vallée is not a Lazar believer but this corroborates Lazar&#8217;s own public statements about the liquid. Jesse uses it to raise MK Ultra as the obvious use-case: erasing memories of a secret programme rather than implanting UFO beliefs.</p>
+      <div class="link-row">
+        <a class="link-pill amber" href="https://www.amazon.com/s?k=vallee+messengers+of+deception" target="_blank">&#128218; Amazon</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Intelligence / Disclosure documents -->
+  <div class="bib-category">Declassified Intelligence &amp; Government Documents</div>
+  <div class="bib-papers">
+
+    <div class="bib-entry">
+      <div class="bib-label">1952 &#183; Robertson Panel / Robertson Memo &#183; CIA</div>
+      <p>CIA-sponsored panel (January 1952) that produced the Robertson Report &#8212; the policy framework instructing the Air Force to debunk UAP sightings, reduce public interest, and monitor civilian UFO organisations as potential national security threats.</p>
+      <p class="desc">Jesse cites this as the declassified constitutional document for Project Blue Book &#8212; confirmation that Blue Book&#8217;s purpose was not investigation but public management. The 1971 Australian Turner memo references this directly, saying Blue Book was a PR front while real anti-gravity research continued in classified channels.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Robertson_Panel" target="_blank">&#8599; Robertson Panel &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1949 &#183; Emergency Inter-Agency Meeting on UAPs at Nuclear Sites</div>
+      <p>Declassified Air Force document from 1949 recording an emergency meeting between: Air Force Office of Special Investigations, Army Counter Intelligence Corps (CIC), FBI, and Office of Naval Intelligence &#8212; convened due to alarm at the frequency of UAP incursions at US nuclear installations.</p>
+      <p class="desc">Jesse cites this as the documented institutional confirmation that the nuclear-UAP connection was taken seriously at the highest interagency level in 1949 &#8212; not just pilot anecdote but a formal emergency multi-agency response.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/UFO_sightings_at_nuclear_facilities" target="_blank">&#8599; UAPs at nuclear facilities &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://www.theblackvault.com/documentarchive/" target="_blank">&#8599; Black Vault declassified archive</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1986 &#183; Congressional Budget &#183; &#8220;Aurora&#8221; $2 Billion Line Item</div>
+      <p>A $2 billion budget line item for a programme labelled &#8220;Aurora&#8221; appeared in the 1986 US congressional budget documents. The Aurora was a rumoured hypersonic reconnaissance aircraft (Mach 6+) succeeding the SR-71.</p>
+      <p class="desc">Jesse uses this as evidence that a classified hypersonic aircraft was in development around the time Bob Lazar worked at S4 &#8212; providing context for the advanced but conventionally-explainable technology that Lazar might have seen mixed with genuinely anomalous craft. Lazar himself mentions seeing the Aurora at the base. Oil rig engineers in the North Sea and aviation journalist Bill Sweetman (Jane&#8217;s Defence Weekly) independently described unusual aircraft matching the Aurora description.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Aurora_(aircraft)" target="_blank">&#8599; Aurora aircraft &#8212; Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">2001 &#183; Donald Rumsfeld &#183; $2 Trillion Missing from Pentagon (Sep 10)</div>
+      <p>Statement by Secretary of Defense Donald Rumsfeld on September 10, 2001 (the day before 9/11) that $2.3 trillion in Pentagon transactions could not be accounted for.</p>
+      <p class="desc">Jesse uses this as his scale reference for the possible black budget funding a breakaway civilisation programme &#8212; contrasting it with the $22 million AATIP budget that modern disclosure discussions focus on. His argument: $22 million is what they show you; the real programme is orders of magnitude larger and the Rumsfeld statement is a publicly documented instance of unaccountable Pentagon spending at that scale.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Unaccounted_Pentagon_spending" target="_blank">&#8599; Pentagon unaccounted funds</a>
+        <a class="link-pill" href="https://archive.org/details/rumsfeld-2-trillion" target="_blank">&#8599; C-SPAN archive &#8212; Rumsfeld statement</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Mars -->
+  <div class="bib-category">Mars &#8212; Primary Sources &amp; Research</div>
+  <div class="bib-papers">
+
+    <div class="bib-entry">
+      <div class="bib-label">Brandenberg &#183; Xenon-129 / Mars Nuclear Holocaust Hypothesis &#183; Published Papers</div>
+      <p><strong>Brandenberg, J.E.</strong> Multiple papers (2011&#8211;2016) arguing that the isotopic composition of the Martian atmosphere &#8212; specifically excess Xenon-129 and Argon-40 &#8212; is inconsistent with natural radioactive decay and consistent only with thermonuclear detonations of planetary scale.</p>
+      <p class="desc">Jesse emphasises that Brandenberg worked at Sandia National Labs and Lawrence Livermore &#8212; he has the credentials to read isotopic signatures. The hypothesis is a minority view in planetary science but has been peer-reviewed. Jesse interviewed Brandenberg on American Alchemy.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/John_Brandenberg" target="_blank">&#8599; John Brandenberg &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://arxiv.org/search/?query=brandenberg+mars+nuclear&searchtype=all" target="_blank">&#8599; arXiv search &#8212; Brandenberg Mars</a>
+      </div>
+    </div>
+
+    <div class="bib-entry">
+      <div class="bib-label">1990s &#183; CIA &#183; McMoneagle &#8220;Mars 1 Million BC&#8221; Remote Viewing Session (Declassified)</div>
+      <p>Declassified CIA document: a remote viewing session conducted by Joseph McMoneagle (Remote Viewer #001 in the Stargate programme) in which he was tasked with viewing Mars approximately one million years in the past. He described ruins, pyramidal structures, and tall humanoid beings.</p>
+      <p class="desc">Jesse notes the session is in the declassified Stargate records &#8212; the task itself (remote viewing ancient Mars) is documented government activity, regardless of what one makes of the results. McMoneagle is the most decorated remote viewer in the programme&#8217;s history.</p>
+      <div class="link-row">
+        <a class="link-pill" href="https://en.wikipedia.org/wiki/Joe_McMoneagle" target="_blank">&#8599; Joe McMoneagle &#8212; Wikipedia</a>
+        <a class="link-pill" href="https://www.cia.gov/readingroom/collection/stargate" target="_blank">&#8599; CIA Stargate Reading Room</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 </div>
 </main>

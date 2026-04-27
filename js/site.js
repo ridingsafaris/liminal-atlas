@@ -20,6 +20,7 @@ const NAV_LINKS = [
   { label: 'UAP',           href: '/categories/uap.html' },
   { label: 'Consciousness', href: '/categories/consciousness.html' },
   { label: 'Archive',       href: '/archive.html' },
+  { label: 'People',        href: '/people.html' },
 ];
 
 const FOOTER_COLS = [
