@@ -1,212 +1,287 @@
-<!DOC
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liminal Atlas — Knowledge at the Edge of the Map</title>
+  <meta name="description" content="Close readings of UAP, physics, consciousness and religion. Deep dives into the frontier of what we know.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .topbar {
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .topbar strong { color: var(--text-bright); font-weight: 800; }
+    .col-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--amber);
+      margin-bottom: 4px;
+    }
+    .col-head.books { border-bottom-color: var(--blue-bright); }
+    .col-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .col-label.books { color: var(--blue-bright); }
+    .col-count {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--text-dim);
+    }
+    a.card-row:hover div[style*="text-bright"] {
+      color: var(--blue-bright) !important;
+    }
+  </style>
+</head>
+<body data-theme="light">
 
+<div class="topbar">
+  <strong>Liminal Atlas</strong>
+  &nbsp;&middot;&nbsp; Knowledge at the edge of the map
+  &nbsp;&middot;&nbsp;
+  <a href="/search.html" style="color:var(--text-dim);text-decoration:none;">Search</a>
+  &nbsp;&middot;&nbsp;
+  <a href="/categories/uap.html" style="color:var(--text-dim);text-decoration:none;">UAP</a>
+  &nbsp;&middot;&nbsp;
+  <a href="/categories/physics.html" style="color:var(--text-dim);text-decoration:none;">Physics</a>
+  &nbsp;&middot;&nbsp;
+  <a href="/categories/religion.html" style="color:var(--text-dim);text-decoration:none;">Religion</a>
+  &nbsp;&middot;&nbsp;
+  <a href="/categories/consciousness.html" style="color:var(--text-dim);text-decoration:none;">Consciousness</a>
+  &nbsp;&middot;&nbsp;
+  <a href="/people.html" style="color:var(--text-dim);text-decoration:none;">People</a>
+  &nbsp;&middot;&nbsp;
+  <button onclick="document.body.dataset.theme=document.body.dataset.theme==='dark'?'light':'dark'" style="background:none;border:1px solid var(--border2);color:var(--text-dim);font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:3px;cursor:pointer;">&#9680; Dark</button>
+</div>
 
-<div class="news-wrap" style="max-width:1200px;margin:0 auto;padding:32px 24px 80px;">
+<div style="max-width:1200px;margin:0 auto;padding:32px 24px 80px;">
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
 
     <!-- LEFT: Video Close Reads -->
     <div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:2px solid var(--amber);margin-bottom:4px;">
-        <span style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);">&#9654; Video Close Reads</span>
-        <span style="font-family:var(--mono);font-size:9px;color:var(--text-dim);">10 episodes</span>
+      <div class="col-head">
+        <span class="col-label">&#9654; Video Close Reads</span>
+        <span class="col-count">10 episodes</span>
       </div>
     <a href="/articles/jorjani-nazi-breakaway-civilization.html" style="display:grid;grid-template-columns:120px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
       <div style="width:120px;height:68px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/ABw7EsWh2Us/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://img.youtube.com/vi/ABw7EsWh2Us/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
-        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:5px;">Jason Jorjani — "There&#39;s a Nazi Breakaway Civilisation with UFOs"</div>
-        <div style="font-size:12px;color:var(--text-dim);line-height:1.55;margin-bottom:6px;">Part II: Die Glocke, Magenta crash, Roswell as Nazi PSYOP, Operation Paperclip &amp; Gehlen Organisation, ODESSA / the Spider, Martin Borman in Argentina, Betty Hill&#39;s Nazi face, Thule Society / Antarctic Atlantis, Thousand-Year Reich as polemos, the Magic Theater of Cruelty.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Jesse Michels</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Jason Jorjani — "There's a Nazi Breakaway Civilisation with UFOs"</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:5px;">Die Glocke, Magenta crash, Roswell as Nazi PSYOP, Gehlen Organisation, ODESSA / the Spider, Martin Borman in Argentina, Betty Hill's Nazi face, Thule / Antarctic Atlantis, Thousand-Year Reich as polemos, the Magic Theater of Cruelty.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Jesse Michels</div>
       </div>
     </a>
-    <a href="/articles/townsend-brown-documentary.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/RTEWLSTyUic/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/townsend-brown-documentary.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/RTEWLSTyUic/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Documentary · 109 min</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Documentary · 109 min</div>
       </div>
     </a>
-    <a href="/articles/john-brandenburg-mars-nuclear-war.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/p0S0BfoZy0w/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/john-brandenburg-mars-nuclear-war.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/p0S0BfoZy0w/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Dr. John Brandenburg — Life on Mars Destroyed by Ancient Nuclear War</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Jesse Michels · 106 min</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Dr. John Brandenburg — Life on Mars Destroyed by Ancient Nuclear War</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Jesse Michels · 106 min</div>
       </div>
     </a>
-    <a href="/articles/jorjani-american-alchemy.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/EzPmG_7WhXc/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/jorjani-american-alchemy.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/EzPmG_7WhXc/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Sep 2025</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Sep 2025</div>
       </div>
     </a>
-    <a href="/articles/nsa-director-ufo.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/jMCavr3dVP0/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/nsa-director-ufo.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/jMCavr3dVP0/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Former NSA Director Breaks Silence on UAPs</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · 2025</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Former NSA Director Breaks Silence on UAPs</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · 2025</div>
       </div>
     </a>
-    <a href="/articles/catherine-fitts-breakaway.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/piDqTbBwWRM/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/catherine-fitts-breakaway.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/piDqTbBwWRM/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Catherine Austin Fitts — The $21 Trillion Breakaway Civilisation</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Danny Jones Podcast · 2025</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Catherine Austin Fitts — The $21 Trillion Breakaway Civilisation</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Danny Jones Podcast · 2025</div>
       </div>
     </a>
-    <a href="/articles/jre-jesse-michels.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/jre-jesse-michels.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Jesse Michels on The Joe Rogan Experience #2331</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">JRE #2331 · 2025</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Jesse Michels on The Joe Rogan Experience #2331</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">JRE #2331 · 2025</div>
       </div>
     </a>
-    <a href="/articles/pais-rossi-hard-truths.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/jMCavr3dVP0/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/pais-rossi-hard-truths.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/jMCavr3dVP0/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Hard Truths · Dec 2024</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Hard Truths · Dec 2024</div>
       </div>
     </a>
-    <a href="/articles/sal-pais-close-reading.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/EzPmG_7WhXc/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/sal-pais-close-reading.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/EzPmG_7WhXc/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Dr. Salvatore Pais — "Navy Scientist: A Cosmic War Is Happening"</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · 2024</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Dr. Salvatore Pais — "Navy Scientist: A Cosmic War Is Happening"</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · 2024</div>
       </div>
     </a>
-    <a href="/articles/dave-rossi-close-reading.html" style="display:grid;grid-template-columns:80px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:80px;height:46px;border-radius:3px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
-        <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+    <a href="/articles/dave-rossi-close-reading.html" style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
+      <div style="width:80px;height:46px;border-radius:4px;overflow:hidden;flex-shrink:0;background:var(--surface2);">
+        <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/mqdefault.jpg" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
       </div>
       <div>
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Feb 2025</div>
+        <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
+        
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">American Alchemy · Feb 2025</div>
       </div>
     </a>
     </div>
 
     <!-- RIGHT: Book & Document Close Reads -->
     <div>
-      <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:2px solid var(--blue-bright);margin-bottom:4px;">
-        <span style="font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue-bright);">&#128218; Book &amp; Document Close Reads</span>
-        <span style="font-family:var(--mono);font-size:9px;color:var(--text-dim);">9 entries</span>
+      <div class="col-head books">
+        <span class="col-label books">&#128218; Book &amp; Document Close Reads</span>
+        <span class="col-count">9 entries</span>
       </div>
     <a href="/articles/behold-a-pale-horse.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">&#128218;</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
-        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">William Cooper — Behold a Pale Horse (1991)</div>
-        <div style="font-size:12px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">The underground bible of the conspiracy world: MJ-12, the Eisenhower alien treaty, Silent Weapons for Quiet Wars, FEMA emergency powers, the AIDS bioweapon claim, the Protocols chapter, and the 9/11 prediction — with 27 subsequent-view annotations on what has since been confirmed, refuted, or contextualised.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading &#183; 1991</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.08);border:1px solid rgba(168,85,247,0.25);display:flex;align-items:center;justify-content:center;font-size:18px;">📚</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+        <div style="font-size:13px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">William Cooper — Behold a Pale Horse (1991)</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">MJ-12, the Eisenhower alien treaty, Silent Weapons for Quiet Wars, FEMA emergency powers, the AIDS bioweapon claim, the Protocols chapter, and the 9/11 prediction — with 27 subsequent-view annotations.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1991</div>
       </div>
     </a>
     <a href="/articles/nicap-cia-ufo-evidence.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📁</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">CIA vs. NICAP — The UFO Evidence & CIA Monitoring of Civilian Oversight (1956–1969)</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">NICAP's own 1964 congressional brief filed in CIA intelligence databases. Hillenkoetter (first CIA Director) on NICAP's board demanding disclosure. Col. Bryan III — CIA Psych Warfare Staff founder — eventually runs NICAP into the ground.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Primary Source · CIA FOIA · Declassified 2001</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);display:flex;align-items:center;justify-content:center;font-size:18px;">📁</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">CIA vs. NICAP — The UFO Evidence & CIA Monitoring (1956–1969)</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">NICAP's own 1964 congressional brief filed in CIA intelligence databases. Hillenkoetter (first CIA Director) on NICAP's board demanding disclosure.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Primary Source · CIA FOIA · Declassified 2001</div>
       </div>
     </a>
     <a href="/articles/australian-jio-ufo-file.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📁</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">14-year SECRET file: weapon-systems analysis of UFOs, sighting reports forwarded to CIA, anti-gravity programme at UNC Chapel Hill, and 41 declassified reports. 16 sub-documents, interactive timeline.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Primary Source · Declassified · The Black Vault</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);display:flex;align-items:center;justify-content:center;font-size:18px;">📁</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">14-year SECRET file: weapon-systems analysis, sighting reports forwarded to CIA, anti-gravity programme at UNC Chapel Hill. 16 sub-documents, interactive timeline.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Primary Source · Declassified · The Black Vault</div>
       </div>
     </a>
     <a href="/articles/bramley-gods-of-eden.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">William Bramley — The Gods of Eden</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">The book Jorjani cites for the Black Plague bioweapon claim. Brotherhood of the Snake, Custodians, and a revisionist history of human conflict as alien management.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1989</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">William Bramley — The Gods of Eden</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">The book Jorjani cites for the Black Plague bioweapon claim. Brotherhood of the Snake, Custodians, and a revisionist history of human conflict as alien management.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1989</div>
       </div>
     </a>
     <a href="/articles/jorjani-american-alchemy.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Jason Jorjani — American Alchemy (Close Reading)</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">Full chapter-by-chapter close read of Jorjani's argument that Nordic hyperdimensionals engineered humanity and seed every major religion.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Jason Jorjani — American Alchemy (Book Close Reading)</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">Full chapter-by-chapter close read of Jorjani's argument that Nordic hyperdimensionals engineered humanity and seeded every major religion.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading</div>
       </div>
     </a>
     <a href="/articles/yates-rosicrucian-enlightenment.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Frances Yates — The Rosicrucian Enlightenment</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">How John Dee's Elizabethan occult philosophy migrated to the Palatinate and sparked the Thirty Years' War. The Rosicrucian manifestos as political programme.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1972</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Frances Yates — The Rosicrucian Enlightenment</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">How John Dee's Elizabethan occult philosophy migrated to the Palatinate and sparked the Thirty Years' War.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1972</div>
       </div>
     </a>
     <a href="/articles/yates-occult-philosophy.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Frances Yates — The Occult Philosophy in the Elizabethan Age</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">20 chapters tracking the Hermetic-Cabalist tradition from Ramon Lull to John Dee to Shakespeare's Prospero.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1979</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Frances Yates — The Occult Philosophy in the Elizabethan Age</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">20 chapters tracking the Hermetic-Cabalist tradition from Ramon Lull to John Dee to Shakespeare's Prospero.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1979</div>
       </div>
     </a>
     <a href="/articles/swedenborg-arcana-coelestia.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Swedenborg — Arcana Coelestia Vol. 1</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">The text Kant read in full and then built a philosophy to contain. Verse-by-verse exegesis of Genesis with interwoven accounts of angelic society.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1749</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(34,197,94,0.12);color:#4ade80;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Swedenborg — Arcana Coelestia Vol. 1</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">The text Kant read in full and then built a philosophy to contain. Verse-by-verse exegesis of Genesis with interwoven accounts of angelic society.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1749</div>
       </div>
     </a>
     <a href="/articles/swedenborg-earths-in-universe.html" style="display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;align-items:start;">
-      <div style="width:40px;height:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📖</div>
-      <div style="flex:1;">
-        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
-        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:4px;">Swedenborg — The Earths in the Universe</div>
-        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:4px;">Mercury's telepathic interstellar travellers, Mars's celestial communists, and Saturn's naked philosophers. The 18th century's most detailed account of off-world civilisations.</div>
-        <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1758</div>
+      <div style="width:40px;height:40px;min-width:40px;border-radius:4px;background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;"><span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:#f59e0b;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+        <div style="font-size:12.5px;font-weight:700;color:var(--text-bright);line-height:1.35;margin-bottom:3px;">Swedenborg — The Earths in the Universe</div>
+        <div style="font-size:11.5px;color:var(--text-dim);line-height:1.55;margin-bottom:3px;">Mercury's telepathic interstellar travellers, Mars's celestial communists, and Saturn's naked philosophers. The 18th century's most detailed account of off-world civilisations.</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.06em;">Book Close Reading · 1758</div>
       </div>
     </a>
     </div>
 
   </div>
-
 </div>
-
 
 <script src="/js/site.js"></script>
 </body>
