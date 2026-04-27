@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William P. Lear — Profile | Liminal Atlas</title>
+  <meta name="description" content="William P. Lear: Aviation Pioneer   Chairman, Lear Inc.   Anti-Gravity Research Advocate">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .profile-wrap{max-width:900px;margin:0 auto;padding:48px 24px 100px;}
+    .profile-header{display:grid;grid-template-columns:140px 1fr;gap:32px;align-items:start;padding-bottom:36px;border-bottom:1px solid var(--border);margin-bottom:36px;}
+    .profile-photo{width:140px;height:140px;border-radius:8px;object-fit:cover;border:1px solid var(--border2);}
+    .profile-photo-placeholder{width:140px;height:140px;border-radius:8px;background:var(--surface2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:52px;}
+    .profile-name{font-size:1.9rem;font-weight:800;color:var(--text-bright);letter-spacing:-0.02em;margin-bottom:5px;}
+    .profile-role{font-family:var(--font-mono);font-size:10px;color:var(--blue-bright);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;line-height:1.7;}
+    .profile-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+    .profile-tag{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid var(--border2);color:var(--text-dim);}
+    .profile-links{display:flex;gap:7px;flex-wrap:wrap;}
+    .profile-link{font-family:var(--font-mono);font-size:10px;padding:4px 11px;border-radius:4px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-dim);text-decoration:none;transition:all 0.15s;}
+    .profile-link:hover{border-color:var(--blue-bright);color:var(--blue-bright);}
+    .bio-section{margin-bottom:36px;}
+    .bio-h{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .bio-p{font-size:14.5px;line-height:1.8;color:var(--text);margin-bottom:12px;}
+    .bio-p strong{color:var(--text-bright);}
+    .tab-bar{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:20px;flex-wrap:wrap;}
+    .tab-btn{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:10px 18px;border:none;background:none;color:var(--text-dim);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.15s;}
+    .tab-btn:hover{color:var(--text-bright);}
+    .tab-btn.active{color:var(--blue-bright);border-bottom-color:var(--blue-bright);}
+    .tab-panel{display:none;}
+    .tab-panel.active{display:block;}
+    .ep-list{display:flex;flex-direction:column;gap:2px;}
+    .ep-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:13px 16px;align-items:center;background:var(--surface2);border:1px solid var(--border2);text-decoration:none;border-radius:4px;transition:border-color 0.15s;}
+    a.ep-row:hover{border-color:var(--blue-bright);}
+    .ep-title{font-size:13.5px;font-weight:600;color:var(--text-bright);line-height:1.35;margin-bottom:3px;}
+    .ep-sub{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
+    .ep-date{font-family:var(--font-mono);font-size:10px;color:var(--amber);white-space:nowrap;}
+    .role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+    .role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+    .role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+    .role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+    .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+    .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
+    @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
+  </style>
+</head>
+<body>
+<div class="profile-wrap">
+  <div class="profile-header">
+    <div class="profile-photo-placeholder">&#128100;</div>
+    <div>
+      <div class="profile-name">William P. Lear</div>
+      <div class="profile-role">Aviation Pioneer &#183; Chairman, Lear Inc. &#183; Anti-Gravity Research Advocate</div>
+      <div class="profile-tags"><span class="profile-tag">UAP</span><span class="profile-tag">Physics</span></div>
+      <div class="profile-links">
+        <a class="profile-link" href="https://en.wikipedia.org/wiki/Bill_Lear" target="_blank">&#8599; More info</a>
+        <a class="profile-link" href="/people.html">&#8592; All People</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Biography</div>
+    <p class="bio-p">American aviation pioneer and inventor (Learjet, autopilot, car radio). The Australian JIO chronology records his public statement of 2 February 1955: &#8220;because of flying saucers, serious efforts were being made in the U.S. to prove the existence of anti-gravitational forces.&#8221; This is cited alongside the US government&#8217;s simultaneous funding of six Gravity Research Centres &#8212; Princeton, MIT, Purdue, University of Indiana, University of North Carolina, and the Babson Gravity Research Institute &#8212; as evidence that the US was taking UAP propulsion seriously at the highest industrial and academic levels while publicly denying any interest.</p>
+  </div>
+
+  <div class="bio-section">
+    <div class="bio-h">Appearances on Liminal Atlas</div>
+    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-figure-william-lear"><div class="ep-list">        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
+          <div>
+            <div class="ep-title"><span class="role-badge role-figure">Figure</span>Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)</div>
+            <div class="ep-sub">Liminal Atlas Primary Source</div>
+          </div>
+          <div class="ep-date">1971</div>
+        </a></div></div>
+  </div>
+</div>
+<script src="/js/site.js"></script>
+<script>
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var bar = btn.closest('.tab-bar');
+    var section = btn.closest('.bio-section');
+    bar.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    section.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+    btn.classList.add('active');
+    section.querySelector('#tab-' + btn.dataset.tab + '-william-lear').classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
