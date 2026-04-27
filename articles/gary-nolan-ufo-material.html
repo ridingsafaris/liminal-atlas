@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Garry Nolan &#8212; Actual UFO Material With Stanford Scientist | Liminal Atlas</title>
+  <meta name="description" content="Close reading of Jesse Michels&#8217; interview with Stanford immunologist Dr. Garry Nolan: the CIA visit, caudate-putamen neurological findings, Ub&#225; Tuba isotope anomalies, the bismuth-magnesium Roswell sample, and the Vall&#233;e-Pasulka hypothesis.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+.article-hero {
+  position: relative; z-index: 1;
+  padding: 72px 24px 56px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+.article-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; letter-spacing: -0.03em;
+  color: var(--text-bright); line-height: 1.1; margin-bottom: 20px;
+}
+.article-hero h1 span { color: var(--blue-bright); }
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);
+  letter-spacing: 0.06em;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 12px 0; margin-bottom: 24px;
+}
+.hero-intro {
+  font-size: 17px; line-height: 1.8;
+  color: var(--text); max-width: 720px; margin-bottom: 24px;
+}
+.hero-intro strong { color: var(--text-bright); font-weight: 600; }
+.speakers-section {
+  position: relative; z-index: 1;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
+}
+.speakers-inner { max-width: var(--max-width); margin: 0 auto; }
+.speakers-label {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.25em; color: var(--blue);
+  text-transform: uppercase; margin-bottom: 24px;
+}
+.speakers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.speaker-card {
+  background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 20px;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.speaker-photo {
+  width: 72px; height: 72px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim); flex-shrink: 0;
+}
+.speaker-photo-placeholder {
+  width: 72px; height: 72px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 26px;
+}
+.speaker-name { font-size: 15px; font-weight: 700; color: var(--text-bright); margin-bottom: 2px; }
+.speaker-role {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.08em; color: var(--blue-bright);
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.speaker-bio { font-size: 13px; line-height: 1.65; color: var(--text-dim); margin-bottom: 10px; }
+.speaker-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.toc-section {
+  position: relative; z-index: 1;
+  padding: 32px 24px;
+  max-width: var(--max-width); margin: 0 auto;
+}
+.article-body {
+  position: relative; z-index: 1;
+  max-width: var(--max-width); margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.person-card-photo {
+  background: var(--surface); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 18px 22px; margin: 20px 0;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.person-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim);
+  flex-shrink: 0; background: var(--surface2);
+}
+.person-avatar-placeholder {
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+}
+.person-card-content { flex: 1; min-width: 0; }
+.person-card-content .person-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px;
+}
+.person-card-content p { font-size: 14px; line-height: 1.7; }
+@media (max-width: 640px) {
+  .speakers-grid { grid-template-columns: 1fr; }
+  .speaker-card { flex-direction: column; }
+  .person-card-photo { flex-direction: column; }
+}
+
+/* ── Enhancement styles ── */
+
+/* Claim status badges */
+.claim-verified   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-disputed   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-unsupported{ display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-classified { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+
+/* Claim key legend */
+.claim-legend { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim); }
+.claim-legend span { display:flex;align-items:center;gap:6px; }
+
+/* Glossary term link */
+.gterm { color:var(--blue-bright);text-decoration:none;border-bottom:1px dashed rgba(96,165,250,0.4);cursor:help;font-weight:500; }
+.gterm:hover { border-bottom-color:var(--blue-bright); }
+
+/* Episode timeline bar */
+.ep-timeline { position:relative;margin:0 0 32px;padding:20px 0 8px; }
+.ep-timeline-track { position:relative;height:6px;background:var(--surface2);border-radius:3px;margin:0 12px; }
+.ep-timeline-fill { position:absolute;left:0;top:0;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blue-bright)); }
+.ep-timeline-markers { position:relative;height:32px; }
+.ep-timeline-marker { position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px; }
+.ep-marker-dot { width:8px;height:8px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);margin-top:-4px; }
+.ep-marker-label { font-family:var(--font-mono);font-size:8px;color:var(--text-dim);letter-spacing:0.05em;white-space:nowrap; }
+.ep-timeline-label { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;padding:0 12px; }
+
+/* Key claims box */
+.key-claims { background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0; }
+.key-claims-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px; }
+.key-claims ol { margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px; }
+.key-claims li { font-size:13.5px;line-height:1.6;color:var(--text); }
+
+/* Glossary section */
+.glossary-section { border-top:2px solid var(--border);padding-top:40px;margin-top:16px; }
+.glossary-grid { display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px; }
+.glossary-entry { background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px; }
+.glossary-entry:hover { border-color:var(--blue-dim); }
+.g-term { font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);letter-spacing:0.05em;margin-bottom:6px;text-transform:uppercase; }
+.g-def { font-size:13px;line-height:1.65;color:var(--text-dim); }
+.g-status { margin-top:6px; }
+.g-chapters { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);margin-top:4px; }
+
+/* Concept thread index */
+.thread-index { background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px; }
+.thread-index-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px; }
+.thread-row { display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px; }
+.thread-row:last-child { border-bottom:none; }
+.thread-concept { font-weight:600;color:var(--text-bright);min-width:220px;flex-shrink:0; }
+.thread-links { display:flex;flex-wrap:wrap;gap:5px; }
+.thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
+.thread-ch:hover { border-color:var(--blue-bright); }
+
+/* Speaker confidence on dialogue lines */
+.d-confidence { font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block; }
+.conf-fact { background:rgba(34,197,94,0.1);color:#22c55e; }
+.conf-spec { background:rgba(245,158,11,0.1);color:#f59e0b; }
+.conf-classified { background:rgba(139,92,246,0.1);color:#a78bfa; }
+.conf-declined { background:rgba(239,68,68,0.1);color:#ef4444; }
+
+/* "What mainstream physics says" sidebars */
+.mainstream-box { background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0; }
+.mainstream-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px; }
+.mainstream-box p { font-size:13px;line-height:1.7;margin-bottom:6px; }
+.mainstream-box p:last-child { margin-bottom:0; }
+
+@media(max-width:640px){
+  .glossary-grid{grid-template-columns:1fr;}
+  .thread-concept{min-width:140px;}
+}
+
+    .wiki-link { color: #93c5fd !important; font-size: inherit; font-family: inherit; font-weight: inherit; text-decoration: underline; text-decoration-color: rgba(147,197,253,0.4); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+    .wiki-link:hover { color: #bfdbfe !important; text-decoration-color: #bfdbfe; }
+  
+  .wiki-link {color:#93c5fd!important;font-size:inherit;font-family:inherit;font-weight:inherit;text-decoration:underline;text-decoration-color:rgba(147,197,253,0.4);text-underline-offset:2px;}
+  .wiki-link:hover {color:#bfdbfe!important;}
+  </style>
+</head>
+<body>
+<main data-pagefind-body>
+
+<div class="article-hero fade-up">
+  <div style="margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;">
+    <span class="cat-pill uap">UAP</span>
+    <span class="cat-pill physics">Physics</span>
+    <span class="cat-pill consciousness">Consciousness</span>
+  </div>
+  <div class="badge" style="margin-bottom:20px;">Video Close Reading &#183; American Alchemy &#183; 2023</div>
+  <h1>Dr. Garry Nolan &#8212;<br><span>Actual UFO Material<br>With Stanford Scientist</span></h1>
+  <div class="hero-meta">
+    <span>Channel: American Alchemy</span>
+    <span>Host: Jesse Michels</span>
+    <span>Guest: Dr. Garry Nolan, Stanford</span>
+    <span>Duration: ~26 min &#183; 5 chapters</span>
+  </div>
+  <p class="hero-intro">Stanford immunologist and geneticist <strong>Dr. Garry Nolan</strong> describes being approached by the CIA to analyse MRI scans of DoD and intelligence personnel with UAP encounters, discovers a consistent neurological signature in the <strong>caudate&#8211;putamen region</strong> of the basal ganglia, then walks through his mass spectrometry analysis of physical UAP material &#8212; including a Brazilian fragment with <strong>anomalous magnesium isotope ratios</strong> that could not occur naturally, and a bismuth&#8211;magnesium layered sample allegedly from Roswell whose structure miniaturises terahertz waveguides by a factor of thirty. The episode closes with Nolan&#8217;s framing of the <strong>Vall&#233;e&#8211;Pasulka hypothesis</strong>: that UAP have always been present and are only interpreted through the available cultural vocabulary of the time.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="https://www.youtube.com/watch?v=dzTZbSNsKV8" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>
+    <a class="btn btn-ghost" href="https://thesolfoundation.org/" target="_blank" rel="noopener">&#8599; The Sol Foundation</a>
+    <a class="btn btn-ghost" href="https://web.stanford.edu/group/nolan/" target="_blank" rel="noopener">&#8599; Nolan Lab Stanford</a>
+  </div>
+</div>
+
+<div style="position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:32px 24px 0;">
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);background:var(--surface2);">
+    <iframe
+      src="https://www.youtube.com/embed/dzTZbSNsKV8"
+      title="Actual UFO Material With Stanford Scientist ft. Garry Nolan"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
+</div>
+
+<div class="speakers-section fade-up-1">
+  <div class="speakers-inner">
+    <div class="speakers-label">About the Speakers</div>
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <div class="speaker-photo-placeholder" style="background:rgba(59,130,246,0.15);font-size:22px;">&#129516;</div>
+        <div>
+          <div class="speaker-name">Dr. Garry Nolan</div>
+          <div class="speaker-role">Guest &#183; Stanford Professor of Pathology &#183; UAP Materials Analyst</div>
+          <p class="speaker-bio">Rachford &amp; Carlota A. Harris Professor in the Department of Pathology at Stanford School of Medicine. PhD genetics, Stanford (1989); postdoc under Nobel laureate David Baltimore, MIT. Published 300+ research articles, holds 40+ US patents, founded 8 biotech companies (BINA sold to Roche 2014 for $107M; Akoya Biosciences). Named one of Stanford's top 25 inventors. Co-developed CyTOF single-cell mass cytometry and CODEX spatial tissue analysis. Since ~2019, has publicly conducted materials analysis and brain imaging research related to UAP under CIA and DoD facilitation. Co-founder and Executive Director of the Board at <strong>The Sol Foundation</strong> (2023), a UAP research nonprofit. Has publicly stated 100% probability that non-human intelligence has visited Earth.</p>
+          <div class="speaker-links">
+            <a href="https://web.stanford.edu/group/nolan/" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Nolan Lab</a>
+            <a href="https://thesolfoundation.org/" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Sol Foundation</a>
+            <a href="https://x.com/garrypnolan" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#120143; @GarryPNolan</a>
+            <a href="https://en.wikipedia.org/wiki/Garry_Nolan" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Wikipedia</a>
+            <a href="https://profiles.stanford.edu/garry-nolan" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Stanford Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <img class="speaker-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.outerHTML='<div class=&quot;speaker-photo-placeholder&quot;>&#127908;</div>'">
+        <div>
+          <div class="speaker-name">Jesse Michels</div>
+          <div class="speaker-role">Host &#183; American Alchemy</div>
+          <p class="speaker-bio">Filmmaker and podcast host. Creator of <strong>American Alchemy</strong>, exploring consciousness, frontier science, and UAP through long-form interviews with scientists, whistleblowers, and researchers on the edge of mainstream acceptance.</p>
+          <div class="speaker-links">
+            <a href="https://www.youtube.com/@AmericanAlchemyMedia" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; American Alchemy</a>
+            <a href="https://x.com/jesse_michels" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#120143; @jesse_michels</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="toc-section">
+  <div class="toc-inner">
+    <div class="toc-label">Contents &#8212; 5 chapters</div>
+    <div class="toc-grid">
+      <a href="#ch1"><span class="ch-num" style="min-width:44px;">00:00</span>Introduction &#8212; CIA Visit &amp; the Invisible College</a>
+      <a href="#ch2"><span class="ch-num" style="min-width:44px;">05:10</span>The Caudate&#8211;Putamen Finding</a>
+      <a href="#ch3"><span class="ch-num" style="min-width:44px;">09:10</span>UAP Materials Analysis &#8212; Vall&#233;e&#8217;s Archive</a>
+      <a href="#ch4"><span class="ch-num" style="min-width:44px;">13:50</span>Ub&#225; Tuba Sample &#8212; Anomalous Isotope Ratios</a>
+      <a href="#ch5"><span class="ch-num" style="min-width:44px;">19:15</span>The Bigger Picture &#8212; What Are They &amp; Why Here?</a>
+    </div>
+  </div>
+</div>
+
+<div class="article-body">
+<div class="claim-legend"><strong style="color:var(--text-bright);margin-right:6px;">Claim status:</strong><span><span class="claim-verified">&#10003; Verified</span> Accepted / independently documented</span><span><span class="claim-disputed">&#9651; Disputed</span> In serious circulation but contested</span><span><span class="claim-unsupported">&#10007; Unverifiable / First-hand</span> First-hand claim, not independently verified</span></div>
+<div class="chapter" id="ch1">
+  <div class="ch-header"><span class="ch-num">CH 01</span><span class="ch-time">00:00 &#8211; 05:10</span></div>
+  <h2>Introduction &#8212; The Invisible College & the CIA Visit</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);"><div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div><p>Jesse opens at the Nolan Research Lab at Stanford, framing Nolan as rare: a credentialed mainstream scientist who publicly studies UAP. Nolan describes how his involvement began when the CIA came to his office and told him he had built the best single-cell analysis tool (CyTOF/CODEX). They introduced him to what insiders call the <strong>Invisible College</strong> &#8212; Jacques Vall&#233;e, Hal Puthoff, Eric Davis, Robert Bigelow, and Colm Kelleher. The CIA showed him MRI scans of intelligence and DoD personnel who had had UAP interactions and wanted to know if anything was neurologically distinct about them. Nolan agreed to look.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Invisible College &#183; CyTOF / CODEX single-cell analysis &#183; Jacques Vall&#233;e &#183; Hal Puthoff &#183; Eric Davis &#183; Robert Bigelow &#183; Colm Kelleher &#183; AATIP</div></div>
+  
+  <div class="key-claims"><div class="key-claims-label">&#9670; Key checkable claims</div><ol><li>The CIA approached Nolan unsolicited at Stanford and showed him MRI scans of DoD and intelligence personnel with UAP encounters. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span></li><li>Nolan had built "the best tool" for single-cell analysis (CyTOF). <span class="claim-verified">&#10003; Verified</span> &#8212; CyTOF and CODEX are real, peer-reviewed, commercialised technologies originating in the Nolan Lab.</li><li>The "Invisible College" &#8212; a loose network of scientists privately studying UAP &#8212; includes Vall&#233;e, Puthoff, Davis, Bigelow, Kelleher. <span class="claim-verified">&#10003; Verified</span> &#8212; all are publicly documented UAP researchers.</li><li>The CIA specifically selected Nolan because of his analytical tools, not his UAP interest. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span></li></ol></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Hal Puthoff &amp; the Bigelow / DIA programme</div><p>Puthoff's involvement with Robert Bigelow's NIDS and the subsequent DIA-funded AATIP programme is documented in the New York Times (2017) and confirmed by Puthoff himself in public testimony. Colm Kelleher co-authored <em>Hunt for the Skinwalker</em> (2005) about Bigelow's Skinwalker Ranch research.</p></div><div class="mainstream-box" style="border-left-color:#3b82f6;"><div class="mainstream-label" style="color:#3b82f6;">&#9632; Contextualises &#8212; The "Invisible College" concept</div><p>The term "Invisible College" for informal UAP research networks was coined by Jacques Vall&#233;e in his 1975 book <em>The Invisible College</em>, describing researchers who work outside official channels. Nolan's use of the term here confirms this network remains active and connected to government intelligence.</p></div>
+</div>
+<div class="chapter" id="ch2">
+  <div class="ch-header"><span class="ch-num">CH 02</span><span class="ch-time">05:10 &#8211; 09:10</span></div>
+  <h2>The Caudate&#8211;Putamen Finding &#8212; A Neurological Signature for UAP Contact</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);"><div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div><p>Nolan describes what he found when he looked at the MRIs: an area of the brain between the head of the <strong>caudate nucleus</strong> and the <strong>putamen</strong> that showed increased neural density in nearly all the individuals who had reported UAP contact. This region is part of the basal ganglia and is associated with intuitive decision-making &#8212; the kind of rapid, pattern-matching snap judgement required of fighter pilots. When Nolan checked family members of the subjects, the same enlarged structure appeared &#8212; indicating a <strong>genetic</strong>, not acquired, component. He frames two hypotheses: either this structure predisposes people to <em>perceive</em> UAP that others cannot, or post-contact trauma causes the enlargement. He favours the first: the structure is a filter-widener, allowing the brain to access a broader range of perceptual input that is normally suppressed.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: caudate nucleus &#183; putamen &#183; basal ganglia &#183; neural density &#183; intuition &#183; shogi masters &#183; autism &#183; schizophrenia &#183; sensory reduction hypothesis</div></div>
+  <div class="dialogue" style="border-left-color:#a78bfa;"><div class="d-line"><div class="d-text" style="font-style:italic;font-size:15px;line-height:1.8;">&#8220;Our senses are a filter to stop our brains from being overwhelmed with reality. What we see is a limited aspect of everything around us. The sensory organs are not productive &#8212; they're reductive.&#8221;</div></div><div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-top:6px;">&#8212; Nolan, 07:19</div></div>
+  <div class="key-claims"><div class="key-claims-label">&#9670; Key checkable claims</div><ol><li>Multiple individuals with documented UAP contact showed enlarged caudate-putamen neural density on MRI, compared to controls. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span> &#8212; Nolan describes unpublished / CIA-facilitated research.</li><li>The finding was replicated in family members of UAP contactees, suggesting a genetic component. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span></li><li>Shogi (Japanese chess) grandmasters show caudate-putamen activation during intuitive "brilliant" moves. <span class="claim-verified">&#10003; Verified</span> &#8212; This is documented in published neuroscience research (Wan et al., 2011, <em>Science</em>).</li><li>Schizophrenia and autism involve dysfunction of the same basal ganglia region. <span class="claim-verified">&#10003; Verified</span> &#8212; Consistent with published psychiatric neuroscience.</li></ol></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Caudate-putamen &amp; intuition (Wan et al., 2011)</div><p>Nolan's shogi master example is real. A 2011 <em>Science</em> paper (Wan et al.) used fMRI to show that expert shogi players showed distinct activation of the caudate nucleus during intuitive move selection, compared to deliberate calculation. This is the specific finding Nolan references.</p></div><div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed &#8212; UAP-specific MRI findings remain unpublished</div><p>The caudate-putamen UAP finding has not been published in a peer-reviewed journal as of 2025. Without publication, independent replication is impossible. Nolan has referenced this work in multiple public appearances since ~2021 but has not yet produced the paper. The claim is scientifically plausible but unverified.</p></div><div class="mainstream-box" style="border-left-color:#3b82f6;"><div class="mainstream-label" style="color:#3b82f6;">&#9632; Contextualises &#8212; The transmission / filter theory of consciousness</div><p>Nolan's model &#8212; that sensory organs are reductive filters on a richer underlying reality &#8212; is a version of the "transmission theory" of mind proposed by William James in 1898 and revisited by Aldous Huxley in <em>The Doors of Perception</em> (1954). It has contemporary defenders in philosophy of mind (Bernardo Kastrup, Donald Hoffman) but is not the mainstream scientific position.</p></div>
+</div>
+<div class="chapter" id="ch3">
+  <div class="ch-header"><span class="ch-num">CH 03</span><span class="ch-time">09:10 &#8211; 13:50</span></div>
+  <h2>UAP Materials Analysis &#8212; Jacques Vall&#233;e&#8217;s Sample Archive</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);"><div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div><p>Nolan explains how he came to be the primary scientific analyst of potential UAP materials. <strong>Jacques Vall&#233;e</strong> &#8212; whose background Nolan briefly summarises (NASA Mars map, early ARPANET with Doug Engelbart, model for the French scientist in <em>Close Encounters</em>, originator of the multi-dimensional hypothesis) &#8212; has spent decades collecting physical samples sent to him by crash witnesses around the world. Vall&#233;e publishes his address online so witnesses can mail him parts. He has no lab. Nolan does. So Vall&#233;e sends samples to Nolan for mass spectrometry analysis using a <strong>NanoSIMS</strong> (secondary ion mass spectrometer) in Stanford's engineering department, which can resolve individual isotopic ratios at nanometre scale.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Jacques Vall&#233;e &#183; NanoSIMS &#183; secondary ion mass spectrometry &#183; isotopic ratios &#183; ARPANET &#183; multi-dimensional hypothesis</div></div>
+  
+  <div class="key-claims"><div class="key-claims-label">&#9670; Key checkable claims</div><ol><li>Jacques Vall&#233;e co-developed an early computerised map of Mars at NASA. <span class="claim-verified">&#10003; Verified</span> &#8212; Documented in Vall&#233;e's published biography and NASA records.</li><li>Vall&#233;e worked on ARPANET with Doug Engelbart at SRI. <span class="claim-verified">&#10003; Verified</span> &#8212; Documented in internet history.</li><li>Vall&#233;e was the inspiration for the Lacombe character in Spielberg's <em>Close Encounters of the Third Kind</em> (1977). <span class="claim-verified">&#10003; Verified</span> &#8212; Confirmed by Spielberg and Vall&#233;e.</li><li>Vall&#233;e published his postal address so UAP crash witnesses could send him material samples. <span class="claim-verified">&#10003; Verified</span> &#8212; Stated publicly by Nolan and Vall&#233;e.</li><li>Stanford's NanoSIMS can resolve individual isotopic ratios at nanometre scale. <span class="claim-verified">&#10003; Verified</span> &#8212; The instrument exists and its capabilities are as described.</li></ol></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Vall&#233;e&#8217;s UAP materials archive</div><p>Vall&#233;e has published accounts of his sample collection in multiple books including <em>Forbidden Science</em> (vols. 1&#8211;4) and in the 2022 Progress in Aerospace Sciences paper co-authored with Nolan. The paper (Nolan et al., 2022) is the first peer-reviewed publication of UAP physical evidence analysis from a major research institution.</p></div>
+</div>
+<div class="chapter" id="ch4">
+  <div class="ch-header"><span class="ch-num">CH 04</span><span class="ch-time">13:50 &#8211; 19:15</span></div>
+  <h2>Ub&#225; Tuba Sample &#8212; Anomalous Magnesium Isotope Ratios</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);"><div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div><p>The most scientifically detailed section of the episode. Nolan describes analysis of a sample from <strong>Ub&#225; Tuba, Brazil</strong>, where a fisherman witnessed a glowing object explode off the coast and collected fragments. The material turned out to be <strong>magnesium at extremely high purity</strong> &#8212; anomalous because pure magnesium ignites readily and should not survive as a structural material. More striking: NanoSIMS analysis of the isotope ratios showed magnesium-25 and magnesium-26 at levels <em>way off natural terrestrial ratios</em> &#8212; ratios Nolan says could not occur naturally and would require isotope separation (e.g. gas centrifuges) to produce. A second fragment from the same reported event had <em>exactly correct</em> terrestrial isotope ratios, creating an inhomogeneous mixture Nolan compares to a half-swirled chocolate-vanilla ice cream. No known industrial process creates that specific mixed profile. He then calls Hal Puthoff live to discuss a second sample &#8212; thin-layered <strong>bismuth/magnesium</strong> allegedly from Roswell, sent anonymously by a man who found it in his grandfather's diary. Puthoff says its layered structure miniaturises microwave guides for <strong>terahertz frequencies</strong> by a factor of ~30, a property with significant communications implications. Why the motivation to create such isotope ratios? Nolan floats two possibilities: the ratios serve a functional purpose in the material's physical properties, or they are a manufacturing byproduct of some process we don't understand.</p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Ub&#225; Tuba Brazil &#183; magnesium isotope ratios &#183; NanoSIMS &#183; isotope separation &#183; bismuth-magnesium layering &#183; terahertz waveguide &#183; Hal Puthoff &#183; Roswell</div></div>
+  <div class="dialogue" style="border-left-color:#a78bfa;"><div class="d-line"><div class="d-text" style="font-style:italic;font-size:15px;line-height:1.8;">&#8220;Maybe the stuff that we have, somebody is sitting around saying laughably, they're wasting their time on exhaust. We have the engine.&#8221;</div></div><div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-top:6px;">&#8212; Nolan, 13:35</div></div>
+  <div class="key-claims"><div class="key-claims-label">&#9670; Key checkable claims</div><ol><li>The Ub&#225; Tuba magnesium sample showed Mg-25 and Mg-26 isotope ratios far outside natural terrestrial range. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span> &#8212; Nolan's claim; the 2022 Progress in Aerospace Sciences paper describes anomalous samples but details vary by sample. Not independently replicated.</li><li>Pure magnesium cannot normally serve as a structural material because it ignites readily. <span class="claim-verified">&#10003; Verified</span></li><li>Producing anomalous isotope ratios requires gas centrifuges or equivalent isotope-separation technology. <span class="claim-verified">&#10003; Verified</span></li><li>The bismuth-magnesium layered sample miniaturises terahertz waveguides by ~30x. <span class="claim-unsupported">&#10007; Unverifiable / First-hand</span> &#8212; Puthoff's claim; not peer-reviewed.</li><li>Terahertz frequencies represent a significant next frontier for communications technology. <span class="claim-verified">&#10003; Verified</span></li></ol></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Nolan &amp; Vall&#233;e 2022 peer-reviewed publication</div><p>Nolan et al. (2022), "Improved Instrumental Methods for the Characterization of Materials from Unidentified Aerial Phenomena," <em>Progress in Aerospace Sciences</em>, vol. 128 &#8212; the first peer-reviewed paper on UAP physical evidence from a major research institution. It describes isotopic anomalies in a Council Bluffs, Iowa sample but references the broader programme of analysis. The Ub&#225; Tuba sample has been analysed since the 1970s by multiple researchers including physicist Peter Sturrock; Nolan's NanoSIMS analysis is the highest-resolution work done to date.</p></div><div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed &#8212; Isotope anomalies vs. contamination and nuclear testing</div><p>Isotopic anomalies in environmental samples are not automatically of exotic origin. Decades of atmospheric nuclear testing (1945&#8211;1963) and subsequent industrial processes have introduced non-terrestrial isotope signatures into the environment. Independent analysis of the Ub&#225; Tuba sample by Brazilian researchers in the 1990s reached mixed conclusions. The anomaly is real; its origin is contested.</p></div><div class="mainstream-box" style="border-left-color:#3b82f6;"><div class="mainstream-label" style="color:#3b82f6;">&#9632; Contextualises &#8212; Bismuth-magnesium layered samples</div><p>The bismuth-magnesium sample Puthoff describes (alleged Roswell origin) has been discussed publicly by Puthoff since at least 2019 in conference presentations. Materials scientist Gary Vesperman and others have noted that thin-film bismuth-magnesium laminates with unusual electromagnetic properties are theoretically interesting but have not been independently verified to have the waveguide properties Puthoff describes.</p></div>
+</div>
+<div class="chapter" id="ch5">
+  <div class="ch-header"><span class="ch-num">CH 05</span><span class="ch-time">19:15 &#8211; 26:45</span></div>
+  <h2>The Bigger Picture &#8212; What Are They, Why Are They Here?</h2>
+  <div class="sci-box" style="border-left:3px solid var(--text-dim);background:var(--surface);"><div class="sci-box-header"><div class="sci-icon">&#128203;</div><div class="sci-title">Chapter Summary</div> <span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div><p>Nolan and Jesse step back from the materials science to discuss cosmological and philosophical questions. Nolan endorses what he calls the <strong>Vall&#233;e&#8211;Pasulka theory</strong>: that 1947 / Roswell represents a cultural dividing line &#8212; before it, witnesses described the same phenomena as angels, demons, fairies, or the local supernatural architecture of their culture; after it, people describe aliens and craft. The phenomena itself may be constant; only the interpretive frame changes. He uses an extended ant-colony analogy: an intelligence so far beyond us that the only way to communicate is to build something that resembles an ant &#8212; a probe scaled to our comprehension level. On the atom-splitting question (does nuclear activity attract UAP attention?), Nolan notes the Trinity crash of 1945 predates Roswell by two years. His answer: a civilisation a million years ahead of us would rationally want to monitor a species that had just cracked fission and was a few centuries from spreading into the galactic arm. <em>&#8220;Do they want a bunch of angry monkeys running around with bombs?&#8221;</em> </p><div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-dim);">Key terms: Vall&#233;e&#8211;Pasulka hypothesis &#183; cultural tracking &#183; Diana Walsh Pasulka &#183; John Mack &#183; Thomas Kuhn &#183; Trinity crash 1945 &#183; Fermi paradox &#183; Enrico Fermi &#183; inter-dimensional hypothesis</div></div>
+  <div class="dialogue" style="border-left-color:#a78bfa;"><div class="d-line"><div class="d-text" style="font-style:italic;font-size:15px;line-height:1.8;">&#8220;When your mind expands to a certain point in terms of what you might consider reality to be, other entities live there.&#8221;</div></div><div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim);margin-top:6px;">&#8212; Nolan, opening</div></div>
+  <div class="key-claims"><div class="key-claims-label">&#9670; Key checkable claims</div><ol><li>The Vall&#233;e-Pasulka theory holds that pre-1947 UAP encounters were reported through local cultural frameworks (angels, demons, fairies) and post-1947 through the alien / spacecraft framework. <span class="claim-disputed">&#9651; Disputed</span> &#8212; Documented in Vall&#233;e's <em>Passport to Magonia</em> (1969) and Pasulka's <em>American Cosmic</em> (2019).</li><li>Thomas Kuhn (Structure of Scientific Revolutions) was a friend of John Mack, the Harvard psychiatry chairman who studied alien abductions. <span class="claim-verified">&#10003; Verified</span> &#8212; Nolan states this; Mack and Kuhn were both Harvard faculty in overlapping periods.</li><li>The Trinity, NM crash occurred in 1945, two years before Roswell. <span class="claim-disputed">&#9651; Disputed</span> &#8212; Trinity is documented in Paola Harris & Jacques Vall&#233;e's <em>Trinity: The Best Kept Secret</em> (2021); not accepted by mainstream UAP researchers.</li><li>Enrico Fermi was thinking about alien life while at Los Alamos &#8212; origin of the Fermi Paradox. <span class="claim-verified">&#10003; Verified</span></li></ol></div>
+  <div class="mainstream-box" style="border-left-color:#22c55e;"><div class="mainstream-label" style="color:#22c55e;">&#10003; Subsequently confirmed &#8212; Vall&#233;e&#8217;s <em>Passport to Magonia</em> thesis</div><p>The cultural-tracking hypothesis Nolan describes was Vall&#233;e's central thesis in <em>Passport to Magonia</em> (1969) and has been further developed by Joshua Cutchin, Patrick Harpur (<em>Daimonic Reality</em>), and Diana Walsh Pasulka (<em>American Cosmic</em>, 2019). It is the dominant "soft" interpretation among serious UAP researchers who take both the phenomenon and its cultural variability seriously.</p></div><div class="mainstream-box" style="border-left-color:#3b82f6;"><div class="mainstream-label" style="color:#3b82f6;">&#9632; Contextualises &#8212; John Mack and Harvard</div><p>John Mack (1929&#8211;2004) was Professor of Psychiatry at Harvard Medical School and won the Pulitzer Prize for his biography of T.E. Lawrence. From the late 1980s he documented alien abduction cases, publishing <em>Abduction: Human Encounters with Aliens</em> (1994). Harvard conducted a formal inquiry into his work but ultimately upheld his academic freedom. He was killed by a drunk driver in London.</p></div><div class="mainstream-box" style="border-left-color:#ef4444;"><div class="mainstream-label" style="color:#ef4444;">&#9888; Disputed &#8212; Trinity crash claim</div><p>The 1945 Trinity NM UAP crash described in Vall&#233;e and Harris's 2021 book is based on testimony from two elderly witnesses interviewed decades after the alleged event. Most UAP researchers, including some sympathetic to Roswell, have been sceptical. No physical evidence matching the description has been produced.</p></div>
+</div>
+<div style="border-top:2px solid var(--blue);padding-top:32px;margin-top:16px;">
+  <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.25em;color:var(--blue);text-transform:uppercase;margin-bottom:20px;">People Referenced in This Episode</div>
+  <div style="display:flex;flex-direction:column;gap:6px;">    <a href="/people/gary-nolan.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Dr. Garry Nolan</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Stanford Professor of Pathology &#183; UAP Materials Analyst</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/jacques-vallee.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Jacques Vall&#233;e</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Computer Scientist &#183; Astronomer &#183; UAP Researcher &#183; SRI</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/hal-puthoff.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Hal Puthoff</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Theoretical Physicist &#183; SRI Remote Viewing Programme &#183; EarthTech</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/eric-davis.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Eric Davis</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Theoretical Physicist &#183; EarthTech &#183; DIA Consultant</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/diana-pasulka.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Diana Walsh Pasulka</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Professor of Religious Studies &#183; UNC Wilmington &#183; Sol Foundation</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/john-mack.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">John Mack</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Harvard Professor of Psychiatry &#183; Abduction Researcher &#183; Pulitzer Laureate</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>    <a href="/people/jesse-michels.html" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);text-decoration:none;gap:12px;">
+      <div>
+        <div style="font-size:13.5px;font-weight:700;color:var(--text-bright);margin-bottom:2px;">Jesse Michels</div>
+        <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-dim);">Host &#183; American Alchemy</div>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:9px;color:var(--blue-bright);white-space:nowrap;">Profile &#8594;</span>
+    </a>
+  </div>
+</div>
+</div>
+
+</main>
+<script src="/js/site.js"></script>
+</body>
+</html>
