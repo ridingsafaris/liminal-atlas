@@ -138,8 +138,65 @@ function buildFooter() {
   document.body.append(footer);
 }
 
+// ─── PEOPLE DIRECTORY ──────────────────────
+function initPeopleDirectory() {
+  var grid = document.querySelector('.pdir-grid');
+  if (!grid) return;
+
+  var cards = document.querySelectorAll('.pdir-card');
+  var btns  = document.querySelectorAll('.filter-btn');
+
+  // Sort alphabetically by surname using a DocumentFragment
+  // to avoid repeated live DOM moves that cause image flicker
+  var cardArr = Array.from(cards);
+  cardArr.sort(function(a, b) {
+    var na = a.querySelector('.pdir-name').textContent.trim();
+    var nb = b.querySelector('.pdir-name').textContent.trim();
+    var la = na.split(' ').pop(), lb = nb.split(' ').pop();
+    return la.localeCompare(lb) || na.localeCompare(nb);
+  });
+  var frag = document.createDocumentFragment();
+  cardArr.forEach(function(c) { frag.appendChild(c); });
+  grid.appendChild(frag); // single DOM operation — no flicker
+
+  // Expand / collapse on click
+  cards.forEach(function(card) {
+    card.querySelector('.pdir-card-inner').addEventListener('click', function() {
+      var profile = card.querySelector('.pdir-profile');
+      var isOpen  = card.classList.contains('open');
+      document.querySelectorAll('.pdir-card.open').forEach(function(c) {
+        c.classList.remove('open');
+        c.querySelector('.pdir-profile').style.display = 'none';
+      });
+      if (!isOpen) {
+        card.classList.add('open');
+        profile.style.display = 'block';
+      }
+    });
+  });
+
+  // Filter buttons
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      cards.forEach(function(card) {
+        if (filter === 'all') {
+          card.classList.remove('hidden');
+        } else if (['host', 'guest', 'figure'].includes(filter)) {
+          card.classList.toggle('hidden', card.dataset.label !== filter);
+        } else {
+          card.classList.toggle('hidden', !card.hasAttribute('data-cat-' + filter));
+        }
+      });
+    });
+  });
+}
+
 // ─── INIT ──────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   buildHeader();
   buildFooter();
+  initPeopleDirectory();
 });
