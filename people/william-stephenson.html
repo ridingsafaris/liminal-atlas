@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Stephenson — Profile | Liminal Atlas</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .profile-wrap{max-width:900px;margin:0 auto;padding:48px 24px 100px;}
+    .profile-header{display:grid;grid-template-columns:140px 1fr;gap:32px;align-items:start;padding-bottom:36px;border-bottom:1px solid var(--border);margin-bottom:36px;}
+    .profile-photo-placeholder{width:140px;height:140px;border-radius:8px;background:var(--surface2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:52px;}
+    .profile-name{font-size:1.9rem;font-weight:800;color:var(--text-bright);letter-spacing:-0.02em;margin-bottom:5px;}
+    .profile-role{font-family:var(--font-mono);font-size:10px;color:var(--blue-bright);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;line-height:1.7;}
+    .profile-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+    .profile-tag{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid var(--border2);color:var(--text-dim);}
+    .profile-links{display:flex;gap:7px;flex-wrap:wrap;}
+    .profile-link{font-family:var(--font-mono);font-size:10px;padding:4px 11px;border-radius:4px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-dim);text-decoration:none;}
+    .bio-section{margin-bottom:36px;}
+    .bio-h{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .bio-p{font-size:14.5px;line-height:1.8;color:var(--text);margin-bottom:12px;}
+    .tab-bar{display:flex;border-bottom:2px solid var(--border);margin-bottom:20px;}
+    .tab-btn{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:10px 18px;border:none;background:none;color:var(--text-dim);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;}
+    .tab-btn.active{color:var(--blue-bright);border-bottom-color:var(--blue-bright);}
+    .tab-panel{display:none;}
+    .tab-panel.active{display:block;}
+    .ep-list{display:flex;flex-direction:column;gap:2px;}
+    .ep-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:13px 16px;align-items:center;background:var(--surface2);border:1px solid var(--border2);text-decoration:none;border-radius:4px;}
+    a.ep-row:hover{border-color:var(--blue-bright);}
+    .ep-title{font-size:13.5px;font-weight:600;color:var(--text-bright);margin-bottom:3px;}
+    .ep-sub{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
+    .ep-date{font-family:var(--font-mono);font-size:10px;color:var(--amber);}
+    .role-badge{display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+    .role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+    @media(max-width:640px){.profile-header{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div class="profile-wrap">
+  <div class="profile-header">
+    <div class="profile-photo-placeholder">&#128100;</div>
+    <div>
+      <div class="profile-name">William Stephenson</div>
+      <div class="profile-role">MI6 &#183; &#8216;Intrepid&#8217; &#183; James Bond inspiration &#183; 1897&#8211;1989</div>
+      <div class="profile-tags"><span class="profile-tag">UAP</span></div>
+      <div class="profile-links">
+        <a class="profile-link" href="https://en.wikipedia.org/wiki/William_Stephenson" target="_blank">&#8599; More info</a>
+        <a class="profile-link" href="/people/">&#8592; All People</a>
+      </div>
+    </div>
+  </div>
+  <div class="bio-section">
+    <div class="bio-h">Biography</div>
+    <p class="bio-p">MI6&#8217;s top spy in America, codenamed &#8216;Intrepid,&#8217; Churchill&#8217;s chief American intelligence operative and the inspiration for Ian Fleming&#8217;s James Bond. Led the mission with Wild Bill Donovan (OSS) that had Brown parachuted into Nazi Germany in 1945. Sent a telegram from the Rockefeller Plaza building to Brown&#8217;s wife: &#8216;Your husband is recuperating fine in an English hospital. We&#8217;ll send him home soon.&#8217; Nassau was his base of operations; he met with the Caroline Group aboard Eldridge Reeves Johnson&#8217;s yacht.</p>
+  </div>
+  <div class="bio-section">
+    <div class="bio-h">Appearances on Liminal Atlas</div>
+    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div>
+<div class="tab-panel active" id="tab-figure-william-stephenson">
+  <div class="ep-list">
+        <a href="/articles/townsend-brown-documentary.html" class="ep-row">
+          <div>
+            <div class="ep-title"><span class="role-badge role-figure">Figure</span>Thomas Townsend Brown — The CIA Scientist Who Cracked Antigravity</div>
+            <div class="ep-sub">American Alchemy</div>
+          </div>
+          <div class="ep-date">2024</div>
+        </a>
+  </div>
+</div>
+  </div>
+</div>
+<script src="/js/site.js"></script>
+<script>
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    btn.closest('.tab-bar').querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+    btn.closest('.bio-section').querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab + '-william-stephenson').classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
