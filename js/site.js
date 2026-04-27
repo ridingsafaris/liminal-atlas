@@ -19,7 +19,6 @@ const NAV_LINKS = [
   { label: 'Religion',      href: '/categories/religion.html' },
   { label: 'UAP',           href: '/categories/uap.html' },
   { label: 'Consciousness', href: '/categories/consciousness.html' },
-  { label: 'Archive',       href: '/archive.html' },
   { label: 'People',        href: '/people.html' },
 ];
 
@@ -71,7 +70,11 @@ function buildHeader() {
   header.className = 'site-header';
   header.innerHTML = `
     <a href="/index.html" class="site-logo">${SITE.name}</a>
-    <div style="display:flex;align-items:center;gap:20px;">
+    <div class="site-search-wrap">
+      <input type="search" class="site-search" id="siteSearch" placeholder="Search articles…" autocomplete="off">
+      <div class="site-search-results" id="searchResults"></div>
+    </div>
+    <div class="site-header-right">
       <nav><ul class="site-nav">${navHTML}</ul></nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">${toggleLabel}</button>
     </div>
@@ -94,6 +97,42 @@ function buildHeader() {
       localStorage.setItem('theme', 'light');
       this.innerHTML = '&#9790; Dark';
     }
+  });
+
+  // ── Search
+  const SEARCH_INDEX = [
+    { title: 'Jesse Michels on The Joe Rogan Experience #2331', url: '/articles/jre-jesse-michels.html', tags: 'townsend brown lazar nazca rogan uap' },
+    { title: 'Former NSA Director Breaks Silence on UAPs', url: '/articles/nsa-director-ufo.html', tags: 'hazelton gilbert nsa havana syndrome warp drive' },
+    { title: 'Jason Jorjani on American Alchemy', url: '/articles/jorjani-american-alchemy.html', tags: 'jorjani kant swedenborg epstein spectral revolution' },
+    { title: 'Pais & Rossi on Hard Truths', url: '/articles/pais-rossi-hard-truths.html', tags: 'pais rossi zpe electrodynamics casimir' },
+    { title: 'Navy Scientist: A Cosmic War Is Happening', url: '/articles/sal-pais-close-reading.html', tags: 'salvatore pais navy patents hybrid craft pais effect' },
+    { title: 'Dave Rossi on American Alchemy', url: '/articles/dave-rossi-close-reading.html', tags: 'dave rossi electrodynamics scalar waves superconductor' },
+    { title: 'William Bramley — The Gods of Eden', url: '/articles/bramley-gods-of-eden.html', tags: 'bramley custodians black plague brotherhood snake' },
+    { title: 'Frances Yates — The Rosicrucian Enlightenment', url: '/articles/yates-rosicrucian-enlightenment.html', tags: 'yates rosicrucian dee palatinate royal society' },
+    { title: 'Swedenborg — Arcana Coelestia', url: '/articles/swedenborg-arcana-coelestia.html', tags: 'swedenborg kant arcana genesis heaven hell' },
+    { title: 'Frances Yates — The Occult Philosophy', url: '/articles/yates-occult-philosophy.html', tags: 'yates hermetic cabalist elizabethan dee spenser' },
+    { title: 'Swedenborg — The Earths in the Universe', url: '/articles/swedenborg-earths-in-universe.html', tags: 'swedenborg mars mercury planets kant jorjani' },
+    { title: 'People Directory', url: '/people.html', tags: 'people hosts guests figures directory' },
+  ];
+
+  const searchInput = document.getElementById('siteSearch');
+  const searchResults = document.getElementById('searchResults');
+
+  searchInput.addEventListener('input', function() {
+    const q = this.value.trim().toLowerCase();
+    if (q.length < 2) { searchResults.style.display = 'none'; return; }
+    const matches = SEARCH_INDEX.filter(a =>
+      a.title.toLowerCase().includes(q) || a.tags.includes(q)
+    ).slice(0, 5);
+    if (!matches.length) { searchResults.style.display = 'none'; return; }
+    searchResults.innerHTML = matches.map(a =>
+      `<a href="${a.url}" class="sr-item">${a.title}</a>`
+    ).join('');
+    searchResults.style.display = 'block';
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!header.contains(e.target)) searchResults.style.display = 'none';
   });
 }
 
