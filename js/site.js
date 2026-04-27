@@ -64,14 +64,37 @@ function buildHeader() {
     return `<li><a href="${link.href}" ${isActive ? 'class="active"' : ''}>${link.label}</a></li>`;
   }).join('');
 
+  const isDark = localStorage.getItem('theme') !== 'light';
+  const toggleLabel = isDark ? '&#9788; Light' : '&#9790; Dark';
+
   const header = document.createElement('header');
   header.className = 'site-header';
   header.innerHTML = `
     <a href="/index.html" class="site-logo">${SITE.name}</a>
-    <nav><ul class="site-nav">${navHTML}</ul></nav>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <nav><ul class="site-nav">${navHTML}</ul></nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">${toggleLabel}</button>
+    </div>
   `;
 
   document.body.prepend(header);
+
+  // Apply saved theme immediately
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') document.body.setAttribute('data-theme', 'light');
+
+  document.getElementById('themeToggle').addEventListener('click', function() {
+    const isLight = document.body.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.body.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+      this.innerHTML = '&#9788; Light';
+    } else {
+      document.body.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      this.innerHTML = '&#9790; Dark';
+    }
+  });
 }
 
 // ─── INJECT FOOTER ─────────────────────────

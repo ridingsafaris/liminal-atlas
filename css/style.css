@@ -38,6 +38,28 @@
   --max-width:    860px;
 }
 
+/* ─── LIGHT MODE TOKENS ─── */
+[data-theme="light"] {
+  --bg:           #ffffff;
+  --surface:      #f5f5f5;
+  --surface2:     #ebebeb;
+  --border:       #e0e0e0;
+  --border2:      #cccccc;
+  --text:         #374151;
+  --text-dim:     #9ca3af;
+  --text-bright:  #111827;
+  --blue:         #2563eb;
+  --blue-bright:  #1d4ed8;
+  --blue-dim:     #bfdbfe;
+  --blue-glow:    rgba(37,99,235,0.08);
+  --blue-glow2:   rgba(37,99,235,0.04);
+  --amber:        #d97706;
+  --amber-dim:    rgba(217,119,6,0.08);
+  --green:        #16a34a;
+  --red:          #dc2626;
+  --purple:       #7c3aed;
+}
+
 /* ─── RESET ─── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -49,10 +71,11 @@ body {
   font-size: 16px;
   line-height: 1.75;
   overflow-x: hidden;
+  transition: background 0.2s, color 0.2s;
 }
 
-/* Grid texture */
-body::before {
+/* Grid texture — dark only */
+body:not([data-theme="light"])::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -64,10 +87,32 @@ body::before {
   z-index: 0;
 }
 
+/* ─── THEME TOGGLE ─── */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 3px 10px 3px 8px;
+  transition: all 0.15s;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+.theme-toggle:hover { border-color: var(--blue-bright); color: var(--blue-bright); }
+
 /* ─── HEADER ─── */
 .site-header {
   position: sticky; top: 0; z-index: 200;
   background: rgba(8,9,14,0.95);
+}
+[data-theme="light"] .site-header {
+  background: rgba(255,255,255,0.97);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 0 24px;

@@ -9,7 +9,7 @@
 <style>
 
 
-.pdir-hero{padding:56px 24px 40px;max-width:var(--max-width);margin:0 auto;border-bottom:1px solid var(--border);}
+.pdir-header{padding:32px 24px 20px;max-width:1200px;margin:0 auto;border-bottom:1px solid var(--border);margin-bottom:0;}
 .pdir-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;letter-spacing:-0.02em;color:var(--text-bright);margin-bottom:12px;}
 .pdir-hero h1 span{color:var(--blue-bright);}
 .pdir-hero p{font-size:15px;color:var(--text-dim);max-width:640px;}
@@ -18,7 +18,7 @@
 .filter-btn{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 14px;border-radius:4px;border:1px solid var(--border2);background:var(--surface2);color:var(--text-dim);cursor:pointer;transition:all 0.15s;}
 .filter-btn:hover,.filter-btn.active{background:var(--blue);border-color:var(--blue);color:#fff;}
 
-.pdir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px;max-width:var(--max-width);margin:0 auto;padding:24px;}
+.pdir-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;max-width:1200px;margin:0 auto;padding:16px 24px 80px;}
 
 .pdir-card{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:border-color 0.15s;}
 .pdir-card:hover,.pdir-card.open{border-color:var(--blue-bright);}
@@ -44,18 +44,6 @@
 </head>
 <body>
 <main>
-<div class="pdir-hero">
-  <h1>People in <span>Liminal Atlas</span></h1>
-  <p>Everyone who has appeared as a host or guest, or been discussed as a significant figure, across all close readings. Click any card for a full profile and links to the articles they appear in.</p>
-</div>
-
-<div class="pdir-stats">
-  <strong>21</strong> people &nbsp;&#183;&nbsp;
-  <strong>3</strong> hosts &nbsp;&#183;&nbsp;
-  <strong>4</strong> guests &nbsp;&#183;&nbsp;
-  <strong>14</strong> figures mentioned
-</div>
-
 <div class="pdir-filters">
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="host">Hosts</button>
@@ -412,6 +400,18 @@
 document.addEventListener('DOMContentLoaded',function(){
   var cards = document.querySelectorAll('.pdir-card');
   var btns  = document.querySelectorAll('.filter-btn');
+
+  // Sort cards alphabetically by name
+  var grid = document.querySelector('.pdir-grid');
+  var cardArr = Array.from(cards);
+  cardArr.sort(function(a,b){
+    var na = a.querySelector('.pdir-name').textContent.trim();
+    var nb = b.querySelector('.pdir-name').textContent.trim();
+    // Sort by last word (surname) then full name
+    var la = na.split(' ').pop(), lb = nb.split(' ').pop();
+    return la.localeCompare(lb) || na.localeCompare(nb);
+  });
+  cardArr.forEach(function(c){ grid.appendChild(c); });
 
   cards.forEach(function(card){
     card.querySelector('.pdir-card-inner').addEventListener('click',function(){

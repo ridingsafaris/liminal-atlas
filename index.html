@@ -26,8 +26,6 @@
     .hero-deck{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.6;margin-bottom:10px;max-width:580px;}
     .hero-meta{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em;}
     /* Hero summary strip */
-    .hero-summary{background:var(--surface2);border:1px solid var(--border2);padding:16px 20px;margin-bottom:2px;font-size:13px;line-height:1.6;color:var(--text-dim);}
-    .hero-summary strong{color:var(--text-bright);}
     /* Secondary col */
     .sec-col{display:flex;flex-direction:column;gap:2px;}
     .sec-story{display:block;text-decoration:none;flex:1;background:var(--surface2);overflow:hidden;transition:background 0.15s;}
@@ -63,7 +61,7 @@
     @media(max-width:600px){.article-grid{grid-template-columns:1fr;}.sec-col{flex-direction:column;}}
   </style>
 </head>
-<body>
+<body data-theme="light">
 <!-- Header injected by site.js -->
 
 <div class="topbar">
@@ -111,11 +109,6 @@
     </div>
   </div>
 
-  <!-- Summary strip below hero -->
-  <div class="hero-summary">
-    <strong>What is a Video Close Reading?</strong> Each episode is followed chapter by chapter through a verbatim transcript &#8212; every claim is identified and given a status badge (Documented / Disputed / No Evidence), key dialogue is quoted directly, concept threads link the same idea across chapters, and every named person and paper links to a reference or profile. These are not summaries &#8212; they are structured analyses.
-  </div>
-
   <div class="main-layout">
     <div>
       <div class="section-label" style="margin-top:0;">More Video Close Readings</div>
@@ -150,9 +143,6 @@
       </div>
 
       <div class="section-label" style="margin-top:32px;">&#128218; Book Close Readings</div>
-      <div class="hero-summary" style="margin-bottom:2px;">
-        <strong>What is a Book Close Reading?</strong> Canonical texts &#8212; primary sources cited by guests across multiple episodes &#8212; dissected chapter by chapter. Every claim, concept, and disputed passage annotated. Currently covering Yates, Swedenborg, and Bramley; more to follow as the episode library grows.
-      </div>
       <div class="article-grid">
 <a href="/articles/bramley-gods-of-eden.html" class="grid-card">
       <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:10px;color:#4a5568;letter-spacing:0.1em;">BOOK</span></div></div>
