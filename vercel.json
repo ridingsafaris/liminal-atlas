@@ -1,5 +1,6 @@
 {
   "buildCommand": "npx -y pagefind --site . --output-path _pagefind",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
