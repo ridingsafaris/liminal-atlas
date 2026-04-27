@@ -22,6 +22,10 @@
     .bio-h{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
     .bio-p{font-size:14.5px;line-height:1.8;color:var(--text);margin-bottom:12px;}
     .bio-p strong{color:var(--text-bright);}
+    .kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+    .kf:last-child{border-bottom:none;}
+    .kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+    .kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
     .tab-bar{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:20px;flex-wrap:wrap;}
     .tab-btn{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:10px 18px;border:none;background:none;color:var(--text-dim);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.15s;}
     .tab-btn:hover{color:var(--text-bright);}
@@ -34,24 +38,14 @@
     .ep-title{font-size:13.5px;font-weight:600;color:var(--text-bright);line-height:1.35;margin-bottom:3px;}
     .ep-sub{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);}
     .ep-date{font-family:var(--font-mono);font-size:10px;color:var(--amber);white-space:nowrap;}
-    .role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+    .role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;vertical-align:middle;}
     .role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
     .role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
     .role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
-    .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
+    .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:24px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{flex-direction:column;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  
-.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
-.kf:last-child{border-bottom:none;}
-.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
-.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
-.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
-.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
-.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
-.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
-.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
-</style>
+  </style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -73,35 +67,41 @@
     <p class="bio-p">American theoretical physicist named in the Australian JIO SECRET file as one of the scientists in the 1955 US anti-gravity research programme. Later co-created the ADM formalism with Arnowitt and Misner &#8212; a landmark in general relativity and quantum gravity. Also known for foundational work in supergravity. In 1955 he was at the start of his career; his subsequent decades-long contribution to quantum gravity grew directly from this formative period.</p>
   </div>
 
+
+  </div>
+
   <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-figure-stanley-deser"><div class="ep-list">        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="videos">Videos</button>
+      <button class="tab-btn" data-tab="books">Books</button>
+    </div>
+    <div class="tab-panel active" data-panel="videos">
+      <div class="empty-state">No entries in this category yet.</div>
+      </div>
+      <div class="tab-panel" data-panel="books">
+      <div class="ep-list">
+        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
           <div>
-            <div class="ep-title"><span class="role-badge role-figure">Figure</span>Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)
-        <a href="/articles/jre-jesse-michels.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned" style="background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);">Mentioned</span>The Joe Rogan Experience #2331 — Jesse Michels</div>
-            <div class="ep-sub">Joe Rogan Experience</div>
+            <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Australian JIO — The UFO File</div>
+            <div class="ep-sub">Liminal Atlas close reading</div>
           </div>
-          <div class="ep-date">2025</div>
+          <div class="ep-date">2024</div>
         </a>
-</div>
-            <div class="ep-sub">Liminal Atlas Primary Source</div>
-          </div>
-          <div class="ep-date">1971</div>
-        </a></div></div>
+      </div>
+      </div>
   </div>
 </div>
 <script src="/js/site.js"></script>
 <script>
 document.querySelectorAll('.tab-btn').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var bar = btn.closest('.tab-bar');
-    var section = btn.closest('.bio-section');
-    bar.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
-    section.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+  btn.addEventListener('click',function(){
+    var bar=btn.closest('.tab-bar');
+    var wrap=bar.parentElement;
+    bar.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+    wrap.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
     btn.classList.add('active');
-    section.querySelector('#tab-' + btn.dataset.tab + '-stanley-deser').classList.add('active');
+    wrap.querySelector('[data-panel="'+btn.dataset.tab+'"]').classList.add('active');
   });
 });
 </script>
