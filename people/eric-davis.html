@@ -41,7 +41,17 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -63,16 +73,32 @@
     <p class="bio-p">Theoretical physicist and senior research scientist at EarthTech International (co-founded with Hal Puthoff). Has worked as a consultant to the US Department of Defense and AARO on UAP-related propulsion physics. Co-authored a 2010 AIAA paper on faster-than-light travel and warp drives. Dave Rossi describes researchers &#8220;affiliated with Hal Puthoff and Eric Davis&#8221; as the first to recognise his self-directed research and introduce him to the broader community of DoD-adjacent physicists working on exotic propulsion. Davis has spoken publicly about classified briefings on non-human technology at the Pentagon.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-figure-eric-davis"><div class="ep-list">        <a href="/articles/dave-rossi-close-reading.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Dave Rossi — "Aliens Taught Me Advanced Physics"
-        <a href="/articles/catherine-fitts-breakaway.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned" style="background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);">Mentioned</span>Catherine Austin Fitts — The Breakaway Civilisation</div>
-            <div class="ep-sub">Danny Jones Podcast</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/eric-davis-ufo-secrets-part1.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Eric Davis — UFO Secrets Part I</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/eric-weinstein-ufo-secrets-part2.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Eric Weinstein — Physics & Institutions Part II</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/gary-nolan-ufo-material.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Dr. Garry Nolan — Actual UFO Material</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2023</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">2024</div>
         </a>
         <a href="/articles/townsend-brown-documentary.html" class="ep-row">

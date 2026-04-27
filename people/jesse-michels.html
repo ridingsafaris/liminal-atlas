@@ -49,7 +49,17 @@
     .mention-ctx{font-family:var(--font-mono);font-size:9px;color:var(--text-dim);border:1px solid var(--border2);padding:2px 7px;border-radius:3px;white-space:nowrap;}
 
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <!-- Header injected by site.js -->
@@ -86,29 +96,102 @@
   </div>
 
   <!-- Tabbed episode listing -->
-  <div class="bio-section">
-    <div class="bio-h">Episode Listings</div>
-
-    <div class="tab-bar">
-      <button class="tab-btn active" data-tab="host">American Alchemy (Host)</button>
-      <button class="tab-btn" data-tab="guest">As Guest</button>
+    <div class="bio-section">
+    <div class="bio-h">Appearances on Liminal Atlas</div>
+    <div class="ep-list">
+      <a href="/articles/gary-nolan-ufo-material.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Dr. Garry Nolan — Actual UFO Material</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2023</div>
+      </a>
+      <a href="/articles/dave-rossi-close-reading.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/jre-jesse-michels.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Jesse Michels on The Joe Rogan Experience #2331</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/nsa-director-ufo.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Former NSA Director Breaks Silence on UAPs</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/john-brandenburg-mars-nuclear-war.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Dr. John Brandenburg — Life on Mars</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/townsend-brown-documentary.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Thomas Townsend Brown — CIA Scientist</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/jorjani-american-alchemy.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Jason Jorjani — Aliens Invented Religion</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/jorjani-nazi-breakaway-civilization.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Jason Jorjani — Nazi Breakaway Civilisation</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/pais-rossi-hard-truths.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Pais & Rossi — UFO Disclosure</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/sal-pais-close-reading.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Dr. Salvatore Pais — Navy Scientist</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/catherine-fitts-breakaway.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Catherine Austin Fitts — $21 Trillion</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/eric-davis-ufo-secrets-part1.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Eric Davis — UFO Secrets Part I</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/eric-weinstein-ufo-secrets-part2.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-host">Host</span>Eric Weinstein — Physics & Institutions Part II</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
     </div>
-
-    <!-- TAB 1: American Alchemy episodes Jesse hosted (only covered ones, newest first) -->
-    <div class="tab-panel active" id="tab-host">
-      <div class="ep-list">
-
-        <a href="/articles/nsa-director-ufo.html" class="ep-row">
-          <div>
-            <div class="ep-title">Former NSA Director Breaks Silence on UAPs
-        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned" style="background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);">Mentioned</span>Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)
-        <a href="/articles/jorjani-nazi-breakaway-civilization.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-host" style="background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);">Host</span>Jason Jorjani — "There's a Nazi Breakaway Civilisation with UFOs" (Part II)</div>
-            <div class="ep-sub">American Alchemy</div>
-          </div>
+  </div>
           <div class="ep-date">2025</div>
         </a>
 </div>

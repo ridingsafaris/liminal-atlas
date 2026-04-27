@@ -41,12 +41,22 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
   <div class="profile-header">
-    <div class="profile-photo-placeholder" style="background:rgba(34,197,94,0.12);border:1px solid #4ade8044;"><span style="font-family:var(--font-mono);font-size:42px;font-weight:800;color:#4ade80;letter-spacing:-0.03em;">JV</span></div>
+    <img class="profile-photo" src="/assets/people/jacques-vallee.jpg" alt="Jacques Vallée" onerror="this.outerHTML='<div class=&quot;profile-photo-placeholder&quot; style=&quot;background:var(--surface2);&quot;><span style=&quot;font-family:var(--font-mono);font-size:36px;font-weight:800;color:var(--blue-bright);&quot;>JV</span></div>'">
     <div>
       <div class="profile-name">Jacques Vallée</div>
       <div class="profile-role">Physicist &#183; Computer Scientist &#183; UAP Researcher &#183; Northwestern University</div>
@@ -63,13 +73,25 @@
     <p class="bio-p">French-American astronomer, computer scientist, and venture capitalist who became one of the world&#8217;s most respected UAP researchers. His computerised database of 1,000 UFO landing or near-landing cases, compiled at Northwestern University with Dr J. Allen Hynek, was used by Australian JIO&#8217;s Head of Nuclear Branch O.H. Turner as the primary data source for his 1970 weapon-systems analysis &#8212; one of the most extraordinary sections of any declassified five-eyes intelligence document. Vallée is cited by name in the JIO file introduction. He appears again in the JRE #2331 episode context: Jesse Michels cites the 1971 Australian document as evidence that allied governments were seriously studying UAP weapon effects.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-figure-jacques-vallee"><div class="ep-list">        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-figure">Figure</span>Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)</div>
-            <div class="ep-sub">Liminal Atlas Primary Source</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/gary-nolan-ufo-material.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Dr. Garry Nolan — Actual UFO Material</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2023</div>
+      </a>
+      <a href="/articles/eric-davis-ufo-secrets-part1.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Eric Davis — UFO Secrets Part I</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">1971</div>
         </a>
         <a href="/articles/jre-jesse-michels.html#ch6" class="ep-row">

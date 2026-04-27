@@ -41,7 +41,17 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -63,16 +73,25 @@
     <p class="bio-p">Former Assistant Secretary of Housing and Urban Development under President George H.W. Bush and former managing director of Dillon, Read &amp; Co. Spent 11 years in DOJ litigation after attempting to stop HUD mortgage fraud. Founder of the Solari Report. Working with economist Mark Skidmore (Michigan State), documented $21 trillion in undocumentable federal budget adjustments between 1998&#8211;2015. Her frameworks &#8212; the central banking warfare model, the financial coup d&#8217;&#233;tat, Mr. Global, and the breakaway civilisation &#8212; are the intellectual architecture of the Danny Jones interview close reading. Also cited by Jesse Michels on JRE #2331.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="guest">Guest</button><button class="tab-btn " data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-guest-catherine-austin-fitts"><div class="ep-list">        <a href="/articles/catherine-fitts-breakaway.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-guest">Guest</span>Catherine Austin Fitts — The Breakaway Civilisation
-        <a href="/articles/jre-jesse-michels.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-figure" style="background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Figure</span>The Joe Rogan Experience #2331 — Jesse Michels</div>
-            <div class="ep-sub">Joe Rogan Experience</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/catherine-fitts-breakaway.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Catherine Austin Fitts — $21 Trillion</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+      <a href="/articles/jre-jesse-michels.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Jesse Michels on The Joe Rogan Experience #2331</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">2025</div>
         </a>
 </div>

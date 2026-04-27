@@ -41,7 +41,17 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -66,10 +76,18 @@
     <p class="bio-p">Mack was killed in London in September 2004 when struck by a drunk driver after attending a lecture. He remains the most credentialed academic to have conducted serious empirical research into the abduction phenomenon.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
     <div class="ep-list">
-    <a href="/articles/gary-nolan-ufo-material.html" class="ep-row"><div><div class="ep-title"><span style="font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);margin-right:8px;">Mentioned</span>Dr. Garry Nolan &#8212; Actual UFO Material With Stanford Scientist</div><div class="ep-sub">Liminal Atlas close reading</div></div><div class="ep-date">2023</div></a>
+      <a href="/articles/gary-nolan-ufo-material.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Dr. Garry Nolan — Actual UFO Material</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2023</div>
+      </a>
+    </div>
+  </div><div class="ep-date">2023</div></a>
       </div>
   </div>
 </div>

@@ -41,7 +41,17 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -63,16 +73,18 @@
     <p class="bio-p">Coined &#8220;black hole,&#8221; &#8220;wormhole,&#8221; and &#8220;quantum foam.&#8221; Developed the <em>It from Bit</em> hypothesis: all physical entities derive from information. Also appears in the 1971 Australian JIO document naming him as a participant in secret US anti-gravity research alongside Oppenheimer, Teller, and Dyson. Was present at the 1957 Chapel Hill Conference on gravity at the same time Townsend Brown was funded in the back room.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="figure">Referenced</button></div><div class="tab-panel active" id="tab-figure-john-wheeler"><div class="ep-list">        <a href="/articles/nsa-director-ufo.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Former NSA Director Breaks Silence on UAPs
-        <a href="/articles/australian-jio-ufo-file.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-figure" style="background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Figure</span>Australian JIO File 3092/2 — Scientific Intelligence: UFOs (1957–1971)</div>
-            <div class="ep-sub">Liminal Atlas Primary Source</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/eric-davis-ufo-secrets-part1.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Eric Davis — UFO Secrets Part I</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">1971</div>
         </a>
         <a href="/articles/jorjani-american-alchemy.html" class="ep-row">

@@ -41,12 +41,22 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
   <div class="profile-header">
-    <div class="profile-photo-placeholder" style="background:rgba(245,158,11,0.15);border:1px solid #f59e0b44;"><span style="font-family:var(--font-mono);font-size:42px;font-weight:800;color:#f59e0b;letter-spacing:-0.03em;">SC</span></div>
+    <img class="profile-photo" src="/assets/people/sal-pais.png" alt="Dr. Salvatore Cesar Pais" onerror="this.outerHTML='<div class=&quot;profile-photo-placeholder&quot; style=&quot;background:var(--surface2);&quot;><span style=&quot;font-family:var(--font-mono);font-size:36px;font-weight:800;color:var(--blue-bright);&quot;>DS</span></div>'">
     <div>
       <div class="profile-name">Dr. Salvatore Cesar Pais</div>
       <div class="profile-role">U.S. Navy Engineer &#183; Author of the Navy UAP Patents</div>
@@ -63,16 +73,32 @@
     <p class="bio-p">Aerospace engineer who worked for the US Naval Air Warfare Center Aircraft Division (NAWCAD). Filed a series of extraordinary patents on behalf of the US Navy between 2016 and 2019 describing a room-temperature superconductor, a high-energy electromagnetic field generator, a compact fusion reactor, and a &#8220;hybrid aerospace-undersea craft.&#8221; His papers reference the &#8220;Pais Effect&#8221; &#8212; high-frequency vibration of electrically charged matter. The Navy confirmed these are real patents filed in earnest.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="guest">Guest</button></div><div class="tab-panel active" id="tab-guest-sal-pais"><div class="ep-list">        <a href="/articles/sal-pais-close-reading.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-guest">Guest</span>Dr. Salvatore Pais — "Navy Scientist: A Cosmic War Is Happening"
-        <a href="/articles/dave-rossi-close-reading.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-mentioned" style="background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);">Mentioned</span>Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
-            <div class="ep-sub">American Alchemy</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/sal-pais-close-reading.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Dr. Salvatore Pais — Navy Scientist</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/pais-rossi-hard-truths.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Pais & Rossi — UFO Disclosure</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/jre-jesse-michels.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Jesse Michels on The Joe Rogan Experience #2331</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">2025</div>
         </a>
         <a href="/articles/jorjani-american-alchemy.html" class="ep-row">

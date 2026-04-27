@@ -41,7 +41,17 @@
     .role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
     .empty-state{font-family:var(--font-mono);font-size:11px;color:var(--text-dim);padding:20px;text-align:center;border:1px dashed var(--border2);border-radius:4px;}
     @media(max-width:640px){.profile-header{grid-template-columns:1fr;}.ep-row{grid-template-columns:1fr;}.ep-date{display:none;}}
-  </style>
+  
+.kf{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border2);align-items:baseline;}
+.kf:last-child{border-bottom:none;}
+.kf-l{font-family:var(--font-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);min-width:160px;flex-shrink:0;}
+.kf-v{font-size:13.5px;color:var(--text);line-height:1.6;}
+.role-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap;margin-right:6px;}
+.role-host{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3);}
+.role-guest{background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3);}
+.role-figure{background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);}
+.role-mentioned{background:var(--surface);color:var(--text-dim);border:1px solid var(--border2);}
+</style>
 </head>
 <body>
 <div class="profile-wrap">
@@ -63,16 +73,25 @@
     <p class="bio-p">PhD plasma physicist. Worked at Lawrence Livermore National Laboratory (fusion and H-bomb programme under Edward Teller) and Sandia National Laboratories (directed energy weapons). Later consulting physicist to Pentagon and intelligence agencies. Inventor of the microwave water-based electrothermal thruster (flown in orbit by Momentus Space). Developer of GEM Theory (Gravity-Electromagnetism unification), which he claims predicts Big G and the proton mass. Claims first identification of the Martian paleo-ocean (1986) and interprets Viking-era Xe-129 and Ar-40 isotopic anomalies as evidence of an ancient thermonuclear event on Mars. Author of Death on Mars (2015) and Cosmic Awakening.</p>
   </div>
 
-  <div class="bio-section">
+    <div class="bio-section">
     <div class="bio-h">Appearances on Liminal Atlas</div>
-    <div class="tab-bar"><button class="tab-btn active" data-tab="guest">Guest</button></div><div class="tab-panel active" id="tab-guest-john-brandenburg"><div class="ep-list">        <a href="/articles/john-brandenburg-mars-nuclear-war.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-guest">Guest</span>Dr. John Brandenburg — Life on Mars Destroyed by Ancient Nuclear War
-        <a href="/articles/jre-jesse-michels.html" class="ep-row">
-          <div>
-            <div class="ep-title"><span class="role-badge role-figure" style="background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);">Figure</span>The Joe Rogan Experience #2331 — Jesse Michels</div>
-            <div class="ep-sub">Joe Rogan Experience</div>
-          </div>
+    <div class="ep-list">
+      <a href="/articles/john-brandenburg-mars-nuclear-war.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-guest">Guest</span>Dr. John Brandenburg — Life on Mars</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2024</div>
+      </a>
+      <a href="/articles/jre-jesse-michels.html" class="ep-row">
+        <div>
+          <div class="ep-title"><span class="role-badge role-mentioned">Mentioned</span>Jesse Michels on The Joe Rogan Experience #2331</div>
+          <div class="ep-sub">Liminal Atlas close reading</div>
+        </div>
+        <div class="ep-date">2025</div>
+      </a>
+    </div>
+  </div>
           <div class="ep-date">2025</div>
         </a>
         <a href="/articles/townsend-brown-documentary.html" class="ep-row">
