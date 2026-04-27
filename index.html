@@ -4,98 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liminal Atlas — Knowledge at the Edge of the Map</title>
-  <meta name="description" content="A knowledge-sharing blog at the intersection of frontier physics, comparative religion, UAP research, and consciousness studies.">
+  <meta name="description" content="Close readings at the intersection of frontier physics, UAP research, comparative religion, and consciousness studies.">
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Per-page styles only for things unique to this page -->
   <style>
-    /* ── Hero ── */
-    .home-hero {
-      padding: 80px 0 56px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 56px;
-    }
-    .home-hero h1 {
-      font-size: clamp(2.4rem, 6vw, 4rem);
-      font-weight: 700; letter-spacing: -0.03em;
-      color: var(--text-bright); line-height: 1.1;
-      margin-bottom: 20px;
-    }
-    .home-hero h1 span { color: var(--blue-bright); }
-    .home-hero p {
-      font-size: 17px; line-height: 1.8;
-      color: var(--text); max-width: 620px;
-      margin-bottom: 32px;
-    }
+    :root { --mono: 'JetBrains Mono','Fira Code',monospace; }
 
-    /* ── Category filter bar ── */
-    .filter-bar {
-      display: flex; flex-wrap: wrap; gap: 8px;
-      margin-bottom: 40px;
-    }
-    .filter-btn {
-      font-family: var(--font-mono);
-      font-size: 11px; letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 6px 16px; border-radius: 20px;
-      border: 1px solid var(--border2);
-      background: transparent; color: var(--text-dim);
-      cursor: pointer; transition: all 0.15s;
-    }
-    .filter-btn:hover, .filter-btn.active {
-      border-color: var(--blue);
-      color: var(--blue-bright);
-      background: var(--blue-glow);
-    }
-
-    /* ── Article grid ── */
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 20px;
-      margin-bottom: 80px;
-    }
-
-    /* ── Featured article (full width) ── */
-    .article-card.featured {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: center;
-      padding: 36px;
-    }
-    .featured .card-title { font-size: clamp(1.4rem, 3vw, 2rem); }
-    .featured-badge {
-      font-family: var(--font-mono);
-      font-size: 9px; letter-spacing: 0.2em;
-      color: var(--amber); text-transform: uppercase;
-      border: 1px solid rgba(245,158,11,0.3);
-      padding: 2px 8px; border-radius: 3px;
-      background: var(--amber-dim);
-    }
-
-    /* ── About strip ── */
-    .about-strip {
+    /* ── Top bar ── */
+    .topbar {
       background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px 36px;
-      margin-bottom: 80px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 32px;
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      display: flex;
       align-items: center;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
     }
-    .about-strip h3 {
-      font-size: 1.1rem; font-weight: 700;
-      color: var(--text-bright); margin-bottom: 8px;
-    }
-    .about-strip p { font-size: 14px; color: var(--text-dim); line-height: 1.7; max-width: 520px; }
+    .topbar span { color: var(--amber); font-weight: 700; }
 
-    @media (max-width: 700px) {
-      .articles-grid { grid-template-columns: 1fr; }
-      .article-card.featured { grid-template-columns: 1fr; }
-      .about-strip { grid-template-columns: 1fr; }
+    /* ── Section labels ── */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      padding: 0 0 10px;
+      border-bottom: 2px solid var(--blue);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Hero ── */
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 2px;
+      margin-bottom: 2px;
+    }
+    .hero-story {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      height: 480px;
+    }
+    .hero-story:hover .hero-img img { transform: scale(1.02); }
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-img img { transition: transform 0.4s ease; width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(5,7,12,0.95) 0%, rgba(5,7,12,0.5) 50%, transparent 100%);
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 28px;
+    }
+    .hero-cats { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 10px; }
+    .hero-title {
+      font-size: clamp(1.3rem, 2.5vw, 1.85rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .hero-deck { font-size: 13.5px; color: rgba(255,255,255,0.75); line-height: 1.6; margin-bottom: 10px; max-width: 600px; }
+    .hero-meta { font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,0.45); letter-spacing: 0.08em; }
+
+    /* ── Secondary column ── */
+    .sec-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .sec-story {
+      display: block;
+      text-decoration: none;
+      flex: 1;
+      background: var(--surface2);
+      overflow: hidden;
+      transition: background 0.15s;
+    }
+    .sec-story:hover { background: #1a2133; }
+    .sec-img { height: 130px; overflow: hidden; }
+    .sec-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .sec-story:hover .sec-img img { transform: scale(1.03); }
+    .sec-text { padding: 14px 16px; }
+    .sec-title { font-size: 13.5px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 5px; }
+    .sec-deck { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 6px; }
+    .sec-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
+
+    /* ── Main layout (grid + sidebar) ── */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 40px;
+      padding-top: 32px;
+    }
+
+    /* ── Grid ── */
+    .article-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+    }
+    .grid-card {
+      display: block;
+      text-decoration: none;
+      background: var(--surface2);
+      overflow: hidden;
+      transition: background 0.15s;
+    }
+    .grid-card:hover { background: #1a2133; }
+    .grid-img { height: 160px; overflow: hidden; }
+    .grid-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .grid-card:hover .grid-img img { transform: scale(1.03); }
+    .grid-text { padding: 14px; }
+    .grid-title { font-size: 13px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 5px; }
+    .grid-deck { font-size: 11.5px; color: var(--text-dim); line-height: 1.5; margin-bottom: 6px; }
+    .grid-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
+
+    /* ── Sidebar ── */
+    .sidebar {}
+    .sidebar-item {
+      display: flex;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      align-items: flex-start;
+      transition: opacity 0.15s;
+    }
+    .sidebar-item:last-child { border-bottom: none; }
+    .sidebar-item:hover { opacity: 0.8; }
+    .sidebar-num {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--border2);
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 32px;
+    }
+    .sidebar-title { font-size: 13px; font-weight: 700; color: var(--text-bright); line-height: 1.4; margin-bottom: 4px; }
+    .sidebar-meta { font-family: var(--mono); font-size: 9px; color: var(--text-dim); letter-spacing: 0.06em; }
+
+    /* ── Page wrapper ── */
+    .news-wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; }
+
+    @media (max-width: 900px) {
+      .hero-row { grid-template-columns: 1fr; }
+      .sec-col { flex-direction: row; }
+      .main-layout { grid-template-columns: 1fr; }
+      .article-grid { grid-template-columns: 1fr 1fr; }
+      .hero-story { height: 340px; }
+    }
+    @media (max-width: 600px) {
+      .article-grid { grid-template-columns: 1fr; }
+      .sec-col { flex-direction: column; }
     }
   </style>
 </head>
@@ -103,219 +190,165 @@
 
 <!-- Header injected by site.js -->
 
-<main class="page-wrapper">
+<div class="topbar">
+  <span>Liminal Atlas</span>
+  Knowledge at the edge of the map &nbsp;·&nbsp; Frontier physics · UAP research · Comparative religion · Consciousness
+</div>
 
-  <!-- Hero -->
-  <section class="home-hero fade-up">
-    <div class="badge" style="margin-bottom: 24px;">Est. 2026</div>
-    <h1>Knowledge at the<br><span>Edge of the Map</span></h1>
-    <p>Close readings, physics explainers, and deep dives at the intersection of frontier science, comparative religion, UAP research, and the study of consciousness. Curious, not credulous.</p>
-    <div class="btn-row">
-      <a class="btn btn-primary" href="/articles/pais-rossi-hard-truths.html">Read Latest Article →</a>
+<div class="news-wrap">
+
+  <!-- Hero row -->
+  <div style="padding: 24px 0 2px;">
+    <div class="section-label">Latest</div>
+  </div>
+  <div class="hero-row">
+    <a href="/articles/jre-jesse-michels.html" class="hero-story">
+    <div class="hero-img">
+      <img src="https://img.youtube.com/vi/r9Ldl70x5Fg/maxresdefault.jpg" alt="Jesse Michels on The Joe Rogan Experience #2331" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <div class="hero-cats"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <h1 class="hero-title">Jesse Michels on The Joe Rogan Experience #2331</h1>
+        <p class="hero-deck">Townsend Brown's anti-gravity tech tree. Bob Lazar's limited hangout. The $21 trillion breakaway civilisation. Nazca tridactyl mummies.</p>
+        <span class="hero-meta">JRE #2331 &nbsp;·&nbsp; 2025</span>
+      </div>
     </div>
-  </section>
-
-  <!-- Filter bar -->
-  <div class="filter-bar fade-up-1" id="filterBar">
-    <button class="filter-btn active" data-cat="all">All</button>
-    <button class="filter-btn" data-cat="physics">Physics</button>
-    <button class="filter-btn" data-cat="uap">UAP</button>
-    <button class="filter-btn" data-cat="religion">Religion</button>
-    <button class="filter-btn" data-cat="consciousness">Consciousness</button>
-    <button class="filter-btn" data-cat="biology">Biology</button>
+  </a>
+    <div class="sec-col">
+      <a href="/articles/nsa-director-ufo.html" class="sec-story">
+      <div class="sec-img"><img src="https://img.youtube.com/vi/jMCavr3dVP0/maxresdefault.jpg" alt="Former NSA Director Breaks Silence on UAPs" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="sec-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+        <div class="sec-title">Former NSA Director Breaks Silence on UAPs</div>
+        <div class="sec-deck">Dr. Eric Hazelton (NSA Director of Research, ODNI CTO) applies intelligence tradecraft: competing hypotheses, Havana Syn…</div>
+        <span class="sec-meta">American Alchemy &nbsp;·&nbsp; 2025</span>
+      </div>
+    </a>
+<a href="/articles/jorjani-american-alchemy.html" class="sec-story">
+      <div class="sec-img"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/maxresdefault.jpg" alt="Jason Jorjani — "Aliens Invented Religion To Control Humanity"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+      <div class="sec-text">
+        <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+        <div class="sec-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
+        <div class="sec-deck">Philosopher Jorjani's unified theory: a Nordic hyperdimensional caste managing human history. Kant suppressing Swedenbor…</div>
+        <span class="sec-meta">American Alchemy &nbsp;·&nbsp; Sep 2025</span>
+      </div>
+    </a>
+    </div>
   </div>
 
-  <!-- Articles grid -->
-  <div class="articles-grid fade-up-2" id="articlesGrid">
+  <!-- Main layout -->
+  <div class="main-layout">
 
-    <!-- FEATURED: Article 1 -->
-    <a class="article-card featured" href="/articles/dave-rossi-close-reading.html" data-cat="physics uap consciousness">
-      <div>
-        <div class="card-meta">
-          <span class="featured-badge">★ Featured</span>
-          <span class="cat-pill physics">Physics</span>
-          <span class="cat-pill uap">UAP</span>
-          <span class="cat-pill consciousness">Consciousness</span>
-          <span class="card-date">13 Feb 2025</span>
+    <!-- Article grid -->
+    <div>
+      <div class="section-label" style="margin-top: 0;">More Articles</div>
+      <div class="article-grid">
+        <a href="/articles/pais-rossi-hard-truths.html" class="grid-card">
+        <div class="grid-img"><img src="https://img.youtube.com/vi/jMCavr3dVP0/hqdefault.jpg" alt="Pais & Rossi on Hard Truths — "UFO Disclosure"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="grid-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
+          <div class="grid-deck">Pais couldn't sleep. He's worked out how the orbs move. With Dave Rossi: ZPE, EVOs, Casimir, Lagnov's supercon…</div>
+          <span class="grid-meta">Hard Truths &nbsp;·&nbsp; Dec 2024</span>
         </div>
-        <div class="card-title">Dave Rossi on Jesse Michels&#8217; American Alchemy: &#8220;Aliens Taught Me Advanced Physics&#8221;</div>
-        <div class="card-excerpt">A close reading of the American Alchemy episode with Dave Rossi — covering extended electrodynamics, longitudinal scalar waves, Ning Li's anti-gravity research, Salvatore Pais's Navy patents, Montagnier's DNA teleportation, and the ethics of suppressed knowledge. 10 chapters, inline diagrams, and links to every concept.</div>
-        <div class="card-footer">
-          <div class="tag-row" style="margin: 0;">
-            <span class="tag">Extended Electrodynamics</span>
-            <span class="tag">Scalar Waves</span>
-            <span class="tag">Superconductors</span>
-          </div>
-          <span class="card-read">Read →</span>
+      </a>
+<a href="/articles/sal-pais-close-reading.html" class="grid-card">
+        <div class="grid-img"><img src="https://img.youtube.com/vi/EzPmG_7WhXc/hqdefault.jpg" alt="Navy Scientist: A Cosmic War Is Happening" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="grid-title">Navy Scientist: A Cosmic War Is Happening</div>
+          <div class="grid-deck">Salvatore Pais — the Navy engineer behind four extraordinary propulsion patents — explains the Pais Effect and…</div>
+          <span class="grid-meta">American Alchemy &nbsp;·&nbsp; 2024</span>
         </div>
+      </a>
+<a href="/articles/dave-rossi-close-reading.html" class="grid-card">
+        <div class="grid-img"><img src="https://img.youtube.com/vi/r9Ldl70x5Fg/hqdefault.jpg" alt="Dave Rossi — "Aliens Taught Me Advanced Physics"" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.background='#161b25'"></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="grid-title">Dave Rossi — "Aliens Taught Me Advanced Physics"</div>
+          <div class="grid-deck">Extended electrodynamics, longitudinal scalar waves, Ning Li's anti-gravity research, Salvatore Pais's Navy pa…</div>
+          <span class="grid-meta">American Alchemy &nbsp;·&nbsp; Feb 2025</span>
+        </div>
+      </a>
+<a href="/articles/bramley-gods-of-eden.html" class="grid-card">
+        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="grid-title">William Bramley — The Gods of Eden</div>
+          <div class="grid-deck">The book Jorjani cites for the Black Plague bioweapon claim. 41 chapters: Custodians, Brotherhood of the Snake…</div>
+          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1989</span>
+        </div>
+      </a>
+<a href="/articles/yates-rosicrucian-enlightenment.html" class="grid-card">
+        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span></div>
+          <div class="grid-title">Frances Yates — The Rosicrucian Enlightenment</div>
+          <div class="grid-deck">How Dee's Elizabethan occult philosophy migrated to the Palatinate, generated the Rosicrucian manifestos, and …</div>
+          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1972</span>
+        </div>
+      </a>
+<a href="/articles/swedenborg-arcana-coelestia.html" class="grid-card">
+        <div class="grid-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0f1117 60%,#c084fc22);display:flex;align-items:center;justify-content:center;"><span style="font-family:var(--mono);font-size:11px;color:#4a5568;letter-spacing:0.1em;text-transform:uppercase;">Religion</span></div></div>
+        <div class="grid-text">
+          <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(168,85,247,0.15);color:#c084fc;border-radius:3px;padding:2px 7px;">Religion</span> <span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:#f59e0b;border-radius:3px;padding:2px 7px;">Consciousness</span></div>
+          <div class="grid-title">Swedenborg — Arcana Coelestia Vol. 1</div>
+          <div class="grid-deck">The text Kant read in full and then built a philosophy to contain. Swedenborg's verse-by-verse commentary on G…</div>
+          <span class="grid-meta">Liminal Atlas &nbsp;·&nbsp; 1749</span>
+        </div>
+      </a>
       </div>
-      <div style="display:flex; align-items:center; justify-content:center;">
-        <!-- Placeholder visual for featured card -->
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" opacity="0.6">
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,4"/>
-          <circle cx="100" cy="100" r="55" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="6,3"/>
-          <circle cx="100" cy="100" r="30" fill="rgba(59,130,246,0.1)" stroke="#3b82f6" stroke-width="1"/>
-          <circle cx="100" cy="100" r="6" fill="#60a5fa"/>
-          <line x1="100" y1="20" x2="100" y2="180" stroke="#1e3a5f" stroke-width="1"/>
-          <line x1="20" y1="100" x2="180" y2="100" stroke="#1e3a5f" stroke-width="1"/>
-          <text x="100" y="105" text-anchor="middle" fill="#5a5d7a" font-size="8" font-family="'IBM Plex Mono',monospace">zero point</text>
-        </svg>
-      </div>
-    </a>
+    </div>
 
-        <a class="article-card" href="/articles/yates-occult-philosophy.html" data-cat="religion consciousness">
-      <div class="card-meta">
-        <span class="cat-pill religion">Religion</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="card-date">1979</span>
-      </div>
-      <div class="card-title">Frances Yates &#8212; The Occult Philosophy in the Elizabethan Age</div>
-      <div class="card-excerpt">Close reading of Yates&#8217;s final book: 20 chapters tracking the Hermetic&#8211;Cabalist tradition from Ramon Lull to Milton, with every reference linked, disputed claims flagged, and open questions surfaced.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/jorjani-american-alchemy.html" data-cat="uap physics consciousness">
-      <div class="card-meta">
-        <span class="cat-pill uap">UAP</span>
-        <span class="cat-pill physics">Physics</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="card-date">Sep 2025</span>
-      </div>
-      <div class="card-title">Jason Jorjani on Jesse Michels&#8217; American Alchemy &#8212; &#8220;Aliens Invented Religion&#8221;</div>
-      <div class="card-excerpt">Philosopher Jorjani&#8217;s unified theory: a Nordic hyperdimensional caste managing human history as a control system. Kant suppressing Swedenborg, PK black units, Black Plague bioterrorism, Ingo Swann on the Moon, nuclear Mars, Landauer&#8217;s data catastrophe, and Epstein&#8217;s Nordic eugenics programme.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/bramley-gods-of-eden.html" data-cat="uap religion consciousness">
-      <div class="card-meta">
-        <span class="cat-pill uap">UAP</span>
-        <span class="cat-pill religion">Religion</span>
-        <span class="card-date">1989</span>
-      </div>
-      <div class="card-title">William Bramley &#8212; The Gods of Eden</div>
-      <div class="card-excerpt">Close reading of the book Jorjani cites for the Black Plague bioweapon claim. 41 chapters: Custodians, Brotherhood of the Snake, hooded plague-sprayers, and the Scientology substrate the author never disclosed.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/yates-rosicrucian-enlightenment.html" data-cat="religion consciousness">
-      <div class="card-meta">
-        <span class="cat-pill religion">Religion</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="card-date">1972</span>
-      </div>
-      <div class="card-title">Frances Yates &#8212; The Rosicrucian Enlightenment</div>
-      <div class="card-excerpt">How John Dee&#8217;s Elizabethan occult philosophy migrated to the Palatinate court, generated the Rosicrucian manifestos, survived the Bohemian catastrophe through exile networks, and re-emerged as the Royal Society &#8212; stripped of its magical dimension.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/swedenborg-arcana-coelestia.html" data-cat="religion consciousness">
-      <div class="card-meta">
-        <span class="cat-pill religion">Religion</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="card-date">1749</span>
-      </div>
-      <div class="card-title">Emanuel Swedenborg &#8212; Arcana Coelestia Vol. 1</div>
-      <div class="card-excerpt">The text Kant read in full and then built a philosophy to contain. Swedenborg&#8217;s verse-by-verse internal-sense commentary on Genesis 1&#8211;9: the celestial man, the Fall as epistemological shift, first-person accounts of heaven and hell, and the correspondence system underlying all of it.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/swedenborg-earths-in-universe.html" data-cat="religion consciousness uap">
-      <div class="card-meta">
-        <span class="cat-pill religion">Religion</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="cat-pill uap">UAP</span>
-        <span class="card-date">1758</span>
-      </div>
-      <div class="card-title">Swedenborg &#8212; The Earths in the Universe</div>
-      <div class="card-excerpt">The book Kant read and built a philosophy to contain. Swedenborg&#8217;s first-person accounts of Mercury&#8217;s telepathic interstellar travellers, Mars&#8217;s celestial communicators, and five earths in the starry heaven &#8212; focused on Jorjani&#8217;s claim about why Kant suppressed it.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/nsa-director-ufo.html" data-cat="uap physics consciousness">
-      <div class="card-meta">
-        <span class="cat-pill uap">UAP</span>
-        <span class="cat-pill physics">Physics</span>
-        <span class="cat-pill consciousness">Consciousness</span>
-        <span class="card-date">2025</span>
-      </div>
-      <div class="card-title">Former NSA Director Breaks Silence on UAPs</div>
-      <div class="card-excerpt">Dr. Eric Hazelton (NSA Director of Research, ODNI CTO) and Dr. Chris Gilbert apply intelligence tradecraft to UAPs: competing hypotheses, Havana Syndrome directed energy, laser-plasma propulsion, tardigrade astrobiology, warp drives, panspermia, and why visiting craft are probably AI. A few dozen cases are genuinely real and beyond current science.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-        <a class="article-card" href="/articles/jre-jesse-michels.html" data-cat="uap physics consciousness">
-      <div class="card-meta">
-        <span class="cat-pill uap">UAP</span>
-        <span class="cat-pill physics">Physics</span>
-        <span class="card-date">2025</span>
-      </div>
-      <div class="card-title">Jesse Michels on The Joe Rogan Experience #2331</div>
-      <div class="card-excerpt">Townsend Brown&#8217;s anti-gravity tech tree from 1923 to the B2. Bob Lazar&#8217;s limited hangout. Nitinol at Battelle. The $21 trillion breakaway civilisation. Nazca tridactyl mummies. Jesse&#8217;s own UFO sightings. The most research-dense JRE episode in the UAP space.</div>
-      <div class="card-footer"><span class="card-read">Read &#8594;</span></div>
-    </a>
-
-    <!-- Pais & Rossi Hard Truths article card -->
-    <a class="article-card" href="/articles/pais-rossi-hard-truths.html" data-cat="physics uap">
-      <div class="card-meta">
-        <span class="cat-pill physics">Physics</span>
-        <span class="cat-pill uap">UAP</span>
-        <span class="card-date">Dec 2024</span>
-      </div>
-      <div class="card-title">Pais &amp; Rossi on Ashton Forbes&#8217; Hard Truths &#8212; &#8220;UFO Disclosure&#8221;</div>
-      <div class="card-excerpt">Pais couldn&#8217;t sleep. He&#8217;s worked out how the orbs move: T = C/&#969;, the chain rule, the Minkowski metric. With Dave Rossi and Ashton Forbes: ZPE, EVOs, Casimir, Lagnov&#8217;s superconductor, Thiel&#8217;s angel/demon binary, and the Meissner effect as proof you can live forever.</div>
-      <div class="card-footer">
-        <span class="card-read">Read &#8594;</span>
-      </div>
-    </a>
-
-    <!-- Sal Pais article card -->
-    <a class="article-card" href="/articles/sal-pais-close-reading.html" data-cat="physics uap consciousness">
-      <div class="card-meta">
-        <span class="cat-pill physics">Physics</span>
-        <span class="cat-pill uap">UAP</span>
-        <span class="card-date">2024</span>
-      </div>
-      <div class="card-title">Navy Scientist: A Cosmic War Is Happening</div>
-      <div class="card-excerpt">Salvatore Pais &#8212; the Navy engineer behind four extraordinary propulsion patents &#8212; explains the Pais Effect, identifies MH370 as a demonstration of his physics, discusses a breakaway occult civilisation with 140 years of technological head start, and calls for humanity to unite against a non-human intelligence forming near Proxima Centauri.</div>
-      <div class="card-footer">
-        <span class="cat-pill consciousness" style="font-size:9px;">Cosmic War</span>
-        <span class="card-read">Read &#8594;</span>
-      </div>
-    </a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="section-label" style="margin-top: 0;">Latest Five</div>
+      <a href="/articles/jre-jesse-michels.html" class="sidebar-item">
+        <span class="sidebar-num">01</span>
+        <div>
+          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="sidebar-title">Jesse Michels on The Joe Rogan Experience #2331</div>
+          <div class="sidebar-meta">JRE #2331 &nbsp;·&nbsp; 2025</div>
+        </div>
+      </a>
+<a href="/articles/nsa-director-ufo.html" class="sidebar-item">
+        <span class="sidebar-num">02</span>
+        <div>
+          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="sidebar-title">Former NSA Director Breaks Silence on UAPs</div>
+          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; 2025</div>
+        </div>
+      </a>
+<a href="/articles/jorjani-american-alchemy.html" class="sidebar-item">
+        <span class="sidebar-num">03</span>
+        <div>
+          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(59,130,246,0.15);color:#60a5fa;border-radius:3px;padding:2px 7px;">UAP</span></div>
+          <div class="sidebar-title">Jason Jorjani — "Aliens Invented Religion To Control Humanity"</div>
+          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; Sep 2025</div>
+        </div>
+      </a>
+<a href="/articles/pais-rossi-hard-truths.html" class="sidebar-item">
+        <span class="sidebar-num">04</span>
+        <div>
+          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+          <div class="sidebar-title">Pais & Rossi on Hard Truths — "UFO Disclosure"</div>
+          <div class="sidebar-meta">Hard Truths &nbsp;·&nbsp; Dec 2024</div>
+        </div>
+      </a>
+<a href="/articles/sal-pais-close-reading.html" class="sidebar-item">
+        <span class="sidebar-num">05</span>
+        <div>
+          <div style="margin-bottom:4px;"><span style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(16,185,129,0.15);color:#34d399;border-radius:3px;padding:2px 7px;">Physics</span></div>
+          <div class="sidebar-title">Navy Scientist: A Cosmic War Is Happening</div>
+          <div class="sidebar-meta">American Alchemy &nbsp;·&nbsp; 2024</div>
+        </div>
+      </a>
+    </div>
 
   </div>
 
-
-</main>
-
-<!-- Footer injected by site.js -->
+</div>
 
 <script src="/js/site.js"></script>
-<script>
-  // ── Category filter ──────────────────────
-  const filterBar  = document.getElementById('filterBar');
-  const grid       = document.getElementById('articlesGrid');
-
-  filterBar.addEventListener('click', e => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-
-    // Update active button
-    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const cat = btn.dataset.cat;
-
-    // Show/hide cards
-    grid.querySelectorAll('.article-card').forEach(card => {
-      const cats = card.dataset.cat || '';
-      if (cat === 'all' || cats.includes(cat)) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-</script>
 </body>
 </html>
