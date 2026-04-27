@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. John Brandenburg &#8212; Life on Mars Destroyed by Ancient Nuclear War | American Alchemy Close Reading | Liminal Atlas</title>
-<meta name="description" content="Close reading of Jesse Michels&#8217; interview with plasma physicist Dr. John Brandenburg on Mars isotopic anomalies, GEM Theory, Cydonian archaeology, Roswell, and his nuclear lab years at Lawrence Livermore and Sandia.">
-<link rel="stylesheet" href="/css/style.css">
-<style>
-.ch-num{font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;background:rgba(245,158,11,0.15);color:var(--amber);border:1px solid rgba(245,158,11,0.3);border-radius:3px;padding:3px 10px;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. John Brandenburg &#8212; Life on Mars Destroyed by Ancient Nuclear War | Liminal Atlas</title>
+  <meta name="description" content="Close reading of Jesse Michels&#8217; interview with plasma physicist Dr. John Brandenburg on Mars isotopic anomalies, GEM Theory, Cydonian archaeology, Roswell, and his nuclear lab years at Lawrence Livermore and Sandia.">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+
+.article-hero {
+  position: relative; z-index: 1;
+  padding: 72px 24px 56px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+.article-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700; letter-spacing: -0.03em;
+  color: var(--text-bright); line-height: 1.1; margin-bottom: 20px;
+}
+.article-hero h1 span { color: var(--blue-bright); }
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);
+  letter-spacing: 0.06em;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 12px 0; margin-bottom: 24px;
+}
+.hero-intro {
+  font-size: 17px; line-height: 1.8;
+  color: var(--text); max-width: 720px; margin-bottom: 24px;
+}
+.hero-intro strong { color: var(--text-bright); font-weight: 600; }
+.speakers-section {
+  position: relative; z-index: 1;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
+}
+.speakers-inner { max-width: var(--max-width); margin: 0 auto; }
+.speakers-label {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.25em; color: var(--blue);
+  text-transform: uppercase; margin-bottom: 24px;
+}
+.speakers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.speaker-card {
+  background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 20px;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.speaker-photo {
+  width: 72px; height: 72px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim); flex-shrink: 0;
+}
+.speaker-photo-placeholder {
+  width: 72px; height: 72px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 26px;
+}
+.speaker-name { font-size: 15px; font-weight: 700; color: var(--text-bright); margin-bottom: 2px; }
+.speaker-role {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.08em; color: var(--blue-bright);
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.speaker-bio { font-size: 13px; line-height: 1.65; color: var(--text-dim); margin-bottom: 10px; }
+.speaker-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.toc-section {
+  position: relative; z-index: 1;
+  padding: 32px 24px;
+  max-width: var(--max-width); margin: 0 auto;
+}
+.article-body {
+  position: relative; z-index: 1;
+  max-width: var(--max-width); margin: 0 auto;
+  padding: 0 24px 100px;
+}
+.person-card-photo {
+  background: var(--surface); border: 1px solid var(--border2);
+  border-radius: var(--radius); padding: 18px 22px; margin: 20px 0;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.person-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--blue-dim);
+  flex-shrink: 0; background: var(--surface2);
+}
+.person-avatar-placeholder {
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 2px solid var(--blue-dim); flex-shrink: 0;
+  background: var(--blue-glow);
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+}
+.person-card-content { flex: 1; min-width: 0; }
+.person-card-content .person-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px;
+}
+.person-card-content p { font-size: 14px; line-height: 1.7; }
+@media (max-width: 640px) {
+  .speakers-grid { grid-template-columns: 1fr; }
+  .speaker-card { flex-direction: column; }
+  .person-card-photo { flex-direction: column; }
+}
+
+/* ── Enhancement styles ── */
+
+/* Claim status badges */
+.claim-verified   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(34,197,94,0.12);color:#22c55e;border:1px solid rgba(34,197,94,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-disputed   { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(245,158,11,0.12);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-unsupported{ display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(239,68,68,0.1);color:#ef4444;border:1px solid rgba(239,68,68,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+.claim-classified { display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;padding:2px 7px;border-radius:3px;background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25);vertical-align:middle;margin-left:6px;white-space:nowrap; }
+
+/* Claim key legend */
+.claim-legend { display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;padding:14px 18px;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;color:var(--text-dim); }
+.claim-legend span { display:flex;align-items:center;gap:6px; }
+
+/* Glossary term link */
+.gterm { color:var(--blue-bright);text-decoration:none;border-bottom:1px dashed rgba(96,165,250,0.4);cursor:help;font-weight:500; }
+.gterm:hover { border-bottom-color:var(--blue-bright); }
+
+/* Episode timeline bar */
+.ep-timeline { position:relative;margin:0 0 32px;padding:20px 0 8px; }
+.ep-timeline-track { position:relative;height:6px;background:var(--surface2);border-radius:3px;margin:0 12px; }
+.ep-timeline-fill { position:absolute;left:0;top:0;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blue-bright)); }
+.ep-timeline-markers { position:relative;height:32px; }
+.ep-timeline-marker { position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px; }
+.ep-marker-dot { width:8px;height:8px;border-radius:50%;background:var(--blue-bright);border:2px solid var(--bg);margin-top:-4px; }
+.ep-marker-label { font-family:var(--font-mono);font-size:8px;color:var(--text-dim);letter-spacing:0.05em;white-space:nowrap; }
+.ep-timeline-label { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;padding:0 12px; }
+
+/* Key claims box */
+.key-claims { background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.2);border-radius:var(--radius);padding:16px 20px;margin:16px 0; }
+.key-claims-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:12px; }
+.key-claims ol { margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px; }
+.key-claims li { font-size:13.5px;line-height:1.6;color:var(--text); }
+
+/* Glossary section */
+.glossary-section { border-top:2px solid var(--border);padding-top:40px;margin-top:16px; }
+.glossary-grid { display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:16px; }
+.glossary-entry { background:var(--surface2);border:1px solid var(--border2);padding:14px 18px;scroll-margin-top:80px; }
+.glossary-entry:hover { border-color:var(--blue-dim); }
+.g-term { font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--blue-bright);letter-spacing:0.05em;margin-bottom:6px;text-transform:uppercase; }
+.g-def { font-size:13px;line-height:1.65;color:var(--text-dim); }
+.g-status { margin-top:6px; }
+.g-chapters { font-family:var(--font-mono);font-size:9px;color:var(--text-dim);margin-top:4px; }
+
+/* Concept thread index */
+.thread-index { background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px; }
+.thread-index-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;color:var(--blue);text-transform:uppercase;margin-bottom:14px; }
+.thread-row { display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid var(--border2);font-size:13px; }
+.thread-row:last-child { border-bottom:none; }
+.thread-concept { font-weight:600;color:var(--text-bright);min-width:220px;flex-shrink:0; }
+.thread-links { display:flex;flex-wrap:wrap;gap:5px; }
+.thread-ch { font-family:var(--font-mono);font-size:10px;padding:1px 7px;border-radius:3px;background:var(--surface2);border:1px solid var(--border2);color:var(--blue-bright);text-decoration:none;white-space:nowrap; }
+.thread-ch:hover { border-color:var(--blue-bright); }
+
+/* Speaker confidence on dialogue lines */
+.d-confidence { font-family:var(--font-mono);font-size:9px;letter-spacing:0.06em;padding:1px 6px;border-radius:2px;margin-top:4px;display:inline-block; }
+.conf-fact { background:rgba(34,197,94,0.1);color:#22c55e; }
+.conf-spec { background:rgba(245,158,11,0.1);color:#f59e0b; }
+.conf-classified { background:rgba(139,92,246,0.1);color:#a78bfa; }
+.conf-declined { background:rgba(239,68,68,0.1);color:#ef4444; }
+
+/* "What mainstream physics says" sidebars */
+.mainstream-box { background:var(--surface);border:1px solid var(--border2);border-left:3px solid #3b82f6;border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:16px 0; }
+.mainstream-label { font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;color:var(--blue);text-transform:uppercase;margin-bottom:8px; }
+.mainstream-box p { font-size:13px;line-height:1.7;margin-bottom:6px; }
+.mainstream-box p:last-child { margin-bottom:0; }
+
+@media(max-width:640px){
+  .glossary-grid{grid-template-columns:1fr;}
+  .thread-concept{min-width:140px;}
+}
+
+    .wiki-link { color: #93c5fd !important; font-size: inherit; font-family: inherit; font-weight: inherit; text-decoration: underline; text-decoration-color: rgba(147,197,253,0.4); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+    .wiki-link:hover { color: #bfdbfe !important; text-decoration-color: #bfdbfe; }
+  
+  .wiki-link {color:#93c5fd!important;font-size:inherit;font-family:inherit;font-weight:inherit;text-decoration:underline;text-decoration-color:rgba(147,197,253,0.4);text-underline-offset:2px;}
+  .wiki-link:hover {color:#bfdbfe!important;}
+  
+
+/* Brandenburg chapter classes */
 .chapter{background:var(--surface2);border:1px solid var(--border2);border-left:4px solid var(--amber);border-radius:0 var(--radius) var(--radius) 0;padding:20px 24px;margin:28px 0;}
 .chapter-header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
 .chapter-num{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;background:rgba(245,158,11,0.12);color:var(--amber);border:1px solid rgba(245,158,11,0.3);border-radius:3px;padding:2px 8px;}
@@ -20,71 +196,84 @@
 .doc-quote{background:var(--surface);border:1px solid var(--border2);border-left:3px solid var(--blue);padding:12px 16px;margin:12px 0;font-size:13.5px;font-style:italic;color:var(--text);border-radius:0 4px 4px 0;}
 .doc-names{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
 .doc-name-pill{font-family:var(--font-mono);font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(59,130,246,0.08);color:var(--blue-bright);border:1px solid rgba(59,130,246,0.2);}
-.toc-section{padding:32px 24px;max-width:var(--max-width);margin:0 auto;}
-.toc-inner{background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:24px;}
-.toc-label{font-family:var(--font-mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);margin-bottom:16px;}
-.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
-.toc-grid a{display:flex;align-items:baseline;gap:8px;font-size:12px;color:var(--text-dim);text-decoration:none;padding:6px 10px;border-radius:4px;transition:all 0.12s;}
-.toc-grid a:hover{background:rgba(245,158,11,0.08);color:var(--amber);}
-.toc-n{font-family:var(--font-mono);font-size:9px;color:var(--amber);min-width:24px;}
 .bib-entry{background:var(--surface2);border:1px solid var(--border2);border-left:3px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;padding:16px 20px;margin:12px 0;}
 .bib-label{font-family:var(--font-mono);font-size:10px;color:var(--blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
 .bib-entry p{font-size:13.5px;line-height:1.7;margin-bottom:8px;}
 .link-row{display:flex;flex-wrap:wrap;gap:8px;}
 .link-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-family:var(--font-mono);padding:4px 10px;border-radius:4px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;}
 .link-pill.amber{color:var(--amber);border-color:rgba(245,158,11,0.3);}
-.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;}
-.person-card{background:var(--surface2);border:1px solid var(--border2);padding:20px;display:flex;gap:16px;align-items:flex-start;}
-.person-photo-placeholder{width:72px;height:72px;border-radius:4px;flex-shrink:0;background:var(--surface);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:28px;}
-.person-name{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:3px;}
-.person-role{font-family:var(--font-mono);font-size:10px;color:var(--blue-bright);letter-spacing:0.08em;margin-bottom:8px;}
-.person-bio{font-size:12.5px;line-height:1.65;color:var(--text-dim);margin-bottom:10px;}
-.person-links{display:flex;flex-wrap:wrap;gap:5px;}
 .concept-thread{background:var(--surface);border:1px solid var(--border2);border-left:3px solid rgba(168,85,247,0.5);padding:10px 14px;margin:10px 0;border-radius:0 4px 4px 0;font-size:12.5px;color:var(--text-dim);line-height:1.65;}
-@media(max-width:640px){.toc-grid,.people-grid{grid-template-columns:1fr;}}
-</style>
+.toc-n{font-family:var(--font-mono);font-size:9px;color:var(--amber);min-width:24px;}
+@media(max-width:640px){.toc-grid{grid-template-columns:1fr;}}
+
+  </style>
 </head>
 <body>
 <main data-pagefind-body>
+
 <div class="article-hero fade-up">
   <div style="margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap;">
     <span class="cat-pill uap">UAP</span>
     <span class="cat-pill physics">Physics</span>
   </div>
-  <div style="margin-bottom:16px;"><span style="display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:rgba(132,204,22,0.12);color:#84cc16;border:1px solid rgba(132,204,22,0.4);border-radius:4px;padding:2px 8px;">&#10022; Claude AI Derived Summaries</span></div>
-  <div class="badge" style="margin-bottom:20px;">American Alchemy &#183; Jesse Michels &#183; Close Reading</div>
-  <h1>Dr. John Brandenburg<br><span style="color:var(--amber);">Life on Mars Destroyed by<br>an Ancient Nuclear War</span></h1>
+  <div class="badge" style="margin-bottom:20px;">Video Close Reading &#183; American Alchemy &#183; Jesse Michels</div>
+  <h1>Dr. John Brandenburg &#8212;<br><span>Life on Mars Destroyed<br>by an Ancient Nuclear War</span></h1>
   <div class="hero-meta">
+    <span>Channel: American Alchemy</span>
     <span>Host: Jesse Michels</span>
     <span>Guest: Dr. John Brandenburg, plasma physicist</span>
-    <span>Source: American Alchemy, YouTube</span>
     <span>11 chapters &#183; 106 minutes</span>
   </div>
-
-  <div class="speaker-grid" style="margin-bottom:28px;">
-    <div class="speaker-card">
-      <div class="speaker-name">Jesse Michels</div>
-      <div class="speaker-role">Host &#183; American Alchemy</div>
-      <div class="speaker-bio">Filmmaker, investor, and host of American Alchemy. Previously covered Thomas Townsend Brown, gravity-EM unification, and the JRE #2331 episode cited throughout the show. His interest in Brandenburg begins with GEM Theory and Mars anomalies going viral via Joe Rogan.</div>
-    </div>
-    <div class="speaker-card">
-      <div class="speaker-name">Dr. John Brandenburg</div>
-      <div class="speaker-role">Plasma Physicist &#183; Lawrence Livermore &#183; Sandia</div>
-      <div class="speaker-bio">PhD plasma physicist. Worked at Lawrence Livermore (controlled fusion, under Edward Teller) and Sandia National Laboratories (directed energy weapons). Later consulting physicist to Pentagon and intel agencies. Inventor of microwave water thruster (Momentus Space). Developed GEM Theory. Claims discovery of the Martian paleo-ocean (1986) and interprets Xe-129/Ar-40 isotopic anomalies as evidence of an ancient thermonuclear event. Author of <em>Death on Mars</em><a href="https://www.amazon.com/Death-Mars-Discovery-Planetary-Nuclear/dp/1935487922" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:1px 6px;border-radius:3px;background:rgba(245,158,11,0.1);color:var(--amber);border:1px solid rgba(245,158,11,0.25);text-decoration:none;vertical-align:middle;margin-left:4px;">&#128218; Amazon</a> (2015).</div>
-    </div>
-  </div>
-
-  <div style="position:relative;width:100%;padding-bottom:56.25%;margin-bottom:28px;">
-    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:var(--radius);"
-      src="https://www.youtube.com/embed/p0S0BfoZy0w" title="Dr. John Brandenburg — Life on Mars Destroyed by Ancient Nuclear War"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="btn-row" style="margin-bottom:0;">
+  <p class="hero-intro">Plasma physicist <strong>Dr. John Brandenburg</strong> &#8212; who worked at Lawrence Livermore under Edward Teller on fusion and H-bomb programmes, then at Sandia on directed energy weapons &#8212; describes discovering evidence for an ancient thermonuclear catastrophe on Mars: <strong>anomalous Xe-129 and Ar-40 isotopic ratios</strong> in Viking lander data consistent with a nuclear detonation signature, a Martian paleo-ocean he claims to have identified in 1986, and the Cydonia face and pyramids as potential archaeological remnants. He also covers his <strong>GEM Theory</strong> unifying gravity and electromagnetism, the government PSYOP against UAP researchers (Paul Benowitz, J. Allen Hynek), Roswell, and the theology of a galactic civilisation that may have watched humanity split the atom.</p>
+  <div class="btn-row">
     <a class="btn btn-primary" href="https://www.youtube.com/watch?v=p0S0BfoZy0w" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>
+    <a class="btn btn-ghost" href="https://www.amazon.com/Death-Mars-Discovery-Planetary-Nuclear/dp/1935487922" target="_blank" rel="noopener">&#128218; Death on Mars (2015)</a>
     <a class="btn btn-ghost" href="/articles/australian-jio-ufo-file.html">&#8599; JIO File 3092/2 (Teller)</a>
-    <a class="btn btn-ghost" href="/articles/nicap-cia-ufo-evidence.html">&#8599; CIA / NICAP Article</a>
-    <a class="btn btn-ghost" href="/people.html">&#128100; People Directory</a>
+  </div>
+</div>
+
+<div style="position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:32px 24px 0;">
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);background:var(--surface2);">
+    <iframe
+      src="https://www.youtube.com/embed/p0S0BfoZy0w"
+      title="Dr. John Brandenburg &#8212; Life on Mars Destroyed by Ancient Nuclear War"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;">
+    </iframe>
+  </div>
+</div>
+
+<div class="speakers-section fade-up-1">
+  <div class="speakers-inner">
+    <div class="speakers-label">About the Speakers</div>
+    <div class="speakers-grid">
+      <div class="speaker-card">
+        <div class="speaker-photo-placeholder" style="background:rgba(34,197,94,0.15);font-size:22px;">&#128300;</div>
+        <div>
+          <div class="speaker-name">Dr. John Brandenburg</div>
+          <div class="speaker-role">Guest &#183; Plasma Physicist &#183; Lawrence Livermore &#183; Sandia</div>
+          <p class="speaker-bio">PhD plasma physicist. Worked at Lawrence Livermore National Laboratory (fusion and H-bomb programme under Edward Teller) and Sandia National Laboratories (directed energy weapons). Later consulting physicist to Pentagon and intelligence agencies. Inventor of the microwave water-based electrothermal thruster (Momentus Space). Developer of GEM Theory (Gravity-Electromagnetism unification). Claims discovery of the Martian paleo-ocean (1986) and interprets Viking-era Xe-129 and Ar-40 isotopic anomalies as evidence of an ancient thermonuclear event on Mars. Author of <em>Death on Mars</em> <a href="https://www.amazon.com/Death-Mars-Discovery-Planetary-Nuclear/dp/1935487922" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#128218; Amazon</a> (2015).</p>
+          <div class="speaker-links">
+            <a href="https://en.wikipedia.org/wiki/John_Brandenburg_(physicist)" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Wikipedia</a>
+            <a href="/people/john-brandenburg.html" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; Full Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <img class="speaker-photo" src="https://pbs.twimg.com/profile_images/1611778484030873601/9qyn2m7J_400x400.jpg" alt="Jesse Michels" onerror="this.outerHTML='&lt;div class=&quot;speaker-photo-placeholder&quot;&gt;&#127908;&lt;/div&gt;'">
+        <div>
+          <div class="speaker-name">Jesse Michels</div>
+          <div class="speaker-role">Host &#183; American Alchemy</div>
+          <p class="speaker-bio">Filmmaker and podcast host. Creator of <strong>American Alchemy</strong>, exploring consciousness, frontier science, and UAP through long-form interviews with scientists, whistleblowers, and researchers on the edge of mainstream acceptance.</p>
+          <div class="speaker-links">
+            <a href="https://www.youtube.com/@AmericanAlchemyMedia" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#8599; American Alchemy</a>
+            <a href="https://x.com/jesse_michels" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:9px;padding:3px 8px;border-radius:3px;border:1px solid var(--border2);background:var(--surface);color:var(--text-dim);text-decoration:none;">&#120143; @jesse_michels</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -108,6 +297,8 @@
     </div>
   </div>
 </div>
+
+
 
 <div class="article-body">
 <div style="background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius);padding:16px 20px;margin-bottom:32px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
@@ -420,6 +611,8 @@ His practical conclusion: Mars is reachable with existing technology (methane/LO
   </div>
 </section>
 </div>
+
+
 </main>
 <script src="/js/site.js"></script>
 </body>
